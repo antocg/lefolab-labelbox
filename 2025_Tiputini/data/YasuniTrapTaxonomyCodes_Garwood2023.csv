@@ -1,0 +1,1680 @@
+﻿Familia APGIV,Familia,NombreActual,Authors,NombreMemoria,CODIGO,CodigoPBDY_18,FormaPBDY_2018,Forma_2015,NumRec_2018,MinYear_2018,MaxYear_2018,UserNotes2018
+,,,, 'Functional Codes',BUDS,,,,55,2000,2000,Functional code: BUDS equals buds unidentified to taxon.
+,,,, 'Functional Codes',error,,,,35,2002,2017,Functional code: ERROR equals an incorrect code on data sheet which cannot be corrected because it could match more than one taxon.
+,,,, 'Functional Codes',MISS,,,,2,2000,2000,Functional code: MISS equals missing.  Code probably not entered on the datasheet. 
+,,,, 'Functional Codes',NADA,,,,8127,2000,2018,Functional code: NADA equals nothing found in the trap to record.
+,,,, 'Functional Codes',PERDIDO,,,,1,2015,2015,Functional code: PERDIDO equals data lost.  This sometimes refers to an entire or partial census.  The station has sometimes been evacuated because of flooding or kidnapping after a census has begun or before the second of two censuses in a typical jornada (20-day work period) has started.  It rarely refers to a datasheet lost before data entry.
+,,,, 'Functional Codes',ROTO,,,,158,2000,2018,Functional code: ROTO equals a trap broken.  No data collected can be collected until that trap has been repaired.
+,(no identificado),(no identificado SSP1350),,(unknown SSP1350),U1350,,,-,74,2000,2011,
+,Selaginellaceae,Selaginella sp.,,Selaginella sp.,SELA1_A,,,EH,7,2017,2017,Not a seed plant; reproductive parts scored as fruits &seeds & fragments.
+Acanthaceae,Acanthaceae,Mendoncia hollenbergiae,Wassh.,Mendoncia sp. C,MEND_C,,,CW,135,2000,2013,Early collections possibly mixed with another species.
+Acanthaceae,Acanthaceae,Mendoncia pedunculata,Leonard,Mendoncia 'rug',MENDRU,,,CW,592,2000,2017,More common of two species in Mendoncia 'rug' s.l.. Code retained.  Early collections possibly mixed.
+Acanthaceae,Acanthaceae,Mendoncia 'rug',,Mendoncia sp. G,MEND_G,,,CW,47,2001,2016,Less common of two species in Mendoncia 'rug' s.l.  Temp-name retained. New code created. Early collections possibly mixed.
+Acanthaceae,Acanthaceae,Mendoncia sericea,Leonard ex Wassh.,Mendonicia glomerata,MENDGL,,,CW,915,2000,2018,
+Acanthaceae,Acanthaceae,Mendoncia sp. D,,Mendoncia sp. D,MEND_D,,,CW,3,2000,2006,
+Acanthaceae,Acanthaceae,Mendoncia sp. H,,Mendoncia sp. H,MEND_H,,,CW,2,2001,2008,
+Acanthaceae,Acanthaceae,Mendoncia sp. M,,Mendoncia sp. M,MEND_M,,,CW,16,2001,2010,
+Acanthaceae,Acanthaceae,Mendoncia sp. N,,Mendonica sp. N,MEND_N,,,CW,11,2002,2008,
+Acanthaceae,Acanthaceae,Mendoncia sp. O,,Mendoncia sp. O,MEND_O,,,CW,6,2002,2005,
+Acanthaceae,Acanthaceae,Mendoncia sp. R,,Mendoncia sp. R,MEND_R,,,CW,1,2001,2001,Discontinued.
+Acanthaceae,Acanthaceae,Mendoncia sp. S (mezclada?),,Mendoncia sp. S,MEND_S,,,CW,354,2002,2011,Probably mixed (mezclada) collections (MEND_C + MENDGL). Stopped use after 2011.
+Acanthaceae,Acanthaceae,Mendoncia sp. T,,Mendonica sp. T,MEND_T,,,CW,3,2007,2008,Discontinued.
+Achariaceae,Flacourtiaceae,Carpotroche longifolia,(Poepp.) Benth.,Carpotroche longifolia,CAR3LO,CARPLO,S,SL,26,2002,2017,
+Achariaceae,Flacourtiaceae,Lindackeria paludosa,(Benth.) Gilg,Lindackeria paludosa,LINDPA,LINDPA,M,TM,585,2000,2018,
+Achariaceae,Flacourtiaceae,Mayna odorata,Aubl.,Mayna odorata,MAYNOD,MAYNOD,S,SL,6,2001,2015,
+Achariaceae,Flacourtiaceae,Mayna yasuniana,Á.J. Pérez & Liesner & D. Santam.,Mayna 'anelio',MAYNAN,MAYNAN,S,SL,1,2003,2003,New plot ID in 2018 as yasuniana. Temp-name was 'anelio' 2001-2014.
+Anacardiaceae,Anacardiaceae,Astronium graveolens,Jacq.,Astronium 'comun',AST2CO,ASTRGR,T,TC,59,2000,2018,
+Anacardiaceae,Anacardiaceae,Spondias mombin,L.,Spondias mombin,SPONMO,SPONMO,T,TC,1338,2000,2018,
+Anacardiaceae,Anacardiaceae,Tapirira guianensis,Aubl.,Tapirira guianensis,TAPIGU,TAPIGU,T,TC,658,2000,2018,
+Annonaceae,Annonaceae,Anaxagorea brevipes,Benth.,Anaxagorea brevipes,ANAXBR,ANAXBR,U,TU,121,2000,2017,
+Annonaceae,Annonaceae,Annona ambotay,Aubl.,Annona ambotay,ANNOAM,ANNOAM,M,TM,1,2017,2017,
+Annonaceae,Annonaceae,Annona glomerulifera,(Maas & Westra) H. Rainer,Rollinia cuspidata,ROLLCU,ROLLCU,U,TU,11,2000,2007,Tree near trap 163 is A. glomerulifera but identity at other traps not yet confirmed.
+Annonaceae,Annonaceae,Annona dolichopetala,(R.E. Fr.) H. Rainer,Rollinia 'palida',ROLLPA,ROLLDO,M,TM,173,2000,2017,
+Annonaceae,Annonaceae,Annona edulis,(Triana & Planch.) H. Rainer,Guatteria 'gransmoothie',GUATG2,GUATGS,T,TC,2,2003,2016,
+Annonaceae,Annonaceae,Annona 'flacaglabra',,Rollinia 'flacaglabra',ANNOFL,ROLLFL,S,SL,3,2016,2017,
+Annonaceae,Annonaceae,Annona 'mosaic',,Annona 'mosaic',ANNOMO,ANNOMO,T,TC,5,2000,2017,
+Annonaceae,Annonaceae,Annona neochrysocarpa,H. Rainer,Rollinia chrysocarpa,ROLLCH,ROLLCH,S,SL,1,2007,2007,
+Annonaceae,Annonaceae,Annona papilionella,(Diels) H. Rainer,Rollinia pittieri,ROLLPI,ROLLPI,T,TC,391,2000,2018,
+Annonaceae,Annonaceae,Annonaceae sp. AI,,Annonaceae sp. AI,ANN_AI,,,T?,1,2000,2000,Discontinued.
+Annonaceae,Annonaceae,Annonaceae sp. AN,,Annonaceae sp. AN,ANN_AN,,,T?,2,2000,2000,Discontinued.
+Annonaceae,Annonaceae,Annonaceae sp. BE,,Annonaceae sp. BE,ANN_BE,,,T?,1,2001,2001,Discontinued.
+Annonaceae,Annonaceae,Annonaceae sp. E,,Annonaceae sp. E,ANN_E,,,T?,1,2000,2000,Discontinued.
+Annonaceae,Annonaceae,Annonaceae sp. N,,Annonaceae sp. N,ANN_N,,,T?,1,2000,2000,Discontinued.
+Annonaceae,Annonaceae,Annonaceae sp. Q,,Annonaceae sp. Q,ANN_Q,,,T?,1,2000,2000,Discontinued.
+Annonaceae,Annonaceae,Cremastosperma cauliflorum,R.E. Fr.,Cremastosperma 'brilla',CREMBR,CREMCA,U,TM,5,2001,2017,
+Annonaceae,Annonaceae,Cremastosperma gracilipes,R.E. Fr.,Cremastosperma gracilipes,CREMGR,CREMGR,S,SL,2,2015,2015,
+Annonaceae,Annonaceae,Cymbopetalum coriaceum,N.A. Murray,Cymbopetalum coriaceum,CYM1CO,CYMBCO,S,SL,2,2015,2015,
+Annonaceae,Annonaceae,Duguetia 'cortaten',,Duguetia 'cortaten',DUGUCO,DUGUCO,T,TC,19,2002,2012,
+Annonaceae,Annonaceae,Duguetia hadrantha,(Diels) R.E. Fr.,Duguetia hadrantha,DUGUHA,DUGUHA,U,TU,428,2000,2017,
+Annonaceae,Annonaceae,Duguetia quitarensis,Benth.,Duguetia quitarensis,DUGUQU,DUGUQU,M,TM,89,2002,2018,
+Annonaceae,Annonaceae,Duguetia spixiana,Mart.,Duguetia spixiana,DUGUSP,DUGUSP,M,TM,5,2008,2014,
+Annonaceae,Annonaceae,Guatteria asplundiana,R.E. Fr.,Guatteria 'grande',GUATG1,GUATGR,T,TC,154,2000,2018,
+Annonaceae,Annonaceae,Guatteria glaberrima,R.E. Fr.,Guatteria 'tipica',GUATT2,GUATGL,T,TM,182,2000,2018,
+Annonaceae,Annonaceae,Guatteria multivenia,Diels,Guatteria multivenia,GUATMU,GUATMU,M,TM,31,2000,2017,
+Annonaceae,Annonaceae,Guatteria 'punctomarron',,Guatteria 'punctomarron',GUATP2,GUATPC,T,TC,475,2000,2018,
+Annonaceae,Annonaceae,Guatteria recurvisepala,R.E. Fr.,Guatteria 'rolin',GUATRO,GUATRE,M,TM,610,2000,2017,
+Annonaceae,Annonaceae,Guatteria scalarinervia,D.R. Simpson,Guatteria 'pulvinada',GUATP1,GUATPU,M,TM,964,2000,2018,
+Annonaceae,Annonaceae,Guatteria sp. E,,Guatteria sp. E,GUAT_E,,,T?,20,2000,2011,
+Annonaceae,Annonaceae,Guatteria sp. J,,Guatteria sp. J,GUAT_J,,,T?,10,2000,2011,
+Annonaceae,Annonaceae,Guatteria sp. R,,Guatteria sp. R,GUAT_R,,,T?,2,2003,2011,
+Annonaceae,Annonaceae,Guatteria stipitata,R.E. Fr.,Guatteria 'cachorro',GUATCA,GUATCI,M,TM,26,2001,2017,
+Annonaceae,Annonaceae,Oxandra mediocris,Diels,Oxandra mediocris,OXANME,OXANME,M,TM,68,2000,2016,
+Annonaceae,Annonaceae,Oxandra riedeliana,R.E. Fr.,Oxandra riedeliana,OXANRI,OXANRI,M,TM,66,2000,2016,
+Annonaceae,Annonaceae,Pseudomalmea diclina,(R.E. Fr.) Chatrou,Pseudomalmea diclina,PSE2DI,PSEDDI,T,TC,248,2000,2018,
+Annonaceae,Annonaceae,Ruizodendron ovale,(Ruiz & Pav.) R.E. Fr.,Ruizodendron ovale,RUIZOV,RUIZOV,T,TC,12,2001,2016,
+Annonaceae,Annonaceae,Trigynaea triplinervis,D.M. Johnson & N.A. Murray,Trigynaea triplinervis,TRI3TR,TRIGTR,U,TU,29,2000,2017,
+Annonaceae,Annonaceae,Unonopsis floribunda,Diels,Unonopsis floribunda,UNONFL,UNONFL,M,TM,7,2007,2017,
+Annonaceae,Annonaceae,Unonopsis sp. C,,Unonopsis sp. C,UNON_C,,,T?,2,2000,2001,
+Annonaceae,Annonaceae,Unonopsis veneficiorum,(Mart.) R.E. Fr.,Unonopsis 'venefalso',UNONVE,UNONVE,U,TU,494,2000,2018,
+Annonaceae,Annonaceae,Xylopia cuspidata,Diels,Xylopia cuspidata,XYL1CU,XYLOCU,S,TU,3,2000,2007,
+Annonaceae,Annonaceae,Xylopia sericea,A. St.-Hil.,Xylopia 'ligu',XYL1LI,XYLOLI,T,TC,393,2000,2017,
+Apocynaceae,Apocynaceae,Allomarkgrafia sp.,,Apocynaceae sp. OF,APO_OF,,,CW,369,2003,2018,Very common in traps. Either a new species or new to Ecuador.
+Apocynaceae,Apocynaceae,Apocynaceae sp. AD,,Apocynaceae sp. AD,APO_AD,,,CW,1,2001,2001,
+Apocynaceae,Apocynaceae,Apocynaceae sp. AE,,Apocynaceae sp. AE,APO_AE,,,CW,1,2001,2001,Discontinued.
+Apocynaceae,Apocynaceae,Apocynaceae sp. AF,,Apocynaceae sp. AF,APO_AF,,,CW,1,2002,2002,Discontinued.
+Apocynaceae,Apocynaceae,Apocynaceae sp. AG,,Apocynaceae sp. AG,APO_AG,,,CW,2,2001,2001,Discontinued.
+Apocynaceae,Apocynaceae,Apocynaceae sp. C,,Apocynaceae sp. C,APO_C,,,CW,1,2000,2000,Discontinued.
+Apocynaceae,Apocynaceae,Apocynaceae sp. Z,,Apocynaceae sp. Z,APO_Z,,,CW,7,2002,2004,
+Apocynaceae,Apocynaceae,Aspidosperma 'blancimpreso',,Aspidosperma 'blancimpreso',ASPIBL,ASPIBL,T,TC,383,2000,2018,
+Apocynaceae,Apocynaceae,Aspidosperma darienense,Woodson ex Dwyer,Aspidosperma darienense,ASPIDA,ASPIDA,T,TC,27,2001,2014,
+Apocynaceae,Apocynaceae,Aspidosperma megalocarpon,Müll. Arg.,Aspidosperma 'grandis',ASPIGR,ASPIME,T,TC,94,2000,2014,
+Apocynaceae,Apocynaceae,Aspidosperma rigidum,Rusby,Aspidosperma rigidum,ASPIRI,ASPIRI,T,TC,5,2001,2012,
+Apocynaceae,Apocynaceae,Forsteronia acouci,(Aubl.) A. DC.,Fosteronia acouci,FOSTAC,,,CW,708,2000,2018,
+Apocynaceae,Apocynaceae,Forsteronia affinis,Müll. Arg.,Fosteronia affinis,FOSTAF,,,CW,913,2000,2018,
+Apocynaceae,Apocynaceae,Himatanthus sucuuba,(Spruce ex Müll. Arg.) Woodson,Himatanthus sucuuba,HIMASU,HIMASU,T,TC,54,2000,2016,
+Apocynaceae,Apocynaceae,Lacmellea lactescens,(Kulm.) Markgr.,Lacmellea lactescens,LACMLA,LACMLA,T,TC,6,2006,2017,
+Apocynaceae,Apocynaceae,Lacmellea oblongata,Markgr.,Lacmellea  'ramalada',LACMRA,LACMOB,U,TU,13,2012,2017,
+Apocynaceae,Apocynaceae,Mandevilla sp. A,,Mandevilla sp. A,MAN_A,,,CH,79,2004,2015,
+Apocynaceae,Apocynaceae,Mandevilla sp. B,,Mandevilla sp. B,MAN_B,,,CH,65,2007,2017,
+Apocynaceae,Asclepiadaceae,Metalepis albiflora,Urb.,Metalepis albiflora,METAAL,,,CW,49,2000,2017,Adult voucher awaiting ID confirmation.
+Apocynaceae,Asclepiadaceae,Metalepis sp. A,,Asclepiadaceae sp. A (2),ASCL_A,,,CW,9,2002,2018,
+Apocynaceae,Apocynaceae,Odontadenia puncticulosa,(Rich.) Pulle,Odontadenia puncticulosa,ODONPU,,,CW,4,2007,2016,
+Apocynaceae,Apocynaceae,Odontodenia sp. A,,Odontodenia sp. A,ODON_A,,,CW,473,2000,2018,Probably Odontadenia stemmadeniifolia Woodson.
+Apocynaceae,Apocynaceae,Odontodenia sp. B,,Odontodenia sp. B,ODON_B,,,CW,3,2001,2001,Possibly equals ODON_A.
+Apocynaceae,Apocynaceae,Rauvolfia praecox,K. Schum. ex Markgr.,Rauvolfia 'vertichica',RAUVVE,RAUVPR,T,TC,460,2000,2018,
+Apocynaceae,Apocynaceae,Tabernaemontana sananho,Ruiz & Pav.,Tabernaemontana sananho,TAB2SA,TABRSA,U,TU,7,2000,2016,
+Apocynaceae,Apocynaceae,Tassadia sp. AQ,,Apocynaceae sp. AQ,APO_AQ,,,CW,149,2003,2017,Scan of adult voucher awaiting identification.
+Araceae,Araceae,Anthurium cf. bonplandii,G.S. Bunting,Anthurium bonplandii,ANTHBO,,,XT,334,2008,2017,Anthurium bonplandii not known from Ecuador.
+Araceae,Araceae,Anthurium cf. griseum,Croat,Anthurium griseum,ANTHGR,,,EH,74,2006,2016,
+Araceae,Araceae,Anthurium cf. sinuatum,Benth. ex Schott,Anthurium sinuatum,ANTHSI,,,EH,1443,2001,2018,Anthuirium sinuatum not know from Ecuador.
+Araceae,Araceae,Anthurium sp. D,,Anthurium sp. D,ANTH_D,,,,1,2001,2001,
+Araceae,Araceae,Anthurium sp. G,,Anthurium sp. G,ANTH_G,,,EH,2,2002,2002,Discontinued.
+Araceae,Araceae,Anthurium sp. H,,Anthurium sp. H,ANTH_H,,,EH,951,2001,2017,
+Araceae,Araceae,Anthurium sp. J ('palmata'),,Anthurium sp. J ('palmata'),ANTH_J,,,EH,33,2008,2010,Temp-name 'palmata' because leaves palmate.
+Araceae,Araceae,Araceae sp. A,,Araceae sp. A,ARA_A,,,,3,2007,2010,Discontinued.
+Araceae,Araceae,Araceae sp. AC,,Araceae sp. AC,ARA_AC,,,-,11,2002,2008,
+Araceae,Araceae,Araceae spp. (partes indet. a sp.),,Araceae spp. (partes indet. a sp.),ARA_PIN,,,-,2603,2000,2008,Includes all unidentified aroid parts (mostly seeds) before 4-2008 with codes ARAxx (where xx equals the trap number or is absent) and a few unknowns. After this date samples assigned to specific codes.
+Araceae,Araceae,Dieffenbachia sp. A,,Dieffenbachia sp. A,DIEF_A,,,XT,5,2000,2010,
+Araceae,Araceae,Dracontium longipes,Engl.,Dracontium longipes,DRACLO,,,XT,2,2002,2002,
+Araceae,Araceae,Heteropsis flexuosa,(Kunth) G.S. Bunting,Heteropsis sp. A,HETE2_A,,,HL,29,2002,2018,Adult sterile voucher awaiting ID confirmation.
+Araceae,Araceae,Heteropsis sp. B,,Heteropsis sp. B,HETE2_B,,,HL,6,2009,2015,
+Araceae,Araceae,Monstera obliqua,Miq.,Monstera obliqua,MONSOB,,,HV,102,2000,2017,
+Araceae,Araceae,Philodendron 'platypodium',,Philodendron 'platypodium',PHILPL,,,HV,583,2003,2018,Philodendron platypodium not known from Ecuador.
+Araceae,Araceae,Philodendron sp.,,Phylodendron sp.,PHYLLE,,,HV,1,2005,2005,Discontinued.
+Araceae,Araceae,Philodendron sp. A,,Philodendron sp. A,PHIL_A,,,HV,16,2002,2008,
+Araceae,Araceae,Philodendron sp. B,,Philodendron sp. B,PHIL_B,,,HV,1,2006,2006,
+Araceae,Araceae,Philodendron sp. 'GR',,Philodendron sp. 'GR',PHILGR,,,HV,1,2013,2013,Discontinued.
+Araceae,Araceae,Syngonium sp. A,,Syngonium sp. A,SYN1_A,,,HV,4,2008,2017,
+Araceae,Araceae,Syngonium sp. B,,Syngonium sp. B,SYN1_B,,,HV,3,2008,2010,
+Araliaceae,Araliaceae,Dendropanax arboreus,(L.) Dec. & Planch,Dendropanax arboreus,DEN2AR,DENDAR,T,TC,303,2000,2017,
+Araliaceae,Araliaceae,Dendropanax caucanus,(Harms) Harms,Dendropanax 'grande',DEN2GR,DENDCA,M,TM,538,2000,2016,
+Araliaceae,Araliaceae,Dendropanax querceti,Donn. Sm.,Dendropanax 'quercetorum',DEN2QU,DENDQU,S,SL,120,2000,2017,
+Araliaceae,Araliaceae,Schefflera morototoni,(Aubl.) Maguire & Stey. & Frod.,Schefflera morototoni,SCH2MO,SCHEMO,T,TC,616,2000,2017,
+Arecaceae,Arecaceae,Aiphanes ulei,(Dammer) Burret,Aiphanes ulei,AIPHUL,AIPHUL,S,SL,35,2000,2018,
+Arecaceae,Arecaceae,Astrocaryum chambira,Burret,Astrocaryum chambira,AST1CH,ASTCCH,T,TC,598,2000,2018,
+Arecaceae,Arecaceae,Astrocaryum urostachys,Burret,Astrocaryum murumuru,AST1MU,ASTCMU,M,TM,70,2001,2018,New ID as Astrocaryum urostachys in 2014-2018 plot lists.
+Arecaceae,Arecaceae,Attalea cf. insignis,(Mart.) Drude,Attalea insignis cf.,ATTAIN,,,SS,4,2005,2007,Stem subterranean (not aerial) hence not included in plot censuses.
+Arecaceae,Arecaceae,Attalea maripa,(Aubl.) Mart.,Attalea maripa,ATTAMA,ATTAMA,T,TC,12,2001,2017,
+Arecaceae,Arecaceae,Bactris corossilla,H. Karst.,Bactris corossilla,BACTCO,BACTCO,S,SL,1,2003,2003,
+Arecaceae,Arecaceae,Bactris maraja,Mart.,Bactris maraja,BACTMA,BACTMA,S,SL,2,2009,2013,Two varieties included in plot code BACTMA. Trap 200 has var. juruensis. Trap 53 not identified to variety (maraja or juruensis).
+Arecaceae,Arecaceae,Bactris simplicifrons,Mart.,Bactris simplicifrons,BACTSI,BACTSI,S,SL,6,2006,2011,
+Arecaceae,Arecaceae,Desmoncus giganteus,A.J. Hend.,Desmoncus orthacanthos,DESMOR,,,CW,25,2001,2016,New ID 2013.
+Arecaceae,Arecaceae,Euterpe precatoria,Mart.,Euterpe precatoria,EUTEPR,EUTEPR,T,TM,130,2000,2017,
+Arecaceae,Arecaceae,Geonoma aspidifolia,Spruce,Geonoma 'comun',GEONCO,GEONCO,S,SL,282,2000,2018,
+Arecaceae,Arecaceae,Geonoma brongniartii,Mart.,Geonoma brongniartii,GEONBR,,,SS,3,2000,2011,Palm stem < 1 m tall hence not included in plot censuses.
+Arecaceae,Arecaceae,Geonoma macrostachys,Mart.,Geonoma sp. A,GEON_A,,,SS,34,2000,2017,Palm stem < 1 m tall hence not included in plot censuses.
+Arecaceae,Arecaceae,Geonoma maxima,(Poit.) Kunth,Geonoma maxima,GEONMA,GEONMA,S,SL,57,2001,2017,
+Arecaceae,Arecaceae,Geonoma stricta var. stricta,(Poit.) Kunth,Geonoma stricta,GEONST,GEONST,S,SL,7,2000,2006,Both varieties included in plot code GEONST. Only var. stricta in traps. Var. piscicauda rare on plot.
+Arecaceae,Arecaceae,Geonoma triglochin,Burrett,Geonoma triglochin,GEONTR,GEONTR,S,SL,13,2003,2016,
+Arecaceae,Arecaceae,Hyospathe elegans,Mart.,Hyospathe elegans,HYOSEL,HYOSEL,S,SL,5,2002,2010,
+Arecaceae,Arecaceae,Iriartea deltoidea,Ruiz & Pav.,Iriartea deltoidea,IRIADE,IRIADE,T,TM,17376,2000,2018,
+Arecaceae,Arecaceae,Mauritia flexuosa,L.f.,Mauritia flexuosa,MAURFL,MAURFL,T,TC,226,2000,2018,
+Arecaceae,Arecaceae,Oenocarpus bataua,Mart.,Oenocarpus bataua,OENOBA,OENOBA,T,TC,1500,2000,2018,
+Arecaceae,Arecaceae,Oenocarpus mapora,H. Karst.,Oenocarpus mapora,OENOMA,OENOMA,M,TM,2,2002,2005,
+Arecaceae,Arecaceae,Phytelephas tenuicaulis,(Barfod) A.J. Hend.,Phytelephas tenuicaulis,PHYTTE,PHYTTE,U,TU,7,2006,2016,
+Arecaceae,Arecaceae,Prestoea schultzeana,(Burret) H.E. Moore,Prestoea schultzeana,PRESSC,PRESSC,S,TU,149,2000,2017,
+Arecaceae,Arecaceae,Socratea exorrhiza,(Mart.) H. Wendl.,Socratea exorrhiza,SOCREX,SOCREX,T,TC,41,2000,2017,
+Arecaceae,Arecaceae,Wettinia maynensis,Spruce,Wettinia maynensis,WETTMA,WETTMA,M,TM,208,2000,2018,
+Aristolochiaceae,Aristolochiaceae,Aristolochia sp. A,,Aristolochia sp. A,ARIS_A,,,CW,457,2000,2018,No adult voucher yet. Unsure if mixed collection of similar parts (mostly seeds).
+Aristolochiaceae,Aristolochiaceae,Aristolochia sp. H,,Aristolochia sp. H,ARIS_H,,,CW,1,2000,2000,Scan of adult voucher awaiting ID.
+Aristolochiaceae,Aristolochiaceae,Aristolochia sp. K,,Aristolochia sp. K,ARIS_K,,,CW,18,2005,2017,
+Aristolochiaceae,Aristolochiaceae,Aristolochia sp. L,,Aristolochia sp. L,ARIS_L,,,CW,1,2005,2005,
+Aristolochiaceae,Aristolochiaceae,Aristolochia sp. M,,Aristolochia sp. M,ARIS_M,,,CW,2,2007,2017,
+Asteraceae,Asteraceae,Asteraceae sp. C,,Asteraceae sp. C,AST_C,,,CW,561,2000,2017,No adult vouchers. Widespread. Unsure if mixed collection.
+Asteraceae,Asteraceae,Asteraceae sp. D,,Asteraceae sp. D,AST_D,,,CW,7,2000,2012,
+Asteraceae,Asteraceae,Asteraceae sp. G,,Asteraceae sp. G,AST_G,,,CW,450,2001,2017,No adult vouchers. Widespread. Unsure if mixed collection.
+Asteraceae,Asteraceae,Asteraceae sp. H,,Asteraceae sp. H,AST_H,,,CW,10,2000,2016,
+Asteraceae,Asteraceae,Asteraceae sp. Q,,Asteraceae sp. Q,AST_Q,,,CW,7,2000,2001,
+Asteraceae,Asteraceae,Asteraceae sp. R,,Asteraceae sp. R,AST_R,,,CW,24,2000,2016,Early records may include some UNCA_A.
+Asteraceae,Asteraceae,Asteraceae sp. S,,Asteraceae sp. S,AST_S,,,CW,82,2007,2013,
+Asteraceae,Asteraceae,Mikania 'anchaliza',,Mikania 'anchaliza',MIKAAN,,,CW,38,2013,2014,Separated from AST_B on 10-2013. Adult voucher awaiting ID.
+Asteraceae,Asteraceae,Mikania 'dorata',,Mikania 'dorata',MIKADO,,,CW,54,2011,2016,Separated from AST_B 12-2011. Adult voucher awaiting ID.
+Asteraceae,Asteraceae,Mikania sp. B ,(Cf. Mikania hookeriana DC.),Asteraceae sp. B,AST_B,,,CW,6591,2000,2018,Adult vouchers cf. hookeriana.  Very widespread. Early collections are definitely mixed with at least MIKAAN & MIDADO. Later collections may still  be mixed with other species.
+Begoniaceae,Begoniaceae,Begonia sp. B,,Begonia sp. B,BEGO_B,,,XT,35,2000,2008,
+Bignoniaceae,Bignoniaceae,Adenocalymma cladotrichum,(Sandwith) L.G. Lohmann,Memora cladotricha,MEMOCL,MEMOCL,U,TU,27,2002,2017,Memora cladotricha Sandwith (still plot name) moved into Adenocalymma by Lohmann & Taylor 2014.
+Bignoniaceae,Bignoniaceae,Adenocalymma 'purpurascens',,Adenocalymma 'purpurascens',ADENPU,,,CW,150,2000,2018,Adult voucher awaiting ID.
+Bignoniaceae,Bignoniaceae,Amphilophium cf. sp A.,,Amphilophium sp. A,AMPH_A,,,CW,111,2006,2017,Probably not Amphilophium.
+Bignoniaceae,Bignoniaceae,Amphilophium crucigerum,(L.) L.G. Lohmann ,Pithecoctinium sp. A,PITH_A,,,CW,33,2006,2017,Pithecoctinium crucigerum (L.) A.H. Gentry moved into Amphilophium by Lohmann & Taylor 2014.
+Bignoniaceae,Bignoniaceae,Amphilophium paniculatum,(L.) Kunth,Amphilophium paniculatum,AMPHPA,,,CW,78,2000,2011,
+Bignoniaceae,Bignoniaceae,Amphilophium sp. ,,Distictella sp. A,DIS1_A,,,CW,79,2004,2016,Distictella moved into Amphilophium by Lohmann & Taylor 2014. Not equal to AMPH_A.
+Bignoniaceae,Bignoniaceae,Anemopaegma 'chrysoleucum',,Anemopaegma chrysoleucum,ANEMCH,,,CW,163,2000,2017,Not Anemopaegma chrysoleucum because seeds not buoyant & not water dispersed. Adult voucher awaiting ID.
+Bignoniaceae,Bignoniaceae,Arrabidaea sp. B,,Arrabidaea sp. B,ARRA_B,,,CW,41,2000,2016,Arrabidaea recently divided into three genera by Lohmann & Taylor 2014).  Identification to Fridericia or Cuspidaria or Tanaecium not yet possible. 
+Bignoniaceae,Bignoniaceae,Arrabidaea sp. T,,Arrabidaea sp. T,ARRA_T,,,CW,1,2004,2004,Discontinued.
+Bignoniaceae,Bignoniaceae,Bignonia cf. aequinoctialis,L. ,Bignoniaceae sp. F,BIG_F,,,CW,131,2000,2017,Adult voucher awaiting ID confirmation. Cydista aequinoctialis (L.) Miers. transferred back to Bignonia by Lohmann & Taylor 2014.
+Bignoniaceae,Bignoniaceae,Bignonia sp. A,,Roentgenia sp. A,ROEN_A,,,CW,1,2013,2013,Adult voucher awaiting identification. Roentgenia moved into Bignonia by Lohmann & Taylor 2014.
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. AE,,Bignoniaceae sp. AE,BIG_AE,,,CW,57,2000,2016,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. AK,,Bignoniaceae sp. AK,BIG_AK,,,CW,7,2000,2010,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. AM,,Bignoniaceae sp. AM,BIG_AM,,,CW,4,2000,2001,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. AO,,Bignoniaceae sp. AO,BIG_AO,,,CW,2,2000,2000,Possibly equal BIG_AE.
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. AP,,Bignoniaceae sp. AP,BIG_AP,,,CW,3,2000,2016,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. AS,,Bignoniaceae sp. AS,BIG_AS,,,CW,14,2001,2008,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. AW,,Bignoniaceae sp. AW,BIG_AW,,,CW,6,2001,2017,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. AZ,,Bignoniaceae sp. AZ,BIG_AZ,,,CW,1,2001,2001,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. B,,Bignoniaceae sp. B,BIG_B,,,CW,508,2000,2017,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. BA,,Bignoniaceae sp. BA,BIG_BA,,,CW,23,2000,2004,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. BB,,Bignoniaceae sp. BB,BIG_BB,,,CW,185,2000,2016,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. BL,,Bignoniaceae sp. BL,BIG_BL,,,CW,5,2001,2017,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. BM,,Bignoniaceae sp. BM,BIG_BM,,,CW,27,2001,2011,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. BQ,,Bignoniaceae sp. BQ,BIG_BQ,,,CW,2,2004,2004,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. C,,Bignoniaceae sp. C,BIG_C,,,CW,316,2000,2014,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. E,,Bignoniaceae sp. E,BIG_E,,,CW,5,2000,2000,Discontinued.
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. G,,Bignoniaceae sp. G,BIG_G,,,CW,425,2000,2017,Adult vouchers awaiting identification.
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. N,,Bignoniaceae sp. N,BIG_N,,,CW,2,2000,2000,Discontinued.
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. S,,Bignoniaceae sp. S,BIG_S,,,CW,8,2000,2009,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. V,,Bignoniaceae sp. V,BIG_V,,,CW,55,2000,2010,
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. W,,Bignoniaceae sp. W,BIG_W,,,CW,517,2000,2018,Scan of adult voucher awaiting identification. Specimen with few leaflets & flowers. Voucher at Yasuni with insufficeint material to export for ID.
+Bignoniaceae,Bignoniaceae,Bignoniaceae sp. X,,Bignoniaceae sp. X,BIG_X,,,CW,26,2000,2015,No adult vouchers yet for identification.
+Bignoniaceae,Bignoniaceae,Callichlamys latifolia,(Rich.) K. Schum.,Callichlamys latifolia,CAL2LA,,,CW,151,2001,2016,
+Bignoniaceae,Bignoniaceae,Dolichandra sp. A,,Macfadyena sp. A,MACF_A,,,CW,24,2000,2000,Macfadyena moved into Dolichandra by Lohmann & Taylor 2014.
+Bignoniaceae,Bignoniaceae,Fridericia cf. schumanniana, (Loes.) L.G. Lohmann ,Bignoniaceae sp. Y,BIG_Y,,,CW,224,2000,2017,Fruits similar to Arrabideae verrusoca  (Standl.) A.H. Gentry but identification needs confirmation.  Arrabideae verrucosa transferred to Fridericia schumanniana by Lohmann & Taylor 2014.
+Bignoniaceae,Bignoniaceae,Fridericia sp. A,,Arrabidaea sp. A,ARRA_A,,,CW,489,2000,2018,Arrabidaea recently divided by Lohmann & Taylor 2014 into three genera.  This sample identified as Fridericia sp.  No adult voucher yet.
+Bignoniaceae,Bignoniaceae,Jacaranda copaia,(Aubl.) D. Don,Jacaranda copaia,JAC1CO,JACACO,T,TC,873,2001,2018,
+Bignoniaceae,Bignoniaceae,Jacaranda glabra,(DC.) Bureau & K. Schum.,Jacaranda glabra,JAC1GL,JACAGL,M,TM,5,2008,2013,
+Bignoniaceae,Bignoniaceae,Mansoa parvifolia,(A.H. Gentry) A.H. Gentry,Mansoa parvifolia,MANSPA,,,CW,1,2015,2015,
+Bignoniaceae,Bignoniaceae,Tanaecium pyramidatum,(Rich.) L.G. Lohmann  ,Bignoniaceae sp. AJ,BIG_AJ,,,CW,24,2000,2012,Identified by fruits & seeds & seedling.  Paragonia pyramidata (Rich.) Bureau moved into Tanaecium by Lohmann & Taylor 2014.
+Bignoniaceae,Bignoniaceae,Tynanthus sp.,,Bignoniaceae sp. BO,BIG_BO,,,CW,5,2002,2003,
+Boraginaceae,Boraginaceae,Cordia chamissoniana,Steud.,Cordia chamissoniana,CORDCH,CORDCH,T,TC,326,2000,2018,
+Boraginaceae,Boraginaceae,Cordia collocacca,L.,Cordia 'aspera',CORDA1,CORDCO,M,TM,2,2017,2017,
+Boraginaceae,Boraginaceae,Cordia hebeclada,I.M. Johnst.,Cordia hebeclada,CORDHE,CORDHE,T,TC,30,2004,2016,
+Boraginaceae,Boraginaceae,Cordia nodosa,Lam.,Cordia nodosa,CORDNO,CORDNO,S,SL,262,2001,2017,
+Boraginaceae,Boraginaceae,Cordia sp. A,,Cordia sp. A,CORD_A,,,T?,13,2000,2011,
+Boraginaceae,Boraginaceae,Cordia sp. B,,Cordia sp. B,COR_B,,,T?,1,2004,2004,
+Boraginaceae,Boraginaceae,Tournefortia sp. B,,Tournefortia sp. B,TOUR_B,,,CW,4,2004,2008,
+Boraginaceae,Boraginaceae,Tournefortia 'tace',,Tournefortida 'tace',TOURTA,,,CW,171,2005,2018,Adult voucher awaiting ID.
+Boraginaceae,Boraginaceae,Tournefortia ulei,Vaupel,Tournefortia ulei,TOURUL,,,CW,400,2001,2018,Adult voucher awaiting ID confirmation.
+Bromeliaceae,Bromeliaceae,Aechmea chantinii,(Carrière) Baker,Aechmea 'amazonica',AECHAM,,,EH,2,2017,2017,Aechmea amazonica Ule is a synonym of Aechmea chantinii. Source of name unknown.
+Bromeliaceae,Bromeliaceae,Aechmea sp. A,,Bromeliaceae sp. A,BRO_A,,,EH,2,2000,2002,
+Bromeliaceae,Bromeliaceae,Bromeliaceae sp. B,,Bromeliaceae sp. B,BRO_B,,,EH,2,2003,2009,
+Bromeliaceae,Bromeliaceae,Bromeliaceae sp. C,,Bromeliaceae sp. C,BRO_C,,,EH,1,2001,2001,
+Bromeliaceae,Bromeliaceae,Bromeliaceae sp. D,,Bromeliaceae sp. D,BRO_D,,,EH,5,2001,2003,
+Bromeliaceae,Bromeliaceae,Bromeliaceae sp. E,,Bromeliaceae sp. E,BRO_E,,,EH,2,2002,2002,
+Bromeliaceae,Bromeliaceae,Bromeliaceae sp. F,,Bromeliaceae sp. F,BRO_F,,,EH,6,2002,2009,
+Bromeliaceae,Bromeliaceae,Bromeliaceae sp. H,,Bromeliaceae sp. H,BRO_H,,,EH,1,2002,2002,
+Bromeliaceae,Bromeliaceae,Bromeliaceae sp. I,,Bromeliaceae sp. I,BRO_I,,,EH,19,2002,2010,
+Bromeliaceae,Bromeliaceae,Bromeliaceae sp. J,,Bromeliaceae sp. J,BRO_J,,,EH,19,2002,2015,
+Bromeliaceae,Bromeliaceae,Bromeliaceae sp. L,,Bromeliaceae sp. L,BRO_L,,,EH,55,2001,2003,
+Bromeliaceae,Bromeliaceae,Bromeliaceae sp. M,,Bromeliaceae sp. M,BRO_M,,,EH,6,2001,2006,
+Bromeliaceae,Bromeliaceae,Bromeliaceae sp. N,,Bromeliaceae sp. N,BRO_N,,,EH,160,2000,2017,
+Burseraceae,Burseraceae,Crepidospermum rhoifolium,(Benth.) Triana & Planch.,Crepidospermum rhoifolium,CREPRH,CREPRH,M,TM,25,2001,2016,
+Burseraceae,Burseraceae,Dacryodes 'gorda',,Dacryodes 'gorda',DACRGO,DACRGO,M,TM,13,2001,2016,
+Burseraceae,Burseraceae,Dacryodes peruviana,(Loes.) H.J. Lam,Dacryodes peruviana,DACRPE,DACRPE,M,TM,2,2015,2015,
+Burseraceae,Burseraceae,Protium amazonicum,(Cuatrec.) Daly,Protium amazonicum,PROTAM,PROTAM,T,TC,653,2000,2017,
+Burseraceae,Burseraceae,Protium aracouchini,(Aubl.) Marchand,Protium aracouchini,PROTAR,PROTAR,M,TM,49,2004,2017,
+Burseraceae,Burseraceae,Protium 'brillanodu',,Protium 'brillanodu',PROTBR,PROTBR,T,TC,472,2000,2018,
+Burseraceae,Burseraceae,Protium glabrescens,Swart,Protium glabrescens,PROTGL,PROTGL,T,TC,360,2000,2017,
+Burseraceae,Burseraceae,Protium 'grannodu',,Protium 'grannodu',PROTGR,PROTGR,T,TC,2,2002,2002,
+Burseraceae,Burseraceae,Protium guianense,(Aubl.) Marchand,Protium guianense,PROTGU,PROTGU,M,TM,58,2000,2012,
+Burseraceae,Burseraceae,Protium nodulosum,Swart,Protium nodulosum,PROTNO,PROTNO,T,TC,1148,2000,2018,
+Burseraceae,Burseraceae,Protium sagotianum,Marchand,Protium sagotianum,PROTSA,PROTSA,T,TC,937,2000,2018,
+Burseraceae,Burseraceae,Protium sp.,,Protium sp.,U1724,,,T?,1,2000,2000,Discontinued.
+Burseraceae,Burseraceae,Protium sp. K,,Protium sp. K,PROT_K,,,T?,1,2000,2000,Discontinued.
+Burseraceae,Burseraceae,Protium sp. M,,Protium sp. M,PROT_M,,,T?,2,2000,2000,Discontinued.
+Burseraceae,Burseraceae,Protium stevensonii,(Stand.) Daly,Tetragastris panamensis,TET2PA,TETGPA,T,TC,397,2000,2018,Tetragastris panamensis (Engl.) Kuntze transferred into Protium.
+Burseraceae,Burseraceae,Trattinnickia lawrancei var. boliviana,Swart,Trattinnickia aspera,TRATAS,TRATAS,T,TC,217,2000,2017,Only one variety on plot. Var. boliviana in 2009 plot list.
+Burseraceae?,Burseraceae?,Protium? sp. {Trichilia quadrijuga?},,Protium? sp.,U2214,,,T?,1,2000,2000,Discontinued.
+Cactaceae,Cactaceae,Epiphyllum cf. phyllanthus,(L.) Haw.,Epiphyllum sp. A,EPIP_A,,,EH,6,2006,2015,
+Calophyllaceae,Clusiaceae,Calophyllum brasiliense,Cambess.,Calophyllum brasiliense,CAL3BR,CALOBR,E,TE,40,2000,2017,
+Calophyllaceae,Clusiaceae,Caraipa 'comun',,Caraipa 'comun',CAR1CO,CARACO,T,TC,1,2011,2011,Was Caraipa 'comun' in plot lists 2018 & 2014. Was Caraipa aff. Myricoides Ducke in plot list  2009-2010.
+Calophyllaceae,Clusiaceae,Marila 'comun' ,,Marila 'comun',MAR1CO,MARICO,T,TC,10,2007,2018,Was Marila 'comun' in  plot lists 2018 & 2014. Was Marila cf. pluricostat Standl. & L.O. Williams in plot lists 2009-2010.
+Campanulaceae,Campanulaceae,Centropogon loretensis,E. Wimm.,Centropogon loretensis,CENTLO,CENTLO,S,SL,12,2003,2011,
+Cannabaceae,Ulmaceae,Celtis iguanaea,(Jacq.) Sarg.,Celtis iguanaea,CELTIG,,,CW,1124,2000,2018,
+Cannabaceae,Ulmaceae,Celtis schippii,Standl.  ,Celtis schippii,CELTSC,CELTSC,T,TC,932,2000,2018,
+Capparaceae,Capparidaceae,Capparidastrum osmanthum,(Diels) Cornejo & Iltis,Capparis osmantha,CAPPOS,CAPPOS,M,TM,8,2002,2017,Generic name change (through synonymy). Changed in  plot lists 2014 & 2018.
+Capparaceae,Capparidaceae,Capparidastrum sola,(J.F. Macbr.) Cornejo & H. Iltis,Capparis sola,CAPPSO,CAPPSO,S,SL,7,2000,2014,Generic name change (through synonymy). Changed in plot lists 2014 & 2018.
+Capparaceae,Capparidaceae,Capparis sp. A,,Capparis sp. A,CAPP_A,,,T?,1,2000,2000,
+Capparaceae,Capparidaceae,Preslianthus detonsus,(Triana & Planch.) Iltis & Cornejo,Capparis detonsa,CAPPDE,CAPPDE,U,TU,14,2003,2010,Generic name change (through synonymy). Changed in plot lists 2014 & 2018.
+Caricaceae,Caricaceae,Carica microcarpa,Jacq.,Carica microcarpa,CARIMI,CARIMI,S,SL,2,2017,2017,
+Caricaceae,Caricaceae,Jacaratia digitata,(Poepp. & Engl.) Solms,Jacaratia digitata,JAC2DI,JACTDI,T,TC,11,2009,2017,
+Caryocaraceae,Caryocaraceae,Anthodiscus amazonicus,Gleason & A.C. Sm.,Anthodiscus amazonicus,ANTHAM,ANTHAM,T,TC,302,2000,2017,
+Caryocaraceae,Caryocaraceae,Caryocar glabrum,(Aubl.) Pers.,Caryocar glabrum,CAR4GL,CARYGL,T,TC,3,2000,2017,
+Celastraceae,Hippocrateaceae,Anthodon decussatus,Ruiz & Pav.,Anthodon sp. O,ANT1_O,,,CW,13,2003,2009,Fruit photo identified as Anthodon decussatus by J. Lombardi (2013).
+Celastraceae,Hippocrateaceae,Cheiloclinium cognatum,(Miers) A.C. Sm.,Cheiloclinium cognatum,CHEICO,CHEICO,S,SL,1365,2000,2018,
+Celastraceae,Hippocrateaceae,Cuervea kappleriana,(Miq.) A.C. Sm.,Hylenaea comosa,HYLECO,ZZHISE,V,CW,182,2000,2017,New ID to plot lianas. Our specimen scans & photos identified by J. Lombardi as Cuervea kappleriana (2013). Fruits are different from those on BCI.
+Celastraceae,Hippocrateaceae,Hippocratea volubilis,L.,Hippocratea volubilis,HIPPVO,,,CW,955,2000,2018,
+Celastraceae,Celastraceae,Maytenus  'cilindrica' ,,Maytenus 'cilindrica',MAYTCI,MAYTCI,T,TC,645,2000,2018,Maytenus 'cilindrica' in 2018 & 2014 plot lists. Was Maytenus cf macrocarpa  (Ruiz & Pab.) Briq. s.l. in 2009-2010 plot list.
+Celastraceae,Celastraceae,Maytenus 'cuadliso',,Maytenus 'cuadliso',MAYTCU,MAYTCU,M,TM,2,2003,2007,Was Maytenus 'cuadliso' in 2018 & 2014 plot list. was Maytenus cf ebenifolia Reissek s.l. in 2009-2010 plot.
+Celastraceae,Celastraceae,Maytenus sp.,,(no identificado SSP3889),U3889,,,T?,1,2001,2001,
+Celastraceae,Hippocrateaceae,Peritassa cf. pruinosa,(Seem.) A.C. Sm.,Peritassa 'mab',PERIMA,,,CW,3,2001,2016,New ID to plot lianas. Our specimen scans & photos identified  by J. Lombardi (2013) as Peritass cf pruinosa (Seem.) A.C. Sm.
+Celastraceae,Hippocrateaceae,Pristimera nervosa,(Miers) A.C. Sm.,Pristimera nervosa,PRISNE,,,CW,3,2010,2010,
+Celastraceae,Hippocrateaceae,Salacia 'atenucrasa',,Salacia 'atenucrasa',SALAAT,SALAAT,U,TU,55,2000,2017,
+Celastraceae,Hippocrateaceae,Salacia 'ovalo',,uniden 'ovalo',ZZHIOV,ZZHIOL,T,TC,17,2004,2015,
+Celastraceae,Hippocrateaceae,Salacia 'supernervi',,Salacia 'supernervi',SALASU,,,CW,64,2002,2007,
+Celastraceae,Hippocrateaceae,Salacia ulei,Loes.,Tontelea 'redondagrande',TONTRE,,,CW,280,2000,2018,New identification of plot lianas. Our specimen scans & photos identified by Garwood as Salacia ulei.
+Celastraceae,Hippocrateaceae,uniden 'atenumembra',,uniden 'atenumembra',ZZHIAT,ZZHIAT,U&V,CU,13,2001,2004,
+Chrysobalanaceae,Chrysobalanaceae,(no identificado SSP1295),,(unknown SSP1295),U1295,,,-,1,2000,2000,Discontinued.
+Chrysobalanaceae,Chrysobalanaceae,Couepia obovata,Ducke,Couepia  obovata,COU1OB,COUEOB,M,TM,43,2004,2017,
+Chrysobalanaceae,Chrysobalanaceae,Hirtella excelsa,Standl. ex Prance,Hirtella excelsa,HIRTEX,HIRTEX,T,TC,235,2000,2016,
+Chrysobalanaceae,Chrysobalanaceae,Licania arborea,Seem.,Licania arborea,LIC1AR,LICAAR,E,TE,148,2001,2016,
+Chrysobalanaceae,Chrysobalanaceae,Licania caudata,Prance,Licania 'intermedia',LIC1IN,LICACA,M,TM,95,2000,2015,
+Chrysobalanaceae,Chrysobalanaceae,Licania harlingii,Prance,Licania harlingii,LIC1H1,LICAHA,T,TC,98,2002,2017,
+Chrysobalanaceae,Chrysobalanaceae,Licania 'hipofuzzy',,Licania 'hipofuzzy',LIC1H2,LICAHI,T,TC,190,2001,2017,
+Chrysobalanaceae,Chrysobalanaceae,Licania longipedicellata,Ducke,Licania longipedicellata,LIC1LO,LICALG,U,TU,255,2000,2017,
+Chrysobalanaceae,Chrysobalanaceae,Licania 'nervifina',,Licania 'nervifina',LIC1NE,LICANE,T,TM,109,2000,2017,
+Chrysobalanaceae,Chrysobalanaceae,Licania 'opaca'  ,,Licania 'opaca',LIC1OP,LICAOP,M,TM,92,2000,2017,Was Licania 'opaca' in plot lists 2018 & 2014. Was Licania cf silvae Prance in plot list 2009-2010.
+Chrysobalanaceae,Chrysobalanaceae,Licania sp. D,,Licania sp. D,LIC1_D,,,T?,1,2004,2004,Discontinued.
+Chrysobalanaceae,Chrysobalanaceae,Licania urceolaris,Hook. f.,Licania 'glablanca',LIC1G2,LICAUR,T,TC,386,2000,2018,
+Chrysobalanaceae,Chrysobalanaceae,Licania 'zigzag',,Licania 'zigzag',LIC1ZI,LICAZI,M,TM,83,2005,2018,
+Clusiaceae,Clusiaceae,Chrysochlamys 'fragil',,Chrysochlamys 'medio',CHR1ME,CHRCFR,S,SL,3,2008,2009,Chrysochlamys 'fragil' is one of 3 segragates of an older taxon Chrysochlamys 'medio' made by 2004.  (Others segregates were 'hugo' and membranacea.)  We kept old code.
+Clusiaceae,Clusiaceae,Chrysochlamys tenuifolia,Cuatrec.,Chrysochlamys tenuifolia,CHR1TE,CHRCTE,S,SL,21,2008,2015,
+Clusiaceae,Clusiaceae,Clusia 'alata',,Clusia sp. P,CLUS_P,,,HW,248,2008,2016,First recognized in 2008. Adult vouchers awaiting identification.
+Clusiaceae,Clusiaceae,Clusia 'amarilla',,Clusia 'amarilla',CLUSAM,,,HW,9,2016,2016,First recognized in 2013 & later reported from traps. Adult vouchers awaiting identification.
+Clusiaceae,Clusiaceae,Clusia cf. flavida,(Benth.) Pipoly,Clusia sp. F,CLUS_F,,,HW,126,2008,2012,First recognized in 2008. Adult voucher first identifed in 2011 as Havetiopsis flexilis  Spruce ex Planch. & Triana. That genus is nested within Clusia and now included in it.
+Clusiaceae,Clusiaceae,Clusia 'puntoroja',,Clusia sp. X,CLUS_X,,,HW,86,2013,2016,First recognized off the plot. First reported from traps in 2013. (2 leaves present in card voucher.)
+Clusiaceae,Clusiaceae,Clusia sp. A,,Clusia sp. A,CLUS_A,,,HW,1,2014,2014,
+Clusiaceae,Clusiaceae,Clusia sp. C,,Clusia sp. C,CLUS_C,,,HW,136,2000,2017,Used twice in 2000 & discontinued but re-recognized in 2008.
+Clusiaceae,Clusiaceae,Clusia sp. D,,Clusia sp. D,CLUS_D,,,HW,7,2000,2000,Discontiuned after 2000 (insufficient material for identification).
+Clusiaceae,Clusiaceae,Clusia sp. DD,,Clusia sp. DD,CLUS_DD,,,HW,1,2000,2000,Discontiuned after 2000 (insufficient material for identification).
+Clusiaceae,Clusiaceae,Clusia sp. HH,,Clusia sp. HH,CLUS_HH,,,HW,172,2008,2017,Little material for study. This is possibly CLUS_N and/or CLUS_I.
+Clusiaceae,Clusiaceae,Clusia sp. I,,Clusia sp. I,CLUS_I,,,HW,402,2000,2017,Used briefly in 2000-2001 (13 records). Re-recognized in 2008. Adult voucher awaiting identification.
+Clusiaceae,Clusiaceae,Clusia sp. JJ,,Clusia sp. JJ,CLUS_JJ,,,HW,1,2001,2001,Discontiuned after 2000 (insufficient material for identification).
+Clusiaceae,Clusiaceae,Clusia sp. K,,Clusia sp. K,CLU_K,,,HW,12,2000,2001,Discontinued.
+Clusiaceae,Clusiaceae,Clusia sp. LL,,Clusia sp. LL,CLUS_LL,,,HW,3,2008,2008,
+Clusiaceae,Clusiaceae,Clusia sp. N,,Clusia sp. N,CLUS_N,,,HW,115,2008,2017,First ecognized in 2008. Voucher material poor (1 leaf & fruit). Not yet identified to species.
+Clusiaceae,Clusiaceae,Clusia sp. RR,,Clusia sp. RR,CLUS_RR,,,HW,81,2009,2016,First recogized in 2009.
+Clusiaceae,Clusiaceae,Clusia sp. Y,,Clusia sp. Y,CLUS_Y,,,HW,3,2000,2013,
+Clusiaceae,Clusiaceae,Clusia sp. ZZ ,,Clusia sp. ZZ,CLUS_ZZ,,,HW,17,2010,2011,First recognized in 2010. Probably CLUS_Z ('chiquita'). Adult voucher awaiting identification.
+Clusiaceae,Clusiaceae,Clusia spp. (partes indet. a sp.),,Clusia spp. (partes indet. a sp.),CLUS_PIN,,,HW,1676,2000,2008,Includes all unidentified Clusia parts before 5-2008 with codes CLUxx (where xx equals the trap number) or CLUS or CLUSIA and a few unknowns.  After this date samples were assigned to specific codes.
+Clusiaceae,Clusiaceae,Garcinia brasiliensis,Mart.,Garcinia brasiliensis,GAR2BR,GARCBR,M,TM,1,2008,2008,
+Clusiaceae,Clusiaceae,Garcinia macrophylla,Mart.,Garcinia macrophylla,GAR2M1,GARCMC,T,TC,2,2016,2017,
+Clusiaceae,Clusiaceae,Garcinia madruno,(Kunth) Hammel,Garcinia madruno,GAR2M2,GARCMA,M,TM,2,2003,2013,
+Clusiaceae,Clusiaceae,Symphonia globulifera,L. f.,Symphonia globulifera,SYMPGL,SYMHGL,T,TM,8,2005,2014,
+Clusiaceae,Clusiaceae,Tovomita 'alargada',,Tovomita 'arbol',TOVOAR,TOVOAL,M,TM,6,2001,2016,
+Clusiaceae,Clusiaceae,Tovomita sp. A,,Tovomita sp. A,TOVO_A,,,T?,1,2000,2000,Discontinued.
+Clusiaceae?,Clusiaceae,(no identificado SSP1377),,(unknown SSP1377),U1377,,,-,2,2000,2000,Discontinued. Possibly a Clusia.
+Clusiaceae?,Clusiaceae?,Clusiaceae? sp.,,Clusiaceae? sp.,U2685,,,-,1,2000,2000,Discontinued.
+Combretaceae,Combretaceae,Buchenavia grandis,Ducke,Buchenavia 'elegante',BUCHEL,BUCHGR,E,TC,3,2006,2011,
+Combretaceae,Combretaceae,Buchenavia 'ob',,Terminalia 'ob',TERMOB,TERMOB,T,TC,164,2000,2018,Generic change in plot list 2014-2018. Was Terminila in lists through 2010
+Combretaceae,Combretaceae,Buchenavia oxycarpa,(Mart.) Eichler,Buchenavia 'cilipunto',BUCHCI,BUCHPU,T,TC,16,2001,2014,Buchenavia oxycarpa in plot lists  of 2018 & 2014.  This as was B. 'punctata' in lists from 2004-2010 and  B. 'cilipunto' in earlier lists.
+Combretaceae,Combretaceae,Buchenavia parvifolia,Ducke,Buchenavia parvifolia,BUCHPA,BUCHPA,T,TC,388,2000,2018,
+Combretaceae,Combretaceae,Combretum sp. I,,Combretum sp. I,COMB_I,,,CW,52,2001,2013,
+Combretaceae,Combretaceae,Combretum sp. J,,Combretum sp. J,COMB_J,,,CW,1,2001,2001,
+Combretaceae,Combretaceae,Combretum sp. K,,Combretum sp. K,COMB_K,,,CW,3,2004,2008,
+Combretaceae,Combretaceae,Combretum 'subsesil',,Combretum 'subsesil',COMBSU,,,CW,6383,2000,2018,
+Combretaceae,Combretaceae,Terminalia amazonia,(J.F. Gmel.) Exell,Terminalia sp. A,TERM_A,,,TC,198,2000,2017,
+Combretaceae,Combretaceae,Terminalia sp. B,,Terminalia sp. B,TERM_B,,,TC,4,2014,2017,This is a winged wind-dispersed fruit. Therefore it is probably not a Buchenavia.
+Commelinaceae,Commelinaceae,Commelina cf. erecta,L.,Dichorisandra sp. A,DIC1_A,,,XT,7,2000,2006,
+Commelinaceae,Commelinaceae,Dichorisandra hexandra,(Aubl.) Standl.,Dichorisandra hexandra,DIC1HE,,,CH,17,2004,2017,
+Connaraceae,Connaraceae,Connaraceae sp. B,,Connaraceae sp. B,CON_B,,,CW,1,2000,2000,Discontinued.
+Connaraceae,Connaraceae,Connaraceae sp. D,,Connaraceae sp. D,CON_D,,,CW,2,2001,2001,Discontinued.
+Connaraceae,Connaraceae,Connarus punctatus,Planch.,Connarus 'comun',CONNCO,,,CW,6,2006,2015,Adult voucher awaiting identification confirmation.
+Connaraceae,Connaraceae,Connarus sp. B,,Connarus sp. B,CONN_B,,,CW,7,2001,2003,Discontinued.
+Connaraceae,Connaraceae,Connarus sp. C,,Connarus sp. C,CONN_C,,,CW,16,2001,2013,
+Connaraceae,Connaraceae,Rourea amazonica,(Baker) Radlk.,Connarus 'amazonicum',CONNAM,,,CW,1,2007,2007,Probably not equal ROUR_A.
+Connaraceae,Connaraceae,Rourea sp. A,,Rourea sp. A,ROUR_A,,,CW,256,2000,2016,There are at least 2 Rourea speciesin Yasuni region fide Cat. Ecuador.
+Convolvulaceae,Convolvulaceae,Dicranostyles cf. globostigma,D.F. Austin,Dicranostyles sp. I,DICR_I,,,CW,39,2002,2016,Leaves densely pubescent. Not previously found in plot herbarium. Adult voucher awaiting ID confirmation.
+Convolvulaceae,Convolvulaceae,Dicranostyles holostyla,Ducke,Dicranostyles holostyla,DICRHO,,,CW,469,2000,2016,Larger fruits (≥ 3 cm). Widely distributed.
+Convolvulaceae,Convolvulaceae,Dicranostyles sp. C,,Dicranostyles sp. C,DICR_C,,,CW,839,2000,2017,Smaller fruits (≤ 2 cm). Widely distributed.  Adult voucher awaiting ID.
+Convolvulaceae,Convolvulaceae,Dicranostyles sp. J,,Dicranostyles sp. J,DICR_J,,,CW,35,2006,2016,Limited distribution (traps 83-85).  Needs to be compared closely to DICR_C.
+Convolvulaceae,Convolvulaceae,Ipomoea phyllomega,House,Ipomoea phyllomega,IPOMPH,,,CW,66,2002,2017,Species idnetification tentative.
+Convolvulaceae,Convolvulaceae,Maripa cf. pauciflora,D.F. Austin,Convolvulaceae sp. A,CONV_A,,,CW,4,2000,2000,Limited distribution (only trap 127).
+Convolvulaceae,Convolvulaceae,Maripa sp. B,,Maripa sp. B,MAR2_B,,,CW,410,2000,2018,Widespread.  Adult voucher awaiting ID.
+Costaceae,Costaceae,Costus sp. B,,Costus sp. B,COST_B,,,XT,70,2000,2011,
+Costaceae,Costaceae,Costus sp. D,,Costus sp. D,COST_D,,,XT,11,2001,2014,Probably equal COST_B.  B only only in tr. 125.
+Costaceae,Costaceae,Costus sp. E,,Costus sp. E,COST_E,,,XT,2,2001,2008,
+Costaceae,Costaceae,Dimerocostus strobilaceus,Kuntze,Dimerocostus sp. A,DIME_A,,,XT,1,2001,2001,
+Cucurbitaceae,Cucurbitaceae,Cayaponia '1-punto',,Cayaponia '1-punto' (plantula),CAYA1P,,,CW,1,2017,2017,Temp-name '1-punto' refers to first seedling leaf which is unlobed and acuminate.  Seeds and fruits that match those that produce '1-punto' seedlings (plantulas) are assigned this code.  Fruits are ~ 3 cm long in a loose cluster. Adult leaves are shallowly 3-lobed.
+Cucurbitaceae,Cucurbitaceae,Cayaponia 'comun' ,,Cayaponia sp. C ('5 puntos' plantula),CAYA_C,,,C?,31,2000,2012,Temp-name '5-puntos' refers to first seedling leaf which is 5-lobed. Seeds and fruits matching those that produce '5-puntos' seedlings (plantulas) are assigned this code. Fruits are 4-5 cm long & solitary. Adults leaves are deeply 5-lobed and somewhat glabrous. Adult voucher awaiting ID.
+Cucurbitaceae,Cucurbitaceae,Cayaponia macrocalyx,Harms,Cayaponia macrocalyx,CAYAMA,,,CW,143,2000,2016,Need to distinguish from CAYA_C.  No adult voucher yet available for identification. Seeds only available on a card voucher.
+Cucurbitaceae,Cucurbitaceae,Cayaponia ophthalmica,R.E. Schult.,Cayaponia '3 puntos' (plantula),CAYA3P,,,CW,41,2012,2018,Temp-name '3-puntos' refers to first seedling leaf which is 3-lobed. Seeds and fruits that match those that produce '3-puntos' seedlings (plantulas) are assigned this code.  Fruits are ~ 3 cm long and tightly clustered. Adult leaves are deeply 5-7 lobed.
+Cucurbitaceae,Cucurbitaceae,Cayaponia sp. D,,Cayaponia sp. D,CAYA_D,,,C?,3,2005,2010,
+Cucurbitaceae,Cucurbitaceae,Cayaponia sp. E,,Cucurbitaceae sp. E,CUC_E,,,C?,4,2001,2014,Seeds smaller than other Cayaponia.
+Cucurbitaceae,Cucurbitaceae,Cayaponia sp. U,,Cucurbitaceae sp. U,CUC_U,,,C?,17,2003,2008,Possibly equal CAYA_C.
+Cucurbitaceae,Cucurbitaceae,Cayaponia 'tubulosa',,Cayaponia 'tubulosa' cf.,CAYATU,,,CW,21,2016,2018,Possibly equal CAYA_C. Adult voucher (male) awaiting ID but probably not C. tubulosa Cogn.
+Cucurbitaceae,Cucurbitaceae,Cucurbitaceae sp. C,,Cucurbitaceae sp. C,CUC_C,,,C?,9,2000,2014,
+Cucurbitaceae,Cucurbitaceae,Cucurbitaceae sp. I,,Cucurbitaceae sp. I,CUC_I,,,C?,45,2000,2014,
+Cucurbitaceae,Cucurbitaceae,Cucurbitaceae sp. K,,Cucurbitaceae sp. K,CUC_K,,,C?,1,2001,2001,
+Cucurbitaceae,Cucurbitaceae,Cucurbitaceae sp. O,,Cucurbitaceae sp. O,CUC_O,,,C?,1,2001,2001,
+Cucurbitaceae,Cucurbitaceae,Cucurbitaceae sp. S,,Cucurbitaceae sp. S,CUC_S,,,C?,59,2000,2018,
+Cucurbitaceae,Cucurbitaceae,Cucurbitaceae sp. V,,Cucurbitaceae sp. V,CUC_V,,,C?,4,2000,2008,
+Cucurbitaceae,Cucurbitaceae,Fevillea cordifolia,L.,Fevillea cordifolia,FEVICO,,,CW,86,2003,2016,
+Cucurbitaceae,Cucurbitaceae,Gurania acuminata,Cogn.,Gurania acuminata,GURAAC,,,C?,5,2017,2018,Scan of adult voucher awaiting ID confirmation.
+Cucurbitaceae,Cucurbitaceae,Gurania sp. R,,Cucurbitaceae sp. R,CUC_R,,,C?,59,2000,2017,
+Cucurbitaceae,Cucurbitaceae,Gurania sp. S,,Gurania sp. S,GURA1_S,,,C?,1,2012,2012,
+Cucurbitaceae,Cucurbitaceae,Melothria cf. dulcis,Wunderlin,Sicydium sp. A,SICY_A,,,CH,15,2011,2015,Adult voucher awaiting ID confirmation.
+Cucurbitaceae,Cucurbitaceae,Siolmatra pentaphylla,Harms,Siolmatra pentaphylla,SIOLPE,,,CW,252,2000,2018,
+Cyclanthaceae,Cyclanthaceae,Asplundia sp. A,,Asplundia sp. A,ASPL_A,,,HV,252,2000,2017,
+Cyclanthaceae,Cyclanthaceae,Asplundia sp. B,,Asplundia sp. B,ASPL_B,,,HV,51,2000,2013,
+Cyclanthaceae,Cyclanthaceae,Asplundia sp. F,,Asplundia sp. F,ASPL_F,,,HV,1,2001,2001,Discontinued.
+Cyclanthaceae,Cyclanthaceae,Asplundia sp. L,,Asplundia sp. L,ASPL_L,,,HV,97,2000,2017,Possibly equal ASPLVA.  Awaiting identification of adult voucher which is only available at Yasuni.  There were insufficient samples for exporting.
+Cyclanthaceae,Cyclanthaceae,Asplundia sp. N,,Asplundia sp. N,ASPL_N,,,HV,9,2001,2003,
+Cyclanthaceae,Cyclanthaceae,Asplundia sp. S,,Asplundia sp. S,ASPL_S,,,HV,10,2002,2005,Possibly equal ASPL_A.
+Cyclanthaceae,Cyclanthaceae,Asplundia cf. vaupesiana,Harling,Asplundia vaupesiana,ASPLVA,,,HV,4,2006,2008,Possibly equal ASPL_L.
+Cyclanthaceae,Cyclanthaceae,Evodianthus funifer,(Poit. )Linsm.,Evodianthus sp. A,EVO1_A,,,HV,39,2010,2017,
+Cyclanthaceae,Cyclanthaceae,Ludovia integrifolia,(Woodson) Haarling,Asplundia sp. J,ASPL_J,,,HV,22,2001,2010,
+Dichapetalaceae,Dichapetalaceae,Dichapetalum 'coriaceum',,Dichapetalum sp. A,DICH_A,,,CW,190,2000,2016,
+Dichapetalaceae,Dichapetalaceae,Dichapetalum sp. B,,Dichapetalum sp. B,DICH_B,,,CW,6,2003,2005,
+Dichapetalaceae,Dichapetalaceae,Tapura juruana,(Ule) Rizz.,Tapura juruana,TAPUJU,TAPUJU,T,TC,303,2000,2018,
+Dichapetalaceae,Dichapetalaceae,Tapura peruviana,K. Krause,Tapura peruviana,TAPUPE,TAPUPE,U,TU,8,2000,2014,
+Dilleniaceae,Dilleniaceae,Davilla rugosa,Poir.,Davilla sp. A,DAVI_A,,,CW,1083,2000,2018,Adult vouchers awaiting ID confirmation.
+Dilleniaceae,Dilleniaceae,Dilleniaceae sp. B,,Dilleniaceae sp. B,DIL_B,,,CW,2,2000,2003,Discontinued.
+Dilleniaceae,Dilleniaceae,Dilleniaceae sp. G,,Dilleniaceae sp. G,DIL_G,,,CW,2,2001,2001,Discontinued.
+Dilleniaceae,Dilleniaceae,Dilleniaceae sp. ZA,,Dilleniaceae sp. ZA,DILL_ZA,,,CW,2,2012,2012,Discontinued.
+Dilleniaceae,Dilleniaceae,Doliocarpus sp. A,,Doliocarpus sp. A,DOLI_A,,,CW,103,2000,2017,
+Dilleniaceae,Dilleniaceae,Doliocarpus sp. B,,Doliocarpus sp. B,DOLI_B,,,CW,1,2001,2001,Probably discontinued.
+Dilleniaceae,Dilleniaceae,Doliocarpus sp. F,,Dilleniaceae sp. F,DIL_F,,,CW,4,2001,2003,Probably discontinued.
+Dilleniaceae,Dilleniaceae,Pizona coriacea,Mart. & Zucc.,Pizona coriacea,PINZCO,,,CW,727,2000,2016,
+Dilleniaceae,Dilleniaceae,Tetracera willdenowiana,Steud.,Tetracera willdenowiana,TET1WI,,,CW,2762,2000,2018,Adult vouchers awaiting ID confirmation.
+Dioscoreaceae,Dioscoreaceae,Dioscorea sp. A,,Dioscorea sp. A,DIO1_A,,,CH,44,2000,2015,Scans of adult voucher awaiting identification.
+Dioscoreaceae,Dioscoreaceae,Dioscorea sp. B,,Dioscorea sp. B,DIO1_B,,,CH,16,2001,2011,
+Ebenaceae,Ebenaceae,Diospyros pseudoxylopia,Mildbr.,Diospyros pseudoxylopia,DIO2PS,DIOSPS,T,TC,422,2000,2017,
+Ebenaceae,Ebenaceae,Diospyros subrotata,Hiern,Diospyros 'simibrachy',DIO2SI,DIOSSU,M,TM,15,2000,2010,
+Elaeocarpaceae,Elaeocarpaceae,Sloanea cf. fragrans,Rusby,Sloanea 'stipulon',SLOAST,SLOAFR,T,TC,73,2000,2018,Was Sloanea cf fragans Rusby in plot book (2014).
+Elaeocarpaceae,Elaeocarpaceae,Sloanea 'gigapulvi',,Sloanea 'gigapulvi',SLOAG1,SLOAGI,T,TC,181,2001,2018,
+Elaeocarpaceae,Elaeocarpaceae,Sloanea 'granredonda',,Sloanea 'granredonda',SLOAG3,SLOAGD,M,TM,3,2004,2004,
+Elaeocarpaceae,Elaeocarpaceae,Sloanea guianensis,(Aubl.) Benth.,Sloanea 'guia',SLOAG4,SLOAGU,T,TC,26,2000,2007,New identification as Sloanea guianensis (Aubl.) Benth. in plot list 2018; was 'guia' in 2001-2014
+Elaeocarpaceae,Elaeocarpaceae,Sloanea 'nervi',,Sloanea 'nervi',SLOANE,SLOANE,T,TC,216,2000,2018,
+Elaeocarpaceae,Elaeocarpaceae,Sloanea 'oak',,Sloanea 'oak',SLOAOA,SLOAOA,T,TC,27,2000,2017,
+Elaeocarpaceae,Elaeocarpaceae,Sloanea cf. pubescens,Benth.,Sloanea 'tomentosa',SLOATO,SLOATO,T,TC,404,2000,2017,This was Sloanea cf pubsescens Benth. in plot book (2014).
+Elaeocarpaceae,Elaeocarpaceae,Sloanea 'robustipeq',,Sloanea 'robustipeq',SLOARO,SLOARO,T,TC,5,2004,2011,
+Elaeocarpaceae,Elaeocarpaceae,Sloanea sp. A,,Sloanea sp. A,ELA_A,,,T?,15,2000,2000,Discontinued.
+Elaeocarpaceae,Elaeocarpaceae,Sloanea sp. H (mezcla SLOAG1 & SLOAG4),,Sloanea sp. H,SLOA_H,,,T?,33,2000,2010,Discontinued.  Contained both SLOAG1 and SLOAG4 flowers on reference card.
+Elaeocarpaceae,Elaeocarpaceae,Sloanea synandra,Spruce ex Benth.,Sloanea 'chocoplatalmen',SLOACH,SLOASY,E,TE,2,2009,2009,
+Erythroxylaceae,Erythroxylaceae,Erythroxylum macrophyllum var. ecuadorense,Plowman,Erythroxylum 'ecuadorense',ERY2EC,ERYOMA,U,TU,4,2006,2011,Both varieties in plot included in plot code ERYOMA in lists 2018 & 2014.   Varities given in plot lists 2009-2010. We maintain them separately in the trap database because they differ morphologically.
+Erythroxylaceae,Erythroxylaceae,Erythroxylum macrophyllum var. macrophyllum,Cav.,Erythroxylum macrophyllum,ERY2MA,ERYOMA,U,TU,99,2000,2018,Both varieties in plot included in plot code ERYOMA in lists 2018 & 2014.   Varities given in plot lists 2009-2010. We maintain them separately in the trap database because they differ morphologically.
+Erythroxylaceae,Erythroxylaceae,Erythroxylum sp.,,(unknown SSP2968),U2968,,,-,1,2001,2001,Discontinued. Possibly equal ERY2MA.
+Erythroxylaceae,Erythroxylaceae,Erythroxylum sp. C,,Erythroxylum sp. C,ERY2_C,,,T?,1,2001,2001,Discontinued.
+Erythroxylaceae,Erythroxylaceae,Erythroxylum sp. D,,Erythroxylum sp. D,ERY2_D,,,T?,1,2002,2002,Discontinued.
+Erythroxylaceae,Erythroxylaceae,Erythroxylum squamatum,Sw.,Erythroxylum squamatum,ERY2SQ,ERYOSQ,U,TU,264,2000,2018,
+Euphorbiaceae,Euphorbiaceae,Acalypha cuneata,Poepp. & Endl.,Acalypha cuneata,ACALCU,ACALCU,S,SL,159,2000,2018,
+Euphorbiaceae,Euphorbiaceae,Acidoton nicaraguensis,(Hemsl.) G.L. Webster,Acidoton nicaraguensis,ACIDNI,ACIDNI,S,SL,354,2000,2018,
+Euphorbiaceae,Euphorbiaceae,Alchornea triplinervia,(Spreng.) Müll. Arg.,Alchornea triplinervia,ALC1TR,ALC1TR,E,TE,5298,2000,2018,
+Euphorbiaceae,Euphorbiaceae,Alchorneopsis floribunda,(Benth.) Müll. Arg.,Alchorneopsis floribunda,ALC2FL,ALC2FL,T,TC,172,2000,2015,
+Euphorbiaceae,Euphorbiaceae,Aparisthmium cordatum,(A. Juss.) Baill.,Aparisthmium cordatum,APARCO,APARCO,M,TM,1777,2000,2018,
+Euphorbiaceae,Euphorbiaceae,Caryodendron orinocense,H. Karst.,Caryodendron orinocense,CAR6OR,CARDOR,T,TC,143,2000,2017,
+Euphorbiaceae,Euphorbiaceae,Conceveiba rhytidocarpa,Müll. Arg.,Conceveiba guianensis,CONCGU,CONCRH,U,TU,27,2003,2017,
+Euphorbiaceae,Euphorbiaceae,Hevea guianensis,Aubl.,Hevea guianensis,HEVEGU,HEVEGU,T,TC,6,2010,2016,
+Euphorbiaceae,Euphorbiaceae,Mabea 'comun',,Mabea 'comun',MABECO,MABECO,U,TU,30,2000,2018,
+Euphorbiaceae,Euphorbiaceae,Mabea 'superbrondu',,Mabea 'superbrondu',MABESU,MABESU,M,TM,133,2000,2017,
+Euphorbiaceae,Euphorbiaceae,Manihot brachyloba,Müll. Arg.,Manihot brachyloba,MANIBR,,,C?,9,2015,2017,Adult voucher waiting ID confirmation.
+Euphorbiaceae,Euphorbiaceae,Omphalea diandra,L.,Omphalea sp. A,OMPH_A,,,CW,821,2000,2017,Scans of adult vouchers awaiting ID confirmation.
+Euphorbiaceae,Euphorbiaceae,Pausandra trianae,(Müll. Arg.) Baill.,Pausandra trianae,PAUSTR,PAUSTR,U,TU,363,2000,2018,
+Euphorbiaceae,Euphorbiaceae,Plukenetia sp. A,,Plukenetia sp. A,PLUK_A,,,CW,153,2001,2017,
+Euphorbiaceae,Euphorbiaceae,Sagotia racemosa,Baill.,Sagotia racemosa,SAGORA,SAGORA,M,TM,704,2000,2017,
+Euphorbiaceae,Euphorbiaceae,Sapium 'primero' ,,Sapium 'primero',SAPIPR,SAPIPR,T,TC,398,2000,2018,Sapium 'primero' in plot lists of 2018 & 2014. This was Sapium cf. glandulosum (L.) Morong in lists of 2009-2010.
+Euphorbiaceae,Euphorbiaceae,Sapium 'redonda',,Sapium 'redonda',SAPIRE,SAPIRE,T,TC,9,2006,2018,
+Euphorbiaceae,Euphorbiaceae,Tetrorchidium macrophyllum,Müll. Arg.,Tetrorchidium macrophyllum,TET5MA,TETRMC,U,TU,37,2004,2017,
+Euphorbiaceae?,Euphorbiaceae,Euphorbiaceae sp. A,,Euphorbiaceae sp. A,EUP_A,,,-,11,2000,2000,Discontinued.
+Euphorbiaceae?,Euphorbiaceae,Euphorbiaceae sp. B,,Euphorbiaceae sp. B,EUP_B,,,-,1,2000,2000,Discontinued.
+Euphorbiaceae?,Euphorbiaceae,Euphorbiaceae sp. D,,Euphorbiaceae sp. D,EUP_D,,,-,1,2000,2000,Discontinued.
+Euphorbiaceae?,Euphorbiaceae,Euphorbiaceae sp. G,,Euphorbiaceae sp. G,EUP_G,,,-,2,2000,2000,Discontinued.
+Euphorbiaceae?,Euphorbiaceae,Euphorbiaceae sp. H,,Euphorbiaceae sp. H,EUP_H,,,-,49,2000,2001,Discontinued.
+Fabaceae,Fabaceae,Abarema jupunba,(Willd.) Britton & Killip,Abarema jupunba,ABARJU,ABARJU,T,TC,14,2003,2014,
+Fabaceae,Fabaceae,Abarema laeta,(Benth.) Barneby & J.W. Grimes,Abarema laeta,ABARLA,ABARLA,U,TU,4,2007,2013,
+Fabaceae,Fabaceae,Apuleia leiocarpa,(Vogel) J. F. Macbr.,Apuleia leiocarpa,APULLE,APULLE,T,TC,162,2006,2018,
+Fabaceae,Fabaceae,Bauhinia brachycalyx,Ducke,Bauhinia brachycalyx,BAUHBR,BAUHBR,M,TM,98,2002,2016,
+Fabaceae,Fabaceae,Brownea grandiceps,Jacq.,Brownea grandiceps,BRO2GR,BROWGR,M,TM,306,2000,2018,
+Fabaceae,Fabaceae,Brownea jaramilloi,Á.J. Pérez & Klitg.,Browneopsis 'lore',BRO3LO,BROWLO,M,TM,15,2000,2018,
+Fabaceae,Fabaceae,Calliandra trinervia var. carbonaria,(Benth.) Barneby,Calliandra carbonaria,CAL1CA,CALLCA,T,TC,143,2000,2016,Calliandra carbonaria Benth. in plot lists 2001-2018.  Calliandra trinervia var. carbonaria is recent taxonomic treatments. Only one variety  in plot.
+Fabaceae,Fabaceae,Cedrelinga cateniformis,Ducke,Cedrelinga cateniformis,CED2CA,CEDGCA,E,TE,2227,2000,2017,
+Fabaceae,Fabaceae,Clitoria 'palida',,Clitoria 'palida',CLITPA,,,CW,92,2000,2017,
+Fabaceae,Fabaceae,Dalbergia monetaria,L. f.,Dalbergia monetaria,DALBMO,,,CW,30,2000,2017,
+Fabaceae,Fabaceae,Dalbergia sp. CC,,Fabaceae sp. CC,FAB_CC,,,-,22,2004,2014,
+Fabaceae,Fabaceae,Dialium guianense,(Aubl.) Sandwith,Dialium guianense,DIALGU,DIALGU,T,TC,250,2000,2018,
+Fabaceae,Fabaceae,Dioclea reflexa,Hook. f.,Dioclea sp. A,DIOC_A,,,CW,571,2000,2018,Adult voucher awaiting ID confirmation.
+Fabaceae,Fabaceae,Dioclea sp. C,,Dioclea sp. C,DIOC_C,,,CW,10,2004,2008,Possibly equal DIOC_A.
+Fabaceae,Fabaceae,Dioclea sp. G,,Dioclea sp. G,DIOC_G,,,CW,117,2001,2010,Possibly equal DIOC_A.
+Fabaceae,Fabaceae,Dioclea sp. H,,Dioclea sp. H,DIOC_H,,,CW,49,2000,2017,
+Fabaceae,Fabaceae,Diplotropis cf. sp. B,,Diplotropis sp. B,DIPL_B,,,CW,9,2005,2016,Diplotropis are trees. Fruit on card voucher is from liana. Perhaps sample mixed in canopy.
+Fabaceae,Fabaceae,Dussia 'delgada',,Dussia 'delgada',DUSSDE,DUSSDE,T,TC,4,2001,2015,
+Fabaceae,Fabaceae,Dussia 'pelosblancos',,Dussia 'pelosblancos',DUSSPE,DUSSPE,T,TC,1,2015,2015,
+Fabaceae,Fabaceae,Dussia tessmannii,Harms,Dussia sp. A,DUSS_A,DUSSTE,T,TC,108,2001,2015,
+Fabaceae,Fabaceae,Entada polyphylla,Benth.,Entada sp. A,ENTA_A,,,CW,145,2001,2018,Leaves and seedlings collected are Entada polyphylla Benth.  Entada polystachya (L.) DC> may also be present.  Ffruits similar are if not identical.
+Fabaceae,Fabaceae,Enterolobium barnebianum,Mesquita & M.F. Silva,Enterolobioum barnebianum,ENTEBA,ENTEBA,T,TC,2,2007,2007,
+Fabaceae,Fabaceae,Fabaceae sp. 6598,,(unknown SSP 6598),U6598,,,,1,2014,2014,
+Fabaceae,Fabaceae,Fabaceae sp. A,,(unknown SSP1266),U1266,,,-,1,2000,2000,Discontinued.
+Fabaceae,Fabaceae,Fabaceae sp. BB,,Fabaceae sp. BB,FAB_BB,,,-,1,2000,2000,Discontinued.
+Fabaceae,Fabaceae,Fabaceae sp. P,,Fabaceae sp. P,FAB_P,,,-,1,2000,2000,Discontinued.
+Fabaceae,Fabaceae,Fabaceae sp. U,,Fabaceae sp. U,FAB_U,,,-,3,2000,2000,Discontinued.
+Fabaceae,Fabaceae,Hymenaea oblongifolia,Huber,Hymenaea oblongifolia,HYM1OB,HYMAOB,T,TC,734,2000,2017,
+Fabaceae,Fabaceae,Hymenolobium 'stipsericea',,Hymenolobium 'stipsericea',HYM2ST,HYMEST,T,TC,2,2000,2011,
+Fabaceae,Fabaceae,Inga '3crasa',,Inga '3crasa',INGA3C,INGA3C,T,TC,236,2001,2018,
+Fabaceae,Fabaceae,Inga '4alitarco',,Inga '4alitarco',INGA4A,INGA4A,M,TM,6,2003,2004,
+Fabaceae,Fabaceae,Inga kursarii,M.J. Endara & J.E. Guevara ,Inga '6cuadra',INGA6C,INGA6C,T,TC,314,2000,2018,
+Fabaceae,Fabaceae,Inga acreana,Harms,Inga acreana,INGAAC,INGAAC,T,TC,153,2000,2017,
+Fabaceae,Fabaceae,Inga alata,(Sw.) Willd.,Inga alata,INGAAA,INGAAL,T,TC,158,2000,2018,
+Fabaceae,Fabaceae,Inga auristellae,Harms,Inga auristellae,INGAAU,INGAAU,M,TM,2437,2000,2018,
+Fabaceae,Fabaceae,Inga bourgonii,(Aubl.) DC.,Inga bourgonii,INGABO,INGABO,T,TC,39,2000,2017,
+Fabaceae,Fabaceae,Inga cf. brachyrhachis,Harms,Inga brachyrhachis,INGABR,INGABR,M,TM,312,2000,2018,
+Fabaceae,Fabaceae,Inga capitata,Desv.,Inga capitata,INGAC1,INGACA,M,TM,274,2000,2018,
+Fabaceae,Fabaceae,Inga cayennensis,Sagot ex Benth.,Inga cayennensis,INGAC2,INGACY,M,TM,322,2000,2018,
+Fabaceae,Fabaceae,Inga ciliata subsp. subcapitata,T.D. Penn.,Inga ciliata,INGAC4,INGACI,U,TU,453,2000,2017,Inga ciliata C. Presl in plot list 2018 & 2014.  Inga ciliata subsp. subcapitata T.D. Penn. in lists 2009-2010. Only one variety is present in plot.
+Fabaceae,Fabaceae,Inga cinnamomea,Spruce ex Benth.,Inga cinnamomea,INGAC5,INGACN,M,TM,5,2017,2017,
+Fabaceae,Fabaceae,Inga cordatoalata,,Inga cordatoalata,INGAC6,INGACO,M,TM,21,2001,2010,
+Fabaceae,Fabaceae,Inga heterophylla,Willd.,Inga heterophylla,INGAHE,INGAHE,T,TC,253,2000,2016,
+Fabaceae,Fabaceae,Inga laurina,(Sw.) Willd.,Inga '3oscura',INGA3O,INGA3O,E,TE,757,2000,2018,New identification as Inga laurina in plot list 2018.  This was Inga '3oscura'  in the 2001-2014 lists.
+Fabaceae,Fabaceae,Inga leiocalycina,Benth.,Inga leiocalycina,INGALE,INGALE,T,TC,331,2000,2018,
+Fabaceae,Fabaceae,Inga marginata,Willd.,Inga marginata,INGAMA,INGAMA,M,TM,12,2001,2015,
+Fabaceae,Fabaceae,Inga multinervis,T.D. Penn.,Inga multinervis,INGAMU,INGAMU,T,TC,1,2008,2008,
+Fabaceae,Fabaceae,Inga oerstediana,Benth.,Inga oerstediana,INGAOE,INGAOE,T,TC,984,2000,2018,
+Fabaceae,Fabaceae,Inga poeppigiana,Benth.,Inga poeppigiana,INGAPO,INGAPO,M,TM,7,2005,2015,
+Fabaceae,Fabaceae,Inga punctata,Willd.,Inga punctata,INGAPU,INGAPU,M,TM,3,2004,2010,
+Fabaceae,Fabaceae,Inga ruiziana,G. Don.,Inga ruiziana,INGAR1,INGARU,T,TC,167,2000,2018,
+Fabaceae,Fabaceae,Inga sarayacuensis,T.D. Penn.,Inga sarayacuensis,INGAS2,INGASR,M,TM,264,2000,2018,
+Fabaceae,Fabaceae,Inga sp (fruit in tr. 167),,Inga sp (fruit in tr. 167),INGA_167,,,T?,1,2001,2001,Discontinued.
+Fabaceae,Fabaceae,Inga sp.,,(unknown SSP0595),U595,,,-,1,2000,2000,Discontinued.
+Fabaceae,Fabaceae,Inga sp.,,(unknown SSP1913),U1913,,,-,1,2000,2000,Discontinued.
+Fabaceae,Fabaceae,Inga sp. A,,Inga sp. A,INGA_A,,,T?,3,2000,2000,Discontinued.
+Fabaceae,Fabaceae,Inga sp. AE,,Inga sp. AE,INGA_AE,,,T?,4,2001,2001,Discontinued.
+Fabaceae,Fabaceae,Inga sp. E,,Inga sp. E,INGA_E,,,T?,1,2000,2000,Discontinued.
+Fabaceae,Fabaceae,Inga sp. I,,Inga sp. I,INGA_I,,,T?,4,2000,2001,Discontinued.
+Fabaceae,Fabaceae,Inga sp. K,,Inga sp. K,INGA_K,,,T?,2,2000,2000,Discontinued.
+Fabaceae,Fabaceae,Inga sp. Q,,Inga sp. Q,INGA_Q,,,T?,3,2000,2000,Discontinued.
+Fabaceae,Fabaceae,Inga sp. U,,Inga sp. U,INGA_U,,,T?,5,2000,2000,Discontinued.
+Fabaceae,Fabaceae,Inga sp. V,,Inga sp. V,INGA_V,,,T?,2,2000,2000,Discontinued.
+Fabaceae,Fabaceae,Inga spectabilis,(Vahl) Willd.,Inga spectabilis,INGAS4,INGASB,T,TC,396,2000,2018,
+Fabaceae,Fabaceae,Inga spp. (semillas indet. a sp.),,Inga spp. (semillas indet. a sp.),INGA_SIN,,,T?,55,2000,2002,Unidentified Inga seeds were initially recorded (2000-2002) as  either INGA_xx (where xx-trap number) or various unknowns (e.g. Inga_AC).  Any reamaining unidentified seeds were combined into this codigo.
+Fabaceae,Fabaceae,Inga 'stelaeglabra',,Inga 'stelaeglabra',INGAS5,INGASB,M,TC,4,2013,2013,
+Fabaceae,Fabaceae,Inga striata,Benth.,Inga striata,INGAS7,INGAST,M,TM,3,2001,2001,
+Fabaceae,Fabaceae,Inga tenuistipula,Ducke,Inga tenuistipula,INGATE,INGATE,M,TM,97,2000,2016,
+Fabaceae,Fabaceae,Inga thibaudiana subsp. thibaudiana,DC.,Inga thibaudiana,INGATH,INGATH,T,TC,1036,2000,2018,Inga thibuadiana DC. in plot lists 2018 & 2014.  Inga thibuadiana subsp. thibaudiana  DC. in plots lists 2009-2010. Only 1 subsp. in plot.
+Fabaceae,Fabaceae,Inga tocacheana,D.R. Simpson,Inga tocacheana,INGATO,INGATO,M,TM,1,2016,2016,
+Fabaceae,Fabaceae,Inga umbellifera,(Vahl) Steud.,Inga umbellifera,INGAU1,INGAUE,M,TM,180,2000,2015,
+Fabaceae,Fabaceae,Inga umbratica,Poepp. & Endl.,Inga umbratica,INGAU2,INGAUM,M,TM,167,2000,2018,
+Fabaceae,Fabaceae,Inga vismiifolia,Poepp.  & Endl.,Inga vismiifolia,INGAVI,,,TM,2,2004,2004,
+Fabaceae,Fabaceae,Inga yacoana,J.F. Macbr.,Inga yacoana,INGAYA,INGAYA,M,TM,70,2000,2007,
+Fabaceae,Fabaceae,Lonchocarpus seorsus,(J.F.Macbr.) M. Sousa ex D.A. Neill & Klitg. & G.P. Lewis,Lonchocarpus 'guil',LONCGU,LONCSE,T,TC,1313,2000,2018,Lonchocarpus cf. seorsus in plot book (2014).  Lonchocarpus seorsus in plot lists 2018 & 2014.
+Fabaceae,Fabaceae,Machaerium aristulatum,(Spruce ex Benth.) Ducke,Machaerium aristulatum,MACHAR,MACHAR,T,TC,42,2000,2010,
+Fabaceae,Fabaceae,Machaerium cuspidatum, Kuhlm. & Hoehne,Machaerium cuspidatum,MACHCU,,,CW,2942,2000,2018,
+Fabaceae,Fabaceae,Machaerium 'finiparalel',,Machaerium 'finiparalel',MACHFI,MACHFI,U&V,SL,132,2000,2018,
+Fabaceae,Fabaceae,Machaerium floribundum,Benth.,Machaerium floribundum,MACHFL,,,CW,152,2000,2013,
+Fabaceae,Fabaceae,Machaerium kegelii,Meisn. In A. DC.,Machaerium kegelii,MACHKE,,,CW,2,2016,2016,
+Fabaceae,Fabaceae,Machaerium sp. 5976,,(unknown SSP5976),U5976,,,-,54,2010,2016,Mostly flowers.
+Fabaceae,Fabaceae,Machaerium sp. E,,Machaerium sp. E,MACH_E,,,-,1,2000,2000,Discontinued.
+Fabaceae,Fabaceae,Machaerium sp. G,,Machaerium sp. G,MACH_G,,,CW,55,2004,2017,
+Fabaceae,Fabaceae,Macrolobium angustifolium,(Benth.) R.S. Cowan,Macrolobium angustifolium,MAC1AN,MACRAN,T,TC,17,2001,2014,
+Fabaceae,Fabaceae,Macrolobium 'yasuni',,Macrolobium 'yasuni',MAC1YA,MACRYA,U,TU,147,2000,2018,
+Fabaceae,Fabaceae,Marmaroxylon basijugum,(Ducke) L. Rico,Marmaroxylon basijugum,MARMBA,MARMBA,U,TU,140,2000,2018,Sometime called Zygia basijuga (Ducke) Barneby & J.W. Grimes.
+Fabaceae,Fabaceae,Mimosa myriadenia,(Benth.) Benth.,Mimosa myriadenia,MIMOMY,,,CS,732,2000,2018,Adult voucher awaiting ID confirmation.
+Fabaceae,Fabaceae,Mimosa pudica,L.,Mimosa pudica,MIMOPU,,,XT,,,,
+Fabaceae,Fabaceae,Mucuna sp. A,,Mucuna sp. A,MUCU_A,,,CW,123,2005,2015,Possiblt a Dioclea.  Flowers similar to D. ucayalina and D. malacocarpa.
+Fabaceae,Fabaceae,Mucuna sp. B,,Mucuna sp. B,MUCU_B,,,CW,14,2012,2018,
+Fabaceae,Fabaceae,Myroxylum balsamum,(L.) Harms,Myroxylum balsamum,MYR3BA,MYROBA,T,TC,7,2017,2018,
+Fabaceae,Fabaceae,Ormosia paraensis,Ducke,Ormosia paraensis,ORMOPA,ORMOPA,T,TC,1,2014,2014,
+Fabaceae,Fabaceae,Ormosia sp. B,,Ormosia sp. B,ORMO_B,,,T?,4,2000,2013,
+Fabaceae,Fabaceae,Parkia balslevii,H.C. Hopkins,Parkia balslevii,PARKBA,PARKBA,T,TC,145,2000,2017,
+Fabaceae,Fabaceae,Parkia multijuga,Benth.,Parkia multijuga,PARKMU,PARKMU,E,TE,564,2000,2017,
+Fabaceae,Fabaceae,Parkia nitida,Miq.,Parkia nitida,PARKNI,PARKNI,E,TE,440,2000,2018,
+Fabaceae,Fabaceae,Parkia velutina,Benoist,Parkia velutina,PARKVE,PARKVE,T,TC,590,2000,2018,
+Fabaceae,Fabaceae,Piptadenia anolidurus,Barneby   ,Piptadenia anolidurus,PIPTAN,,,CW,1,2000,2000,Individual died early in study.
+Fabaceae,Fabaceae,Piptadenia pteroclada,Benth.,Piptadenia 'arbol',PIPTAR,PIPTPT,T,TC,143,2001,2016,
+Fabaceae,Fabaceae,Piptadenia sp. A,,Piptadenia sp. A,PIPT_A,,,-,1081,2000,2018,
+Fabaceae,Fabaceae,Piptadenia sp. D,,Piptadenia sp. D,PIPT_D,,,-,14,2000,2008,
+Fabaceae,Fabaceae,Piptadenia sp. E,,Piptadenia sp. E,PIPT_E,,,-,11,2011,2013,
+Fabaceae,Fabaceae,Piptadenia uaupensis,Spruce ex Benth.,Piptadenia uaupensis,PIPTUA,,,CW,307,2001,2018,Scan of adult voucher awaiting ID confirmation.
+Fabaceae,Fabaceae,Platymiscium stipulare,Benth.,Platymiscium stipulare,PLA1ST,PLATST,T,TC,143,2000,2016,
+Fabaceae,Fabaceae,Pseudopiptadenia suaveolens,(Miq.) J.W. Grimes,Pseudopiptadenia suaveolens,PSE3SU,PSEPSU,E,TE,1341,2000,2017,
+Fabaceae,Fabaceae,Pterocarpus rohrii,Vahl,Pterocarpus 'rhor',PTERRH,PTERRH,T,TC,168,2000,2017,Pterocarpus cf. rohrii Vahl used in plot book (2014).
+Fabaceae,Fabaceae,Rhynchosia sp. A,,Rhynchosia sp. A,RHYN_A,,,C?,3,2002,2015,
+Fabaceae,Fabaceae,Schizolobium parahyba,(Vell.) S.F. Blake,Schizolobium parahyba,SCHIPA,SCHIPA,T,TC,90,2000,2016,
+Fabaceae,Fabaceae,Schnella cf. glabra (morph #1),(Jacq.) Dugand,Bauhinia glabra,BAUHGL,,,CW,228,2000,2014,Schnella (lianas) was recently separated from Bauhinia. Adult voucher awaiting ID comfirmation.
+Fabaceae,Fabaceae,Schnella guianensis,(Aubl.) Wunderlin,Bauhinia guianensis,BAUHGU,,,CW,357,2000,2017,Schnella (lianas) was recently separated  from Bauhinia. Adult voucher awaiting ID comfirmation.  Syn.: Bauhinia guianensis Aubl.
+Fabaceae,Fabaceae,Schnella 'misterio' ,,Bauhinia sp. W,BAUH_W,,,CW,331,2000,2017,Schnella (lianas) was recently separated  from Bauhinia.  This is morph #2 of Schnella cf. microstachya Raddi.
+Fabaceae,Fabaceae,Schnella cf. rubinginosa,(Bong.) Benth. ,Bauhinia 'magenta',BAUHMA,,,CW,414,2000,2018,Schnella (lianas) was recently separated  from Bauhinia. Adult voucher awaiting ID confimration.
+Fabaceae,Fabaceae,Schnella rutilans,(Spruce ex Benth.) Pittier ,Bauhinia rutilans,BAUHRU,BAUHRU,V,CW,266,2000,2018,Schnella (lianas) was recently separated from Bauhinia.   Syn: Bauhinia rutilans Spruce ex Benth.
+Fabaceae,Fabaceae,Schnella sp. AD,,Bauhinia sp. AD,BAUH_AD,,,CW,66,2001,2016,Schnella (lianas) was recently separated from Bauhinia. Adult voucher awaiting ID.
+Fabaceae,Fabaceae,Schnella sp. AE,,Bauhinia sp. AE,BAUH_AE,,,CW,2,2002,2008,
+Fabaceae,Fabaceae,Schnella sp. G ,,Bauhinia sp. G,BAUH_G,,,CW,143,2000,2017,Schnella (lianas) was recently separated  from Bauhinia. Adult voucher awaiting ID.  Schnella cf. microstachya Raddi  morph #1.
+Fabaceae,Fabaceae,Schnella sp. S,,Bauhinia sp. S,BAUH_S,,,CW,97,2000,2011,Schnella (lianas) was recently separated from Bauhinia.
+Fabaceae,Fabaceae,Schnella sp. T,,Bauhinia sp. T,BAUH_T,,,CW,37,2000,2007,Schnella (lianas) was recently separated from Bauhinia. Status uncertain. Possibly a mixed collection of Schnella or another taxon.
+Fabaceae,Fabaceae,Schnella sp. U,,Bauhinia sp. U,BAUH_U,,,CW,4,2000,2001,Discontinued.
+Fabaceae,Fabaceae,Senegalia tenuifolia, (L.) Britton & Rose ,Acacia tenuifolia,ACACTE,,,CW,2389,2000,2018,Recent generic change of some Neotropical Acacia species to Senegalia. Syn: Acacia tenuifolia (L.) Willd.
+Fabaceae,Fabaceae,Senna macrophylla var. gigantifolia,(Britton & Killip) H.S. Irwin & Barneby,Senna macrophylla,SENNMA,SENNMA,S,SL,1,2008,2008,Senna macrophylla (Kunth) H.S. Irwin & Barneby in plot lists of 2018 & 2014. Variety  identified in plot lists 2009-2010. Only one variety on plot.
+Fabaceae,Fabaceae,Senna sp. B,,Senna sp. B,SENN_B,,,-,181,2001,2017,Adult voucher awaiting ID.
+Fabaceae,Fabaceae,Senna trolliiflora,H.S. Irwin & Barneby,Senna trolliiflora,SENNTR,SENNTR,M,TM,34,2003,2013,
+Fabaceae,Fabaceae,Swartzia arborescens,(Aubl.) Pittier,Swartzia arborescens,SWARAR,SWARAR,M,TM,254,2000,2017,
+Fabaceae,Fabaceae,Swartzia calophylla,Poepp.,Swartzia simplex,SWARSI,SWARSI,U,TU,4,2011,2017,New plot ID as Swartzia calophylla 2014 & 2018. Was Swartzia simplex (Sw.) Spreng. in plot lists 2001-2010.
+Fabaceae,Fabaceae,Swartzia rosea,Mart. ex Benth.,Swartzia benthamiana,SWARBE,SWARBE,M,TM,3,2005,2017,New plot ID as Swartzia rosea 2014 & 2018. Was Swartzia benthamiana Miq. in plot lists 2001-2010.
+Fabaceae,Fabaceae,Swartzia trianae,Benth.,Swartzia multijuga,SWARMU,SWARMU,T,TC,197,2000,2016,New plot ID as Swartzia trianae 2018. Was Swartzia multijuga Vogel in plot lists 2001-2014.
+Fabaceae,Fabaceae,Swartzia yasuniensis,Torke & Á.J. Pérez,Swartzia cardiosperma,SWARCA,SWARCA,T,TC,28,2002,2016,New plot ID as Swartzia yasuniensis in 2018. Was Swartzia cardiosperma Spruce ex Benth. in plot lists 2001-2014.
+Fabaceae,Fabaceae,Tachigali formicarum,Harms,Tachigali formicarum,TACHFO,TACHFO,M,TM,85,2000,2017,
+Fabaceae,Fabaceae,Tachigali inconspicua,van der Werff,Tachigali paraensis,TACHPA,TACHPA,T,TC,6,2002,2004,
+Fabaceae,Fabaceae,Vataireopsis iglesiasii,Ducke,Vataireopsis iglesiasii,VATAIG,VATAIG,T,TC,11,2004,2016,
+Fabaceae,Fabaceae,Zygia heteroneura,Barneby & J.W. Grimes,Zygia heteroneura,ZYGIHE,ZYGIHE,U,TU,107,2000,2016,
+Fabaceae,Fabaceae,Zygia 'mediana',,Zygia 'mediana',ZYGIME,ZYGIME,U,TU,32,2002,2017,
+Gentianaceae,Gentianaceae,Potalia resinifera,Mart.,Potalia resinifera,POTARE,POTARE,S,SL,2,2008,2008,
+Gesneriaceae,Gesneriaceae,Besleria quadrangulata,L.E. Skog,Besleria quadrangulata,BESLQU,BESLQU,S,SL,149,2000,2018,
+Gesneriaceae,Gesneriaceae,Columnea tenensis,(Wiehler) B.D. Morley,Columnea tenensis,COLUTE,,,XT,2,2015,2016,First identified in 2011 outside the traps but found in the traps 2015. Perhaps previously included in GESN_A.
+Gesneriaceae,Gesneriaceae,Drymonia coccinea,(Aubl.) Wiehler,Drymonia coccinea,DRYMCO,,,C?,9,2003,2013,
+Gesneriaceae,Gesneriaceae,Drymonia cf. macrophylla,(Oerst.) H.E. Moore,Gesneriaceae sp. A,GESN_A,,,C?,193,2000,2018,First identified to species in 2013 based on voucher cards from trap 93. Early records from other traps possibly include more than one species.
+Gesneriaceae,Gesneriaceae,Gesneriaceae sp. B,,Gesneriaceae sp. B,GSN_B,,,CH,1,2001,2001,
+Gesneriaceae,Gesneriaceae,Gesneriaceae sp. G,,Gesneriaceae sp. G,GES_G,,,CH,6,2002,2004,
+Gesneriaceae,Gesneriaceae,Gesneriaceae sp. H,,Gesneriaceae sp. H,GESN_H,,,-,2,2003,2005,
+Gesneriaceae,Gesneriaceae,Gesneriaceae sp. I,,Gesneriaceae sp. I,GESN_I,,,EH,50,2003,2011,
+Gesneriaceae,Gesneriaceae,Paradrymonia cf. darienensis,(Seem.) Wiehler,Paradrymonia darienensis cf,PARADA,,,EH,6,2001,2004,
+Gnetaceae,Gnetaceae,Gnetum 'nodi',,Gnetum sp. A,GNET_A,,,CW,38,2000,2013,
+Heliconiaceae,Heliconiaceae,Heliconia sp. B,,Heliconia sp. B,HELI_B,,,XT,53,2001,2011,
+Heliconiaceae,Heliconiaceae,Heliconia sp. C,,Heliconia sp. C,HELI_C,,,XT,6,2000,2008,
+Heliconiaceae,Heliconiaceae,Heliconia sp. D,,Heliconia sp. D,HELI_D,,,XT,1,2001,2001,
+Heliconiaceae,Heliconiaceae,Heliconia sp. E,,Heliconia sp. E,HELI_E,,,XT,2,2011,2017,
+Heliconiaceae,Heliconiaceae,Heliconia stricta,Huber,Heliconia stricta,HELIST,,,XT,9,2003,2016,
+Humiriaceae,Humiriaceae,Vantanea guianensis,Aubl.,Vantanea guianensis,VANTGU,VANTGU,T,TC,359,2000,2018,
+Hydrangeaceae,Hydrangeaceae,Hydrangea tarapotensis,Briq.,Hydrangea sp. U5676,U5676,,,HL,266,2003,2018,
+Hypericaceae,Clusiaceae,Vismia baccifera,(L.) Tr. & Pl.,Vismia baccifera,VISMBA,VISMBA,M,TM,1283,2000,2018,
+Hypericaceae,Clusiaceae,Vismia floribunda,Sprague,Vismia floribunda,VISMFL,VISMFL,M,TM',3,2015,2017,
+Hypericaceae,Clusiaceae,Vismia macrophylla,Kunth,Vismia macrophylla,VISMMA,VISMMA,M,TM,148,2000,2018,Possibly Vismia sprucei Sprague at tr 47 (most common trap). This is  not Vismia macrophylla.
+Icacinaceae,Icacinaceae,Leretia cordata,Vell.,Leretia 'reticbril',LERERE,,,CW,194,2000,2017,
+Lacistemataceae,Flacourtiaceae,Lacistema 'med',,Lacistema 'med',LACIME,LACIME,M,TM,84,2000,2017,
+Lacistemataceae,Flacourtiaceae,Lacistema nena,L.F. Macbr.,Lozania 'mediana',LOZAME,LACINE,M,TM,7,2002,2018,
+Lacistemataceae,Flacourtiaceae,Lozania klugii,(Mansf.) Mansf.,Lozania klugii,LOZAKL,LOZAKL,U,TU,958,2000,2018,
+Lamiaceae,Verbenaceae,Aegiphila cordata,Poepp. ex Schauer,Aegiphila cordifolia,AEGICO,AEGIVI,S,SL,29,2001,2015,Fruits similar to VER_C but stems with long erect hairs.  Aegiphila cordata in plot lists 2014-2018. Was Aegiphila cordata var. villossimia Moldenke in plot list of 2009.
+Lamiaceae,Verbenaceae,Aegiphila cf. cordifolia,(Ruiz & Pav.) Moldenke,Verbenaceae sp. C,VER_C,,,CW,15,2001,2018,Fruits similar to AEGICO but stems lack long erect hairs. Possibly confused with AEGICO in some traps.
+Lamiaceae,Verbenaceae,Aegiphila elegans,Moldenke,Verbenaceae sp. A,VER_A,AEGIEL,S,SL,285,2000,2018,
+Lamiaceae,Verbenaceae,Aegiphila haughtii,Moldenke,Aegiphila haughtii,AEGIHA,AEGIHA,U,TU,25,2001,2016,
+Lamiaceae,Verbenaceae,Aegiphila 'memboscu',,Aegiphila 'memboscu',AEGIME,AEGIME,S,SL,1,2007,2007,
+Lamiaceae,Verbenaceae,Vitex schunkei,Moldenke,Vitex 'glabra',VITEGL,VITESC,T,TC,5,2010,2015,
+Lamiaceae,Verbenaceae,Vitex triflora,Vahl,Vitex triflora,VITETR,VITETR,M,TM,20,2006,2017,
+Lauraceae,Lauraceae,Aniba guianensis,Aubl.,Aniba guianensis,ANIBGU,ANIBGU,T,TC,322,2000,2018,
+Lauraceae,Lauraceae,Aniba hostmanniana,(Nees) Mez,Aniba hostmanniana,ANIBHO,ANIBHO,M,TM,58,2004,2017,
+Lauraceae,Lauraceae,Aniba riparia,(Nees) Mez,Aniba riparia,ANIBRI,ANIBRI,M,TM,11,2000,2016,
+Lauraceae,Lauraceae,Beilschmiedia pendula,(Sw.) Hemsl.,Beilschmiedia pendula,BEILPE,BEILPE,T,TC,13,2002,2007,
+Lauraceae,Lauraceae,Cryptocarya yasuniensis,P.L.R. Moraes & van der Werff,Cryptocarya 'nori',CRYPNO,CRYPNO,T,TC,1,2015,2015,
+Lauraceae,Lauraceae,Endlicheria 'burbujas',,Endlicheria 'burbujas',ENDLBU,ENDLBU,M,TM,9,2000,2010,
+Lauraceae,Lauraceae,Endlicheria directonervia,C.K.Allen,Endlicheria tessmannii,ENDLTE,ENDLTE,M,TM,2,2004,2004,New plot ID as Endlicheria directonervia in lists 2014-2018.  Was Endlicheria tessmannii O.C. Schmidt. in plot lists 2009-2010. 
+Lauraceae,Lauraceae,Endlicheria 'dori',,Endlicheria 'dori',ENDLDO,ENDLDO,T,TC,44,2002,2016,
+Lauraceae,Lauraceae,Endlicheria 'falsadyso',,Endlicheria 'falsadyso',ENDLFA,ENDLFA,M,TM,24,2000,2012,
+Lauraceae,Lauraceae,Endlicheria formosa ,A.C. Smith,Endlicheria 'else',ENDLEL,ENDLFO,M,TM,167,2001,2017,
+Lauraceae,Lauraceae,Endlicheria 'platagigante',,Endlicheria 'platagigante',ENDLPL,ENDLPL,M,TM,8,2005,2012,
+Lauraceae,Lauraceae,Endlicheria tschudyana,(Lasser) Kosterm.,Endlicheria tschudyana,ENDLTS,ENDLTS,U,TM,21,2000,2017,
+Lauraceae,Lauraceae,Lauraceae sp. H,,Lauraceae sp. H,LAU_H,,,T?,18,2000,2008,
+Lauraceae,Lauraceae,Lauraceae sp. L,,Lauraceae sp. L,LAU_L,,,T?,1,2000,2000,Discontinued.
+Lauraceae,Lauraceae,Licaria cannella,(Meisn.) Kosterm.,Licaria cannella,LIC2CA,LICRCA,M,TM,105,2001,2017,
+Lauraceae,Lauraceae,Nectandra  'granimpreso',,Nectandra yarinensis cf,NECTYA,NECTGR,M,TM,11,2001,2017,Nectandra 'granimpreso' in plot lists 2014-2018. Was Nectandra cf. yarinensis O.C. Schmidt in plot lists 2009-2010.
+Lauraceae,Lauraceae,Nectandra cf. coeloclada,Rohwer,Lauraceae sp. (1212),U1212,,,T?,1,2000,2000,Fruit matched to specimen collected off plot. Not a species reported from the plot.
+Lauraceae,Lauraceae,Nectandra 'largibrachi',,Nectandra 'largibrachi',NECTL1,NECTLA,T,TC,311,2000,2017,
+Lauraceae,Lauraceae,Nectandra lineata,(Kunth) Rohwer,Nectandra lineata,NECTL3,NECTLI,T,TM,253,2000,2017,
+Lauraceae,Lauraceae,Nectandra membranacea,(Sw.) Griseb.,Nectandra membranacea,NECTME,NECTME,T,TC,158,2000,2018,
+Lauraceae,Lauraceae,Nectandra oppositifolia,Nees & Mart.,Nectandra oppositifolia,NECTOP,NECTOP,T,TC,567,2000,2018,
+Lauraceae,Lauraceae,Nectandra 'skinnyret',,uniden 'skinnyret',ZZLAS2,NECTSK,T,TC,1,2002,2002,Discontinued.
+Lauraceae,Lauraceae,Nectandra sp. B,,Nectandra sp. B,NECT_B,,,T?,1,2000,2000,Discontinued.
+Lauraceae,Lauraceae,Nectandra viburnoides,Meisn. In A. DC.,Nectandra viburnoides,NECTVI,NECTVI,T,TM,28,2001,2017,
+Lauraceae,Lauraceae,Ocotea 'membraobov',,uniden 'membraobov',ZZLAM2,OCOTME,T,TC,27,2000,2017,Ocotea 'membraobov' in plot lists 2014-2018. Was Ocotea cf tessmannii O.C. Schmidt in plot lists 2009-2010.
+Lauraceae,Lauraceae,Ocotea 'alamembra',,Ocotea 'alamembra',OCOTAL,OCOTAL,T,TC,244,2000,2017,
+Lauraceae,Lauraceae,Ocotea 'bayelshmi',,Ocotea 'bayelshmi',OCOTBA,OCOTBA,T,TC,251,2000,2012,
+Lauraceae,Lauraceae,Ocotea cf. bofo,Kunth,Ocotea bofo,OCOTBO,OCOTBO,T,TC,7,2006,2017,Ocotea cf. bofo in plot book (2014).
+Lauraceae,Lauraceae,Ocotea cernua,(Nees) Mez,Ocotea cernua,OCOTCE,OCOTCE,M,TM,25,2000,2012,
+Lauraceae,Lauraceae,Ocotea floribunda,(Sw.) Mez,Ocotea floribunda,OCOTFL,OCOTFL,M,TM,120,2001,2018,
+Lauraceae,Lauraceae,Ocotea 'laurita',,uniden 'laurita',ZZLAL2,OCOTLA,T,TC,156,2000,2018,
+Lauraceae,Lauraceae,Ocotea longifolia,Kunth,Ocotea longifolia,OCOTLO,OCOTLO,M,TM,7,2005,2017,
+Lauraceae,Lauraceae,Ocotea 'luis',,Ocotea 'luis',OCOTLU,OCOTLU,T,TC,50,2000,2017,
+Lauraceae,Lauraceae,Ocotea oblonga,(Meisn.) Mez,Ocotea 'minialata',OCOTMI,OCOTOB,U,TU,74,2000,2016,
+Lauraceae,Lauraceae,Ocotea sp. AJ,,Lauraceae sp. AJ,LAU_AJ,,,T?,6,2000,2008,
+Lauraceae,Lauraceae,Ocotea 'yasuni',,Ocotea 'yasuni',OCOTYA,NECTLA,T,TC,5,2000,2004,Included in Nectandra 'largibrachi' on plot. But tree 430418 on Sendero Tortuga has different fruits.
+Lauraceae,Lauraceae,Persea pseudofasciculata,L.E. Kopp,Persea pseudofasciculata,PERSPS,PERSPS,T,TC,2,2005,2005,
+Lauraceae,Lauraceae,Persea sp. A,,Persea sp. A,PERS_A,,,T?,1,2004,2004,Discontinued.
+Lauraceae,Lauraceae,Pleurothyrium bifidum,Nees,Pleurothyrium bifidum,PLEUBI,PLEUBI,T,TU,117,2000,2017,
+Lauraceae,Lauraceae,Pleurothyrium 'cordata',,uniden 'cordata',ZZLAC5,PLEUCO,T,TC,4,2002,2002,Pleurothyrium 'cordata' in plot lists 2014-2018.  Pleurothyrium cf. williamsii O.C. Schmidt in plots lists 2009-2010.
+Lauraceae,Lauraceae,Pleurothyrium cuneifolium,Nees  ,Pleurothyrium cuneifolium,PLEUCU,PLEUCU,T,TC,269,2000,2016,
+Lauraceae,Lauraceae,Pleurothyrium glabrifolium,van der Werff,Pleurothyrium 'glabiflorum',PLEUGL,PLEUGL,T,TC,42,2006,2018,
+Lauraceae,Lauraceae,Rhodostemonodaphne juruensis,(A.C. Sm.) Chanderb.,Rhodostemonodaphne juruensis,RHODJU,RHODJU,T,TC,19,2005,2017,
+Lauraceae,Lauraceae,Rhodostemonodaphne kunthiana,(Nees) Rohwer,Rhodostemonodaphne kunthiana,RHODKU,RHODKU,T,TC,112,2000,2017,
+Lauraceae,Lauraceae,Rhodostemonodaphne licanioides,(A.C. Sm.) Madriñán,Rhodostemonodaphne licanioides,RHODLI,RHODLI,S,SL,42,2000,2017,
+Lauraceae,Lauraceae,uniden. 'granverde',,uniden. 'granverde',ZZLAG5,ZZLAGV,M,SL,38,2008,2015,
+Lauraceae,Lauraceae,uniden. 'lisagroovy',,uniden. 'lisagroovy',ZZLAL4,ZZLALS,T,TC,108,2000,2016,
+Lauraceae,Lauraceae,uniden. 'medpubinervi' / Ocotea floribunda,,uniden 'medpubinervi',ZZLAM1,ZZLAME,T,TU,82,2007,2017,Tree near trap 149 is Ocotea floribunda (Sw.) Mez (OCOTFL) not 'medpubinervi'.  Identify of tree near trap 190 needs to be confirmed. Perhaps a mixed collection. 
+Lecythidaceae,Lecythidaceae,Couratari guianensis,Aub.,Couratari guianensis,COU3GU,COUTGU,T,TC,29,2000,2017,
+Lecythidaceae,Lecythidaceae,Eschweilera andina,(Rusby) J.F. Macbr.,Eschweilera 'purpura',ESCHP2,ESCHAN,M,TM,124,2000,2017,
+Lecythidaceae,Lecythidaceae,Eschweilera bracteosa,(Poepp. ex O. Berg) Miers,Eschweilera bracteosa,ESCHBR,ESCHBR,T,TC,225,2000,2018,
+Lecythidaceae,Lecythidaceae,Eschweilera coriacea,(DC.) S.A. Mori,Eschweilera 'cori',ESCHCO,ESCHCO,T,TC,3070,2000,2018,
+Lecythidaceae,Lecythidaceae,Eschweilera 'giga',,Eschweilera 'giga',ESCHG1,ESCHGI,T,TC,770,2000,2018,
+Lecythidaceae,Lecythidaceae,Eschweilera gigantea,(Kunth) J.F. Macbr.,Eschweilera 'kim',ESCHKI,ESCHGG,T,TC,726,2000,2018,
+Lecythidaceae,Lecythidaceae,Eschweilera rufifolia,S.A. Mori,Eschweilera rufifolia,ESCHRU,ESCHRU,T,TC,415,2000,2018,
+Lecythidaceae,Lecythidaceae,Grias neuberthii,J.F. Macbr.,Grias neuberthii,GRIANE,GRIANE,T,TC,98,2001,2017,
+Lecythidaceae,Lecythidaceae,Gustavia hexapetala,(Aubl.) Sm.,Gustavia hexapetala,GUSTHE,GUSTHE,M,TM,2,2016,2017,
+Lecythidaceae,Lecythidaceae,Gustavia longifolia,Poepp. Ex O. Berg,Gustavia longifolia,GUSTLO,GUSTLO,M,TM,84,2000,2018,
+Loganiaceae,Loganiaceae,Strychnos 'crasaretic',,Strychnos 'crasaretic',STR1C4,,,CW,15,2001,2017,
+Loganiaceae,Loganiaceae,Strychnos 'miconioide',,Strychnos 'miconioide',STR1MI,,,CW,5,2007,2016,
+Loranthaceae,Loranthaceae,'Cladocolea' sp. Z,,Loranthaceae sp. Z,LOR_Z,,,EP,880,2000,2018,Card vouchers are mixture of species and genera. Unsure who supplied generic name as Cladocolea.  Only adult voucher is Passovia  stelis (L.) Kuijt (Syn: Phthirusa (L.) Kuijt).
+Loranthaceae,Loranthaceae,Loranthaceae sp. G,,Loranthaceae sp. G,LOR_G,,,EP,40,2001,2010,
+Loranthaceae,Loranthaceae,Oryctanthus sp. N,,Loranthaceae sp. N,LOR_N,,,EP,13,2001,2008,
+Loranthaceae,Loranthaceae,Phoradendron sp. A,,Loranthaceae sp. A,LOR_A,,,EP,59,2000,2017,
+Loranthaceae,Loranthaceae,Phoradendron sp. B,,Loranthaceae sp. B,LOR_B,,,EP,4,2000,2003,Discontinued.
+Loranthaceae,Loranthaceae,Psittacanthus corynocephalus,Eichler,Loranthaceae sp. AE,LOR_AE,,,EP,101,2000,2014,Unsure who provided this species name.
+Lythraceae,Lythraceae,Lafoensia 'impreso',,Lafoensia sp. A,LAFO_A,,,TM,5,2011,2018,The tree is not on plot. Seeds have blown into plot and traps.  (Two species of Lafoensia are reported from the region.)
+Malpighiaceae,Malpighiaceae,Banisteriopsis sp. A,,Banisteriopsis sp. A,BANI_A,,,CW,324,2000,2017,
+Malpighiaceae,Malpighiaceae,Banisteriopsis sp. B,,Banisteriopsis sp. B,BANI_B,,,CW,111,2000,2018,Adult voucher awaiting ID.
+Malpighiaceae,Malpighiaceae,Banisteriopsis sp. J,,Banisteriopsis sp. J,BANI_J,,,CW,13,2011,2016,
+Malpighiaceae,Malpighiaceae,Bunchosia 'myrt',,Bunchosia 'myrt',BUNCMY,BUNCMY,S,SL,6,2004,2010,
+Malpighiaceae,Malpighiaceae,Byrsonima 'juanito',,Byrsonima 'juanito',BYRSJU,BYRSJU,T,TC,1,2016,2016,
+Malpighiaceae,Malpighiaceae,Byrsonima putumayensis,Cuatrec.,Byrsonima 'dorada',BYRSDO,BYRSPU,T,TC,342,2000,2018,
+Malpighiaceae,Malpighiaceae,Dicella julianii,(J.F. Macbr.) W.R. Anderson,Dicella julianii,DICEJU,,,CW,1189,2000,2018,
+Malpighiaceae,Malpighiaceae,Diplopterys erianthera,(A. Juss.) W.R. Anderson & C. Davis,Banisteriopsis erianthera,BANIER,,,CW,201,2000,2018,
+Malpighiaceae,Malpighiaceae,Ectopopterys soejartoi,W.R. Anderson,Ectopopterys soejartoi,ECTOSO,,,CW,172,2000,2018,
+Malpighiaceae,Malpighiaceae,Heteropterys aureosericea,Cuatrec.,Heteropterys aureosericea,HET1AU,,,CW,62,2000,2011,
+Malpighiaceae,Malpighiaceae,Hiraea sp. D,,Hiraea sp. D,HIRA_D,,,CW,1,2001,2001,Discontinued . Probably equal HIRA_F.
+Malpighiaceae,Malpighiaceae,Hiraea sp. F,,Hiraea sp. F,HIRA_F,,,CW,552,2000,2018,
+Malpighiaceae,Malpighiaceae,Jubelina uleana,(Nied.) Cuatrec.,Jubelina uleana,JUBEUL,,,CW,123,2000,2017,
+Malpighiaceae,Malpighiaceae,Malpighiaceae sp. AA,,Malpighiaceae sp. AA,MLP_AA,,,CW,10,2000,2003,Discontinued.
+Malpighiaceae,Malpighiaceae,Malpighiaceae sp. AB,,Malpighiaceae sp. AB,MLP_AB,,,CW,2,2002,2002,Discontinued.
+Malpighiaceae,Malpighiaceae,Malpighiaceae sp. C,,Malpighiaceae sp. C,MLP_C,,,CW,1,2000,2000,Discontinued.
+Malpighiaceae,Malpighiaceae,Malpighiaceae sp. G,,Malpighiaceae sp. G,MLP_G,,,CW,19,2000,2001,Discontinued.
+Malpighiaceae,Malpighiaceae,Malpighiaceae sp. H,,Malpighiaceae sp. H,MLP_H,,,CW,1,2000,2000,Discontinued.
+Malpighiaceae,Malpighiaceae,Malpighiaceae sp. J,(Nied.) Cuatrec.,Malpighiaceae sp. J,MLP_J,,,CW,7,2000,2001,Discontinued.
+Malpighiaceae,Malpighiaceae,Malpighiaceae sp. R,,Malpighiaceae sp. R,MLP_R,,,CW,1,2001,2001,Discontinued.
+Malpighiaceae,Malpighiaceae,Malpighiaceae U519,,(unknown SSP0519),U519,,,-,1,2000,2000,Discontinued.
+Malpighiaceae,Malpighiaceae,Mascagnia cf. ovatifolia,(Kunth) Griseb.,Mascagnia sp. D,MASC_D,,,CW,27,2002,2016,Adult voucher awaiting ID confirmation.
+Malpighiaceae,Malpighiaceae,Mascagnia sp. A,,Mascagnia sp. A,MASC_A,,,CW,369,2001,2018,
+Malpighiaceae,Malpighiaceae,Mascagnia sp. B,,Mascagnia sp. B,MASC_B,,,CW,9,2016,2016,Possibly equal MASC_A.
+Malpighiaceae,Malpighiaceae,Stigmaphyllon 'pseudo-adenodon',,Stigmaphyllon adenodon,STIGAD,,,CW,26,2000,2017,Samaras not equal those of Stigmaphyllon adenodon A. Juss.
+Malpighiaceae,Malpighiaceae,Tetrapterys sp. A,,Tetrapterys sp. A,TET3_A,,,CW,467,2000,2016,
+Malpighiaceae,Malpighiaceae,Tetrapterys sp. B,,Tetrapterys sp. B,TET3_B,,,CW,248,2000,2018,
+Malpighiaceae,Malpighiaceae,Tetrapterys sp. D,,Tetrapterys sp. D,TET3_D,,,CW,59,2001,2015,Adult voucher awaiting ID
+Malpighiaceae,Malpighiaceae,Tetrapterys sp. I,,Tetrapterys sp. I,TET3_I,,,CW,276,2002,2017,Adult voucher awaiting ID.
+Malpighiaceae,Malpighiaceae,Tetrapterys sp. T,,Malpighiaceae sp. T,MLP_T,,,CW,3,2001,2002,Discontinued.  Probably equal TET3_A or TET3_B.
+Malvaceae,Tiliaceae,Apeiba menbranacea,Spruce ex Benth.,Apeiba menbranacea,APEIME,APEIME,T,TC,1954,2000,2018,
+Malvaceae,Tiliaceae,Apeiba tibourbou,Aubl.,Apeiba tibourbou,APEITI,APEITI,T,TC,462,2000,2018,
+Malvaceae,Bombacaceae,Bombacaceae sp. A,,Bombacaceae sp. A,BOM_A,,,T?,1,2000,2000,Probably  equal OCHRPY.
+Malvaceae,Sterculiaceae,Byttneria asterotricha,Mildbr.,Byttneria sp. B,BYTT_B,,,CW,234,2000,2018,
+Malvaceae,Sterculiaceae,Byttneria catalpifolia,Jacq.,Byttneria sp. A,BYTT_A,,,CW,37,2003,2009,
+Malvaceae,Bombacaceae,Ceiba pentandra,L. Gaertn.,Ceiba pentandra,CEIBPE,CEIBPE,E,TE,341,2001,2018,
+Malvaceae,Bombacaceae,Ceiba samauma,(Mart.) K. Schum.,Ceiba samauma,CEIBSA,CEIBSA,T,TC,412,2000,2018,
+Malvaceae,Bombacaceae,Eriotheca globosa,(Aubl.) A. Robyns,Eriotheca globosa,ERIOGL,ERIOGL,T,TC,419,2000,2017,
+Malvaceae,Sterculiaceae,Herrania cuatrecasasiana,García-Barr.,Herrania cuatrecasana,HERRCU,HERRCU,U,TU,1,2005,2005,
+Malvaceae,Sterculiaceae,Herrania nitida,(Poepp.) R.E. Schult.,Herrania 'asperoide',HERRAS,HERRNI,S,SL,1,2006,2006,
+Malvaceae,Bombacaceae,Matisia bracteolosa,Ducke (s. l.),Matisia bracteolosa,MATIBR,MATIBR,M,TM,2089,2000,2018,
+Malvaceae,Bombacaceae,Matisia cordata,Bonpl.,Matisia cordata,MATICO,MATICO,T,TC,4,2002,2012,
+Malvaceae,Bombacaceae,Matisia huallagensis,Cuatrec.,Matisia longiflora,MATILO,MATILO,M,TM,174,2000,2018,A new identification as Matisia huallagensis in plot lists of 2014-2018.  This was Matisia longiflora Gleason in lists of 2001-2010.
+Malvaceae,Bombacaceae,Matisia malacocalyx,(Robyns & Nilsson) Alverson  (s. l.),Matisia malacocalyx,MATIMA,MATIMA,M,TM,1606,2000,2018,
+Malvaceae,Bombacaceae,Matisia obliquifolia,Standl.,Matisia obliquifolia,MATIO1,MATIOQ,M,TM,46,2000,2016,
+Malvaceae,Bombacaceae,Matisia oblongifolia,Poepp.  & Endl.,Matisia oblongifolia,MATIO2,MATIOB,U,TU,56,2000,2016,
+Malvaceae,Tiliaceae,Mollia gracilis,Spruce ex Benth.,Mollia gracilis,MOL1GR,MOLIGR,T,TC,205,2000,2017,
+Malvaceae,Bombacaceae,Ochroma pyramidale,(Cav. ex Lam.) Urb.,Ochroma pyramidale,OCHRPY,OCHRPY,M,TM,80,2000,2017,
+Malvaceae,Bombacaceae,Pachira insignis,(Sw.) Sw. ex Savigny,Pachira insignis,PACHIN,PACHIN,T,TC,18,2003,2017,
+Malvaceae,Bombacaceae,Pachira punga-schunkei,Fern. Alonso,Pachira aquatica,PACHAQ,PACHPU,M,TM,9,2010,2017,
+Malvaceae,Bombacaeae,Patinoa paraensis,(Huber) Cuatrec.,Patinoa paraensis,PATIPA,PATIPA,M,TM,1,2017,2017,
+Malvaceae,Bombacaceae,Quararibea 'sesiblanca',,Quararibea 'sesiblanca',QUARSE,QUARSE,,TC,45,2001,2017,Quararibea 'sesiblanca' in plot lists 2018 & 2014. Was Quararibea cf bilobata A. Robyns in plot list 2009.
+Malvaceae,Sterculiaceae,Sterculia apeibophylla,Ducke,Sterculia apeibophylla,STERA1,STERAP,T,TC,43,2000,2017,
+Malvaceae,Sterculiaceae,Sterculia apetala,(Jacq.) H. Karst.,Sterculia apetala,STERA2,STERAT,T,TC,1,2016,2016,
+Malvaceae,Sterculiaceae,Sterculia colombiana,Sprague,Sterculia colombiana,STERCO,STERCO,T,TC,92,2000,2017,
+Malvaceae,Sterculiaceae,Sterculia frondosa,Rich.,Sterculia frondosa,STERFR,STERFR,T,TC,872,2000,2018,
+Malvaceae,Sterculiaceae,Theobroma speciosum,Willd. Ex Spreng.,Theobroma speciosum,THEOSP,THEOSP,M,TM,214,2000,2017,
+Malvaceae,Sterculiaceae,Theobroma subincanum,Mart.,Theobroma subincanum,THEOSU,THEOSU,M,TM,83,2000,2017,
+Marantaceae,Marantaceae,Ischnosiphon 'medio',,Stromanthe sp. A,STRO_A,,,XT,1,2015,2015,
+Marcgraviaceae,Marcgraviaceae,Marcgravia sp. A,,Marcgravia sp. A,MARC_A,,,HL,361,2000,2018,Possibly includes more than one species.
+Marcgraviaceae,Marcgraviaceae,Marcgravia sp. B,,Marcgravia sp. B,MARC_B,,,HL,1,2000,2000,Discontinued.
+Marcgraviaceae,Marcgraviaceae,Marcgravia sp. E,,Marcgravia sp. E,MARC_E,,,HL,1,2006,2006,Discontinued.  Seedlings different from MARC_A (ssp 530).
+Marcgraviaceae,Marcgraviaceae,Marcgravia sp. F,,Marcgravia sp. F,MARC_F,,,HL,5,2001,2015,Adult voucher awaiting ID.
+Marcgraviaceae,Marcgraviaceae,Marcgraviaceae sp. G,,Marcgravia sp. G,MARC_G,,,HL,2,2001,2001,Discontinued.
+Marcgraviaceae,Marcgraviaceae,Marcgraviaceae sp. H,,Marcgraviaceae sp. H,MARC_H,,,HL,368,2000,2018,
+Marcgraviaceae,Marcgraviaceae,Marcgraviaceae sp. M,,Marcgravia sp. M,MARC_M,,,HL,4,2002,2008,
+Marcgraviaceae,Marcgraviaceae,Norantea guianensis,Aubl.,Norantea guianensis,NORAGU,,,HL,426,2001,2018,
+Marcgraviaceae,Marcgraviaceae,Souroubea sp. A,,Souroubea sp. A,SOU1_A,,,HL,46,2015,2017,Adult voucher awaiting ID.
+Marcgraviaceae,Marcgraviaceae,Souroubea sp. CW,,Souroubea sp. CW,CW_SOU,,,HL,1,2000,2000,Discontinued.
+Melastomataceae,Melastomataceae,Adelobotrys scandens,(Aubl.) DC.,Adelobotrys scandens,ADELSC,,,C?,3,2017,2017,First recognized in 2017. Adult voucher awaiting ID confirmation.  Parts except petals pubescent.
+Melastomataceae,Melastomataceae,Adelobotrys sp. B,,Adelobotrys sp. B,ADEL_B,,,CW,909,2000,2018,Adult voucher awaiting identification.  Parts glabrous.  Might include some ADELSC around traps 159-160 prior to 2017.
+Melastomataceae,Melastomataceae,Bellucia pentamera,Naudin,Bellucia pentamera,BELLPE,BELLPE,M,TM,8,2004,2008,
+Melastomataceae,Melastomataceae,Blakea rosea,(Ruiz & Pav.) D. Don,Blakea sp. B,BLAK_B,BLAKRO,H,HL,46,2001,2017,
+Melastomataceae,Melastomataceae,Blakea sp. A,,Blakea sp. A,BLAK_A,,,HL,1,2001,2001,
+Melastomataceae,Melastomataceae,Blakea sp. C,,Blakea sp. C,BLAK_C,,,HL,7,2002,2012,
+Melastomataceae,Melastomataceae,Clidemia dimorphica,J.F. Macbr.,Clidemia dimorphica,CLIDDI,CLIDDI,S,SL,194,2005,2016,
+Melastomataceae,Melastomataceae,Clidemia sp. A,,Clidemia sp. A,CLID_A,,,CW,12,2002,2006,Scant voucher awaiting ID.
+Melastomataceae,Melastomataceae,Henriettella 'aspera',,Miconia 'henrietella',MICOHE,HENRAS,T,TC,536,2000,2016,Henriettella 'aspera' (or Henriettea) in plot lists 2004-2018. Miconia 'henrietlla' was trap temp-name. Mostly in trap 158.
+Melastomataceae,Melastomataceae,Melastomataceae sp. E,,Melastomataceae sp. E,MLS_E,,,-,1,2000,2000,Discontinued.
+Melastomataceae,Melastomataceae,Melastomataceae sp. J,,Melastomataceae sp. J,MLS_J,,,-,2,2000,2005,Discontinued.
+Melastomataceae,Melastomataceae,Melastomataceae sp. L,,Melastomataceae sp. L,MLS_L,,,-,2,2002,2005,Discontinued.
+Melastomataceae,Melastomataceae,Miconia bubalina,Ule,Miconia bubalina,MICOBU,MICOBU,S,SL,60,2006,2018,
+Melastomataceae,Melastomataceae,Miconia decurrens,Cogn.,Miconia decurrens,MICOD2,MICODE,M,TM,31,2000,2002,
+Melastomataceae,Melastomataceae,Miconia elata,(Sw.) DC.,Miconia elata,MICOE1,MICOEL,M,TM,123,2000,2011,
+Melastomataceae,Melastomataceae,Miconia 'elatita',,Miconia 'elatita',MICOE2,MICOET,S,SL,46,2000,2011,
+Melastomataceae,Melastomataceae,Miconia fosteri,Wurdack,Miconia fosteri,MICOFO,MICOFO,S,SL,1,2012,2012,
+Melastomataceae,Melastomataceae,Miconia 'grancordata',,Miconia 'grancordata',MICOG1,MICOGC,S,SL,39,2000,2016,
+Melastomataceae,Melastomataceae,Miconia grandifolia,D. Don,Miconia grandifolia,MICOG2,MICOGR,U,TU,98,2000,2010,
+Melastomataceae,Melastomataceae,Miconia lamprophylla,Triana,Miconia lamprophylla,MICOLA,MICOLA,S,SL,8,2011,2011,
+Melastomataceae,Melastomataceae,Miconia multispicata,Naudin,Miconia multispicata,MICOMU,MICOMU,M,TM,211,2000,2017,
+Melastomataceae,Melastomataceae,Miconia napoana,Wurdack,Miconia napoana,MICON1,MICONA,M,TM,70,2005,2017,
+Melastomataceae,Melastomataceae,Miconia 'nerviblanco',,Miconia 'nerviblanco',MICON2,MICONE,M,TM,71,2008,2016,
+Melastomataceae,Melastomataceae,Miconia nervosa,(Sm.) Triana,Miconia nervosa,MICON3,MICONV,S,SL,63,2003,2017,
+Melastomataceae,Melastomataceae,Miconia 'peqdorada',,Miconia 'peqdorada',MICOP1,MICOPE,U,TU,229,2000,2016,
+Melastomataceae,Melastomataceae,Miconia pilgeriana,Ule,Miconia pilgeriana,MICOP7,MICOPI,M,TM,60,2000,2009,
+Melastomataceae,Melastomataceae,Miconia poeppigii,Triana,Miconia poeppigii,MICOP2,MICOPO,M,TM,8,2013,2016,
+Melastomataceae,Melastomataceae,Miconia pterocaulon,Triana,Miconia pterocaulon,MICOP4,MICOPT,U,TU,40,2005,2010,
+Melastomataceae,Melastomataceae,Miconia 'purpono',,Miconia 'purpono',MICOP6,MICOPU,U,TU,3,2000,2001,
+Melastomataceae,Melastomataceae,Miconia schunkei,Wurdack,Miconia schunkei,MICOSC,MICOSC,S,SL,2,2017,2017,
+Melastomataceae,Melastomataceae,Miconia sp. B,,Miconia sp. B,MICO_B,,,T?,1,2000,2000,Discontinued.
+Melastomataceae,Melastomataceae,Miconia 'tipica',,Miconia 'tipica',MICOT2,MICOTI,U,TU,121,2000,2016,
+Melastomataceae,Melastomataceae,Monolena cf. primuliflora,Hook. f.,Monolena sp. J,MONO_J,,,XT,7,2002,2017,
+Melastomataceae,Melastomataceae,Mouriri acutiflora,Naudin,Mouriri 'opaquita',MOUROP,MOURAC,T,TC,595,2000,2018,
+Melastomataceae,Melastomataceae,Mouriri 'grancoala',,Mouriri 'grancoala',MOURG1,MOURGC,S,SL,10,2000,2011,
+Melastomataceae,Melastomataceae,Mouriri grandiflora,DC.,Mouriri grandiflora,MOURG2,MOURGR,M,TM,376,2000,2017,
+Melastomataceae,Melastomataceae,Mouriri 'intermedia',,Mouriri 'intermedia',MOURIN,MOURIN,T,TC,124,2003,2017,
+Melastomataceae,Melastomataceae,Mouriri myrtilloides,(Sw.) Poir.,Mouriri myrtilloides,MOURMY,MOURMY,T,TM,210,2000,2017,
+Melastomataceae,Melastomataceae,Ossaea boliviensis,(Cogn.) Gleason,Ossaea boliviensis,OSSABO,OSSABO,S,SL,70,2002,2016,
+Melastomataceae,Melastomataceae,Tessmannianthus heterostemon,Markgr.,Tessmannianthus heterostemon,TESSHE,TESSHE,E,TE,213,2000,2012,
+Melastomataceae,Melastomataceae,Tococa caquetana,Sprague,Tococa caquetana,TOCOCA,,,SS,2,2011,2016,
+Meliaceae,Meliaceae,Cabralea canjerana,(Vell.) Mart.,Cabralea canjerana,CABRCA,CABRCA,T,TC,417,2000,2017,
+Meliaceae,Meliaceae,Cedrela odorata,L.  ,Cedrela fissilis,CED1FI,CEDAOD,E,TE,2475,2000,2018,
+Meliaceae,Meliaceae,Guarea carinata,Ducke,Guarea 'fuzzydelgada',GUARFU,GUARCA,T,TC,191,2000,2016,
+Meliaceae,Meliaceae,Guarea ecuadoriensis,W. Palacios,Guarea ecuadoriensis,GUAREC,GUAREC,M,TM,25,2000,2017,
+Meliaceae,Meliaceae,Guarea fistulosa,W. Palacios,Guarea fistulosa,GUARFI,GUARFI,U,TU,97,2000,2018,
+Meliaceae,Meliaceae,Guarea 'gigakunth',,Guarea 'gigakunth',GUARG1,GUARGI,T,TC,40,2000,2017,
+Meliaceae,Meliaceae,Guarea gomma,Pulle,Guarea gomma,GUARG3,GUARGO,T,TC,293,2000,2018,
+Meliaceae,Meliaceae,Guarea grandifolia,DC.,Guarea grandifolia,GUARG4,GUARGR,M,TM,45,2000,2017,
+Meliaceae,Meliaceae,Guarea guentheri,Harms,Guarea guentheri,GUARG5,GUARGU,M,TM,10,2004,2014,
+Meliaceae,Meliaceae,Guarea kunthiana,A. Juss.,Guarea kunthiana,GUARKU,GUARKU,M,TM,248,2000,2017,
+Meliaceae,Meliaceae,Guarea macrophylla subsp. pachycarpa,DC.,Guarea 'macrophylla#1',GUARM1,GUARMA,M,TM,158,2000,2017,Three 'varIeties' on plot treated as one taxon Guarea macrophylla Vahl (GUARMA) in all plot lists.  Variety 1 identified as  subsp. pachycarpa in plot list 2009-2010.
+Meliaceae,Meliaceae,Guarea macrophylla var. '2',,Guarea 'macrophylla#2',GUARM2,GUARMA,M,TM,2,2001,2002,Three 'varIeties' on plot treated as one taxon Guarea macrophylla Vahl (GUARMA) in all plot lists.   Variety 2 identified as  G. macrophylla var. 2 in plot list 2009-2010.
+Meliaceae,Meliaceae,Guarea macrophylla var. '3',,Guarea 'macrophylla#3',GUARM3,GUARMA,M,TM,54,2000,2012,Three 'varIeties' on plot treated as one taxon Guarea macrophylla Vahl (GUARMA) in all plot lists.   Variety 3 identified as var. 3 in plot list 2009-2010.
+Meliaceae,Meliaceae,Guarea pterorhachis,Harms,Guarea pterorhachis,GUARPT,GUARPT,M,TM,152,2000,2017,
+Meliaceae,Meliaceae,Guarea pubescens,(Rich.) A. Juss.,Guarea pubescens,GUARP1,GUARPB,M,TM,2,2004,2004,
+Meliaceae,Meliaceae,Guarea purusana,C. DC.,Guarea purusana,GUARP2,GUARPU,T,TC,296,2000,2017,
+Meliaceae,Meliaceae,Guarea silvatica,C. DC.,Guarea silvatica,GUARSI,GUARSI,M,TM,322,2000,2018,
+Meliaceae,Meliaceae,Guarea sp.,,(unknown SSP2379),U2379,,,-,1,2000,2000,Discontinued.
+Meliaceae,Meliaceae,Ruagea insignis,(C. DC.) T.D. Penn.,Ruagea insignis,RUAGIN,RUAGIN,M,TM,7,2013,2015,
+Meliaceae,Meliaceae,Trichilia adolfii,Harms,Trichilia adolfii,TRI2AD,TRICAD,T,TC,337,2000,2017,
+Meliaceae,Meliaceae,Trichilia 'cip',,Trichilia 'cip',TRI2CI,TRICCI,S,SL,5,2002,2015,
+Meliaceae,Meliaceae,Trichilia 'densapunta',,Trichilia 'densapunta',TRI2DE,TRICDE,M,TM,40,2000,2017,
+Meliaceae,Meliaceae,Trichilia elsae,Harms,Trichilia elsae,TRI2EL,TRICEL,S,SU,99,2000,2017,
+Meliaceae,Meliaceae,Trichilia laxipaniculata,Cuatrec.,Trichilia laxipaniculata,TRI2LA,TRICLA,M,TM,12,2007,2010,
+Meliaceae,Meliaceae,Trichilia maynasiana,C. DC.,Trichilia maynasiana,TRI2M1,TRICMA,T,TC,229,2004,2017,
+Meliaceae,Meliaceae,Trichilia micrantha,Benth.,Trichilia micrantha,TRI2M2,TRICMI,M,TM,7,2001,2008,
+Meliaceae,Meliaceae,Trichilia 'miniraquis' ,,Trichilia 'miniraquis',TRI2M3,TRICMN,M,TM,294,2001,2017,Trichilia 'miniraquis' in plot lists 2014-2018. Was Trichilia cf. pleeana (A. Juss.) C. DC. in 2010 plot list.
+Meliaceae,Meliaceae,Trichilia obovata,W. Palacios,Trichilia obovata,TRI2OB,TRICOB,S,SL,4,2005,2007,
+Meliaceae,Meliaceae,Trichilia pallida,Sw.,Trichilia pallida,TRI2PA,TRICPA,U,TU,296,2000,2017,
+Meliaceae,Meliaceae,Trichilia poeppigii,C. DC.,Trichilia poeppigii,TRI2PO,TRICPO,U,SL,252,2001,2017,
+Meliaceae,Meliaceae,Trichilia quadrijuga,Kunth,Trichilia quadrijuga,TRI2QU,TRICQU,T,TC,61,2000,2014,
+Meliaceae,Meliaceae,Trichilia septentrionalis,C. DC.,Trichilia septentrionalis,TRI2SE,TRICSE,T,TC,971,2000,2018,
+Meliaceae,Meliaceae,Trichilia solitudinis,Harms,Trichilia solitudinis,TRI2SO,TRICSO,T,TC,15,2001,2016,
+Meliaceae,Meliaceae,Trichilia sp. G,,Trichilia sp. G,TRI2_G,,,T?,2,2002,2002,Discontinued. 
+Menispermaceae,Menispermaceae,Abuta grandifolia,(Mart.) Sandwith,Abuta grandifolia,ABUTGR,ABUTGR,S,SL,18,2002,2014,
+Menispermaceae,Menispermaceae,Abuta rufescens,Aubl.,Abuta rufescens,ABUTRU,,,CW,15,2009,2017,
+Menispermaceae,Menispermaceae,Abuta sp. B,,Abuta sp. B,ABUT_B,,,CW,1,2008,2008,Discontinued.
+Menispermaceae,Menispermaceae,Abuta sp. D,,Abuta sp. D,ABUT_D,,,CW,3,2000,2002,
+Menispermaceae,Menispermaceae,Abuta sp. E,,Abuta sp. E,ABUT_E,,,CW,24,2001,2013,
+Menispermaceae,Menispermaceae,Abuta sp. GL,,Abuta sp. GL,ABUTGL,,,CW,1,2016,2016,Probably an error.  Doesn't correspond to any Abuta collection we have.
+Menispermaceae,Menispermaceae,Cissampelos sp. A,,Cissampelos sp. A,CIS1_A,,,C?,166,2000,2015,Possibly more than one species. No adult voucher yet available.
+Menispermaceae,Menispermaceae,Disciphania killipii,Diels,Disciphania sp. V,DISP_V,,,CW,90,2000,2015,Adult voucher awaiting ID confirmation.
+Menispermaceae,Menispermaceae,Disciphania sp. A,,Disciphania sp. A,DISP_A,,,C?,6,2001,2012,
+Menispermaceae,Menispermaceae,Disciphania sp. B,,Disciphania sp. B,DISP_B,,,C?,24,2000,2017,
+Menispermaceae,Menispermaceae,Menispermaceae sp.,,(unknown SSP1275),U1275,,,C?,17,2000,2001,Discontinued.
+Menispermaceae,Menispermaceae,Menispermaceae sp. '1968',,Menispermaceae sp. '1968',U1968,,,C?,5,2000,2000,Discontinued.
+Menispermaceae,Menispermaceae,Menispermaceae sp. A,,Menispermaceae sp. A,MEN_A,,,C?,3,2000,2005,Discontinued.
+Menispermaceae,Menispermaceae,Menispermaceae sp. E,,Menispermaceae sp. E,MEN_E,,,C?,5,2001,2005,Discontinued.
+Menispermaceae,Menispermaceae,Menispermaceae sp. H,,Menispermaceae sp. H,MEN_H,,,C?,2,2001,2003,Discontinued.
+Menispermaceae,Menispermaceae,Menispermaceae sp. T,,Menispermaceae sp. T,MEN_T,,,C?,18,2003,2013,
+Menispermaceae,Menispermaceae,Menispermaceae sp. U,,Menispermaceae sp. U,MEN_U,,,C?,75,2001,2017,
+Menispermaceae,Menispermaceae,Menispermaceae sp. X,,Menispermaceae sp. X,MEN_X,,,C?,1,2006,2006,Discontinued.
+Menispermaceae,Menispermaceae,Odontocarya cf. sp. C.,,Odontocarya cf. sp. C,ODO1_C,,,C?,4,2008,2012,
+Menispermaceae,Menispermaceae,Odontocarya sp. A,,Odontocarya sp. A,ODO1_A,,,C?,152,2000,2017,Possibly more than one species. No adult voucher yet available.
+Menispermaceae,Menispermaceae,Sciadotenia toxifera,Krukoff & A.C. Sm.,Menispermaceae sp. W,MEN_W,,,CW,4,2004,2009,
+Menispermaceae,Menispermaceae,Telitoxicum krukovii,Moldenke,Telitoxicum krukovii,TELIKR,,,CW,153,2001,2017,
+Metteniusaceae,Icacinaceae,Dendrobangia boliviana,Rusby,Dendrobangia boliviana,DEN1BO,DENBBO,M,TM,3,2007,2007,
+Monimiaceae,Monimiaceae,Mollinedia killipii,,Mollinedia killipii,MOL2KI,MOLLKI,S,SL,15,2000,2015,
+Monimiaceae,Monimiaceae,Mollinedia 'spinilarga',,Mollinedia 'spinilarga',MOL2SP,MOLLSP,U,TU,2,2005,2005,
+Monimiaceae,Monimiaceae,Mollinedia tomentosa,(Benth.) Tul.,Mollinedia tomentosa,MOL2TO,MOLLTO,M,TM,23,2000,2007,
+Moraceae,Moraceae,Batocarpus amazonicus,(Ducke) Fosberg,Batocarpus 'obmembra',BATOOB,BATOAM,T,TC,17,2000,2016,
+Moraceae,Moraceae,Batocarpus costaricensis,Standl. & L.O. Williams,Batocarpus 'ramaroja',BATORA,BATOCO,T,TC,83,2000,2015,
+Moraceae,Moraceae,Batocarpus orinocensis,H. Karst,Batocarpus orinocensis,BATOOR,BATOOR,T,TC,121,2000,2018,
+Moraceae,Moraceae,Brosimum acutifolium,Huber,Brosimum acutifolium,BRO1AC,BROSAC,T,TC,176,2000,2017,
+Moraceae,Moraceae,Brosimum guianense,(Aubl.) Huber,Brosimum guianense,BRO1GU,BROSGU,T,TC,469,2000,2017,
+Moraceae,Moraceae,Brosimum lactescens,(S. Moore) C.C. Berg,Brosimum lactescens,BRO1LA,BROSLA,T,TC,22,2000,2016,
+Moraceae,Moraceae,Brosimum potabile,Ducke,Brosimum potabile,BRO1PO,BROSPO,T,TC,61,2000,2018,
+Moraceae,Moraceae,Brosimum utile subsp. ovatifolium,(Ducke) C.C. Berg,Brosimum utile,BRO1UT,BROSUT,T,TC,2,2009,2009,Treated as Brosimum utile (Kunth) Oken in plot lists 2014-2018. Treated Brosimum utile subsp. ovatifolium in plot list 2009 & plot book (2014). Only on subspecies occurs on plot.
+Moraceae,Moraceae,Castilla ulei,Harb.,Castilla ulei,CAS3UL,CASTUL,T,TC,389,2000,2017,
+Moraceae,Moraceae,Clarisia biflora,Ruiz & Pav.,Clarisia biflora,CLARBI,CLARBI,T,TC,74,2002,2018,
+Moraceae,Moraceae,Clarisia racemosa,Ruiz & Pav.,Clarisia racemosa,CLARRA,CLARRA,E,TC,220,2000,2017,
+Moraceae,Moraceae,Ficus americana subsp. subapiculata,(Miq.) C.C. Berg,Ficus 'subapiculata',FICUSU,,,HW,117,2008,2016,Early records may contain Ficus schippii (FICUSC) especially in trap 110. Ficus american subsp. subapiculata (FICUSU) occurs in at least trap 125. Both species have small red fruit.
+Moraceae,Moraceae,Ficus gomelleira,Kunth & Bouché,Ficus gomelleira,FICUGO,FICUGO,T,TC,482,2002,2018,Included in plot censuses.
+Moraceae,Moraceae,Ficus krukovii,Standl.,Ficus brevibracteata,FICUBR,,,HW,7,2008,2008,Adult voucher awaiting ID confirmation.
+Moraceae,Moraceae,Ficus nymphaeifolia,Mill.,Ficus nymphaeifolia,FICUNY,FICUNY,T,HT,64,2008,2017,Included in plot censuses.
+Moraceae,Moraceae,Ficus obtusifolia,Kunth,Ficus obtusifolia,FICUOB,FICUOB,T,TC,1,2017,2017,Included in plot censuses.
+Moraceae,Moraceae,Ficus paraensis,(Miq.) Miq.,Ficus paraensis,FICUPA,,,HW,5,2017,2017,Adult voucher awaiting ID confirmation.
+Moraceae,Moraceae,Ficus pertusa,L. f.,Ficus 'perecose',FICUP2,,,HW,141,2002,2017,ID confirmed with adult voucher.
+Moraceae,Moraceae,Ficus piresiana,Vázq. Avila & C.C. Berg,Ficus sp. GG,FICU_GG,FICUPI,T,TC,171,2000,2018,Included in plot censuses.
+Moraceae,Moraceae,Ficus quichuana,C.C. Berg,Ficus sp. DD,FICU_DD,,,-,395,2000,2018,Adult voucher awaiting ID confirmation.
+Moraceae,Moraceae,Ficus schippii,Standl.,Ficus schippii,FICUSC,FICUBA,T&H,HT,5,2016,2017,Included in plot censuses. Fruits & seeds first recognized in 2016 as distinct from Ficus americana subsp. subapiculata (FICUSU). Both species have small red fruit. Present in at least trap 110.
+Moraceae,Moraceae,Ficus sp. BB,,Ficus sp. BB,FICU_BB,,,-,11,2000,2008,
+Moraceae,Moraceae,Ficus sp. CC,,Ficus sp. CC,FICU_CC,,,-,9,2000,2013,
+Moraceae,Moraceae,Ficus sp. EE,,Ficus sp. EE,FICU_EE,,,-,11,2000,2011,
+Moraceae,Moraceae,Ficus sp. KK,,Ficus sp. KK,FICU_KK,,,-,120,2008,2018,Initially identified as Ficus piresiana (FICU_GG) but tree at trap 110 (with 100 records) possibly is not piresiana.
+Moraceae,Moraceae,Ficus sp. S1 (semillas),,Ficus sp. S1 (semillas),FICU_S1,,,-,94,2000,2017,Mostly isolated but morphologically distinct seeds (sometimes with fruit fragments).  Not yet indentified to species.
+Moraceae,Moraceae,Ficus sp. S2 (semillas),,Ficus sp. S2 (semillas),FICU_S2,,,-,90,2000,2018,Mostly isolated but morphologically distinct seeds (sometimes with fruit fragments).  Not yet indentified to species.
+Moraceae,Moraceae,Ficus sp. S4 (semillas),,Ficus sp. S4 (semillas),FICU_S4,,,-,23,2008,2012,Mostly isolated but morphologically distinct seeds (sometimes with fruit fragments).  Not yet indentified to species.
+Moraceae,Moraceae,Ficus sp. S5 (semillas),,Ficus sp. S5 (semillas),FICU_S5,,,-,21,2009,2013,Mostly isolated but morphologically distinct seeds (sometimes with fruit fragments).  Not yet indentified to species.
+Moraceae,Moraceae,Ficus sp.D,,Ficus sp.D,FICU_D,,,-,15,2000,2016,Possibly equals FICU_DD (Ficus quichuana). Needs confirmation.
+Moraceae,Moraceae,Ficus sp.G,,Ficus sp.G,FICU_G,,,-,2,2000,2000,Possibly equal FICU_GG (Ficus piresiana).  Needs confirmation.
+Moraceae,Moraceae,Ficus sp.H,,Ficus sp.H,FICU_H,,,-,14,2000,2009,
+Moraceae,Moraceae,Ficus sp.K,,Ficus sp.K,FICU_K,,,-,16,2000,2016,Possibly equal FICU_KK.
+Moraceae,Moraceae,Ficus sp.N,,Ficus sp.N,FICU_N,,,-,5,2000,2000,Discontinued.
+Moraceae,Moraceae,Ficus sp.R,,Ficus sp.R,FICU_R,,,-,1,2000,2000,Discontinued.
+Moraceae,Moraceae,Ficus sp.S,,Ficus sp.S,FICU_S,,,-,4,2000,2017,Possibly equal FICUSC (Ficus schippii) and/or FICUSU (Ficus americana). Needs better voucher specimen for confirmation.
+Moraceae,Moraceae,Ficus sp.Y,,Ficus sp.Y,FICU_Y,,,-,61,2000,2001,Discontinued.  Scant material on card voucher available for identificaion. 
+Moraceae,Moraceae,Ficus spp. (partes indet. a sp.),,Ficus spp. (partes indet. a sp.),FICU_PIN,,,-,1737,2000,2015,Unidentified seeds & fruits were initially recorded by trap (FICU_xx where xx equals the trap number).  Samples were saved in hope of future identification.  Unidentified samples were finally combined into a single code because part and trap were already recorded in each record.
+Moraceae,Moraceae,Ficus trigona,L. f.,Ficus trigona,FICUT1,FICUTR,T&H,HT,363,2000,2017,Included in plot censuses.
+Moraceae,Moraceae,Helicostylis tomentosa,(Poepp. & Endl.) Rusby,Helicostylis tomentosa,HEL1TO,HELITO,M,TM,2,2003,2008,
+Moraceae,Moraceae,Maquira calophylla,(Poepp. & Endl.) C.C. Berg,Maquira calophylla,MAQUCA,MAQUCA,M,TM,168,2000,2018,
+Moraceae,Moraceae,Maquira guianensis,Aubl.,Maquira guianensis,MAQUGU,MAQUGU,M,TM,378,2000,2017,
+Moraceae,Moraceae,Naucleopsis krukovii ,(Standl.) C.C. Berg,Naucleopsis 'kv-krukovii',NAUCK2,NAUCKR,U,TM,200,2000,2017,Now treated as single variable taxon (Naucleopsis krukovii with code NAUCKR) in recent plot lists. This was initially (2000) separated into three forms (kv-amarilla & kv-frukovii & & kv-roja) that might correspond to three taxa.  Perhaps combine if phenological patterns are the same.
+Moraceae,Moraceae,Naucleopsis cf. krukovii,(Standl.) C.C. Berg,Naucleopsis 'kv-roja',NAUCK3,NAUCKR,U,TM,82,2002,2014,Now treated as single variable taxon (Naucleopsis krukovii with code NAUCKR) in recent plot lists. This was initially (2000) separated into three forms (kv-amarilla & kv-frukovii & & kv-roja) that might correspond to three taxa.  Perhaps combine if phenological patterns are the same.
+Moraceae,Moraceae,Naucleopsis ulei,(Warb.) Ducke,Naucleopsis ulei,NAUCUL,NAUCUL,T,TC,187,2000,2018,
+Moraceae,Moraceae,Perebea angustifolia,(Poepp. & Endl.) C.C. Berg,Perebea angustifolia,PEREAN,PEREAN,M,TM,3,2008,2008,
+Moraceae,Moraceae,Perebea guianensis,Aubl.,Perebea guianensis,PEREGU,PEREGU,M,TM,7,2008,2016,
+Moraceae,Moraceae,Perebea mollis,(Poepp. & Endl.) Huber,Perebea mollis,PEREMO,PEREMO,T,TC,39,2003,2017,
+Moraceae,Moraceae,Perebea sp. A,,Perebea sp. A,PERE_A,,,T?,4,2001,2004,Discontinued. Probably equal PERETE but needs confirmation.
+Moraceae,Moraceae,Perebea tessmannii,Mildbr.,Perebea tessmannii,PERETE,PERETE,T,TC,5,2017,2017,
+Moraceae,Moraceae,Perebea xanthochyma,H. Karst,Perebea xanthochyma,PEREXA,PEREXA,U,TM,625,2000,2018,
+Moraceae,Moraceae,Poulsenia armata,(Miq.) Standl.,Poulsenia armata,POULAR,POULAR,T,TC,346,2000,2018,
+Moraceae,Moraceae,Pseudolmedia laevigata,Trécul,Pseudolmedia laevigata,PSE1L1,PSEULA,T,TC,307,2000,2018,
+Moraceae,Moraceae,Pseudolmedia laevis,(Ruiz & Pav.) J.F. Macbr.,Pseudolmedia laevis,PSE1L2,PSEULS,T,TC,1795,2000,2018,
+Moraceae,Moraceae,Pseudolmedia macrophylla,Trécul,Pseudolmedia macrophylla,PSE1MC,PSEUMA,T,TC,16,2003,2017,
+Moraceae,Moraceae,Pseudolmedia rigida subsp.eggersii,(Standl.) C.C. Berg,Pseudolmedia rigida,PSE1RI,PSEURI,T,TC,123,2000,2018,Treated as Pseudolmedia rigida in plot lists 2014-2018. Identified as Pseudolmedia rigida subsp. eggersii in plot list 2009. Only one subspecies reported on plot.
+Moraceae,Moraceae,Pseudolmedia sp. A,,Pseudolmedia sp. A,PSE1_A,,,T?,1,2002,2002,Discontinued.
+Moraceae,Moraceae,Sorocea muriculata,Miq. In Mart.,Sorocea muriculata,SOROMU,SOROMU,U,TU,78,2000,2016,
+Moraceae,Moraceae,Sorocea pubivena subsp. hirtella ,(Mildbr.) C.C. Berg,Sorocea hirtella,SOROHI,SOROPU,U,TU,20,2001,2008,Subspecies combined into Sorocea pubivena Hemsl. (SOROPU) in plot lists 2010-2018.  Treated as subspecies in plot list 2009. Widely recognizied as two subspecies.
+Moraceae,Moraceae,Sorocea pubivena subsp. oligotricha ,(Akkermans & C.C. Berg) C.C. Berg,Sorocea oligotricha,SOROOL,SOROPU,U,TM,49,2004,2016,Subspecies combined into Sorocea pubivena Hemsl. (SOROPU) in plot lists 2010-2018.  Treated as subspecies in plot list 2009. Widely recognizied as two subspecies.
+Moraceae,Moraceae,Sorocea steinbachii,C.C. Berg,Sorocea steinbachii,SOROST,SOROST,M,TM,449,2000,2017,
+Moraceae,Moraceae,Trymatococcus amazonicus,Poepp. & Endl.,Trymatococcus amazonicum,TRYMAM,TRYMAM,M,TM,2,2000,2013,
+Myristicaceae,Myristicaceae,Compsoneura capitellata,(A. DC.) Warb.,Compsoneura capitellata,COMPCA,COMPCA,M,TM,146,2000,2017,
+Myristicaceae,Myristicaceae,Compsoneura ulei,Warb.,Compsoneura ulei,COMPUL,COMPUL,M,TM,1,2008,2008,
+Myristicaceae,Myristicaceae,Iryanthera grandis,Ducke,Iryanthera 'alta',IRYAAL,IRYAGR,T,TC,100,2002,2017,
+Myristicaceae,Myristicaceae,Iryanthera hostmannii,(Benth.) Warb.,Iryanthera paraensis,IRYAPA,IRYAHO,M,TM,315,2000,2018,
+Myristicaceae,Myristicaceae,Iryanthera juruensis,Warb.,Iryanthera juruensis,IRYAJU,IRYAJU,M,TM,20,2005,2017,
+Myristicaceae,Myristicaceae,Otoba glycycarpa,(Ducke) W.A. Rodrigues & T.S. Jaramillo,Otoba glycycarpa,OTOBGL,OTOBGL,T,TC,2724,2000,2018,
+Myristicaceae,Myristicaceae,Virola dixonii,Little,Virola dixonii,VIRODI,VIRODI,U,TC,4,2005,2011,
+Myristicaceae,Myristicaceae,Virola duckei,A.C. Smith,Virola duckei,VIRODU,VIRODU,E,TE,770,2000,2017,
+Myristicaceae,Myristicaceae,Virola elongata,(Benth.) Warb.,Virola elongata,VIROEL,VIROEL,T,TC,917,2000,2018,
+Myristicaceae,Myristicaceae,Virola flexuosa,A.C. Smith,Virola flexuosa,VIROFL,VIROFL,T,TC,157,2000,2018,
+Myristicaceae,Myristicaceae,Virola 'microfuzzy',,Virola 'microfuzzy',VIROMI,VIROMI,T,TC,136,2000,2018,
+Myristicaceae,Myristicaceae,Virola obovata,Ducke,Virola obovata,VIROOB,VIROOB,T,TC,31,2000,2011,
+Myristicaceae,Myristicaceae,Virola pavonis,(A. DC.) A.C. Sm.,Virola 'pavo',VIROPA,VIROPA,T,TC,468,2000,2018,
+Myristicaceae,Myristicaceae,Virola sp. I,,Virola sp. I,VIRO_I,,,T?,2,2000,2000,Discontinued.
+Myristicaceae,Myristicaceae,Virola sp. U,,Virola sp. U,VIRO_U,,,T?,1,2002,2002,Discontinued.
+Myristicaceae,Myristicaceae,Virola surinamensis,(Rol. ex Rottb.) Warb.,Virola surinamensis,VIROSU,,,T?,1,2005,2005,This species is not reported from the plot but is present in forests along the river.
+Myrtaceae,Myrtaceae,Calyptranthes glandulosa,M.L. Kawas. & B. Holst,Calyptranthes 'punctote',CALYP3,CALPPC,S,TU,3,2004,2004,
+Myrtaceae,Myrtaceae,Calyptranthes manuensis,B. Holst & M.L. Kawas.,Calyptranthes 'pseudospeciosa',CALYPS,CALPPS,M,TM,5,2004,2017,
+Myrtaceae,Myrtaceae,Calyptranthes plicata,McVaugh,Calyptranthes plicata,CALYPL,CALPPL,U,TU,4,2000,2011,Calyptranthes nervata M.L. Kawas. & B. Holst was separated from Calyptranthes plicata in 2009. They are very similar vegetatively.  It is currently unclear which species is represented by these sparse records.
+Myrtaceae,Myrtaceae,Calyptranthes sp. C,,Calyptranthes sp. C,CALY_C,,,T?,1,2002,2002,Discontinued.
+Myrtaceae,Myrtaceae,Calyptranthes speciosa,Sagot,Calyptranthes speciosa,CALYSP,CALPSP,S,SL,19,2000,2009,
+Myrtaceae,Myrtaceae,Calyptranthes yasuniana,M.L. Kawas. & Á.J. Pérez,Calyptranthes 'sedosa',CALYSE,CALPSE,U,TU,28,2002,2011,Calyptranthes yasuniana was newly described in 2015 and appears as such in plot list from 2018. It was known as Calyptranthes 'sedosa' in plots lists 2001-2014.
+Myrtaceae,Myrtaceae,Eugenia feijoi,O. Berg,Eugenia feijoi,EUGEFE,EUGEFE,T,TC,262,2000,2018,
+Myrtaceae,Myrtaceae,Eugenia florida,DC.,Eugenia florida,EUGEFL,EUGEFL,M,TM,50,2002,2013,
+Myrtaceae,Myrtaceae,Eugenia 'granvariable',,Eugenia 'granvariable',EUGEG1,EUGEGV,M,TM,69,2000,2010,
+Myrtaceae,Myrtaceae,Eugenia lambertiana,DC.,Eugenia lambertiana,EUGELA,EUGELA,M,TM,13,2002,2009,
+Myrtaceae,Myrtaceae,Eugenia longisepala,M.L. Kawas. & B. Holst,Eugenia 'graneschweil',EUGEG2,EUGEGR,M,TM,1,2000,2000,
+Myrtaceae,Myrtaceae,Eugenia macrocalyx,(O. Berg) Mart. ex B.D. Jacks.,Eugenia macrocalyx,EUGEM4,EUGEMC,M,TM,5,2001,2007,
+Myrtaceae,Myrtaceae,Eugenia 'margot',,Eugenia 'margot',EUGEMG,EUGEMA,M,TM,78,2002,2017,
+Myrtaceae,Myrtaceae,Eugenia 'medioperp-verde',,Eugenia 'medioperp-verde',EUGEM3,EUGEMV,M,TM,72,2004,2017,
+Myrtaceae,Myrtaceae,Eugenia multirimosa,McVaugh,Eugenia multirimosa,EUGEM9,EUGEMU,M,TM,5,2000,2016,
+Myrtaceae,Myrtaceae,Eugenia 'panosadorada',,Eugenia 'panosadorada',EUGEPA,EUGEPA,M,TM,7,2016,2016,
+Myrtaceae,Myrtaceae,Eugenia pusilliflora,M.L. Kawas. & B. Holst,Eugenia 'minicomun',EUGEM7,EUGEMI,M,TM,127,2001,2017,
+Myrtaceae,Myrtaceae,Eugenia 'ramamarilla',,Eugenia 'ramamarilla',EUGERA,EUGERA,M,TM,7,2010,2012,
+Myrtaceae,Myrtaceae,Eugenia schunkei,McVaugh,Eugenia schunkei,EUGESC,EUGESC,M,TM,15,2006,2015,
+Myrtaceae,Myrtaceae,Eugenia 'smedbrosimoid',,Eugenia 'smedbrosimoid',EUGES1,,,TM,3,2004,2004,It is Eugenia 'smedbrosimoid' in plot lists 2014-1018.  It was Eugenia aff. dittocrepis O. Berg in plot lists 2009-2010.
+Myrtaceae,Myrtaceae,Eugenia 'smedcomun',,Eugenia 'smedcomun',EUGES7,ZZMYSC,M,TM,8,2016,2016,
+Myrtaceae,Myrtaceae,Eugenia sp. D,,Eugenia sp. D,EUGE_D,,,,1,2004,2004,Discontinued.
+Myrtaceae,Myrtaceae,Eugenia yasuniana,B. Holst & M.L. Kawas.,Eugenia 'granplata',EUGEG3,EUGEYA,M,TM,81,2000,2014,
+Myrtaceae,Myrtaceae,Myrcia 'platatomen',,Myrcia 'platatomen',MYR1P2,MYRCPL,M,SL,32,2010,2016,
+Myrtaceae,Myrtaceae,Myrcia splendens,(Sw.) DC.,Myrcia 'rosadita',MYR1RO,MYRCSP,U,TU,70,2001,2016,
+Myrtaceae,Myrtaceae,Myrcia verticillata,M.L. Kawas. & B. Holst,uniden 'vertipub',ZZMYVE,MYRCVE,S,SL,1,2002,2002,
+Myrtaceae,Myrtaceae,Myrciaria amazonica,O. Berg,Myrciaria amazonica,MYR2AM,MYRRAM,S,SL,2,2008,2008,
+Myrtaceae,Myrtaceae,Myrciaria 'intermed',,Myrciaria 'intermed',MYR2IN,MYRRIN,M,TM,1,2002,2002,
+Myrtaceae,Myrtaceae,Myrciaria racemosa,M.L. Kawas.,Plinia 'cortezablanca',PLINCO,PLINCO,T,TC,596,2000,2017,Myrciaria racemosa was newly described in 2011 and appears in plot lists 2014-2018.  It appeared as Plinia 'cortezablanca' in earlier plot lists.  
+Myrtaceae,Myrtaceae,Myrtaceae sp. H,,Myrtaceae sp. H,MRT_H,,,T?,2,2002,2003,Discontinued.
+Myrtaceae,Myrtaceae,Plinia 'pseudomouriri',,Plinia 'pseudomouriri',PLINPS,PLINPS,M,SL,10,2002,2015,
+Myrtaceae,Myrtaceae,uniden. 'smedpubicost',,uniden 'smedpubicost',ZZMYS6,ZZMYSP,M,SL,15,2002,2016,
+Nyctaginaceae,Nyctaginaceae,Guapira 'clasica',,Guapira 'clasica',GUAPCL,GUAPCL,M,TM,13,2002,2016,
+Nyctaginaceae,Nyctaginaceae,Guapira 'granclasica',,Guapira 'granclasica',GUAPGR,GUAPGR,T,TC,72,2000,2018,
+Nyctaginaceae,Nyctaginaceae,Neea 'altomini',,Neea 'altomini',NEEAAL,NEEAAL,U,TU,4,2006,2017,
+Nyctaginaceae,Nyctaginaceae,Neea 'angostintersec',,Neea 'angostintersec',NEEAA2,NEEAAG,M,TM,81,2002,2016,
+Nyctaginaceae,Nyctaginaceae,Neea 'aniboid',,Neea 'aniboid',NEEAA3,NEEAAN,U,TU,31,2005,2010,
+Nyctaginaceae,Nyctaginaceae,Neea 'bajio',,Neea 'bajio',NEEABA,NEEABA,U,TU,105,2000,2017,
+Nyctaginaceae,Nyctaginaceae,Neea 'claudia',,Neea 'tela',NEEATE,NEEACL,M,SL,19,2004,2016,
+Nyctaginaceae,Nyctaginaceae,Neea 'comun',,Neea 'comun',NEEACO,NEEACO,M,TM,229,2000,2016,
+Nyctaginaceae,Nyctaginaceae,Neea 'garci',,Neea 'garci',NEEAGA,NEEAGA,T,TC,266,2000,2018,
+Nyctaginaceae,Nyctaginaceae,Neea 'granredonda',,Neea 'granredonda',NEEAGR,NEEAGR,U,TU,1,2017,2017,
+Nyctaginaceae,Nyctaginaceae,Neea 'mini',,Neea 'mini',NEEAM2,NEEAMI,S,SL,1,2011,2011,
+Nyctaginaceae,Nyctaginaceae,Neea 'paty',,Neea 'paty',NEEAPA,NEEAPA,S,SL,56,2000,2015,
+Nyctaginaceae,Nyctaginaceae,Neea 'popular',,Neea 'popular',NEEAPO,NEEAPO,U,TU,18,2014,2017,
+Nyctaginaceae,Nyctaginaceae,Neea sp. B,,Neea sp. B,NEEA_B,,,T?,1,2000,2000,Discontinued.
+Nyctaginaceae,Nyctaginaceae,Neea 'supercrasa',,Neea 'supercrasa',NEEASU,NEEASU,T,TC,80,2002,2013,
+Ochnaceae,Quiinaceae,Lacunaria jenmanii,(Oliv.) Ducke,Quiina jenmanii,QUIIJE,LACUJE,M,TM,2,2015,2015,
+Ochnaceae,Ochnaceae,Ouratea 'flaquita',,Ouratea 'flaquita',OURAFL,OURAFL,U,TU,98,2000,2018,
+Ochnaceae,Quiinaceae,Quiina 'grande',,Quiina 'grande',QUIIG1,QUIIGR,M,TM,13,2003,2018,The few records are all from trap 85 and probably from one tree. Preliminary identification was Quiina 'grande'. This appears in plot lists of 2014-2018 but was called Quiina cf. macrophylla Tul. in plot lists of 2009-2010.  It might also be Quiina grandifolia Mildbr.
+Ochnaceae,Quiinaceae,Quiina florida,Tul.,Quiina florida,QUIIFL,QUIIFL,M,TM,148,2004,2017,
+Olacaceae,Olacaceae,Aptandra tubicina,(Poepp.) Benth. ex Miers,Aptandra tubicina,APTATU,APTATU,T,TC,4,2001,2010,
+Olacaceae,Olacaceae,Cathedra acuminata,(Benth.) Miers,Cathedra acuminata,CATHAC,CATHAC,T,TC,107,2000,2017,
+Olacaceae,Olacaceae,Dulacia candida,,(Poepp.) Kuntze,DULACA,DULACA,U,TU,120,2009,2016,
+Olacaceae,Olacaceae,Heisteria acuminata,(Bonpl.) Engl.,Heisteria acuminata,HEISAC,HEISAC,U,TU,3,2005,2013,
+Olacaceae,Olacaceae,Heisteria 'grande',,Heisteria 'grande',HEISGR,HEISGR,M,TM,3,2007,2008,
+Olacaceae,Olacaceae,Heisteria nitida,Engl.,Heisteria nitida,HEISNI,HEISNI,T,TC,80,2001,2018,
+Olacaceae,Olacaceae,Heisteria scandens,Ducke,Heisteria scandens,HEISSC,,,CW,57,2000,2017,
+Olacaceae,Olacaceae,Minquartia guianensis,Aubl.,Minquartia guianensis,MINQGU,MINQGU,T,TC,183,2000,2017,
+Opiliaceae,Opiliaceae,Agonandra peruviana,Hiepko,Agonandra silvatica,AGONSI,AGONPE,M,TM,25,2001,2009,
+Opiliaceae,Opiliaceae,Agonandra silvatica,Ducke,Agonandra 'gordito',AGONGO,AGONSI,T,TC,34,2001,2014,
+Orchidaceae,Orchidaceae,Orchidaceae sp. A,,Orchidaceae sp. A,ORC_A,,,EH,2,2000,2008,
+Orchidaceae,Orchidaceae,Orchidaceae sp. B,,Orchidaceae sp. B,ORC_B,,,EH,5,2000,2015,
+Orchidaceae,Orchidaceae,Orchidaceae sp. C,,Orchidaceae sp. C,ORC_C,,,EH,3,2000,2001,
+Orchidaceae,Orchidaceae,Orchidaceae sp. D,,Orchidaceae sp. D,ORC_D,,,EH,3,2001,2004,
+Orchidaceae,Orchidaceae,Orchidaceae sp. D2,,Orchidaceae sp. D2,ORC_D2,,,EH,1,2002,2002,
+Orchidaceae,Orchidaceae,Orchidaceae sp. D3,,Orchidaceae sp. D3,ORC_D3,,,EH,1,2002,2002,
+Orchidaceae,Orchidaceae,Orchidaceae sp. E,,Orchidaceae sp. E,ORC_E,,,EH,2,2001,2014,
+Orchidaceae,Orchidaceae,Orchidaceae sp. F,,Orchidaceae sp. F,ORC_F,,,EH,27,2000,2015,
+Orchidaceae,Orchidaceae,Orchidaceae sp. F2,,Orchidaceae sp. F2,ORC_F2,,,EH,2,2010,2012,
+Orchidaceae,Orchidaceae,Orchidaceae sp. G,,Orchidaceae sp. G,ORC_G,,,EH,3,2002,2008,
+Orchidaceae,Orchidaceae,Orchidaceae sp. H,,Orchidaceae sp. H,ORC_H,,,EH,4,2003,2014,
+Orchidaceae,Orchidaceae,Orchidaceae sp. I,,Orchidaceae sp. I,ORC_I,,,EH,1,2004,2004,
+Orchidaceae,Orchidaceae,Orchidaceae sp. J,,Orchidaceae sp. J,ORC_J,,,EH,4,2004,2010,
+Orchidaceae,Orchidaceae,Orchidaceae sp. K,,Orchidaceae sp. K,ORC_K,,,EH,3,2005,2016,
+Orchidaceae,Orchidaceae,Orchidaceae sp. L,,Orchidaceae sp. L,ORC_L,,,EH,6,2005,2010,
+Orchidaceae,Orchidaceae,Orchidaceae sp. M,,Orchidaceae sp. M,ORC_M,,,EH,1,2002,2002,
+Orchidaceae,Orchidaceae,Orchidaceae sp. N,,Orchidaceae sp. N,ORC_N,,,EH,1,2006,2006,
+Orchidaceae,Orchidaceae,Orchidaceae sp. O,,Orchidaceae sp. O,ORC_O,,,EH,1,2000,2000,
+Orchidaceae,Orchidaceae,Orchidaceae sp. P,,Orchidaceae sp. P,ORC_P,,,EH,1,2008,2008,
+Orchidaceae,Orchidaceae,Orchidaceae sp. Q,,Orchidaceae sp. Q,ORC_Q,,,EH,1,2008,2008,
+Orchidaceae,Orchidaceae,Orchidaceae sp. R,,Orchidaceae sp. R,ORC_R,,,EH,1,2008,2008,
+Orchidaceae,Orchidaceae,Orchidaceae sp. S,,Orchidaceae sp. S,ORC_S,,,EH,1,2008,2008,
+Orchidaceae,Orchidaceae,Orchidaceae sp. T,,Orchidaceae sp. T,ORC_T,,,EH,2,2008,2008,
+Orchidaceae,Orchidaceae,Orchidaceae sp. U,,Orchidaceae sp. U,ORC_U,,,EH,6,2008,2016,
+Orchidaceae,Orchidaceae,Orchidaceae sp. V,,Orchidaceae sp. V,ORC_V,,,EH,1,2008,2008,
+Orchidaceae,Orchidaceae,Sobralia sp. A,,Sobralia sp. A,SOBR_A,,,EH,1,2011,2011,
+Passifloraceae,Passifloraceae,Dilkea parviflora,Killip,Dilkea parviflora,DILKP1,DILKPA,U,TU,12,2001,2015,
+Passifloraceae,Passifloraceae,Dilkea sp. H,,Dilkea sp. H,DILK_H,,,-,2,2015,2015,
+Passifloraceae,Passifloraceae,Passiflora auriculata,Kunth,Passiflora auriculata,PASSAU,,,CW,124,2004,2017,
+Passifloraceae,Passifloraceae,Passiflora sp. B,,Passiflora sp. B,PASS_B,,,CW,1,2004,2004,Discontinued.
+Passifloraceae,Passifloraceae,Passiflora sp. C,,Passiflora sp. C,PASS_C,,,CW,2,2005,2013,
+Passifloraceae,Passifloraceae,Passiflora spinosa,(Poepp. & Endl.) Mast.,Passiflora spinosa,PASSSP,,,CW,3,2010,2013,
+Peraceae,Euphorbiaceae,Pera 'duguet',,Pera 'duguet',PERADU,PERADU,T,TC,21,2001,2014,
+Petiveriaceae,Phytolaccaceae,Trichostigma octandrum,(L.) H. Walter,Trichostigma octandrum,TRI5OC,,,CH,1523,2000,2018,
+Phyllanthaceae,Euphorbiaceae,Hieronyma alchorneoides,P. Franco,Hyeronima alchorneoides,HYERAL,HIERAL,E,TE,3511,2000,2018,
+Phyllanthaceae,Euphorbiaceae,Margaritaria nobilis,L. f.,Margaritaria nobilis,MARGNO,MARGNO,M,TM,66,2000,2018,
+Phyllanthaceae,Euphorbiaceae,Richeria racemosa,(Poepp. & Endl.) Pax & K. Hoffm.,Richeria racemosa,RICHRA,RICHRA,M,TM,34,2000,2011,
+Phytolaccaceae,Phytolaccaceae,Phytolacca rivinoides,Kunth & C.D. Bouché,Phytyolacca rivenoides,PHY2RI,,,XT,7,2000,2012,
+Picramniaceae,Picramniaceae,Picramnia 'mini',,Picramnia 'mini',PICRMI,PICRMI,U,TU,4,2009,2013,
+Picramniaceae,Picramniaceae,Picramnia spruceana,Engl.,Picramnia sellowii,PICRSE,PICRSE,U,TU,6,2001,2013,Picramnia spruceana Engl. in plot lists 2010-2018. Picramnia sellowii subsp. spruceana (Engl.) Pirani in plot list 2009. 
+Picramniaceae,Picramniaceae,Picramnia sp. G,,Picramnia sp. G,PICR_G,,,EH,1,2002,2002,Discontinued.
+Piperaceae,Piperaceae,Peperomia macrostachyos,(Vahl) A. Dietr.,Peperomia macrostachya,PEPEMA,,,EH,1667,2000,2018,Possibly more than one species. P. macrostachyos is certainly a common species. Adult voucher needed.
+Piperaceae,Piperaceae,Peperomia serpens,(Sw.) Loudon,Peperomia serpens,PEPESE,,,EH,5,2005,2011,
+Piperaceae,Piperaceae,Peperomia sp. A,,Peperomia sp. A,PEPE_A,,,EH,1,2002,2002,Discontinued. Probably equal PEPEMA.
+Piperaceae,Piperaceae,Peperomia sp. O,,Peperomia sp. O,PEPE_O,,,EH,4,2002,2005,
+Piperaceae,Piperaceae,Peperomia sp. P,,Peperomia sp. P,PEPE_P,,,EH,2,2000,2009,
+Piperaceae,Piperaceae,Piper augustum,Rudge,Piper augustum,PIPEAU,PIPEAU,S,SL,15,2002,2009,
+Piperaceae,Piperaceae,Piper 'bellidi',,Piper 'bellidi',PIPEBE,PIPEBE,S,SL,18,2008,2011,
+Piperaceae,Piperaceae,Piper bellidifolium,Yunck.,Piper bellidifolium,PIPEB2,PIPEBF,S,SL,,,,
+Piperaceae,Piperaceae,Piper 'fuzicort' ,,Piper 'fuzicort',PIPEFU,PIPEFU,S,SL,5,2003,2004,Piper 'fuzicort'  listed in all plot lists. Specimen at ECY is annotated as Piper soledadense Trel.
+Piperaceae,Piperaceae,Piper hispidum,Sw.,Piper 'scab',PIPESC,PIPESC,S,SL,1,2003,2003,
+Piperaceae,Piperaceae,Piper 'minibroqui',,Piper 'minibroqui',PIPEMI,PIPEMI,S,SL,3,2000,2014,
+Piperaceae,Piperaceae,Piper 'nervi',,Piper 'nervi',PIPENE,PIPENE,S,SL,1,2017,2017,
+Piperaceae,Piperaceae,Piper 'obchic',,Piper 'obchic',PIPEO1,PIPEOC,S,SL,65,2000,2018,
+Piperaceae,Piperaceae,Piper 'obchic',,Piper 'obchic',PIPEO1,,,S?,,,,
+Piperaceae,Piperaceae,Piper 'obvil',,Piper 'obvil',PIPEO5,PIPEOV,S,SL,2,2004,2011,
+Piperaceae,Piperaceae,Piper 'renato',,Piper 'renato',PIPER2,PIPERE,S,SL,4,2006,2014,
+Piperaceae,Piperaceae,Piper 'sesivil',,Piper 'sesivil',PIPESE,PIPESE,S,SL,1,2010,2010,
+Piperaceae,Piperaceae,Piper sp. J,,Piper sp. J,PIPE_J,,,S?,1,2000,2000,Discontinued. Code probably an error.
+Piperaceae,Piperaceae,Piper sp. N,,Piper sp. N,PIPE_N,,,S?,1,2015,2015,Discontinued. Code probably an error.
+Poaceae,Poaceae,Poaceae sp. A,,Poaceae sp. A,POA1_A,,,XT,4,2014,2014,
+Polygalaceae,Polygalaceae,Moutabea aculeata,(Ruiz & Pav.) Poepp. & Endl.,Moutabea aculeata,MOUTAC,,,CW,2,2006,2016,
+Polygalaceae,Polygalaceae,Securidaca sp.,,Banisteriopsis lucida cf.,BANILU,,,CW,20,2010,2016,
+Polygonaceae,Polygonaceae,Coccoloba densifrons,Mart. ex Meisn.,Coccoloba densifrons,COCCDE,COCCDE,M,TM,693,2000,2018,
+Polygonaceae,Polygonaceae,Coccoloba 'lancifuzz',,Coccoloba 'lancifuzz',COCCLA,COCCLA,T,TC,76,2000,2017,
+Polygonaceae,Polygonaceae,Coccoloba 'ninfi',,Coccoloba 'ninfi',COCCNI,COCCNI,T,TC,309,2000,2018,
+Polygonaceae,Polygonaceae,Coccoloba 'puntoblanco',,Coccoloba 'puntoblanco',COCCP1,COCCPB,U,TU,1,2011,2011,
+Polygonaceae,Polygonaceae,Coccoloba sp. B,,Coccoloba sp. B,COCC_B,,,T?,1,2008,2008,
+Polygonaceae,Polygonaceae,Triplaris dugandii,Brandbyge,Triplaris americana,TRI4AM,TRIPDU,M,TM,63,2000,2017,
+Primulaceae,Myrsinaceae,Ardisia 'semibulada',,Ardisia 'semibulada',ARDISE,ARDISE,S,SL,1,2005,2005,
+Primulaceae,Theophrastaceae,Clavija procera,B. Ståhl,Clavija 'granbril',CLAVGR,CLAVPR,U,TU,3,2003,2007,
+Primulaceae,Theophrastaceae,Clavija weberbaueri,Mez,Clavija weberbaueri,CLAVWE,CLAVWE,S,SL,2,2008,2014,
+Primulaceae,Myrsinaceae,Cybianthus anthuriophyllus,Pipoly,Cybianthus anthuriophyllus,CYBIAN,CYBIAN,S,SL,1,2014,2014,
+Primulaceae,Myrsinaceae,Stylogyne longifolia,(Mart. ex Miq.) Mez,Stylogyne longifolia,STYLLO,STYLLO,S,SL,1,2016,2016,
+Putranjivaceae,Euphorbiaceae,Drypetes amazonica,Steyerm.,Drypetes amazonica,DRYPAM,DRYPAM,M,TM,153,2000,2017,
+Putranjivaceae,Euphorbiaceae,Drypetes variabilis,Uittien,Drypetes variabilis,DRYPVA,DRYPVA,T,TC,660,2000,2017,
+Rhamnaceae,Rhamnaceae,Gouania colombiana,Suess.,Gouania colombiana,GOUACO,,,CW,4787,2000,2018,Adult vouchers awaiting ID comfirmation.
+Rhamnaceae,Rhamnaceae,Gouania 'glandulosa',,Gouania lupuloides,GOUALU,,,CW,2525,2000,2017,Adult vouchers awaiting ID comfirmation.
+Rhamnaceae,Rhamnaceae,Ziziphus cinnamomum,Triana & Planch.,Zizyphus cinnamomum,ZIZYCI,ZIZICI,T,TC,3,2002,2010,
+Rhizophoraceae,Euphorbiaceae,Paradrypetes subintegrifolia,G.A. Levin,Paradrypetes 'brillaspin',PARABR,PARASU,M,TM,44,2000,2014,
+Rosaceae,Rosaceae,Prunus debilis,Koehne,Prunus debilis,PRUNDE,PRUNDE,T,TC,106,2000,2018,
+Rubiaceae,Rubiaceae,Agouticarpa curviflora,(Dwyer) C.H. Perss.,Alibertia 'nuevadoris',ALIBNU,AGOUCU,S,SL,40,2002,2017,
+Rubiaceae,Rubiaceae,Agouticarpa isernii,(Standl.) C.H. Perss.,Borojoa 'axiglab',BOROA1,AGOUIS,M,TM,61,2000,2008,
+Rubiaceae,Rubiaceae,Alseis cf. lugonis,L. Andersson,Alseis 'comun',ALSECO,ALSECO,T,TC,343,2000,2018,Alseis cf. lugonis is used in the plot book (2014).
+Rubiaceae,Rubiaceae,Alibertia duckeana,Delprete & C.H. Perss.,Borojoa 'axipub',BOROA2,BOROCL,M,TM,3,2001,2012,Alibertia duckeana appears in the plot book (2014).  Borojoa claviflora (K. Schum.) Cuatrec. in plot lists of 2009-2018.  Several Yasuni specimens of B. claviiflora at MO have been identified as A. duckeana.
+Rubiaceae,Rubiaceae,Calycophyllum megistocaulum,(K. Krause) C.M. Taylor ,Calycophyllum megistocaulum,CAL4ME,CALCME,T,TC,203,2000,2017,Syn: Semaphyllanthe megistocaula (K. Krause) L. Ande.
+Rubiaceae,Rubiaceae,Capirona decorticans,(Poepp.) K. Schum.,Capirona decorticans,CAPIDE,CAPIDE,T,TC,7,2001,2011,
+Rubiaceae,Rubiaceae,Chimarrhis 'jacob',,Chimarrhis 'jacob',CHI1JA,CHIMJA,T,TC,29,2003,2018,
+Rubiaceae,Rubiaceae,Chomelia tenuiflora,Benth.,Chomelia 'comun',CHOMCO,CHOMCO,U,TU,6,2001,2010,
+Rubiaceae,Rubiaceae,Coussarea dulcifolia,D.A. Neill & Cerón & C.M. Taylor,Coussarea dulcifolia,COU5DU,COUSDU,S,SL,35,2003,2016,
+Rubiaceae,Rubiaceae,Duroia hirsuta,(Poepp.) K. Schum.,Duroia hirsuta,DUROHI,DUROHI,U,TU,358,2000,2017,
+Rubiaceae,Rubiaceae,Faramea capillipes,Müll. Arg.,Faramea capillipes,FARACA,FARACA,U,TU,192,2000,2017,
+Rubiaceae,Rubiaceae,Faramea quinqueflora,Poepp. & Endl.,Faramea quinqueflora,FARAQU,FARAQU,S,SL,165,2001,2018,
+Rubiaceae,Rubiaceae,Faramea sp. B,,Faramea sp. B,FARA_B,,,T?,2,2003,2003,Discontinued.
+Rubiaceae,Rubiaceae,Faramea sp. G,,Faramea sp. G,FARA_G,,,T?,2,2000,2002,Discontinued.
+Rubiaceae,Rubiaceae,Faramea torquata,Müll. Arg.,Faramea 'crasa',FARACR,FARATO,M,TM,22,2002,2017,
+Rubiaceae,Rubiaceae,Genipa americana,L.,Genipa americana,GENIAM,GENIAM,T,TC,35,2000,2015,
+Rubiaceae,Rubiaceae,Guettarda comata,Standl.,Psychotria sp. F,PSYC_F,,,CW,25,2004,2016,
+Rubiaceae,Rubiaceae,Ixora acuminatissima,Müll. Arg.,Ixora acuminatissima,IXORAC,IXORAC,S,SL,4,2002,2008,
+Rubiaceae,Rubiaceae,Ixora killipii,Standl.,Ixora killipii,IXORKI,IXORKI,U,TU,4,2002,2017,
+Rubiaceae,Rubiaceae,Ixora panurensis,Müll. Arg.,Ixora panurensis,IXORPA,IXORPA,S,SL,3,2005,2016,
+Rubiaceae,Rubiaceae,Kutchubaea semisericea,Ducke,Kotchubaea semisericea,KOTCSE,KOTCSE,M,TM,140,2001,2012,
+Rubiaceae,Rubiaceae,Macrocnemum roseum,(Ruiz & Pav.) Wedd.,Macrocnemum roseum,MAC2RO,MACNRO,T,TC,21,2014,2014,
+Rubiaceae,Rubiaceae,Malanea ecuadorensis,C.M. Taylor,Malanea 'ciliata',MALACI,,,CW,61,2003,2016,
+Rubiaceae,Rubiaceae,Notopleura macrophylla,(Ruiz & Pav.) C.M. Taylor,Notopleura macrophylla,NOTOMA,NOTOMA,S,SL,1,2008,2008,Syn.: Psychotria macrophylla Ruiz & Pav.
+Rubiaceae,Rubiaceae,Notopleura polyphlebia,(Donn. Sm.) C.M. Taylor ,Psychotria polyphlebia,PSYCP1,,,SS,13,2000,2013,Shrubs too small to be included in plot census. (Syn: Psychotria polyphlebia Donn. Sm.)
+Rubiaceae,Rubiaceae,Palicourea stenostachya,(Standl.) C.M. Taylor ,Psychotria stenostachya,PSYCST,PSYCST,S,SL,19,2000,2011,Taxon moved to Palicourea in 2016 by C. Taylor. (Syn: Psychotria stenostachya Standl.)  Garwood thinks there might be some Palicoura cf. racemosa (Aubl.) G. Nicholson (Syn: Psychotria racemosa (Aubl.) Raeusch. mixed in with P. stenostachya. Both have orange fruit and are found in region. P. racemosa is probably too short for stems to be included in the plot census. 
+Rubiaceae,Rubiaceae,Palicourea grandiflora,(Kunth) Standl.,Palicourea grandiflora,PALIGR,PALIGR,S,SL,6,2000,2004,
+Rubiaceae,Rubiaceae,Palicourea guianensis,Aubl.,Palicourea guianensis,PALIGU,PALIGU,S,SL,6,2008,2015,
+Rubiaceae,Rubiaceae,Palicourea nigricans,Krause,Palicourea nigricans,PALINI,PALINI,S,SL,148,2001,2017,
+Rubiaceae,Rubiaceae,Pentagonia amazonica,(Ducke) L. Andersson & Rova,Pentagonia parvifolia,PEN1PA,PENTPA,T,TC,239,2000,2018,
+Rubiaceae,Rubiaceae,Pentagonia spathicalyx,K. Schum.,Pentagonia 'mediana',PEN1ME,PENTWU,M,TM,5,2003,2008,
+Rubiaceae,Rubiaceae,Pentagonia 'subauric',,Pentagonia 'subauric',PEN1SU,PENTSU,S,SL,54,2000,2017,Listed as Psychotria 'subauric' in plot lists of 2014-2018. It was Psychotria cf. williamsii Standl. in plot lists of 2009-2010.
+Rubiaceae,Rubiaceae,Posoqueria latifolia,(Rudge) Roem. & Schult.,Posoqueria latifolia,POSOLA,POSOLA,M,TM,3,2011,2013,
+Rubiaceae,Rubiaceae,Psychotria 'dracula',,Psychotria 'dracula',PSYCDR,PSYCDR,S,SL,1,2006,2006,
+Rubiaceae,Rubiaceae,Psychotria gracilenta,Müll. Arg.,Psychotria sp. E,PSYC_E,PSYCBR,S,SL,13,2001,2015,
+Rubiaceae,Rubiaceae,Psychotria hoffmannseggiana,(Willd. ex Roem. & Schult.) Müll. Arg.,Psychotria 'baijo',PSYCBA,PSYCHO,S,SL,27,2007,2017,Psychotria hoffmannseggiana listed in plot lists of 2009-2018. It's temp-name was 'baijo' in previous lists.
+Rubiaceae,Rubiaceae,Psychotria huampamiensis,C.M. Taylor,Psychotria huampamiensis,PSYCHU,PSYCHU,S,SL,167,2000,2017,
+Rubiaceae,Rubiaceae,Psychotria m***,,Psychotria m***,PSYCMI,,,,1,2015,2015,This rarely used code might refer to several Pyschotria species.  The plot code for Psychotria microbotrys Ruiz ex Standl. is PSYCMI.   Pyschortria 'micro' and Pychotria 'milton' are also possibilities found among our voucher cards. 
+Rubiaceae,Rubiaceae,Psychotria poeppigiana,Müll. Arg.,Psychotria poeppigiana,PSYCPO,PSYCPO,S,SL,12,2002,2017,
+Rubiaceae,Rubiaceae,Psychotria remota,Benth.,Psychotria remota,PSYCRE,PSYCRE,S,SL,42,2001,2017,
+Rubiaceae,Rubiaceae,Psychotria romolerouxiana,C.M. Taylor,Psychotria 'ondulada',PSYCON,PSYCON,S,SL,5,2003,2011,
+Rubiaceae,Rubiaceae,Psychotria sacciformis,C.M. Taylor,Psychotria borjensis,PSYCBO,PSYCBO,S,SL,166,2004,2017,
+Rubiaceae,Rubiaceae,Psychotria sp. D,,Psychotria sp. D,PSYC_D,,,S?,7,2001,2011,
+Rubiaceae,Rubiaceae,Psychotria sp. G,,Psychotria sp. G,PSYC_G,,,S?,3,2005,2005,
+Rubiaceae,Rubiaceae,Psychotria sp. H,,Psychotria sp. H,PSYC_H,,,S?,2,2006,2006,
+Rubiaceae,Rubiaceae,Psychotria sp. Q,,Psychotria sp. Q,RUB_Q,,,-,3,2001,2007,
+Rubiaceae,Rubiaceae,Psychotria sp. U,,Psychotria sp. U,PSYC_U,,,S?,4,2001,2008,
+Rubiaceae,Rubiaceae,Psychotria sp. V,,Psychotria sp. V,PSYC_V,,,S?,2,2008,2010,
+Rubiaceae,Rubiaceae,Psychotria sp. X,,Psychotria sp. X,PSYC_X,,,S?,4,2010,2012,
+Rubiaceae,Rubiaceae,Psychotria tenuifolia,Sw.,Psychotria 'robin',PSYCRO,PSYCRO,S,SL,1,2003,2003,
+Rubiaceae,Rubiaceae,Psychotria viridis,Ruiz & Pav.,Psychotria viridis,PSYCVI,PSYCVI,S,SL,1,2011,2011,
+Rubiaceae,Rubiaceae,Randia altiscandens,(Ducke) C.M. Taylor,Randia sp. A,RAND_A,,,CW,19,2011,2017,
+Rubiaceae,Rubiaceae,Randia armata,(Sw.) DC.,Randia 'gorki',RANDGO,RANDGO,S,SL,3,2012,2013,
+Rubiaceae,Rubiaceae,Rudgea bracteata,J.H. Kirkbr.,Cossarea 'crassa',COU5CR,RUDGBR,U,TU,1,2017,2017,
+Rubiaceae,Rubiaceae,Rudgea japurensis,Müll. Arg.,Rudgea 'mini',RUDGMI,RUDGJA,S,SL,55,2000,2016,
+Rubiaceae,Rubiaceae,Rudgea 'micro',,Rudgea 'micro',RUDGM1,,,SS,3,2005,2015,Too short to be included in plot census.
+Rubiaceae,Rubiaceae,Simira cordifolia,(Hook. f.) Steyerm.,Simira cordifolia,SIM3CO,SIMICO,T,TC,142,2001,2017,
+Rubiaceae,Rubiaceae,Simira rubescens,(Benth.) Bremek. ex Steyerm.,Simira 'rube',SIM3RU,SIMIRU,T,TC,102,2002,2017,
+Rubiaceae,Rubiaceae,Tocoyena williamsii,Standl.,Tocoyena 'burnham',TOCOBU,TOCOBU,T,TC,3,2007,2008,
+Rubiaceae,Rubiaceae,Uncaria cf. tomentosa,(Willd.) DC.,Uncaria sp. A,UNCA_A,,,CW,4,2000,2008,Eary records may include Asteraceae sp. R (AST_R).
+Rubiaceae,Rubiaceae,Warszewiczia cordata,Spruce ex K. Schum.,Warszewiczia cordata,WARSCO,WARSCO,T,TC,306,2000,2018,
+Rubiaceae,Rubiaceae,Wittmackanthus stanleyanus,(R.H. Schomb.) Kuntze,Wittmackanthus stanleyanus,WITTST,WITTST,T,TC,498,2000,2018,
+Rutaceae,Rutaceae,Esenbeckia amazonica,Kaastra,Esenbeckia amazonica,ESENAM,ESENAM,M,TM,158,2000,2018,
+Rutaceae,Rutaceae,Zanthoxylum 'brillante' ,,Zanthoxylum 'brillante',ZANTBR,ZANTBR,M,TM,3,2001,2001,Zanthoxylum 'brillante' was used in plot lists of 2014-2018. Zanthoxylum aff. sprucei Engl. in plot list of 2009-2010.
+Rutaceae,Rutaceae,Zanthoxylum 'margland',,Zanthoxylum 'margland',ZANTMA,ZANTMA,U,TU,105,2001,2017,Unsure whether all Zanthoxylum in the traps are now recorded as ZANTMA or whether this is just the most common species.
+Rutaceae,Rutaceae,Zanthoxylum sp. B,,Zanthoxylum sp. B,ZANT_B,,,T?,2,2001,2001,
+Rutaceae,Rutaceae,Zanthoxylum sp. C,,Zanthoxylum sp. C,ZANT_C,,,T?,7,2000,2001,
+Rutaceae,Rutaceae,Zanthoxylum sp. D,,Zanthoxylum sp. D,ZANT_D,,,T?,4,2002,2002,
+Rutaceae,Rutaceae,Zanthoxylum sp. E,,Zanthoxylum sp. E,ZANT_E,,,T?,2,2002,2004,
+Sabiaceae,Sabiaceae,Meliosma 'doly',,Meliosma 'doly',MELIDO,MELIDO,T,TC,130,2002,2017,
+Sabiaceae,Sabiaceae,Meliosma vasquezii,A.H. Gentry,Meliosma vasquezii,MELIVA,MELIVA,M,TM,2,2011,2011,
+Sabiaceae,Sabiaceae,Ophiocaryon heterophyllum,(Benth.) Urb.,Ophiocaryon heterophyllum,OPHIHE,OPHIHE,U,TU,31,2002,2015,
+Salicaceae,Flacourtiaceae,Casearia arborea,(Rich.) Urb.,Casearia 'a-tomen',CAS1AT,CASEAE,T,TC,319,2000,2016,
+Salicaceae,Flacourtiaceae,Casearia 'argut',,Casearia 'argut',CAS1AR,CASEAR,U,TU,57,2004,2014,
+Salicaceae,Flacourtiaceae,Casearia bracteifera,Sagot,Casearia bracteifera,CAS1BR,CASEBR,M,TM,5,2003,2004,
+Salicaceae,Flacourtiaceae,Casearia javitensis,Kunth,Casearia javitensis,CAS1JA,CASEJA,M,TM,551,2000,2018,
+Salicaceae,Flacourtiaceae,Casearia nigricans,Sleumer,Casearia nigricans,CAS1NI,CASENI,S,SL,33,2002,2015,
+Salicaceae,Flacourtiaceae,Casearia pitumba,Sleumer,Casearia pitumba,CAS1PI,CASEPI,S,SL,6,2000,2002,
+Salicaceae,Flacourtiaceae,Casearia 'prunicerob',,Casearia 'prunicerob',CAS1P1,CASEPR,S,SL,74,2000,2018,
+Salicaceae,Flacourtiaceae,Casearia prunifolia,Kunth,Casearia prunifolia,CAS1P2,CASEPF,S,SL,149,2000,2017,
+Salicaceae,Flacourtiaceae,Casearia 'sylvepub',,Casearia 'sylvepub',CAS1S1,CASESP,M,TM,39,2000,2017,
+Salicaceae,Flacourtiaceae,Hasseltia floribunda,Kunth,Hasseltia floribunda,HASSFL,HASSFL,M,TM,631,2000,2018,
+Salicaceae,Flacourtiaceae,Lunania parviflora,Spruce ex Benth.,Lunania parviflora,LUNAPA,LUNAPA,U,TU,305,2000,2013,
+Salicaceae,Flacourtiaceae,Ryania speciosa,Vahl,Ryania speciosa,RYANSP,RYANSP,U,TU,1,2007,2007,
+Salicaceae,Flacourtiaceae,Tetrathylacium macrophyllum,Poepp. in Poepp. & Endl.,Tetrathylacium macrophyllum,TET4MA,TETTMA,U V,TU,371,2000,2018,
+Santalaceae,Santalaceae,Acanthosyris annonagustata,C. Ulloa & P. Jørg.,Acanthosyris annonagustata,ACANAN,ACANAN,M,TM,1,2008,2008,
+Santalaceae,Loranthaceae,Phoradendron cf. crassifolium,(Pohl ex DC.) Eichler,Loranthaceae sp. AA,LOR_AA,,,EP,646,2000,2018,
+Sapindaceae,Sapindaceae,Allophylus amazonicus,(Mart.) Radlk.,Allophylus 'arcorden',ALLOAR,ALLOAM,M,TM,214,2000,2017,
+Sapindaceae,Sapindaceae,Allophylus divaricatus,Radlk.,Allophylus 'scabrid',ALLOSC,ALLOSC,M,TM,94,2003,2017,
+Sapindaceae,Sapindaceae,Allophylus 'glabra',,Allophylus 'glabra',ALLOGL,ALLOGL,M,TM,1235,2000,2017,Allphylus 'glabra' used in plot lists of 2014-2018.  Allophylus cf. punctatus  (Poepp.) Radlk. Used in plot lists of 2009-2010.
+Sapindaceae,Sapindaceae,Allophylus pilosus,(J.F. Macbr.) A.H. Gentry,Allophylus pilosus,ALLOPI,ALLOPI,U,TU,84,2000,2009,
+Sapindaceae,Sapindaceae,Allophylus sp. A,,Allophylus sp. A,ALLO_A,,,T?,5,2001,2002,Discontinued.
+Sapindaceae,Sapindaceae,Cupania cinerea,Poepp.,Cupania cinerea,CUPACI,CUPACI,T,TC,8,2013,2017,
+Sapindaceae,Sapindaceae,Cupania livida,(Radlk.) Croat,Cupania livida,CUPALI,CUPALI,T,TC,138,2000,2017,
+Sapindaceae,Sapindaceae,Matayba 'ocho',,Matayba 'ocho',MATA8,MATAOC,T,TC,12,2002,2007,
+Sapindaceae,Sapindaceae,Melicocus novogranatensis,Acev.-Rodr.,Talisia 'novogranatensis',TALINO,MELCNG,M,TM,175,2000,2017,
+Sapindaceae,Sapindaceae,Paullinia alsmithii,J.F. Macbr.,Paullinia sp. Z,PAUL_Z,,,CW,1,2012,2012,
+Sapindaceae,Sapindaceae,Paullinia bilobulata,Radlk.,Paullinia sp. B,PAUL_B,,,CW,140,2000,2014,Adult voucher awaiting ID confirmation.
+Sapindaceae,Sapindaceae,Paullinia 'canal' cf,,Paullinia 'canal' cf,PAULCA,,,CW,46,2013,2017,Adult voucher awaiting ID.
+Sapindaceae,Sapindaceae,Paullinia 'delgado',,Paullinia 'delgado',PAULDE,,,CW,10,2013,2013,Adult voucher awaiting ID.
+Sapindaceae,Sapindaceae,Paullinia eriocarpa,Triana & Planch.,Paullinia bracteosa,PAULB1,,,CW,447,2001,2017,
+Sapindaceae,Sapindaceae,Paullinia cf. faginea,(Triana & Planch.) Radlk. ,Paullinia sp. S,PAUL_S,,,CW,30,2000,2013,Scans of sterile adult voucher awaiting ID confirmation.
+Sapindaceae,Sapindaceae,Paullinia 'falso-alsmithii',,Paullinia sp. M,PAUL_M,,,CW,27,2001,2010,Scans of adult voucher awaiting ID.
+Sapindaceae,Sapindaceae,Paullinia fissistipula,J.F. Macbr.,Paullinia sp. E,PAUL_E,,,CW,14,2003,2004,Adult voucher awaiting ID confirmation.
+Sapindaceae,Sapindaceae,Paullinia hispida,Jacq.,Paullinia sp. D,PAUL_D,,,CW,58,2003,2017,Adult voucher awaiting ID confirmation.
+Sapindaceae,Sapindaceae,Paullinia microneura,Cuatrec.,Paullinia microneura,PAULMI,,,CW,31,2004,2010,Possibly equal PAULCA.  No adult voucher of PAULMI available.
+Sapindaceae,Sapindaceae,Paullinia pachycarpa,Benth.,Paullinia pachycarpa,PAULPA,,,CW,964,2000,2018,
+Sapindaceae,Sapindaceae,Paullinia 'pseudoalsmithii',,Paullinia 'pseudoalsmithii',PAULPS,,,CW,2,2016,2018,Adult voucher awaiting ID.
+Sapindaceae,Sapindaceae,Paullinia reticulata,Radlk.,Paullinia reticulata (sp. G),PAULRE,,,CW,367,2000,2018,Adult voucher awaiting ID confirmation.
+Sapindaceae,Sapindaceae,Paullinia rufescens,Rich. ex Juss.,Paullinia rufescens,PAULRU,,,CW,25,2000,2014,
+Sapindaceae,Sapindaceae,Paullinia simulans,J.F. Macbr.,Paullinia simulans,PAULSI,,,CW,45,2004,2018,
+Sapindaceae,Sapindaceae,Paullinia sp. 4709,,(unknown SSP4709),U4709,,,-,3,2004,2004,
+Sapindaceae,Sapindaceae,Paullinia sp. H,,Paullinia sp. H,PAUL_H,,,CW,78,2001,2016,
+Sapindaceae,Sapindaceae,Paullinia sp. R,,Paullinia sp. R,PAUL_R,,,CW,299,2000,2016,Adult voucher awaiting ID.
+Sapindaceae,Sapindaceae,Paullinia sp. T,,Paullinia sp. T,PAUL_T,,,CW,380,2002,2012,
+Sapindaceae,Sapindaceae,Paullinia sp. U,,Paullinia sp. U,PAUL_U,,,CW,61,2003,2017,
+Sapindaceae,Sapindaceae,Paullinia sp. V,,Paullinia sp. V,PAUL_V,,,CW,4,2000,2000,
+Sapindaceae,Sapindaceae,Paullinia sprucei,J.F. Macbr.,Paullinia spucei,PAULSP,,,CW,5,2016,2016,Scans of adult voucher awaiting ID confirmation.
+Sapindaceae,Sapindaceae,Paullinia tricornis,Radlk.,Paullinia tricornis,PAULTR,,,CW,116,2000,2016,
+Sapindaceae,Sapindaceae,Serjania sp. C,,Serjania sp. C,SERJ_C,,,CW,596,2000,2018,Adult voucher awaiting ID.
+Sapindaceae,Sapindaceae,Serjania sp. E,,Serjania sp. E,SERJ_E,,,CW,81,2000,2011,
+Sapindaceae,Sapindaceae,Serjania cf. circumvallata,Radlk.,Serjania sp. F,SERJ_F,,,CW,245,2000,2016,
+Sapindaceae,Sapindaceae,Serjania sp. N,,Serjania sp. N,SERJ_N,,,CW,1,2001,2001,Discontinued.
+Sapindaceae,Sapindaceae,Serjania sp. T,,Serjania sp. T,SERJ_T,,,CW,3,2004,2008,
+Sapindaceae,Sapindaceae,Talisia cerasina,(Benth.) Radlk.,Talisia cerasina,TALICE,TALICE,M,M,1,2017,2017,
+Sapindaceae,Sapindaceae,Talisia 'gigapulvi',,Talisia 'gigapulvi',TALIGI,TALIGI,M,TM,1,2000,2000,Discontinued.
+Sapindaceae,Sapindaceae,Thinouia cf. myriantha,Triana & Planch.,Thinouia sp. F,THIN_F,,,CW,430,2000,2017,
+Sapindaceae,Sapindaceae,Thinouia cf. obliqua,Radlk.,Thinouia sp. H,THIN_H,,,CW,41,2004,2017,Adult voucher awaiting ID confirmation.
+Sapindaceae,Sapindaceae,Thinouia sp. B,,Thinouia sp. B,THIN_B,,,CW,1,2000,2000,Discontinued.
+Sapindaceae,Sapindaceae,Thinouia sp. J,,Thinouia sp. J,THIN_J,,,CW,1,2010,2010,
+Sapotaceae,Sapotaceae,Chrysophyllum amazonicum,,Chrysophyllum 'lucent',CHR2LU,CHRYAM,T,TC,3,2005,2009,
+Sapotaceae,Sapotaceae,Chrysophyllum argenteum,Jacq.,Chrysophyllum argenteum,CHR2AR,CHRYAR,S,SL,104,2000,2016,Chrysophyllum argenteum in plot lists 2014-2018. Two subspecies are common in region. In older plot lists identified as C. argenteum subsp. auratum (Miq.) T.D. Penn.
+Sapotaceae,Sapotaceae,Chrysophyllum cuneifolium,(Rudge) A. DC.,Chrysophyllum colombianum,CHR2CO,CHRYCU,M,TM,118,2001,2013,
+Sapotaceae,Sapotaceae,Chrysophyllum manaosense,(Aubrév.) T.D. Penn.,Chrysophyllum 'vero',CHR2V2,CHRYMA,T,TC,30,2006,2017,
+Sapotaceae,Sapotaceae,Chrysophyllum 'minor',,Chrysophyllum 'minor',CHR2MI,CHRYMI,T,TC,24,2001,2005,
+Sapotaceae,Sapotaceae,Chrysophyllum ovale,Rusby,Chrysophyllum 'baeo',CHR2BA,CHRYOV,T,TC,8,2004,2008,
+Sapotaceae,Sapotaceae,Chrysophyllum sp. A,,Chrysophyllum sp. A,CHRY_A,,,T?,1,2000,2000,Discontinued.
+Sapotaceae,Sapotaceae,Chrysophyllum venezuelanense,(Pierre) T.D. Penn.,Chrysophyllum venezuelanense,CHR2V1,CHRYVE,T,TC,21,2002,2017,
+Sapotaceae,Sapotaceae,Elaeoluma glabrescens,(Mart. & Eichler) Aubrév.,Elaeoluma glabrescens,ELA2GL,ELAEGL,T,TC,2,2009,2009,
+Sapotaceae,Sapotaceae,Micropholis brochidodroma,T.D. Penn.,Micropholis 'mini',MICRMI,MICRBR,T,TC,414,2000,2017,
+Sapotaceae,Sapotaceae,Micropholis egensis,(A. DC.) Pierre,Micropholis melinoniana,MICRME,MICREG,M,TM,408,2001,2017,
+Sapotaceae,Sapotaceae,Micropholis guyanensis ,(A. DC.) Pierre,Micropholis guyanensis,MICRGU,MICRDU,T,TC,456,2000,2018,M. guyanensis in plot lists 2014-2018.   M. guyanensis subsp. duckeana (Baehni) T.D. Penn.) in plot list of. 2009. subsp. guyanensis  and subsp. duckeana in region.
+Sapotaceae,Sapotaceae,Micropholis venulosa,(Mart. & Eichler) Pierre,Micropholis venulosa,MICRVE,MICRVE,T,TC,5,2001,2004,
+Sapotaceae,Sapotaceae,Pouteria 'angostaloopy',,Pouteria 'angostaloopy',POUTA5,POUTAP,T,TC,7,2015,2016,
+Sapotaceae,Sapotaceae,Pouteria baehniana,Monach.,Pouteria baehniana,POUTBA,POUTBA,M,TM,1,2006,2006,
+Sapotaceae,Sapotaceae,Pouteria bilocularis,(H.J.P. Winkl.) Baehni,Pouteria 'falsacraselip',POUTFA,POUTBI,U V,TU,81,2006,2016,
+Sapotaceae,Sapotaceae,Pouteria cuspidata,(A. DC.) Baehni,Micropholis 'carlos',MICRCA,POUTRB,T,TC,55,2000,2013,The plot lists of 2014-2018 use Pouteria cuspidata (POUTRB) without subspecies.  P. cuspidata subsp. robusta (Mart. & Eichler) T.D. Penn. and P. cuspidata subsp. dura (Eyma) T.D. Penn. occur region and possibly on the plot. Our records are from one tree near trap 155.  The plot code of POUTRB suggests that this is subspecies robusta. 
+Sapotaceae,Sapotaceae,Pouteria durlandii,(Standl.) Baehni,Pouteria 'ancharoja',POUTA3,POUTDU,T,TC,61,2000,2016,The plot lists of 2014-2018 include both subspecies of Pouteria durlandi as POUTDU. Two subspecies were recognized in the plot list of 2009. Our records are mainly from a single tree at trap 98 that was identified as subsp. durlandii.
+Sapotaceae,Sapotaceae,Pouteria glomerata,(Miq.) Radlk.,Pouteria 'platafina',POUTP2,POUTGM,M,TM,37,2007,2012,
+Sapotaceae,Sapotaceae,Pouteria gracilis,T.D. Penn.,Pouteria 'dullmed',POUTDU,POUTGR,T,TC,37,2000,2010,
+Sapotaceae,Sapotaceae,Pouteria hispida,Eyma,Pouteria  'angostacili',POUTA4,POUTAC,T,TC,2,2012,2014,
+Sapotaceae,Sapotaceae,Pouteria krukovii,(A.C. Sm.) Baehni,Pouteria krukovii,POUTKR,POUTKR,T,TC,8,2001,2001,
+Sapotaceae,Sapotaceae,Pouteria 'peciolote',,Pouteria 'peciolote',POUTP1,POUTPE,S,SL,1,2009,2009,
+Sapotaceae,Sapotaceae,Pouteria platyphylla,(A.C. Sm.) Baehni,Pouteria platyphylla,POUTP3,POUTPL,M,TM,12,2010,2016,
+Sapotaceae,Sapotaceae,Pouteria procera,(Mart.) K. Hammer,Pouteria procera,POUTP4,POUTPR,T,TC,12,2000,2011,
+Sapotaceae,Sapotaceae,Pouteria 'redondita',,Pouteria 'redondita',POUTRE,POUTRD,T,TC,198,2000,2016,
+Sapotaceae,Sapotaceae,Pouteria rostrata,(Huber) Baehni,Pouteria rostrata,POUTRO,POUTRO,T,TC,291,2000,2016,
+Sapotaceae,Sapotaceae,Pouteria 'smedobov',,Pouteria 'smedobov',POUTSM,POUTSM,E,TE,1,2016,2016,
+Sapotaceae,Sapotaceae,Pouteria sp. V,,Pouteria sp. V,POUT_V,,,T?,1,2005,2005,
+Sapotaceae,Sapotaceae,Pouteria sp. Y,,Pouteria sp. Y,POUT_Y,,,T?,4,2002,2016,
+Sapotaceae,Sapotaceae,Pouteria torta subsp. glabra,T.D. Penn.,Pouteria 'tortagrande',POUTT3,POUTTU,U,TU,3,2004,2016,Two subspecies of Pouteria torta (Mart.) Radlk. are included as POUTU in plot lists 2014-2018. The two subspecies are recognized in in the plot list of 2009 and plot book (2014).  As our field team notes that the fruit and leaves are very different we distinguish the subspecies in our study.
+Sapotaceae,Sapotaceae,Pouteria torta subsp. tuberculata,(Sleumer) T.D. Penn.,Pouteria 'tuberculata',POUTT6,POUTTU,U,TM,38,2000,2016,Two subspecies of Pouteria torta (Mart.) Radlk. are included as POUTU in plot lists 2014-2018. The two subspecies are recognized in in the plot list of 2009 and plot book (2014).  As our field team notes that the fruit and leaves are very different we distinguish the subspecies in our study.
+Sapotaceae,Sapotaceae,Pouteria 'tortachica',,Pouteria 'tortachica',POUTT1,POUTTO,M,TM,5,2007,2016,
+Sapotaceae,Sapotaceae,Pouteria 'tortachicorden',,Pouteria 'tortachicorden',POUTT2,POUTTC,T,TC,6,2000,2011,
+Sapotaceae,Sapotaceae,Pouteria vernicosa,T.D. Penn.,Pouteria vernicosa,POUTVE,POUTVE,T,TC,226,2002,2017,
+Sapotaceae,Sapotaceae,Sapotaceae sp. D,,Sapotaceae sp. D,SPT_D,,,T?,2,2000,2000,Discontinued.
+Sapotaceae,Sapotaceae,Sapotaceae sp. E,,Sapotaceae sp. E,SPT_E,,,T?,2,2000,2000,Discontinued.
+Sapotaceae,Sapotaceae,Sapotaceae sp. F,,Sapotaceae sp. F,SPT_F,,,T?,1,2000,2000,Discontinued.
+Sapotaceae,Sapotaceae,Sapotaceae sp. G,,Sapotaceae sp. G,SPT_G,,,T?,1,2000,2000,Discontinued.
+Sapotaceae,Sapotaceae,Sapotaceae sp. H,,Sapotaceae sp. H,SPT_H,,,T?,1,2000,2000,Discontinued.
+Sapotaceae,Sapotaceae,Sapotaceae sp. L,,Sapotaceae sp. L,SPT_L,,,T?,1,2001,2001,Discontinued.
+Sapotaceae,Sapotaceae,Sapotaceae sp. N,,Sapotaceae sp. N,SPT_N,,,T?,2,2000,2001,Discontinued.
+Sapotaceae,Sapotaceae,Sapotaceae sp.U2190,,(unknown SSP2190),U2190,,,T?,1,2000,2000,Discontinued.
+Sapotaceae,Sapotaceae,Sarcaulus brasiliensis,A. DC.) Eyma,Sarcaulus 'smed',SARCSM,SARCBR,T,TC,22,2008,2018,All records are from trap 185. The corresponding card voucher is from tree 450347 near trap 185. This tree is now identified as Elaeoluma glabrescens (Mart. & Eichler) Aubrév. (ELA2GL).  We need to confim whether there is also a SARCSM tree near 195.
+Sapotaceae,Sapotaceae,Sarcaulus 'romolerouxii',,Sarcaulus 'romolerouxii',SARCRO,SARCRO,S,SL,6,2001,2008,
+Sapotaceae,Sapotaceae,Sarcaulus vestitus,(Baehni) T.D. Penn.,Sarcaulus vestitus,SARCVE,SARCVE,S,SL,9,2003,2009,
+Schlegeliaceae,Bignoniaceae,Schlegelia 'spruceana',,Schlegelia spruceana,SCHLSP,,,HL,455,2000,2016,Identified to genus by the fruits. No adult vouchers are yet available for comparison. This was originally identifed as Schlegelia spruceana Bureau & K. Schum.  Because that is a Guyanan shield species it is unlikely to be the correct identification.  Seeds of this species are very tiny. Garwood suspects they were possibly mixed with tiny seeds of Philodendron or other species.
+Schoepfiaceae,Olacaceae,Schoepfia  lucida,Pulle,Agonandra 'trespromin',AGONTR,SCHPLU,M,TM,2,2011,2011,
+Simaroubaceae,Simaroubaceae,Simaba paraensis,Ducke,Simaba paraensis,SIM1PA,SIMAPA,T,TC,17,2004,2016,
+Simaroubaceae,Simaroubaceae,Simaba polyphylla,(Cavalcante) W.W. Thomas,Simaba polyphylla,SIM1PO,SIMAPO,T,TC,68,2000,2016,
+Simaroubaceae,Simaroubaceae,Simarouba amara,Aubl.,Simarouba amara,SIM2AM,SIMRAM,E,TE,40,2014,2018,
+Siparunaceae,Monimiaceae,Siparuna 'bigll3¡',,Siparuna 'bigll3¡',SIPABI,SIPABI,S,SL,917,2000,2018,
+Siparunaceae,Monimiaceae,Siparuna cervicornis,Perkins,Siparuna cervicornis,SIPACE,SIPACE,S,SU,4,2000,2015,
+Siparunaceae,Monimiaceae,Siparuna cuspidata,(Tul.) A. DC.,Siparuna cuspidata,SIPACU,SIPACU,M,TM,1273,2000,2018,
+Siparunaceae,Monimiaceae,Siparuna decipiens,(Tul.) A. DC.,Siparuna decipiens,SIPADE,SIPADE,M,TM,3718,2000,2018,
+Siparunaceae,Monimiaceae,Siparuna sp. E,,Siparuna sp. E,SIPA_E,,,T?,1,2002,2002,Discontinued.
+Siparunaceae,Monimiaceae,Siparuna thecaphora ,(Poepp. & Endl.) A. DC. ,Siparuna 't-stelae',SIPAT3,SIPATT,S,SL,23,2002,2013,Three varieties of Siparuna thecaphora were initially distinguished on the plot as separate taxa in early plot lists (2000). All are now treated as one taxon (SIPATT) on the plot. Only variety 't-stelae' was found in traps (not variety 't-estrellita' or 't-hairy').
+Smilacaceae,Smilacaceae,Smilax sp. A,,Smilax sp. A,SMIL_A,,,CW,38,2000,2017,Adult voucher awaiting ID.
+Solanaceae,Solanaceae,Brunfelsia chiricaspi,Plowman,Brunfelsia chiricaspi,BRUNCH,BRUNCH,S,SL,1,2005,2005,
+Solanaceae,Solanaceae,Markea sp. A,,Markea sp. A,MARK_A,,,HL,41,2005,2015,
+Solanaceae,Solanaceae,Solanaceae sp. AA,,Solanaceae sp. AA,SOL_AA,,,CH,6,2003,2008,
+Solanaceae,Solanaceae,Solanaceae sp. H,,Solanaceae sp. H,SOL_H,,,CW,4,2000,2001,Discontinued.
+Solanaceae,Solanaceae,Solanaceae sp. T,,Solanaceae sp. T,SOL_T,,,CW,9,2001,2010,
+Solanaceae,Solanaceae,Solanaceae spp. (partes indet. a sp.),,Solanaceae spp. (partes indet. a sp.),SOL_PIN,,,CW,405,2000,2008,This code includes unidentified Solanaceae parts (mostly seeds) that were initially recorded initially by trap number (as SOLxx where xx is the trap number).  The saved samples could not be morphologically distinguished or asigned to existing codes.
+Solanaceae,Solanaceae,Solanum altissimum,Benítez,Solanum altissimum,SOLAAL,SOLAAL,T,TC,630,2002,2018,
+Solanaceae,Solanaceae,Solanum barbeyanum,Huber,Solanum barbeyanum,SOLABA,,,C?,33,2000,2017,
+Solanaceae,Solanaceae,Solanum grandiflorum,Ruiz & Pav.,Solanum grandiflorum,SOLAGD,SOLAGD,M,TM,31,2003,2018,
+Solanaceae,Solanaceae,Solanum leptopodum,Van Heurck & Müll. Arg.,Solanum leptopodum,SOLALE,SOLALE,S,SL,109,2003,2010,
+Solanaceae,Solanaceae,Solanum leucopogon,Huber,Solanum leucopogon,SOL1LE,,,CW,194,2005,2018,
+Solanaceae,Solanaceae,Solanum malletii,S. Knapp,Solanum malletii,SOLAMA,SOLAMA,S,SL,10,2005,2007,
+Solanaceae,Solanaceae,Solanum 'milton',,Solanaceae sp. V,SOL_V,,,CW,1,2003,2003,
+Solanaceae,Solanaceae,Solanum semilla_#1,,Solanum semilla_#1,SOLA_S1,,,CW,1,2010,2010,Morphologically unique seeds that have not yet been identified to species.
+Solanaceae,Solanaceae,Solanum semilla_#2,,Solanum semilla_#2,SOLA_S2,,,CW,11,2008,2009,Morphologically unique seeds that have not yet been identified to species.
+Solanaceae,Solanaceae,Solanum semilla_#3,,Solanum semilla_#3,SOLA_S3,,,CW,62,2000,2008,Morphologically unique seeds that have not yet been identified to species.
+Solanaceae,Solanaceae,Solanum semilla_#4,,Solanum semilla_#4,SOLA_S4,,,CW,5,2000,2008,Morphologically unique seeds that have not yet been identified to species.
+Solanaceae,Solanaceae,Solanum semilla_#5,,Solanum semilla_#5,SOLA_S5,,,CW,1,2000,2000,Morphologically unique seeds that have not yet been identified to species.
+Solanaceae,Solanaceae,Solanum semilla_#6,,Solanum semilla_#6,SOLA_S6,,,CW,39,2000,2009,Morphologically unique seeds that have not yet been identified to species.
+Solanaceae,Solanaceae,Solanum sp. D,,Solanaceae sp. D,SOL_D,,,CW,1,2000,2000,Discontinued.
+Solanaceae,Solanaceae,Solanum sp. M,,Solanaceae sp. M,SOL_M,,,CW,410,2000,2017,Adult voucher awaiting ID.  This was previously misidentified as Solanum pensile Sendtn.
+Solanaceae,Solanaceae,Solanum sp. O,,Solanaceae sp. O,SOL_O,,,CW,4,2001,2009,
+Staphyleaceae,Staphyleaceae,Turpinia occidentalis,(Sw.) G. Don,Turpinia occidentalis,TURPOC,TURPOC,T,TC,638,2000,2016,
+Stemonuraceae,Icacinaceae,Discophora guianensis,Miers,Discophora guianensis,DISCGU,DISCGU,M,TM,25,2003,2012,
+Styracaceae,Styracaceae,Styrax guyanensis,A. DC. ,Styrax guyanensis,STYRGU,STYRGU,M,TM,23,2000,2008,
+Tapisciaceae,Staphyleaceae,Huertea glandulosa,Ruiz & Pav.,Huertea glandulosa,HUERGL,HUERGL,T,TC,263,2000,2018,
+Ulmaceae,Ulmaceae,Ampelocera edentula,Kuhlm.,Ampelocera edentula,AMPEED,AMPEED,T,TM,5,2004,2011,
+Ulmaceae,Ulmaceae,Ampelocera longissima,Todzia,Ampelocera longissima,AMPELO,AMPELO,M,TM,16,2000,2017,
+Urticaceae,Cecropiaceae,Cecropia engleriana,Snethl.,Cecropia 'scabhert',CECRS1,CECREN,T,TC,514,2000,2017,
+Urticaceae,Cecropiaceae,Cecropia ficifolia,Warb. ex Snethl.,Cecropia ficifolia,CECRFI,CECRFI,T,TC,717,2000,2018,
+Urticaceae,Cecropiaceae,Cecropia herthae,Diels,Cecropia herthae,CECRHE,CECRHE,T,TC,2226,2000,2018,
+Urticaceae,Cecropiaceae,Cecropia marginalis,Cuatrec.,Cecropia marginalis,CECRMA,CECRMA,M,TM,10,2005,2016,
+Urticaceae,Cecropiaceae,Cecropia membranacea,Trécul,Cecropia 'membra',CECRME,CECRME,M,TM,82,2000,2015,
+Urticaceae,Cecropiaceae,Cecropia sciadophylla,Mart.  ,Cecropia sciadophylla,CECRS2,CECRSC,T,TC,10202,2000,2018,
+Urticaceae,Cecropiaceae,Coussapoa asperifolia,Trécul,Coussapoa asperifolia,COU4AS,COSSAS,H,HW,10,2016,2017,
+Urticaceae,Cecropiaceae,Coussapoa orthoneura,Standl.,Coussapoa orthoneura,COU4OR,COSSOR,E,HW,828,2000,2018,
+Urticaceae,Cecropiaceae,Coussapoa sp. B,,Coussapoa sp. B,COU4_B,,,HW,2,2001,2016,
+Urticaceae,Cecropiaceae,Coussapoa sp. G,,Coussapoa sp. G,COU4_G,,,HW,1,2002,2002,
+Urticaceae,Cecropiaceae,Coussapoa 'villosa',,Coussapoa 'billosa',COU4BI,,,HW,332,2000,2018,Some specimens in the Yasuni field herbarum are annotated as Coussapoa villosa Poepp. & Endl. This is an accepted species name. Garwood is not certain that this name applies to the samples in our traps.
+Urticaceae,Cecropiaceae,Pourouma bicolor,Mart.  ,Pourouma bicolor,POURBI,POURBI,T,TC,2150,2000,2018,
+Urticaceae,Cecropiaceae,Pourouma 'deeplob',,Pourouma 'deeplob',POURDE,POURDE,T,TC,561,2000,2018,
+Urticaceae,Cecropiaceae,Pourouma guianensis,Aubl.,Pourouma 'wintergreen',POURWI,POURGU,T,TC,6,2013,2015,
+Urticaceae,Cecropiaceae,Pourouma minor,Benoist,Pourouma minor,POURMI,POURMI,T,TC,435,2000,2018,
+Urticaceae,Cecropiaceae,Pourouma tomentosa subsp. persecta,Standl. ex C.C. Berg & Heusden,Pourouma 'persecta',POURPE,POURTO,T,TC,111,2000,2017,Two subspecies of Pourouma tomentosa Mart. ex Miq. are combined into a single code (POURTO) in the plot lists of 2018 & 2014.  They were considered separate taxa in the plot lists of 2001-2010.  We use the two subspecies as they are recognized taxa.
+Urticaceae,Cecropiaceae,Pourouma tomentosa subsp. tomentosa, Mart. ex Miq.,Pourouma tomentosa,POURTO,POURTO,T,TC,787,2000,2018,Two subspecies of Pourouma tomentosa Mart. ex Miq. are combined into a single code (POURTO) in the plot lists of 2018 & 2014.  They were considered separate taxa in the plot lists of 2001-2010.  We use the two subspecies as they are recognized taxa.
+Verbenaceae,Verbenaceae,Petrea maynensis,Huber,Petrea maynensis,PETRMA,,,CW,186,2000,2017,
+Verbenaceae?,Verbenaceae,Verbenaceae sp. E,,Verbenaceae sp. E,VER_E,,,CW,1,2003,2003,Discontinued.
+Verbenaceae?,Verbenaceae,Verbenaceae sp. PA,,Verbenaceae sp. PA,VER_PA,,,,5,2012,2015,Isolated seeds. Probably an error and equal VRB_PA.  Garwood has no records of this code in collection database.
+Verbenaceae?,Verbenaceae,Verbenaceae sp. PA (plantula),,Verbenaceae sp. PA (plantula),VRB_PA,,,CW,3,2000,2016,Isolated seeds matched to seeds on a seedling provisionally identified as Verbenaceae.  Possibly equal VER_C.
+Violaceae,Violaceae,Gloeospermum equatoriense,Hekking,Gloeospermum equatoriense,GLOEEQ,GLOEEQ,U,TU,49,2000,2017,
+Violaceae,Violaceae,Gloeospermum longifolium,Hekking,Gloeospermum longifolium,GLOELO,GLOELO,U,TU,15,2009,2017,
+Violaceae,Violaceae,Leonia crassa,L.B. Sm. & Á. Fernández,Leonia crassa,LEONCR,LEONCR,M,TM,16,2001,2015,
+Violaceae,Violaceae,Leonia glycycarpa var. glycycarpa,Ruiz & Pav.,Leonia glycycarpa,LEONGL,LEONGL,M,TM,144,2000,2018,Two varieties of Leonia glycycarpa Ruiz & Pav. (var. glycycarpa Ruiz & Pav. and var. racemosa (Mart.) L.B. Sm. & Á. Fernández) are treated as one taxon in the plot lists of 2014-2018.  The two varitieis were distinguished in the plot lists of 2009-2010. Both varieties are known in region.  The traps contain only var. glycyarpa.
+Violaceae,Violaceae,Leonia occidentalis,Cuatrec. ex L.B. Sm. & Á. Fernández,Leonia occidentalis,LEONOC,LEONOC,U,TU,3,2002,2005,
+Violaceae,Violaceae,Rinorea apiculata,Hekking,Rinorea apiculata,RINOAP,RINOAP,M,TM,351,2000,2017,
+Violaceae,Violaceae,Rinorea lindeniana,(Tul.) Kuntze,Rinorea lindeniana,RINOLI,RINOLI,U,TU,1538,2000,2018,
+Violaceae,Violaceae,Rinorea viridifolia,Rusby,Rinorea viridifolia,RINOVI,RINOVI,U,TU,1543,2000,2018,
+Vitaceae,Vitaceae,Cissus 'biformifolia',,Cissus 'viformifolia',CIS2VI,,,CW,42,2007,2017,Identified by someone unknown as Cissus biformifolia Standl. and recorded as the Spanish variant 'viformifolia' by the field team.  Quotes are used here because that species is primarily Central American and not known from or rare in Ecuador.
+Vitaceae,Vitaceae,Cissus cf. desconingsii ,Lombardi,Cissus sp. J,CIS2_J,,,CW,306,2004,2018,Adult voucher awaiting ID confirmation.
+Vitaceae,Vitaceae,Cissus sp. A,,Cissus sp. A,CIS2_A,,,CW,1153,2000,2018,
+Vitaceae,Vitaceae,Cissus ulmifolia,(Baker) Planch.,Cissus microcarpa,CIS2MI,,,CW,35,2001,2016,
+Vochysiaceae,Vochysiaceae,Erisma uncinatum,Warm.,Erisma uncinatum,ERISUN,ERISUN,T,TC,6,2004,2016,
+Vochysiaceae,Vochysiaceae,Qualea paraensis,Ducke,Qualea paraensis,QUALPA,QUALPA,T,TC,674,2000,2016,QUALPA in trap 118 might be VOCHBR.
+Vochysiaceae,Vochysiaceae,Vochysia braceliniae,Standl.,Vochysia braceliniae,VOCHBR,VOCHBR,T,TC,112,2007,2012,
+,,,,,,,,,,,,
+,,(no identificado SSP0510),,(unknown SSP0510),U510,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0512),,(unknown SSP0512),U512,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP0513),,(unknown SSP0513),U513,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0517),,(unknown SSP0517),U517,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0523),,(unknown SSP0523),U523,,,-,14,2000,2001,Discontinued.
+,,(no identificado SSP0524),,(unknown SSP0524),U524,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0526),,(unknown SSP0526),U526,,,-,2,2000,2001,Discontinued.
+,,(no identificado SSP0529),,(unknown SSP0529),U529,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0541),,(unknown SSP0541),U541,,,-,3,2000,2000,Discontinued.
+,,(no identificado SSP0561),,(unknown SSP0561),U561,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0572),,(unknown SSP0572),U572,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0573),,(unknown SSP0573),U573,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0596),,(unknown SSP0596),U596,,,-,5,2000,2000,Discontinued.
+,,(no identificado SSP0598),,(unknown SSP0598),U598,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0613),,(unknown SSP0613),U613,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0615),,(unknown SSP0615),U615,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP0626),,(unknown SSP0626),U626,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0629),,(unknown SSP0629),U629,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0633),,(unknown SSP0633),U633,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0644),,(unknown SSP0644),U644,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0647),,(unknown SSP0647),U647,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0653),,(unknown SSP0653),U653,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP0660),,(unknown SSP0660),U660,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0661),,(unknown SSP0661),U661,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0666),,(unknown SSP0666),U666,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0669),,(unknown SSP0669),U669,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0673),,(unknown SSP0673),U673,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0680),,(unknown SSP0680),U680,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0682),,(unknown SSP0682),U682,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0685),,(unknown SSP0685),U685,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0686),,(unknown SSP0686),U686,,,-,5,2000,2000,Discontinued.
+,,(no identificado SSP0692),,(unknown SSP0692),U692,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0697),,(unknown SSP0697),U697,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0704),,(unknown SSP0704),U704,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0707),,(unknown SSP0707),U707,,,-,2,2000,2000,Disconintued. Possibly equal PROTNO. Male flowers only.
+,,(no identificado SSP0711),,(unknown SSP0711),U711,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0728),,(unknown SSP0728),U728,,,-,3,2000,2000,Discontinued.
+,,(no identificado SSP0738),,(unknown SSP0738),U738,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0741),,(unknown SSP0741),U741,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0750),,(unknown SSP0750),U750,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0767),,(unknown SSP0767),U767,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0783),,(unknown SSP0783),U783,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0789),,(unknown SSP0789),U789,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0795),,(unknown SSP0795),U795,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0798),,(unknown SSP0798),U798,,,-,3,2000,2000,Discontinued.
+,,(no identificado SSP0799),,(unknown SSP0799),U799,,,-,6,2000,2001,Discontinued.  Possibly equal PROTNO.
+,,(no identificado SSP0900),,(unknown SSP0900),U900,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0906),,(unknown SP0906),U906,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0915),,(unknown SSP0915),U915,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0918),,(unknown SSP0918),U918,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0921),,(unknown SSP0921),U921,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0934),,(unknown SSP0934),U934,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0942),,(unknown SSP0942),U942,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0967),,(unknown SSP0967),U967,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0968),,(unknown SSP0968),U968,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0971),,(unknown SSP0971),U971,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0973),,(unknown SSP0973),U973,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0976),,(unknown SSP0976),U976,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP0977),,(unknown SSP0977),U977,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1028),,(unknown SSP1028),U1028,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1033),,(unknown SSP1033),U1033,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1058),,(unknown SSP1058),U1058,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1081),,(unknown SSP1081),U1081,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1084),,(unknown SSP1084),U1084,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1098),,(unknown SSP1098),U1098,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1101),,(unknown SSP1101),U1101,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1109),,(unknown SSP1109),U1109,,,,1,2000,2000,Discontinued.
+,,(no identificado SSP1115),,(unknown SSP1115),U1115,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1133),,(unknown SSP1133),U1133,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1142),,(unknown SSP1142),U1142,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1148),,(unknown SSP1148),U1148,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1161),,(unknown SSP1161),U1161,,,-,7,2000,2001,Discontinued.
+,,(no identificado SSP1176),,(unknown SSP1176),U1176,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1192),,(unknown  SSP1192),U1192,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1202 o 1278),,(unknown SSP1202 or 1278),U1202,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP1206),,(unknown SSP1206),U1206,,,-,3,2000,2000,Discontinued.
+,,(no identificado SSP1208),,(unknown SSP1208),U1208,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1217),,(unknown SSP1217),U1217,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP1218),,(unknown SSP1218),U1218,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP1228),,(unknown SSP1228),U1228,,,-,4,2000,2001,Discontinued.
+,,(no identificado SSP1235),,(unknown SSP1235),U1235,,,-,5,2000,2000,Discontinued.
+,,(no identificado SSP1236),,(unknown SSP1236),U1236,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1237),,(unknown SSP1237),U1237,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1238),,(unknown SSP1238),U1238,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1247),,(unknown SSP1247),U1247,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1260),,(unknown SSP1260),U1260,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1264),,(unknown SSP1264),U1264,,,-,5,2000,2000,Discontinued.
+,,(no identificado SSP1280),,(unknown SSP1280),U1280,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1287),,(unknown SSP1287),U1287,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1310),,(unknown SSP1310),U1310,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP1311),,(unknown SSP1311),U1311,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1312),,(unknown SSP1312),U1312,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1319),,(unknown SSP1319),U1319,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP1326),,(unknown SSP1326),U1326,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1329),,(unknown SSP1329),U1329,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1331),,(unknown SSP1331),U1331,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1333),,(unknown SSP1333),U1333,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1334),,(unknown SSP1334),U1334,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP1336),,(unknown SSP1336),U1336,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1337),,(unknown SSP1337),U1337,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1338),,(unknown SSP1338),U1338,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1358),,(unknown SSP1358),U1358,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1364),,(unknown SSP1364),U1364,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1368),,(unknown SSP1368),U1368,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1371),,(unknown SSP1371),U1371,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1392),,(unknown SSP1392),U1392,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1399),,(unknown SSP1399),U1399,,,-,4,2000,2000,Discontinued.
+,,(no identificado SSP1402),,(unknown SSP1402),U1402,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1405),,(unknown SSP1405),U1405,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1413),,(unknown SSP1413),U1413,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP1414),,(unknown SSP1414),U1414,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1416),,(unknown SSP1416),U1416,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1423),,(unknown SSP1423),U1423,,,-,3,2000,2000,Discontinued.
+,,(no identificado SSP1424),,(unknown SSP1424),U1424,,,-,3,2000,2000,Discontinued.
+,,(no identificado SSP1444),,(unknown SSP1444),U1444,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1448),,(unknown SSP1448),U1448,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1485),,(unknown SSP1485),U1485,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1489),,(unknown SSP1489),U1489,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1495),,(unknown SSP1495),U1495,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1498),,(unknown SSP1498),U1498,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1499),,(unknown SSP1499),U1499,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1503),,(unknown SSP1503),U1503,,,-,2,2000,2001,Discontinued.
+,,(no identificado SSP1507),,(unknown SSP1507),U1507,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1511),,(unknown SSP1511),U1511,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1513),,(unknown SSP1513),U1513,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1521),,(unknown SSP1521),U1521,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1523),,(unknown SSP1523),U1523,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1524),,(unknown SSP1524),U1524,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1525),,(unknown SSP1525),U1525,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1529),,(unknown SSP1529),U1529,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1535),,(unknown SSP1535),U1535,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1542),,(unknown SSP1542),U1542,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP1560),,(unknown SSP1560),U1560,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1561),,(unknown SSP1561),U1561,,,-,5,2000,2000,Discontinued.
+,,(no identificado SSP1577),,(unknown SSP1577),U1577,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1594),,(unknown SSP1594),U1594,,,-,4,2000,2002,Discontinued.
+,,(no identificado SSP1595),,(unknown SSP1595),U1595,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1596),,(unknown SSP1596),U1596,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP1620),,(unknown SSP1620),U1620,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1627),,(unknown SSP1627),U1627,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP1628),,(unknown SSP1628),U1628,,,-,3,2000,2000,Discontinued.
+,,(no identificado SSP1629),,(unknown SSP1629),U1629,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1634),,(unknown SSP1634),U1634,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1635),,(unknown SSP1635),U1635,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1636),,(unknown  SSP1636),U1636,,,-,4,2000,2001,Discontinued.
+,,(no identificado SSP1641),,(unknown SSP1641),U1641,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1645),,(unknown SSP1645),U1645,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1647),,(unknown SSP1647),U1647,,,-,3,2000,2000,Discontinued.
+,,(no identificado SSP1657),,(unknown SSP1657),U1657,,,-,7,2001,2001,Discontinued.
+,,(no identificado SSP1668),,(unknown SSP1668),U1668,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1672),,(unknown SSP1672),U1672,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1683),,(unknown SSP1683),U1683,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1686),,(unknown SSP1686),U1686,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1687),,(unknown SSP1687),U1687,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1690),,(unknown SSP1690),U1690,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1703),,(unknown SSP1703),U1703,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1712),,(unknown SSP1712),U1712,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1714),,(unknown SSP1714),U1714,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1715),,(unknown  SSP1715),U1715,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1716),,(unknown SSP1716),U1716,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP1727),,(unknown SSP1727),U1727,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1742),,(unknown SSP1742),U1742,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1746),,(unknown SSP1746),U1746,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1756),,(unknown SSP1756),U1756,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1783),,(unknown SSP1783),U1783,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1810),,(unknown SSP1810),U1810,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1815),,(unknown SSP1815),U1815,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1826),,(unknown SSP1826),U1826,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1835),,(unknown SSP1835),U1835,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP1863),,(unknown SSP1863),U1863,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1865),,(unknown SSP1865),U1865,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1874),,(unknown SSP1874),U1874,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1876),,(unknown SSP1876),U1876,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1892),,(unknown SSP1892),U1892,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1895),,(unknown SSP1895),U1895,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1896),,(unknown SSP1896),U1896,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1900),,(unknown SSP1900),U1900,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP1903),,(unknown SSP1903),U1903,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1907),,(unknown SSP1907),U1907,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1924),,(unknown SSP1924),U1924,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1934),,(unknown SSP1934),U1934,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1936),,(unknown SSP1936),U1936,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP1982),,(unknown SSP1982),U1982,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2004),,(unknown SSP2004),U2004,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2005),,(unknown SSP2005),U2005,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP2006),,(unknown SSP2006),U2006,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP2015),,(unknown SSP2015),U2015,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP2020),,(unknown SSP2020),U2020,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2061),,(unknown SSP2061),U2061,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2063),,(unknown SSP2063),U2063,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2064),,(unknown SSP2064),U2064,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2069),,(unknown SSP2069),U2069,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2070),,(unknown SSP2070),U2070,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2078),,(unknown SSP2078),U2078,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2083),,(unknown SSP2083),U2083,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2090),,(unknown SSP2090),U2090,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2105),,(unknown SSP2105),U2105,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2113),,(unknown SSP2113),U2113,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2117),,(unknown SSP2117),U2117,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2119),,(unknown SSP2119),U2119,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2123),,(unknown SSP2123),U2123,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2124),,(unknown SSP2124),U2124,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2127),,(unknown SSP2127),U2127,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2133),,(unknown SSP2133),U2133,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2144),,(unknown SSP2144),U2144,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2146),,(unknown SSP2146),U2146,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2147),,(unknown SSP2147),U2147,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2152),,(unknown SSP2152),U2152,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2156),,(unknown SSP2156),U2156,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP2159),,(unknown SSP2159),U2159,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2160),,(unknown SSP2160),U2160,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2161),,(unknown SSP2161),U2161,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2163),,(unknown SSP2163),U2163,,,-,3,2000,2000,Discontinued.
+,,(no identificado SSP2168),,(unknown SSP2168),U2168,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2173),,(unknown SSP2173),U2173,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2181),,(unknown SSP2181),U2181,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2184),,(unknown  SSP2184),U2184,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2195),,(unknown SSP2195),U2195,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP2196),,(unknown SSP2196),U2196,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2217),,(unknown SSP2217),U2217,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2221),,(unknown SSP2221),U2221,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2223),,(unknown SSP2223),U2223,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2224),,(unknown SSP2224),U2224,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2225),,(unknown SSP2225),U2225,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2231),,(unknown SSP2231),U2231,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2235),,(unknown SSP2235),U2235,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2242),,(unknown SSP2242),U2242,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2253),,(unknown SSP2253),U2253,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2259),,(unknown SSP2259),U2259,,,-,2,2000,2001,Discontinued.
+,,(no identificado SSP2269),,(unknown SSP2269),U2269,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2270),,(unknown SSP2270),U2270,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2279),,(unknown SSP2279),U2279,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2298),,(unknown SSP2298),U2298,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2304),,(unknown SSP2304),U2304,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP2306),,(unknown SSP2306),U2306,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2312),,(unknown SSP2312),U2312,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2329),,(unknown SSP2329),U2329,,,-,3,2000,2000,Discontinued.
+,,(no identificado SSP2331),,(unknown SSP2331),U2331,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2332),,(unknown SSP2332),U2332,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2333),,(unknown SSP2333),U2333,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2340),,(unknown SSP2340),U2340,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2392),,(unknown SSP2392),U2392,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2406),,(unknown SSP2406),U2406,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2416),,(unknown SSP2416),U2416,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2430),,(unknown SSP2430),U2430,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2439),,(unknown SSP2439),U2439,,,-,3,2000,2000,Discontinued.
+,,(no identificado SSP2451),,(unknown SSP2451),U2451,,,-,4,2000,2000,Discontinued.
+,,(no identificado SSP2453),,(unknown SSP2453),U2453,,,-,2,2000,2001,Discontinued.
+,,(no identificado SSP2456),,(unknown SSP2456),U2456,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2464),,(unknown SSP2464),U2464,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2485),,(unknown SSP2485),U2485,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2486),,(unknown SSP2486),U2486,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2519),,(unknown SSP2519),U2519,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2524),,(unknown SSP2524),U2524,,,-,2,2000,2000,Discontinued.
+,,(no identificado SSP2535),,(unknown SSP2535),U2535,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2547),,(unknown SSP2547),U2547,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2558),,(unknown SSP2558),U2558,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2576),,(unknown SSP2576),U2576,,,-,3,2000,2000,Discontinued.
+,,(no identificado SSP2589),,((unknown SSP2589),U2589,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2590),,(unknown SP2590),U2590,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2602),,(unknown SSP2602),U2602,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2617),,(unknown SSP2617),U2617,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2627),,(unknown SSP2627),U2627,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2631),,(unknown SSP2631),U2631,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2658),,(unknown SSP2658),U2658,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2659),,(unknown SSP2659),U2659,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2666),,(unknown SSP2666),U2666,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2675),,(unknown SSP2675),U2675,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2682),,(unknown SSP2682),U2682,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2690),,(unknown SSP2690),U2690,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2694),,(unknown SSP2694),U2694,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2733),,(unknown SSP2733),U2733,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2740),,(unknown SSP2740),U2740,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2761),,(unknown SSP2761),U2761,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2768),,(unknown SSP2768),U2768,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2775),,(unknown SSP2775),U2775,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2778),,(unknown SSP2778),U2778,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP2811),,(unknown SSP2811),U2811,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP2826),,(unknown SSP2826),U2826,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP2828),,(unknown SSP2828),U2828,,,-,2,2001,2001,Discontinued.
+,,(no identificado SSP2835),,(unknown SSP2835),U2835,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP2841),,(unknown SSP2841),U2841,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP2883),,(unknown SSP2883),U2883,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP2886),,(unknown SSP2886),U2886,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP2893),,(unknown SSP2893),U2893,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP2894),,(unknown SSP2894),U2894,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP2898),,(unknown SSP2898),U2898,,,-,2,2001,2001,Discontinued.
+,,(no identificado SSP2905),,(unknown SSP2905),U2905,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP2917),,(unknown SSP2917),U2917,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP2929),,(unknown SSP2929),U2929,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP2953),,(unknown SSP2953),U2953,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP2985),,(unknown SSP2985),U2985,,,-,2,2001,2001,Discontinued.
+,,(no identificado SSP2987),,(unknown SSP2987),U2987,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP2991),,(unknown SSP2991),U2991,,,-,2,2001,2001,Discontinued.
+,,(no identificado SSP2994),,(unknown SSP2994),U2994,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3005),,(unknown SSP3005),U3005,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3008),,(unknown SSP3008),U3008,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3009),,(unknown SSP3009),U3009,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3021),,(unknown SSP3021),U3021,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3031),,(unknown SSP3031),U3031,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3044),,(unknown SSP3044),U3044,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3053),,(unknown SSP3053),U3053,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3104),,(unknown SSP3104),U3104,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3111),,(unknown SSP3111),U3111,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3122),,(unknown SSP3122),U3122,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3138),,(unknown SSP3138),U3138,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3169),,(unknown SSP3169),U3169,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3789),,(unknown SSP3789),U3789,,,-,2,2001,2001,Discontinued.
+,,(no identificado SSP3792),,(unknown SSP3792),U3792,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3795),,(unknown SSP3795),U3795,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3838),,(unknown SSP3838),U3838,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3871),,(unknown SSP3871),U3871,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3936),,(unknown SSP3936),U3936,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP3995),,(unknown SSP3995),U3995,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP5008),,(unknown  SSP5008),U5008,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP5019),,(unknown SSP5019),U5019,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP5029),,(unknown SSP5029),U5029,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP5067),,(unknown SSP5067),U5067,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP5100),,(unknown SSP5100),U5100,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP5127),,(unknown SSP5127),U5127,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP5136),,(unknown SSP5136),U5136,,,-,3,2001,2004,Discontinued.
+,,(no identificado SSP5211),,(unknown SSP5211),U5211,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP5244),,(unknown SSP5244),U5244,,,-,8,2001,2003,Discontinued.
+,,(no identificado SSP5261),,(unknown SSP5261),U5261,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP5277),,(unknown SSP5277),U5277,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP5289),,(unknown SSP5289),U5289,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP5297),,(unknown SSP5297),U5297,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP5299),,(unknown SSP5299),U5299,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP5335),,(unknown SSP5335),U5335,,,-,1,2001,2001,Discontinued.
+,,(no identificado SSP5341),,(unknown SSP5341),U5341,,,-,4,2002,2004,Discontinued.
+,,(no identificado SSP5343),,(unknown SSP5343),U5343,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5345),,(unknown SSP5345),U5345,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5352),,(unknown SSP5352),U5352,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5372),,(unknown SSP5372),U5372,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5376),,(unknown SSP5376),U5376,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5399),,(unknown SSP5399),U5399,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5503),,(unknown SSP5503),U5503,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5522),,(unknown SSP5522),U5522,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5531),,(unknown SSP5531),U5531,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5535),,(unknown SSP5535),U5535,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5559),,(unknown SSP5559),U5559,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5572),,(unknown SSP5572),U5572,,,-,2,2002,2002,Discontinued.
+,,(no identificado SSP5578),,(unknown SSP5578),U5578,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5579),,(unknown SSP5579),U5579,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5589),,(unknown SSP5589),U5589,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5593),,(unknown SSP5593),U5593,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5595),,(unknown SSP5595),U5595,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5632),,(unknown SSP5632),U5632,,,-,2,2002,2002,Discontinued.
+,,(no identificado SSP5640),,(unknown SSP5640),U5640,,,-,2,2002,2002,Discontinued.
+,,(no identificado SSP5641),,(unknown SSP5641),U5641,,,-,4,2003,2003,Discontinued.
+,,(no identificado SSP5643),,(unknown SSP5643),U5643,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5646),,(unknown SSP5646),U5646,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5661),,(unknown SSP5661),U5661,,,-,1,2002,2002,Discontinued.
+,,(no identificado SSP5673),,(unknown SSP5673),U5673,,,-,1,2003,2003,Discontinued.
+,,(no identificado SSP5683),,(unknown SSP5683),U5683,,,-,1,2003,2003,Discontinued.
+,,(no identificado SSP5684),,(unknown SSP5684),U5684,,,-,1,2003,2003,Discontinued.
+,,(no identificado SSP5690),,(unknown SSP5690),U5690,,,-,1,2003,2003,Discontinued.
+,,(no identificado SSP5694),,(unknown SSP5694),U5694,,,-,8,2003,2005,Discontinued.
+,,(no identificado SSP5698),,(unknown SSP5698),U5698,,,-,1,2003,2003,Discontinued.
+,,(no identificado SSP5702),,(unknown SSP5702),U5702,,,-,1,2003,2003,Discontinued.
+,,(no identificado SSP5715),,(unknown SSP5715),U5715,,,-,2,2003,2003,Discontinued.
+,,(no identificado SSP5720),,(unknown SSP5720),U5720,,,-,2,2003,2012,Discontinued.
+,,(no identificado SSP5740),,(unknown SSP5740),U5740,,,-,2,2003,2005,Discontinued.
+,,(no identificado SSP5743),,(unknown SSP5743),U5743,,,-,1,2003,2003,Discontinued.
+,,(no identificado SSP5826),,(unknown SSP5826),U5826,,,-,6,2005,2006,Discontinued.
+,,(no identificado SSP5827),,(unknown SSP5827),U5827,,,-,1,2005,2005,Discontinued.
+,,(no identificado SSP5834),,(unknown SSP5834),U5834,,,-,4,2005,2005,Discontinued.
+,,(no identificado SSP5838),,(unknown SSP5838),U5838,,,-,1,2005,2005,Discontinued.
+,,(no identificado SSP5839),,(unknown SSP5839),U5839,,,-,2,2005,2005,Discontinued.
+,,(no identificado SSP5853),,(unknown SSP5853),U5853,,,-,1,2006,2006,Discontinued.
+,,(no identificado SSP5861),,(unknown SSP5861),U5861,,,-,1,2006,2006,Discontinued.
+,,(no identificado SSP5935),,(unknown SSP5935),U5935,,,-,1,2008,2008,Discontinued.
+,,(no identificado SSP5939),,(unknown SSP5939),U5939,,,-,1,2008,2008,Discontinued.
+,,Monocot sp. A,,Monocot sp. A,MON_A,,,-,1,2000,2000,Discontinued.
+,,(no identificado SSP5024),,(unknown SSP5024),U5024,,,-,1,2001,2001,Discontinued.

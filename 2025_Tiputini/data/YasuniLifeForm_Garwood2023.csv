@@ -1,0 +1,24 @@
+﻿Life Form,Forma de vida,Forma_2015
+Climber -  liana (woody*),Trepador - liana (leñoso*),CW
+Climber -  liana (woody*)/large shrub,Trepador - liana (leñoso*)/arbusto grande,CS
+Climber -  liana (woody*)/understory tree,Trepador - liana (leñoso*)/arbol d e sotobosque,CU
+Climber -  vine (herbaceous),Trepador - bejuco (herbáceo),CH
+Climber - unknown habit,Trepador - desconocido,C?
+Epiphyte (herbaceous),Epifito (herbáceo),EH
+Epiphyte (woody),Epifito (leñoso),EW
+Epiphyte  parasitic shrubs,Epifito  arbusto parásito,EP
+Hemi-epiphyte (herbaceous),Hemi-epifito (herbáceo),HH
+Hemi-epiphyte (herbaceous)/vine,Hemi-epifito (herbáceo)/bejuco,HV
+Hemi-epiphyte (woody),Hemi-epifito (leñoso),HW
+Hemi-epiphyte (woody)/canopy tree,Hemi-epifito (leñoso)/Árbol del dosel,HT
+Hemi-epiphyte (woody)/liana,Hemi-epifito (leñoso)/liana,HL
+Herb (terestrial),Hierba (terrestre),XT
+Shrub  large (=> 1 cm dbh),Arbusto  grande (=> 1 cm dbh),SL
+Shrub  small  (< 1 cm dbh),Arbusto  pequeno (< 1 cm dbh),SS
+Shrub  unknown size,Arbusto  tamano desconcido,S?
+Tree  canopy,Árbol del dosel,TC
+Tree  emergent,Árbol emergente,TE
+Tree  medium,Árbol  mediano,TM
+Tree  understory,Árbol de sotobosque,TU
+Tree  unknown size (or shrub),Árbol  tamano desconcido (o arbusto),T?
+Unknown,Desconocido,-
