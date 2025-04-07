@@ -10,8 +10,15 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-LABELBOX_API_KEY = os.getenv("LABELBOX_API_KEY")
+# Get environment variables
 ALLIANCECAN_URL = os.getenv("ALLIANCECAN_URL")
+LABELBOX_API_KEY = os.getenv("LABELBOX_API_KEY")
+
+# Verify environment variables are set
+if not ALLIANCECAN_URL:
+    raise ValueError("ALLIANCECAN_URL environment variable is not set")
+if not LABELBOX_API_KEY:
+    raise ValueError("LABELBOX_API_KEY environment variable is not set")
 
 client = lb.Client(api_key=LABELBOX_API_KEY)
 
