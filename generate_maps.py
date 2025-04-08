@@ -119,9 +119,10 @@ def get_bounding_box_from_raster(raster_path):
             # Create transformer from raster CRS to WGS84
             transformer = Transformer.from_crs(src.crs, "EPSG:4326", always_xy=True)
             
-            # Transform southwest corner
+            # transform() needs to be called with xx, yy
+            # Transform south-west
             lon_min, lat_min = transformer.transform(bounds.left, bounds.bottom)
-            # Transform northeast corner
+            # Transform north-east
             lon_max, lat_max = transformer.transform(bounds.right, bounds.top)
             
             return {
