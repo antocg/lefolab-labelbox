@@ -51,16 +51,16 @@ def search_latest_mapping(year, mission_id):
     # Get all subdirectories in the folder that match the keyword
     matching_dirs = [
         d for d in os.listdir(folder_path)
-        if os.path.isdir(os.path.join(folder_path, d)) and keyword.lower() in d.lower()
+        if os.path.isdir(os.path.join(folder_path, d)) and f"_{keyword}_" in d
     ]
 
     # If no matching directories found, raise error
     if not matching_dirs:
         raise ValueError(f"No matching collection found for mission_id: {mission_id}")
 
-    # Sort directories by creation time (most recent first)
+    # Sort directories by date (most recent first)
     matching_dirs.sort(
-        key=lambda x: os.path.getctime(os.path.join(folder_path, x)),
+        key=lambda x: x[:8],  # Extract YYYYMMDD from directory name
         reverse=True
     )
 
