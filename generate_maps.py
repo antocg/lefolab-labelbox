@@ -18,7 +18,7 @@ load_dotenv()
 
 # Get environment variables
 ALLIANCECAN_URL = os.getenv("ALLIANCECAN_URL")
-BASE_PATH_CONRAD = os.getenv("BASE_PATH")
+BASE_PATH_CONRAD = os.getenv("BASE_PATH_CONRAD")
 
 # Verify environment variables are set
 if not ALLIANCECAN_URL:
@@ -28,7 +28,7 @@ if not BASE_PATH_CONRAD:
 
 def search_latest_mapping(year, mission_id):
     """
-    Search for the most recent mapping mission in /mnt/nfs/conrad/labolaliberte_data/metashape/YYYY/ by zoom mission.
+    Search for the most recent mapping mission in BASE_PATH_CONRAD/YYYY/ by zoom mission.
 
     Args:
         year (str): The year of the mapping mission.
@@ -312,15 +312,15 @@ def main(mission_id, year, dtm_path, output_dir):
         print(f"No mapping_mission found for zoom mission: {mission_id}")
         return
 
-    base_path = f"/mnt/nfs/conrad/labolaliberte_data/metashape/2024/{mapping_mission}/{mapping_mission}"
+    basename_path = f"{BASE_PATH_CONRAD}/{year}/{mapping_mission}/{mapping_mission}"
 
     # Define paths to DSM files
-    dsm_cog_path = f"{base_path}_dsm.cog.tif"
-    dsm_path = f"{base_path}_dsm.tif"
+    dsm_cog_path = f"{basename_path}_dsm.cog.tif"
+    dsm_path = f"{basename_path}_dsm.tif"
 
     # Define paths to RGB files
-    rgb_cog_path = f"{base_path}_rgb.cog.tif"
-    rgb_path = f"{base_path}_rgb.tif"
+    rgb_cog_path = f"{basename_path}_rgb.cog.tif"
+    rgb_path = f"{basename_path}_rgb.tif"
 
     # Check if COG version exists, otherwise use regular version
     if os.path.exists(dsm_cog_path):
