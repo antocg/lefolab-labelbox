@@ -143,5 +143,5 @@ labelbox_tbs_checklist <- bind_rows(yasuni_splist_withgbif,
                 ~ifelse(is.na(.) | . == "NA", "", .))) %>% 
   arrange(taxon_code)
 
-write.csv(labelbox_bci_checklist, "data/labelbox_tbs_completelist.csv",
+write.csv(labelbox_tbs_checklist, "data/labelbox_tbs_completelist.csv",
           fileEncoding = 'latin1', row.names = F, quote = T)
