@@ -30,7 +30,21 @@ yasuni_species_cleaned <- yasuni_species %>%
     TRUE ~ NombreMemoria
     )
   )
-  
+
+# Add missing species
+missing_species <- data.frame(
+  Familia = c("Fabaceae", "Bignoniaceae", "Bignoniaceae", "Salicaceae",
+              "Urticaceae", "Urticaceae", "Moraceae", "Fabaceae",
+              "Cordiaceae", "Fabaceae"),
+  NombreActual = c("Albizia niopoides", "Tabebuia ochracea", "Tabebuia serratifolia", "Banara nitida",
+                   "Cecropia putumayonis", "Cecropia latiloba", "Ficus insipida", "Inga microcoma",
+                   "Cordia alliodora", "Stryphnodendron porcatum"),
+  stringsAsFactors = FALSE
+) %>% 
+  mutate(NombreMemoria = NombreActual)
+
+# Append the manual species to the cleaned dataset
+yasuni_species_cleaned <- bind_rows(yasuni_species_cleaned, missing_species)
 
 yasuni_species_togbif <- yasuni_species_cleaned %>% 
   select(NombreActual)
