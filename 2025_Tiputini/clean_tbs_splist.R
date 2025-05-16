@@ -152,7 +152,7 @@ generalist_withgbif <- generalist_gbif %>%
 labelbox_tbs_checklist <- bind_rows(yasuni_splist_withgbif,
                                     familieslist_withgbif,
                                     generalist_withgbif) %>% 
-  select(taxon_code, gbif_accepted_taxon_id, gbif_accepted_scientific_name, Forma_2015) %>% 
+  select(taxon_code, gbif_accepted_taxon_id, gbif_accepted_scientific_name, Forma_2015, FormaPBDY_2018) %>% 
   mutate(across(everything(), 
                 ~ifelse(is.na(.) | . == "NA", "", .))) %>% 
   arrange(taxon_code)
