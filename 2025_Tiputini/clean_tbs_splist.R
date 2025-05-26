@@ -35,10 +35,12 @@ yasuni_species_cleaned <- yasuni_species %>%
 missing_species <- data.frame(
   Familia = c("Fabaceae", "Bignoniaceae", "Bignoniaceae", "Salicaceae",
               "Urticaceae", "Urticaceae", "Moraceae", "Fabaceae",
-              "Cordiaceae", "Fabaceae"),
+              "Cordiaceae", "Fabaceae", "Fabaceae", "Fabaceae",
+              "Euphorbiaceae"),
   NombreActual = c("Albizia niopoides", "Tabebuia ochracea", "Tabebuia serratifolia", "Banara nitida",
                    "Cecropia putumayonis", "Cecropia latiloba", "Ficus insipida", "Inga microcoma",
-                   "Cordia alliodora", "Stryphnodendron porcatum"),
+                   "Cordia alliodora", "Stryphnodendron porcatum", "Inga velutina", "Lecointea peruviana",
+                   "Glycydendron amazonicum"),
   stringsAsFactors = FALSE
 ) %>% 
   mutate(NombreMemoria = NombreActual)
