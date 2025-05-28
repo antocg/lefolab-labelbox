@@ -361,6 +361,29 @@ def create_map(lat, lon, png_imagery_url, bbox, output_path, dsm_path=None, dtm_
     # Add DTM overlay if coordinates are within DTM bounds
     if use_dtm_overlay:
         try:
+            # Construct DTM PNG URL from the png_imagery_url base
+            base_url = '/'.join(png_imagery_url.split('/')[:-1]) 
+            dtm_filename = os.path.splitext(os.path.basename(dtm_path))[0]
+            dtm_png_url = f"{base_url}/{dtm_filename}.overview.png"
+
+            # Get DTM bounds
+            dtm_bbox = get_bounding_box_from_raster(dtm_path)
+            if not dtm_bbox:
+                raise ValueError("Could not get DTM bounds")
+
+            dtm_bounds = [
+                [dtm_bbox['south_min_lat_y_deg'], dtm_bbox['west_min_lon_x_deg']],
+                [dtm_bbox['north_max_lat_y_deg'], dtm_bbox['east_max_lon_x_deg']]
+            ]
+
+            # Add DTM overlay
+            folium.raster_layers.ImageOverlay(
+                image=dtm_png_url,
+                bounds=dtm_bounds,
+                opacity=0.7, 
+                name='DTM'
+            ).add_to(m)
+
             dem = rioxarray.open_rasterio(dtm_path)
             if 'x' in dem.dims and 'y' in dem.dims:
                 dem = dem.rename({'x': 'longitude', 'y': 'latitude'})
@@ -368,58 +391,19 @@ def create_map(lat, lon, png_imagery_url, bbox, output_path, dsm_path=None, dtm_
                 raise ValueError(f"Unexpected dimension names in DTM file: {dem.dims}")
             arr_dem = dem.values
 
-            clat = dem.latitude.values.mean()
-            clon = dem.longitude.values.mean()
-
-            mlat = dem.latitude.values.min()
-            mlon = dem.longitude.values.min()
-
-            xlat = dem.latitude.values.max()
-            xlon = dem.longitude.values.max()
-
-            with rasterio.open(dtm_path) as dtm:
-                dtm_crs = dtm.crs
-
-            transformer = Transformer.from_crs(dtm_crs, "EPSG:4326", always_xy=True)
-
-            clon, clat = transformer.transform(clon, clat)
-            mlon, mlat = transformer.transform(mlon, mlat)
-            xlon, xlat = transformer.transform(xlon, xlat)
-
-            bounds = [[mlat, mlon], [xlat, xlon]]
-
-            def colorize(array, cmap='terrain'):
-                array = array.astype(np.float64)
-                valid_mask = ~np.isnan(array) & ~np.isinf(array)
-                if valid_mask.any():
-                    vmin = array[valid_mask].min()
-                    vmax = array[valid_mask].max()
-                    # Avoid division by zero
-                    if vmax > vmin:
-                        normed_data = (array - vmin) / (vmax - vmin)
-                    else:
-                        normed_data = np.zeros_like(array)
-                else:
-                    normed_data = np.zeros_like(array)
-    
-                cm = colormaps.get_cmap(cmap)
-                return cm(normed_data)  
-
             if dem.rio.nodata is not None:
                 masked = np.ma.masked_equal(arr_dem[0], dem.rio.nodata)
             else:
                 raise ValueError("NoData value is not defined in the raster file.")
-            colored_data = colorize(masked, cmap='terrain')
 
             # Compute min and max for color scale (based only on valid data)
             valid_data = masked.compressed()
             vmin = valid_data.min()
             vmax = valid_data.max()
 
-            mpl_cmap = colormaps.get_cmap('terrain')
-            norm = colors.Normalize(vmin=vmin, vmax=vmax)
-
             # Create a branca colormap from matplotlib colormap
+            mpl_cmap = colormaps.get_cmap('turbo')
+            norm = colors.Normalize(vmin=vmin, vmax=vmax)
             colormap = bcm.StepColormap(
                 colors=[mpl_cmap(norm(v)) for v in np.linspace(vmin, vmax, 10)],
                 vmin=vmin, vmax=vmax,
@@ -445,10 +429,6 @@ def create_map(lat, lon, png_imagery_url, bbox, output_path, dsm_path=None, dtm_
 
             m.add_child(colormap)
             m.get_root().html.add_child(Element(custom_css))
-
-            folium.raster_layers.ImageOverlay(colored_data,
-                                              [[mlat, mlon], [xlat, xlon]],
-                                              opacity=1).add_to(m)
 
         except Exception as e:
             print(f"Failed to add DTM overlay: {str(e)}")
