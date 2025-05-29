@@ -218,7 +218,7 @@ def calculate_tree_height(lat, lon, dsm_path, dtm_path):
     logger = logging.getLogger('MapGenerator')
     
     try:
-        logger.info(f"Calculating tree height at lat={lat}, lon={lon}")
+        logger.info(f"Calculating tree height at lat={lat:.8f}, lon={lon:.8f}")
         # Open the DSM and DTM files
         with rasterio.open(dsm_path) as dsm, rasterio.open(dtm_path) as dtm:
             # Get CRS from the DSM
@@ -336,7 +336,7 @@ def create_map(lat, lon, rgb_png_url, dtm_png_url, bbox, output_path, dsm_path=N
                 logger.error(f"Tree height calculation error: {error}")
                 raise ValueError(error)
     else:
-        logger.info(f"Coordinates ({lat}, {lon}) are outside DTM bounds or DTM path is not provided.")
+        logger.info(f"Coordinates ({lat:.8f}, {lon:.8f}) are outside DTM bounds or DTM path is not provided.")
     
     # Create popup HTML
     html = f"""
