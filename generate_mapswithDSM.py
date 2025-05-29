@@ -10,6 +10,7 @@ import rasterio
 import re
 import requests
 import rioxarray
+import shutil
 import time
 import xml.etree.ElementTree as ET
 
@@ -289,7 +290,7 @@ def is_point_in_raster(lat, lon, raster_path):
         logger.error(f"Error checking point in raster: {str(e)}")
         return False
 
-def create_map(lat, lon, png_imagery_url, bbox, output_path, dsm_path=None, dtm_path=None):
+def create_map(lat, lon, rgb_png_url, dtm_png_url, bbox, output_path, dsm_path=None, dtm_path=None):
     """
     Create an interactive map with a marker and optional DTM overlay.
     If DSM and DTM paths are provided, calculate tree height at marker location.
@@ -297,7 +298,8 @@ def create_map(lat, lon, png_imagery_url, bbox, output_path, dsm_path=None, dtm_
     Args:
         lat (float): Latitude of the center point.
         lon (float): Longitude of the center point.
-        png_imagery_url (str): URL of the PNG imagery to overlay on the map.
+        rgb_png_url (str): URL of the RGB PNG imagery overlay.
+        dtm_png_url (str): URL of the DTM PNG overlay.
         output_path (str): Path to save the generated HTML file.
         dsm_path (str, optional): Path to the DSM GeoTIFF file.
         dtm_path (str, optional): Path to the DTM GeoTIFF file.
@@ -365,7 +367,7 @@ def create_map(lat, lon, png_imagery_url, bbox, output_path, dsm_path=None, dtm_
     # Add PNG overlay only if DTM overlay is not used
     if not use_dtm_overlay:
         folium.raster_layers.ImageOverlay(
-            image=png_imagery_url,
+            image=rgb_png_url,
             bounds=bounds,
             opacity=1,
             interactive=False,
@@ -374,11 +376,6 @@ def create_map(lat, lon, png_imagery_url, bbox, output_path, dsm_path=None, dtm_
     # Add DTM overlay if coordinates are within DTM bounds
     if use_dtm_overlay:
         try:
-            # Construct DTM PNG URL from the png_imagery_url base
-            base_url = '/'.join(png_imagery_url.split('/')[:-1]) 
-            dtm_filename = os.path.splitext(os.path.basename(dtm_path))[0]
-            dtm_png_url = f"{base_url}/{dtm_filename}.overview.png"
-
             # Get DTM bounds
             dtm_bbox = get_bounding_box_from_raster(dtm_path)
             if not dtm_bbox:
@@ -476,7 +473,7 @@ def setup_logging(mission_id, output_dir):
     logger.addHandler(console_handler)
     
     return logger
-def main(mission_id, year, dtm_path, output_dir):
+def main(mission_id, year, dtm_path, output_dir, project_id=None):
     """Main function to process a mission"""
     start_time = time.time()
     # Configure logging
@@ -545,8 +542,9 @@ def main(mission_id, year, dtm_path, output_dir):
     maps_created = 0
     errors_occurred = 0
     
-    # Define the URL for the RGB overview image
-    png_url = f"{ALLIANCECAN_URL}/{mission_id}/labelbox/{mapping_mission}_rgb.overview.png"
+    # Define the URL for the RGB and DTM overview image
+    rgb_png_url = f"{ALLIANCECAN_URL}/{mission_id}/labelbox/{mapping_mission}_rgb.overview.png"
+    dtm_png_url = f"{ALLIANCECAN_URL}/{mission_id}/labelbox/{mapping_mission}_dtm.overview.png"
     
     # Process all zoom files
     for zoom_file in zoom_files:
@@ -589,7 +587,7 @@ def main(mission_id, year, dtm_path, output_dir):
                 output_file = f"{output_folder}/{filename}.html"
                 
                 # Create the map with the given parameters
-                create_map(lat, lon, png_url, bbox, output_file, dsm_path=dsm_path, dtm_path=dtm_path)
+                create_map(lat, lon, rgb_png_url, dtm_png_url, bbox, output_file, dsm_path=dsm_path, dtm_path=dtm_path)
     
                 logger.info(f"Created map: {output_file}")
                 maps_created += 1
@@ -603,12 +601,43 @@ def main(mission_id, year, dtm_path, output_dir):
     logger.info(f"Mission {mission_id} - Total maps created: {maps_created} in {time.time() - start_time:.1f} seconds")
     logger.info(f"Mission {mission_id} - Total errors: {errors_occurred}")
 
+    # Copy overview files
+    try:
+        # Create destination directory if it doesn't exist
+        dest_dir = f"{output_dir}/{mission_id}/labelbox"
+        os.makedirs(dest_dir, exist_ok=True)
+        
+        # Copy RGB overview file
+        rgb_overview_src = f"{BASE_PATH_CONRAD}/{year}/{mapping_mission}/{mapping_mission}_rgb.overview.png"
+        rgb_overview_dest = f"{dest_dir}/{mapping_mission}_rgb.overview.png"
+        
+        if os.path.exists(rgb_overview_src):
+            shutil.copy2(rgb_overview_src, rgb_overview_dest)
+            logger.info(f"Copied RGB overview file to {rgb_overview_dest}")
+        else:
+            logger.warning(f"RGB overview file not found: {rgb_overview_src}")
+        
+        # Copy DTM overview file if project_id is provided
+        if project_id:
+            dtm_overview_src = f"/app/lefolab-utils/Labelbox/{project_id}/{project_id}_dtm.overview.png"
+            dtm_overview_dest = f"{dest_dir}/{mapping_mission}_dtm.overview.png"
+            
+            if os.path.exists(dtm_overview_src):
+                shutil.copy2(dtm_overview_src, dtm_overview_dest)
+                logger.info(f"Copied DTM overview file to {dtm_overview_dest}")
+            else:
+                logger.warning(f"DTM overview file not found: {dtm_overview_src}")
+    
+    except Exception as e:
+        logger.error(f"Error copying overview files: {str(e)}")
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process drone close-up pictures mission data and create maps.')
     parser.add_argument('--mission_id', required=True, help='ID of the mission to process')
     parser.add_argument('--year', help='Year of the mission (default to first 4 digits of mission_id)')
     parser.add_argument('--dtm_path', help='Path to DTM file') 
     parser.add_argument('--output_dir', required=True, help='Base directory where output folder and maps will be saved')
+    parser.add_argument('--project_id', help='Project ID for copying DTM overview file (optional)')
     args = parser.parse_args()
     
     # Use provided year or extract from mission_id
@@ -618,4 +647,4 @@ if __name__ == "__main__":
             raise ValueError(f"Mission ID {args.mission_id} does not start with 8 digits")
         year = args.mission_id[:4]
 
-    main(args.mission_id, year, args.dtm_path, args.output_dir)
+    main(args.mission_id, year, args.dtm_path, args.output_dir, args.project_id)
