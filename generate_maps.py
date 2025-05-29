@@ -449,11 +449,11 @@ def create_map(lat, lon, rgb_png_url, dtm_png_url, bbox, output_path, dsm_path=N
 def setup_logging(mission_id, output_dir):
     """Configure logging to both file and console."""
     # Create logs directory
-    log_dir = os.path.join(output_dir, mission_id, 'logs')
+    log_dir = os.path.join(output_dir, mission_id, 'labelbox')
     os.makedirs(log_dir, exist_ok=True)
     
     # Set up logging configuration
-    log_file = os.path.join(log_dir, f'{mission_id}_processing.log')
+    log_file = os.path.join(log_dir, f'{mission_id}_generate_maps.log')
     
     # Create a logger
     logger = logging.getLogger('MapGenerator')
