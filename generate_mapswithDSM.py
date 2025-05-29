@@ -2,6 +2,7 @@ import argparse
 import branca.colormap as bcm
 import exifread
 import folium
+import logging
 import matplotlib.colors as colors
 import numpy as np
 import os
@@ -9,6 +10,7 @@ import rasterio
 import re
 import requests
 import rioxarray
+import time
 import xml.etree.ElementTree as ET
 
 from dotenv import load_dotenv
@@ -117,6 +119,8 @@ def get_bounding_box_from_raster(raster_path):
               south_min_lat_y_deg, west_min_lon_x_deg, 
               north_max_lat_y_deg, east_max_lon_x_deg
     """
+    logger = logging.getLogger('MapGenerator')
+    
     try:
         with rasterio.open(raster_path) as src:
             # Get the bounding box in the raster's CRS
@@ -138,8 +142,8 @@ def get_bounding_box_from_raster(raster_path):
                 'east_max_lon_x_deg': lon_max
             }
     except Exception as e:
-        print(f"Failed to read bounding box from raster: {str(e)}")
-        return None
+        logger.error(f"Failed to read bounding box from raster '{raster_path}': {str(e)}")
+        raise
 
 def convert_to_decimal_degrees(value, ref):
     """
@@ -170,6 +174,8 @@ def get_coordinates_from_image_url(picture_url):
     Returns:
         tuple or None: (latitude, longitude) in decimal degrees if found, otherwise None.
     """
+    logger = logging.getLogger('MapGenerator')
+
     response = requests.get(picture_url)
 
     if response.status_code == 200:
@@ -188,10 +194,10 @@ def get_coordinates_from_image_url(picture_url):
             longitude = convert_to_decimal_degrees(longitude, longitude_ref)
             return latitude, longitude
         else:
-            print("Missing GPS EXIF tags in the image metadata.")
+            logger.warning("Missing GPS EXIF tags in the image metadata.")
             return None
     else:
-        print(f"Failed to fetch image. HTTP Status Code: {response.status_code}")
+        logger.error(f"Failed to fetch image. HTTP Status Code: {response.status_code}")
         return None
 
 def calculate_tree_height(lat, lon, dsm_path, dtm_path):
@@ -208,7 +214,10 @@ def calculate_tree_height(lat, lon, dsm_path, dtm_path):
         tuple: (tree_height, error_message) where tree_height is a float (None if calculation failed)
                and error_message is a string (None if calculation succeeded).
     """
+    logger = logging.getLogger('MapGenerator')
+    
     try:
+        logger.info(f"Calculating tree height at lat={lat}, lon={lon}")
         # Open the DSM and DTM files
         with rasterio.open(dsm_path) as dsm, rasterio.open(dtm_path) as dtm:
             # Get CRS from the DSM
@@ -237,6 +246,7 @@ def calculate_tree_height(lat, lon, dsm_path, dtm_path):
             else:
                 return None, f"Coordinates ({lon}, {lat}) are outside raster bounds"
     except Exception as e:
+        logger.error(f"Failed to calculate tree height: {str(e)}")
         return None, f"Failed to calculate tree height: {str(e)}"
 
 def is_point_in_raster(lat, lon, raster_path):
@@ -251,6 +261,8 @@ def is_point_in_raster(lat, lon, raster_path):
     Returns:
         bool: True if coordinates are within bounds and have valid data
     """
+    logger = logging.getLogger('MapGenerator')
+ 
     try:
         with rasterio.open(raster_path) as src:
             # Create transformer from WGS84 to raster CRS
@@ -278,7 +290,7 @@ def is_point_in_raster(lat, lon, raster_path):
             return is_valid
             
     except Exception as e:
-        print(f"Error checking point in raster: {str(e)}")
+        logger.error(f"Error checking point in raster: {str(e)}")
         return False
 
 def create_map(lat, lon, png_imagery_url, bbox, output_path, dsm_path=None, dtm_path=None):
@@ -294,6 +306,8 @@ def create_map(lat, lon, png_imagery_url, bbox, output_path, dsm_path=None, dtm_
         dsm_path (str, optional): Path to the DSM GeoTIFF file.
         dtm_path (str, optional): Path to the DTM GeoTIFF file.
     """
+    logger = logging.getLogger('MapGenerator')
+
     # Create a map centered at the coordinates with Esri Satellite tiles
     m = folium.Map(
         location=[lat, lon],
@@ -321,7 +335,10 @@ def create_map(lat, lon, png_imagery_url, bbox, output_path, dsm_path=None, dtm_
                 tree_height_info = f"{tree_height:.2f}"
                 popup_content.append(f"<b>Tree height:</b> {tree_height_info} m")
             else:
+                logger.error(f"Tree height calculation error: {error}")
                 raise ValueError(error)
+    else:
+        logger.info(f"Coordinates ({lat}, {lon}) are outside DTM bounds or DTM path is not provided.")
     
     # Create popup HTML
     html = f"""
@@ -431,19 +448,49 @@ def create_map(lat, lon, png_imagery_url, bbox, output_path, dsm_path=None, dtm_
             m.get_root().html.add_child(Element(custom_css))
 
         except Exception as e:
-            print(f"Failed to add DTM overlay: {str(e)}")
+            logger.error(f"Failed to add DTM overlay: {str(e)}")
     
     # Save the map as an HTML file
     m.save(output_path)
 
+def setup_logging(mission_id, output_dir):
+    """Configure logging to both file and console."""
+    # Create logs directory
+    log_dir = os.path.join(output_dir, mission_id, 'logs')
+    os.makedirs(log_dir, exist_ok=True)
+    
+    # Set up logging configuration
+    log_file = os.path.join(log_dir, f'{mission_id}_processing.log')
+    
+    # Create a logger
+    logger = logging.getLogger('MapGenerator')
+    logger.setLevel(logging.INFO)
+    
+    # Create handlers
+    file_handler = logging.FileHandler(log_file)
+    console_handler = logging.StreamHandler()
+    
+    # Create formatter
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    file_handler.setFormatter(formatter)
+    console_handler.setFormatter(formatter)
+    
+    # Add handlers to logger
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
+    
+    return logger
 def main(mission_id, year, dtm_path, output_dir):
     """Main function to process a mission"""
-    print(f"Processing mission: {mission_id}")
-
+    start_time = time.time()
+    # Configure logging
+    logger = setup_logging(mission_id, output_dir)
+    logger.info(f"Processing mission: {mission_id}")
+    
     # Search for the latest mapping mission
     mapping_mission = search_latest_mapping(year, mission_id)
     if not mapping_mission:
-        print(f"No mapping_mission found for zoom mission: {mission_id}")
+        logger.warning(f"No mapping_mission found for zoom mission: {mission_id}")
         return
 
     basename_path = f"{BASE_PATH_CONRAD}/{year}/{mapping_mission}/{mapping_mission}"
@@ -483,21 +530,19 @@ def main(mission_id, year, dtm_path, output_dir):
             if key.lower().endswith(".jpg"):  # keep pictures only
                 file_keys.append(key)
 
-        # Print the result
-        print(f"{len(file_keys)} pictures found for this mission : {mission_id}")
+        logger.info(f"{len(file_keys)} pictures found for this mission : {mission_id}")
         
         # Step 6: Filter for close-up pictures
         zoom_files = [key for key in file_keys if "zoom" in key]
 
-        # Print the result
-        print(f"{len(zoom_files)} close-up pictures found for this mission : {mission_id}")
+        logger.info(f"{len(zoom_files)} close-up pictures found for this mission : {mission_id}")
     else:
-        print(f"Failed to fetch XML. HTTP Status Code: {response.status_code}")
+        logger.error(f"Failed to fetch XML. HTTP Status Code: {response.status_code}")
         return
     
     bbox = get_bounding_box_from_raster(rgb_path)
     if not bbox:
-        print(f"No bounding box found for mapping mission: {mapping_mission}")
+        logger.warning(f"No bounding box found for mapping mission: {mapping_mission}")
         return
 
     # Initialize counters for tracking progress
@@ -522,7 +567,7 @@ def main(mission_id, year, dtm_path, output_dir):
                 break
         
         if not wide_file:
-            print(f"Could not find matching wide photo for {zoom_file} with identifier {identifier_match}")
+            logger.warning(f"Could not find matching wide photo for {zoom_file} with identifier {identifier_match}")
             break
         
         # Build the URL for wide pictures to extract coordinates
@@ -550,19 +595,17 @@ def main(mission_id, year, dtm_path, output_dir):
                 # Create the map with the given parameters
                 create_map(lat, lon, png_url, bbox, output_file, dsm_path=dsm_path, dtm_path=dtm_path)
     
-                # Print confirmation
-                print(f"Created map: {output_file}")
+                logger.info(f"Created map: {output_file}")
                 maps_created += 1
             except Exception as e:
-                print(f"Error creating map for {zoom_file}: {str(e)}")
+                logger.error(f"Error creating map for {zoom_file}: {str(e)}")
                 errors_occurred += 1
         else:
-            print(f"No coordinates found for {zoom_file}")
+            logger.warning(f"No coordinates found for {zoom_file}")
             errors_occurred += 1
     
-    # Print summary after loop completion
-    print(f"Mission {mission_id} - Total maps created: {maps_created}")
-    print(f"Mission {mission_id} - Total errors: {errors_occurred}")
+    logger.info(f"Mission {mission_id} - Total maps created: {maps_created} in {time.time() - start_time:.1f} seconds")
+    logger.info(f"Mission {mission_id} - Total errors: {errors_occurred}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process drone close-up pictures mission data and create maps.')
