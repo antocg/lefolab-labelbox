@@ -637,7 +637,7 @@ if __name__ == "__main__":
     parser.add_argument('--year', help='Year of the mission (default to first 4 digits of mission_id)')
     parser.add_argument('--dtm_path', help='Path to DTM file') 
     parser.add_argument('--output_dir', required=True, help='Base directory where output folder and maps will be saved')
-    parser.add_argument('--project_id', help='Project ID for copying DTM overview file (optional)')
+    parser.add_argument('--project_id', help='Project ID for copying DTM overview file from GitHub repo (optional)')
     args = parser.parse_args()
     
     # Use provided year or extract from mission_id
