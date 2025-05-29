@@ -233,18 +233,14 @@ def calculate_tree_height(lat, lon, dsm_path, dtm_path):
             dsm_row, dsm_col = rowcol(dsm.transform, x_proj, y_proj)
             dtm_row, dtm_col = rowcol(dtm.transform, x_proj, y_proj)
             
-            # Check if coordinates are within bounds
-            if (0 <= dsm_row < dsm.height and 0 <= dsm_col < dsm.width and
-                0 <= dtm_row < dtm.height and 0 <= dtm_col < dtm.width):
-                # Get elevation values
-                dsm_value = dsm.read(1)[dsm_row, dsm_col]
-                dtm_value = dtm.read(1)[dtm_row, dtm_col]
-                
-                # Calculate tree height (DSM - DTM)
-                tree_height = dsm_value - dtm_value
-                return tree_height, None
-            else:
-                return None, f"Coordinates ({lon}, {lat}) are outside raster bounds"
+            # Get elevation values
+            dsm_value = dsm.read(1)[dsm_row, dsm_col]
+            dtm_value = dtm.read(1)[dtm_row, dtm_col]
+            
+            # Calculate tree height (DSM - DTM)
+            tree_height = dsm_value - dtm_value
+            logger.info(f"Calculated tree height: {tree_height:.2f}m")
+            return tree_height, None
     except Exception as e:
         logger.error(f"Failed to calculate tree height: {str(e)}")
         return None, f"Failed to calculate tree height: {str(e)}"
