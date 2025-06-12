@@ -46,16 +46,18 @@ def search_latest_mapping(year, mission_id):
     Returns:
         str: The most recent mapping mission name matching the keyword.
     """
+    logger = logging.getLogger('MapGenerator')
+    
     folder_path = os.path.join(BASE_PATH_CONRAD, year)
 
     if not os.path.exists(folder_path):
-        raise FileNotFoundError(f"Folder path does not exist: {folder_path}")
+        logger.error(f"Folder path does not exist: {folder_path}")
     
     if '_' in mission_id:
         parts = mission_id.split('_')
         keyword = parts[1]
     else:
-        raise ValueError(f"Invalid mission_id format: {mission_id}. Expected an underscore ('_') in the ID.")
+        logger.error(f"Invalid mission_id format: {mission_id}. Expected an underscore ('_') in the ID.")
     
     # Get all subdirectories in the folder that match the keyword
     matching_dirs = [
@@ -65,7 +67,7 @@ def search_latest_mapping(year, mission_id):
 
     # If no matching directories found, raise error
     if not matching_dirs:
-        raise ValueError(f"No matching collection found for mission_id: {mission_id}")
+        logger.error(f"No matching collection found for mission_id: {mission_id}")
 
     # Sort directories by date (most recent first)
     matching_dirs.sort(
@@ -473,6 +475,7 @@ def setup_logging(mission_id, output_dir):
     logger.addHandler(console_handler)
     
     return logger
+
 def main(mission_id, year, dtm_path, output_dir, project_id=None):
     """Main function to process a mission"""
     start_time = time.time()
