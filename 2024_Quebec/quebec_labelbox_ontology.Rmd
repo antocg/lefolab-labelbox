@@ -1,0 +1,88 @@
+---
+title: "TBS Labelbox Ontology"
+author: "Etienne Laliberté et Antoine Caron-Guay"
+date: "2025-04-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(reticulate)
+library(here)
+here::i_am("README.md")
+reticulate::py_install(c("labelbox", "pandas"))
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{python import-libs}
+import labelbox as lb
+import json
+```
+
+
+```{r api-key}
+py$api_key <- Sys.getenv("LABELBOX_API_KEY")
+```
+
+
+```{python py-api-key}
+# Add your api key
+client = lb.Client(api_key=api_key)
+```
+
+
+```{r path}
+py$file_path <- here("Labelbox/2024_Quebec/data", "labelbox_quebec_completelist.csv")
+```
+
+
+```{python import-data}
+import pandas as pd
+
+# First read as pandas
+df = pd.read_csv(file_path, encoding='latin1')
+```
+
+
+```{python single-list}
+import labelbox as lb
+from labelbox import MediaType 
+import json
+
+# Create the ontology structure for multiple segmentation tools
+ontology = {
+    "tools": [
+        {
+            "name": "Plant",
+            "label": "plant",
+            "tool": "raster-segmentation",
+            "color": "#1c8aff", 
+            "classifications": [
+                {
+                    "name": "Taxon",
+                    "label": "taxon_id",
+                    "instructions": "Select plant taxon",
+                    "type": "checklist",
+                    "options": []
+                }
+            ]
+        }
+    ]
+}
+
+# Add options from your dataframe
+for _, row in df.iterrows():
+    option = {
+        "value": str(row['gbif_accepted_taxon_id']),
+        "label": row['taxon_code']
+    }
+
+    ontology['tools'][0]['classifications'][0]['options'].append(option)
+```
+
+
+```{python}
+# Create the ontology in Labelbox
+project_ontology = client.create_ontology("Quebec trees and shrubs - single list", ontology, media_type=MediaType.Image)
+```
+
