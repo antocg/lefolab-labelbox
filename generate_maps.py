@@ -476,7 +476,7 @@ def setup_logging(mission_id, output_dir):
     
     return logger
 
-def main(mission_id, year, dtm_path, output_dir, project_id=None):
+def main(mission_id, year, output_dir, dtm_path=None, project_id=None):
     """Main function to process a mission"""
     start_time = time.time()
     # Configure logging
@@ -650,4 +650,4 @@ if __name__ == "__main__":
             raise ValueError(f"Mission ID {args.mission_id} does not start with 8 digits")
         year = args.mission_id[:4]
 
-    main(args.mission_id, year, args.dtm_path, args.output_dir, args.project_id)
+    main(args.mission_id, year, args.output_dir, args.dtm_path, args.project_id)
