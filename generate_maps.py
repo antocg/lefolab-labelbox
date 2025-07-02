@@ -476,18 +476,21 @@ def setup_logging(mission_id, output_dir):
     
     return logger
 
-def main(mission_id, year, output_dir, dtm_path=None, project_id=None):
+def main(mission_id, year, output_dir, dtm_path=None, project_id=None, mapping_mission=None):
     """Main function to process a mission"""
     start_time = time.time()
     # Configure logging
     logger = setup_logging(mission_id, output_dir)
     logger.info(f"Processing mission: {mission_id}")
     
-    # Search for the latest mapping mission
-    mapping_mission = search_latest_mapping(year, mission_id)
-    if not mapping_mission:
-        logger.warning(f"No mapping_mission found for zoom mission: {mission_id}")
-        return
+    # Use provided mapping_mission or search for the latest
+    if mapping_mission:
+        logger.info(f"Using provided mapping_mission: {mapping_mission}")
+    else:
+        mapping_mission = search_latest_mapping(year, mission_id)
+        if not mapping_mission:
+            logger.warning(f"No mapping_mission found for zoom mission: {mission_id}")
+            return
 
     basename_path = f"{BASE_PATH_CONRAD}/{year}/{mapping_mission}/{mapping_mission}"
 
@@ -638,9 +641,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process drone close-up pictures mission data and create maps.')
     parser.add_argument('--mission_id', required=True, help='ID of the mission to process')
     parser.add_argument('--year', help='Year of the mission (default to first 4 digits of mission_id)')
-    parser.add_argument('--dtm_path', help='Path to DTM file') 
     parser.add_argument('--output_dir', required=True, help='Base directory where output folder and maps will be saved')
+    parser.add_argument('--dtm_path', help='Path to DTM file (optional)') 
     parser.add_argument('--project_id', help='Project ID for copying DTM overview file from GitHub repo (optional)')
+    parser.add_argument('--mapping_mission', help='Explicit mapping mission ID to use for overview (optional)')
     args = parser.parse_args()
     
     # Use provided year or extract from mission_id
@@ -650,4 +654,4 @@ if __name__ == "__main__":
             raise ValueError(f"Mission ID {args.mission_id} does not start with 8 digits")
         year = args.mission_id[:4]
 
-    main(args.mission_id, year, args.output_dir, args.dtm_path, args.project_id)
+    main(args.mission_id, year, args.output_dir, args.dtm_path, args.project_id, args.mapping_mission)
