@@ -1,0 +1,91 @@
+---
+title: "Labelbox Ontology"
+author: "Etienne Laliberté et Antoine Caron-Guay"
+date: "2025-07-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(reticulate)
+library(here)
+here::i_am("README.md")
+reticulate::py_install(c("labelbox", "pandas"))
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{python import-libs}
+import labelbox as lb
+import json
+```
+
+
+```{r api-key}
+py$api_key <- Sys.getenv("LABELBOX_API_KEY")
+```
+
+
+```{python py-api-key}
+# Add your api key
+client = lb.Client(api_key=api_key)
+```
+
+
+```{r path}
+# Change according to project
+py$file_path <- here("Labelbox/PROJECT/data", "labelbox_PROJECT_completelist.csv")
+```
+
+
+```{python import-data}
+import pandas as pd
+
+# First read as pandas
+df = pd.read_csv(file_path, encoding='latin1')
+```
+
+
+```{python single-list}
+import labelbox as lb
+from labelbox import MediaType 
+import json
+
+# Change language according to project
+# Create the ontology structure for multiple segmentation tools
+ontology = {
+    "tools": [
+        {
+            "name": "Plant", # Change language
+            "label": "plant",
+            "tool": "raster-segmentation",
+            "color": "#1c8aff", 
+            "classifications": [
+                {
+                    "name": "Taxon", # Change language
+                    "label": "taxon_id",
+                    "instructions": "Select plant taxon", # Change language
+                    "type": "checklist",
+                    "options": []
+                }
+            ]
+        }
+    ]
+}
+
+# Add options from your dataframe
+for _, row in df.iterrows():
+    option = {
+        "value": str(row['gbif_accepted_taxon_id']),
+        "label": row['taxon_code']
+    }
+
+    ontology['tools'][0]['classifications'][0]['options'].append(option)
+```
+
+
+```{python}
+# Change according to project
+# Create the ontology in Labelbox
+project_ontology = client.create_ontology("PROJECT close-up photo segmentation - single list (language)", ontology, media_type=MediaType.Image)
+```
+

@@ -118,7 +118,7 @@ for i, zoom_file in enumerate(zoom_files):
     
     # Find the corresponding wide file from file_keys
     wide_file = None
-    wide_file_end = polygon_id + '.JPG'
+    wide_file_end = f"_{polygon_id}.JPG"
     for key in file_keys:
         if wide_file_end in key and "zoom" not in key:
             wide_file = key
