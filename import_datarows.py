@@ -1,11 +1,20 @@
 import argparse
 import copy
 import labelbox as lb
+import logging
 import os
 import requests
+import sys
 import xml.etree.ElementTree as ET
 
 from dotenv import load_dotenv
+
+# Setup logging with timestamp
+logging.basicConfig(
+    format='[%(asctime)s] %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+    level=logging.INFO
+)
 
 # Load environment variables from .env file
 load_dotenv()
@@ -53,15 +62,15 @@ if response.status_code == 200:
             file_keys.append(key)
 
     # Print the result
-    print(f"{len(file_keys)} pictures found for this mission : {mission_id}")
+    logging.info(f"{len(file_keys)} pictures found for this mission : {mission_id}")
     
     # Step 6: Filter for close-up pictures
     zoom_files = [key for key in file_keys if "zoom" in key]
 
     # Print the result
-    print(f"{len(zoom_files)} close-up pictures found for this mission : {mission_id}")
+    logging.info(f"{len(zoom_files)} close-up pictures found for this mission : {mission_id}")
 else:
-    print(f"Failed to fetch XML. HTTP Status Code: {response.status_code}")
+    logging.error(f"Failed to fetch XML. HTTP Status Code: {response.status_code}")
 
 # Create new dataset in Labelbox based on the project name and mission ID
 # Check if the dataset already exists
@@ -70,10 +79,10 @@ dataset_name = f"{project}_{mission_id}"
 existing_dataset = next((ds for ds in existing_datasets if ds.name == dataset_name), None)
 
 if existing_dataset:
-    print(f"Dataset {dataset_name} already exists")
+    logging.info(f"Dataset {dataset_name} already exists")
     dataset = existing_dataset
 else:
-    print(f"Creating new dataset {dataset_name}")
+    logging.info(f"Creating new dataset {dataset_name}")
     dataset = client.create_dataset(name=f"{project}_{mission_id}")
 
 # Base asset template
@@ -128,17 +137,28 @@ for i, zoom_file in enumerate(zoom_files):
     if wide_file:
         asset["attachments"][0]["value"] = f"{folder_url}{wide_file}"
     else:
-        print(f"Warning: No wide file found for {zoom_file}")
+        logging.warning(f"No wide file found for {zoom_file}")
     
     # Add the updated asset to the list
     assets.append(asset)
 
 # Import data in Labelbox
 if not assets:
-    print("No valid assets to upload. Exiting.")
+    logging.error("No valid assets to upload. Exiting.")
+    sys.exit(1)
 else:
     task = dataset.create_data_rows(assets)
     task.wait_till_done()
-    print(task.errors)
-    task.wait_till_done()
-    print(task.errors)
+    errors = task.errors
+
+    # Count duplicate global key errors
+    duplicate_count = sum(1 for e in errors if e.get('message', '').startswith("Duplicate global key"))
+    other_errors = [e for e in errors if not e.get('message', '').startswith("Duplicate global key")]
+
+    if duplicate_count:
+        logging.warning(f"{duplicate_count} duplicate global key errors.")
+
+    if other_errors:
+        logging.error(f"Other errors: {other_errors}")
+    else:
+        logging.info("No errors while importing data to Labelbox.")
