@@ -78,38 +78,6 @@ def search_latest_mapping(year, mission_id):
     # Return the most recent directory name
     return matching_dirs[0]
 
-# def get_bounding_box(STAC_API_URL, mission_id):
-#     """
-#     Fetch the bounding box of a mission from a STAC API.
-
-#     Args:
-#         STAC_API_URL (str): URL of the STAC API.
-#         mission_id (str): ID of the mission to query.
-
-#     Returns:
-#         list or None: The bounding box [west, south, east, north] if found, otherwise None.
-#     """
-#     # Build the URL for the specific collection
-#     url = f"{STAC_API_URL}/collections/{mission_id}"
-
-#     # Send the GET request
-#     response = requests.get(url)
-
-#     # Check if the request was successful
-#     if response.status_code == 200:
-#         # Parse the response JSON
-#         data = response.json()
-#         bbox = data.get("bbox", None)
-
-#         if bbox:
-#             return bbox
-#         else:
-#             print("Bounding Box not found in the response.")
-#             return None
-#     else:
-#         print(f"Failed to fetch data. HTTP Status Code: {response.status_code}")
-#         return None
-
 def get_bounding_box_from_raster(raster_path):
     """
     Fetch the bounding box of a raster file and convert to decimal degrees.
