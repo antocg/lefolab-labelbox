@@ -1,5 +1,6 @@
 import argparse
 import branca.colormap as bcm
+import datetime
 import exifread
 import folium
 import logging
@@ -11,6 +12,7 @@ import re
 import requests
 import rioxarray
 import shutil
+import sys
 import time
 import xml.etree.ElementTree as ET
 
@@ -35,12 +37,11 @@ if not ALLIANCECAN_URL:
 if not BASE_PATH_CONRAD:
     raise ValueError("BASE_PATH_CONRAD environment variable is not set")
 
-def search_latest_mapping(year, mission_id):
+def search_latest_mapping(mission_id):
     """
     Search for the most recent mapping mission in BASE_PATH_CONRAD/YYYY/ by zoom mission.
 
     Args:
-        year (str): The year of the mapping mission.
         mission_id (str): Zoom mission_id to filter mapping missions.
 
     Returns:
@@ -48,10 +49,9 @@ def search_latest_mapping(year, mission_id):
     """
     logger = logging.getLogger('MapGenerator')
     
-    folder_path = os.path.join(BASE_PATH_CONRAD, year)
-
-    if not os.path.exists(folder_path):
-        logger.error(f"Folder path does not exist: {folder_path}")
+    # Search years from current year down to 2017
+    current_year = datetime.datetime.now().year
+    years = [str(y) for y in range(current_year, 2016, -1)]
     
     if '_' in mission_id:
         parts = mission_id.split('_')
@@ -59,6 +59,18 @@ def search_latest_mapping(year, mission_id):
     else:
         logger.error(f"Invalid mission_id format: {mission_id}. Expected an underscore ('_') in the ID.")
     
+    matching_dirs = []
+    for year in years:
+        folder_path = os.path.join(BASE_PATH_CONRAD, year)
+        if not os.path.exists(folder_path):
+            continue
+        # Get all subdirectories in the folder that match the keyword
+        matches = [
+            d for d in os.listdir(folder_path)
+            if os.path.isdir(os.path.join(folder_path, d)) and f"_{keyword}_" in d
+        ]
+        matching_dirs.extend(matches)
+
     # Get all subdirectories in the folder that match the keyword
     matching_dirs = [
         d for d in os.listdir(folder_path)
@@ -444,7 +456,7 @@ def setup_logging(mission_id, output_dir):
     
     return logger
 
-def main(mission_id, year, output_dir, dtm_path=None, project_id=None, mapping_mission=None):
+def main(mission_id, output_dir, dtm_path=None, project_id=None, mapping_mission=None):
     """Main function to process a mission"""
     start_time = time.time()
     # Configure logging
@@ -453,12 +465,15 @@ def main(mission_id, year, output_dir, dtm_path=None, project_id=None, mapping_m
     
     # Use provided mapping_mission or search for the latest
     if mapping_mission:
-        logger.info(f"Using provided mapping_mission: {mapping_mission}")
+        logger.info(f"Using provided mapping mission: {mapping_mission}")
     else:
-        mapping_mission = search_latest_mapping(year, mission_id)
+        mapping_mission = search_latest_mapping(mission_id)
         if not mapping_mission:
-            logger.warning(f"No mapping_mission found for zoom mission: {mission_id}")
-            return
+            raise ValueError(f"No mapping mission found for zoom mission {mission_id}. Specify a mapping mission manually.")
+
+    if not re.match(r'^\d{8}', mapping_mission):
+        raise ValueError(f"Mapping mission {mapping_mission} does not start with 8 digits")
+    year = mapping_mission[:4]
 
     basename_path = f"{BASE_PATH_CONRAD}/{year}/{mapping_mission}/{mapping_mission}"
 
@@ -608,18 +623,14 @@ def main(mission_id, year, output_dir, dtm_path=None, project_id=None, mapping_m
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process drone close-up pictures mission data and create maps.')
     parser.add_argument('--mission_id', required=True, help='ID of the mission to process')
-    parser.add_argument('--year', help='Year of the mission (default to first 4 digits of mission_id)')
     parser.add_argument('--output_dir', required=True, help='Base directory where output folder and maps will be saved')
     parser.add_argument('--dtm_path', help='Path to DTM file (optional)') 
     parser.add_argument('--project_id', help='Project ID for copying DTM overview file from GitHub repo (optional)')
     parser.add_argument('--mapping_mission', help='Explicit mapping mission ID to use for overview (optional)')
     args = parser.parse_args()
-    
-    # Use provided year or extract from mission_id
-    year = args.year
-    if not year:
-        if not re.match(r'^\d{8}', args.mission_id):
-            raise ValueError(f"Mission ID {args.mission_id} does not start with 8 digits")
-        year = args.mission_id[:4]
 
-    main(args.mission_id, year, args.output_dir, args.dtm_path, args.project_id, args.mapping_mission)
+    try:
+        main(args.mission_id, args.output_dir, args.dtm_path, args.project_id, args.mapping_mission)
+    except Exception as e:
+        logging.getLogger('MapGenerator').error(f"Fatal error: {str(e)}")
+        sys.exit(1)  # Exit with error code for bash script to catch
