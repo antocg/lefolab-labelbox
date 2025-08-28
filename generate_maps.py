@@ -456,7 +456,7 @@ def setup_logging(mission_id, output_dir):
     
     return logger
 
-def main(mission_id, output_dir, dtm_path=None, project_id=None, mapping_mission=None):
+def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mission=None):
     """Main function to process a mission"""
     start_time = time.time()
     # Configure logging
@@ -606,9 +606,9 @@ def main(mission_id, output_dir, dtm_path=None, project_id=None, mapping_mission
         else:
             logger.warning(f"RGB overview file not found: {rgb_overview_src}")
         
-        # Copy DTM overview file if project_id is provided
-        if project_id:
-            dtm_overview_src = f"/app/lefolab-utils/Labelbox/{project_id}/{project_id}_dtm.overview.png"
+        # Copy DTM overview file if github_project is provided
+        if github_project:
+            dtm_overview_src = f"/app/lefolab-utils/Labelbox/{github_project}/{github_project}_dtm.overview.png"
             dtm_overview_dest = f"{dest_dir}/{mapping_mission}_dtm.overview.png"
             
             if os.path.exists(dtm_overview_src):
@@ -625,12 +625,12 @@ if __name__ == "__main__":
     parser.add_argument('--mission_id', required=True, help='ID of the mission to process')
     parser.add_argument('--output_dir', required=True, help='Base directory where output folder and maps will be saved')
     parser.add_argument('--dtm_path', help='Path to DTM file (optional)') 
-    parser.add_argument('--project_id', help='Project ID for copying DTM overview file from GitHub repo (optional)')
+    parser.add_argument('--github_project', help='Github project name for copying DTM overview file from GitHub repo (optional)')
     parser.add_argument('--mapping_mission', help='Explicit mapping mission ID to use for overview (optional)')
     args = parser.parse_args()
 
     try:
-        main(args.mission_id, args.output_dir, args.dtm_path, args.project_id, args.mapping_mission)
+        main(args.mission_id, args.output_dir, args.dtm_path, args.github_project, args.mapping_mission)
     except Exception as e:
         logging.getLogger('MapGenerator').error(f"Fatal error: {str(e)}")
         sys.exit(1)  # Exit with error code for bash script to catch
