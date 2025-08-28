@@ -71,12 +71,6 @@ def search_latest_mapping(mission_id):
         ]
         matching_dirs.extend(matches)
 
-    # Get all subdirectories in the folder that match the keyword
-    matching_dirs = [
-        d for d in os.listdir(folder_path)
-        if os.path.isdir(os.path.join(folder_path, d)) and f"_{keyword}_" in d
-    ]
-
     # If no matching directories found, raise error
     if not matching_dirs:
         logger.error(f"No matching collection found for mission_id: {mission_id}")
@@ -446,7 +440,7 @@ def setup_logging(mission_id, output_dir):
     console_handler = logging.StreamHandler()
     
     # Create formatter
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter('[%(asctime)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
     file_handler.setFormatter(formatter)
     console_handler.setFormatter(formatter)
     
