@@ -73,7 +73,8 @@ def search_latest_mapping(mission_id):
 
     # If no matching directories found, raise error
     if not matching_dirs:
-        logger.error(f"No matching collection found for mission_id: {mission_id}")
+        logger.error(f"No mapping mission found for zoom mission {mission_id}. Specify a mapping mission manually.")
+        raise ValueError(f"No mapping mission found for zoom mission {mission_id}. Specify a mapping mission manually.")
 
     # Sort directories by date (most recent first)
     matching_dirs.sort(
@@ -329,9 +330,11 @@ def create_map(lat, lon, rgb_png_url, dtm_png_url, bbox, output_path, dsm_path=N
     # Validate bbox keys
     required_keys = ['south_min_lat_y_deg', 'west_min_lon_x_deg', 'north_max_lat_y_deg', 'east_max_lon_x_deg']
     if not bbox:
+        logger.error("Bounding box is None. Cannot create map.")
         raise ValueError("Bounding box is None. Cannot create map.")
     if not all(key in bbox for key in required_keys):
         missing_keys = set(required_keys) - set(bbox.keys())
+        logger.error(f"Missing required keys in bbox: {', '.join(missing_keys)}. Provided bbox: {bbox}")
         raise ValueError(f"Missing required keys in bbox: {', '.join(missing_keys)}. Provided bbox: {bbox}")
 
     # Convert bbox to the required bounds format for Folium
@@ -355,6 +358,7 @@ def create_map(lat, lon, rgb_png_url, dtm_png_url, bbox, output_path, dsm_path=N
             # Get DTM bounds
             dtm_bbox = get_bounding_box_from_raster(dtm_path)
             if not dtm_bbox:
+                logger.error("Could not get DTM bounds")
                 raise ValueError("Could not get DTM bounds")
 
             dtm_bounds = [
@@ -374,12 +378,14 @@ def create_map(lat, lon, rgb_png_url, dtm_png_url, bbox, output_path, dsm_path=N
             if 'x' in dem.dims and 'y' in dem.dims:
                 dem = dem.rename({'x': 'longitude', 'y': 'latitude'})
             else:
+                logger.error(f"Unexpected dimension names in DTM file: {dem.dims}")
                 raise ValueError(f"Unexpected dimension names in DTM file: {dem.dims}")
             arr_dem = dem.values
 
             if dem.rio.nodata is not None:
                 masked = np.ma.masked_equal(arr_dem[0], dem.rio.nodata)
             else:
+                logger.error("NoData value is not defined in the raster file.")
                 raise ValueError("NoData value is not defined in the raster file.")
 
             # Compute min and max for color scale (based only on valid data)
@@ -423,31 +429,46 @@ def create_map(lat, lon, rgb_png_url, dtm_png_url, bbox, output_path, dsm_path=N
     m.save(output_path)
 
 def setup_logging(mission_id, output_dir):
-    """Configure logging to both file and console."""
-    # Create logs directory
+    """Configure logging to separate files and streams by level."""
     log_dir = os.path.join(output_dir, mission_id, 'labelbox')
     os.makedirs(log_dir, exist_ok=True)
-    
-    # Set up logging configuration
-    log_file = os.path.join(log_dir, f'{mission_id}_generate_maps.log')
-    
-    # Create a logger
+
+    info_log_file = os.path.join(log_dir, f'{mission_id}_maps_info.log')
+    error_log_file = os.path.join(log_dir, f'{mission_id}_maps_error.log')
+
     logger = logging.getLogger('MapGenerator')
     logger.setLevel(logging.INFO)
-    
-    # Create handlers
-    file_handler = logging.FileHandler(log_file)
-    console_handler = logging.StreamHandler()
-    
-    # Create formatter
-    formatter = logging.Formatter('[%(asctime)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
-    file_handler.setFormatter(formatter)
-    console_handler.setFormatter(formatter)
-    
-    # Add handlers to logger
-    logger.addHandler(file_handler)
-    logger.addHandler(console_handler)
-    
+    logger.handlers = []  # Remove any existing handlers
+
+    # Formatter
+    formatter = logging.Formatter('[%(asctime)s] %(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+
+    # INFO handler to stdout and info.log
+    info_stream_handler = logging.StreamHandler(sys.stdout)
+    info_stream_handler.setLevel(logging.INFO)
+    info_stream_handler.addFilter(lambda record: record.levelno == logging.INFO)
+    info_stream_handler.setFormatter(formatter)
+
+    info_file_handler = logging.FileHandler(info_log_file)
+    info_file_handler.setLevel(logging.INFO)
+    info_file_handler.addFilter(lambda record: record.levelno == logging.INFO)
+    info_file_handler.setFormatter(formatter)
+
+    # WARNING/ERROR handler to stderr and error.log
+    error_stream_handler = logging.StreamHandler(sys.stderr)
+    error_stream_handler.setLevel(logging.WARNING)
+    error_stream_handler.setFormatter(formatter)
+
+    error_file_handler = logging.FileHandler(error_log_file)
+    error_file_handler.setLevel(logging.WARNING)
+    error_file_handler.setFormatter(formatter)
+
+    # Add handlers
+    logger.addHandler(info_stream_handler)
+    logger.addHandler(info_file_handler)
+    logger.addHandler(error_stream_handler)
+    logger.addHandler(error_file_handler)
+
     return logger
 
 def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mission=None):
@@ -462,10 +483,13 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
         logger.info(f"Using provided mapping mission: {mapping_mission}")
     else:
         mapping_mission = search_latest_mapping(mission_id)
+        logger.info(f"Found mapping mission: {mapping_mission}")
         if not mapping_mission:
+            logger.error(f"No mapping mission found for zoom mission {mission_id}. Specify a mapping mission manually.")
             raise ValueError(f"No mapping mission found for zoom mission {mission_id}. Specify a mapping mission manually.")
 
     if not re.match(r'^\d{8}', mapping_mission):
+        logger.error(f"Mapping mission {mapping_mission} does not start with 8 digits")
         raise ValueError(f"Mapping mission {mapping_mission} does not start with 8 digits")
     year = mapping_mission[:4]
 

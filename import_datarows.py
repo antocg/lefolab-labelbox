@@ -10,11 +10,24 @@ import xml.etree.ElementTree as ET
 from dotenv import load_dotenv
 
 # Setup logging with timestamp
-logging.basicConfig(
-    format='[%(asctime)s] %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S',
-    level=logging.INFO
-)
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+# Handler for INFO to stdout
+stdout_handler = logging.StreamHandler(sys.stdout)
+stdout_handler.setLevel(logging.INFO)
+stdout_handler.addFilter(lambda record: record.levelno == logging.INFO)
+stdout_handler.setFormatter(logging.Formatter('[%(asctime)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S'))
+
+# Handler for WARNING and ERROR to stderr
+stderr_handler = logging.StreamHandler(sys.stderr)
+stderr_handler.setLevel(logging.WARNING)
+stderr_handler.setFormatter(logging.Formatter('[%(asctime)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S'))
+
+# Remove default handlers and add custom ones
+logger.handlers = []
+logger.addHandler(stdout_handler)
+logger.addHandler(stderr_handler)
 
 # Load environment variables from .env file
 load_dotenv()
@@ -25,20 +38,22 @@ LABELBOX_API_KEY = os.getenv("LABELBOX_API_KEY")
 
 # Verify environment variables are set
 if not ALLIANCECAN_URL:
+    logger.error("ALLIANCECAN_URL environment variable is not set")
     raise ValueError("ALLIANCECAN_URL environment variable is not set")
 if not LABELBOX_API_KEY:
+    logger.error("LABELBOX_API_KEY environment variable is not set")
     raise ValueError("LABELBOX_API_KEY environment variable is not set")
 
 client = lb.Client(api_key=LABELBOX_API_KEY)
 
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description="Import data rows into Labelbox.")
-parser.add_argument("--mission_id", required=True, help="Mission ID for the Labelbox dataset.")
-parser.add_argument("--project", required=True, help="Project name for the Labelbox dataset.")
+parser.add_argument("--mission_id", required=True, help="Mission ID to generate the dataset.")
+parser.add_argument("--prefix", required=True, help="Prefix for the dataset name.")
 args = parser.parse_args()
 
 mission_id = args.mission_id
-project = args.project
+prefix = args.prefix
 
 # List all pictures on Alliance Canada for a given mission
 # Step 1: Specify the URL of the folder
@@ -62,28 +77,28 @@ if response.status_code == 200:
             file_keys.append(key)
 
     # Print the result
-    logging.info(f"{len(file_keys)} pictures found for this mission : {mission_id}")
+    logger.info(f"{len(file_keys)} pictures found for this mission : {mission_id}")
     
     # Step 6: Filter for close-up pictures
     zoom_files = [key for key in file_keys if "zoom" in key]
 
     # Print the result
-    logging.info(f"{len(zoom_files)} close-up pictures found for this mission : {mission_id}")
+    logger.info(f"{len(zoom_files)} close-up pictures found for this mission : {mission_id}")
 else:
-    logging.error(f"Failed to fetch XML. HTTP Status Code: {response.status_code}")
+    logger.error(f"Failed to fetch XML. HTTP Status Code: {response.status_code}")
 
-# Create new dataset in Labelbox based on the project name and mission ID
+# Create new dataset in Labelbox based on the prefix and mission ID
 # Check if the dataset already exists
 existing_datasets = client.get_datasets()
-dataset_name = f"{project}_{mission_id}"
+dataset_name = f"{prefix}_{mission_id}"
 existing_dataset = next((ds for ds in existing_datasets if ds.name == dataset_name), None)
 
 if existing_dataset:
-    logging.info(f"Dataset {dataset_name} already exists")
+    logger.info(f"Dataset {dataset_name} already exists")
     dataset = existing_dataset
 else:
-    logging.info(f"Creating new dataset {dataset_name}")
-    dataset = client.create_dataset(name=f"{project}_{mission_id}")
+    logger.info(f"Creating new dataset {dataset_name}")
+    dataset = client.create_dataset(name=dataset_name)
 
 # Base asset template
 assets_template = {
@@ -137,14 +152,14 @@ for i, zoom_file in enumerate(zoom_files):
     if wide_file:
         asset["attachments"][0]["value"] = f"{folder_url}{wide_file}"
     else:
-        logging.warning(f"No wide file found for {zoom_file}")
+        logger.warning(f"No wide file found for {zoom_file}")
     
     # Add the updated asset to the list
     assets.append(asset)
 
 # Import data in Labelbox
 if not assets:
-    logging.error("No valid assets to upload. Exiting.")
+    logger.error("No valid assets to upload. Exiting.")
     sys.exit(1)
 else:
     task = dataset.create_data_rows(assets)
@@ -156,9 +171,9 @@ else:
     other_errors = [e for e in errors if not e.get('message', '').startswith("Duplicate global key")]
 
     if duplicate_count:
-        logging.warning(f"{duplicate_count} duplicate global key errors.")
+        logger.warning(f"{duplicate_count} duplicate global key errors.")
 
     if other_errors:
-        logging.error(f"Other errors: {other_errors}")
+        logger.error(f"Other errors: {other_errors}")
     else:
-        logging.info("No errors while importing data to Labelbox.")
+        logger.info("No errors while importing data to Labelbox.")
