@@ -441,7 +441,7 @@ def setup_logging(mission_id, output_dir):
     logger.handlers = []  # Remove any existing handlers
 
     # Formatter
-    formatter = logging.Formatter('[%(asctime)s] %(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+    formatter = logging.Formatter('[%(asctime)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
     # INFO handler to stdout and info.log
     info_stream_handler = logging.StreamHandler(sys.stdout)

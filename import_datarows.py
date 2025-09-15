@@ -166,14 +166,17 @@ else:
     task.wait_till_done()
     errors = task.errors
 
-    # Count duplicate global key errors
-    duplicate_count = sum(1 for e in errors if e.get('message', '').startswith("Duplicate global key"))
-    other_errors = [e for e in errors if not e.get('message', '').startswith("Duplicate global key")]
-
-    if duplicate_count:
-        logger.warning(f"{duplicate_count} duplicate global key errors.")
-
-    if other_errors:
-        logger.error(f"Other errors: {other_errors}")
-    else:
+    if errors is None:
         logger.info("No errors while importing data to Labelbox.")
+    else:
+        # Count duplicate global key errors
+        duplicate_count = sum(1 for e in errors if e.get('message', '').startswith("Duplicate global key"))
+        other_errors = [e for e in errors if not e.get('message', '').startswith("Duplicate global key")]
+
+        if duplicate_count:
+            logger.warning(f"{duplicate_count} duplicate global key errors.")
+
+        if other_errors:
+            logger.error(f"Other errors: {other_errors}")
+        else:
+            logger.info("No errors while importing data to Labelbox.")
