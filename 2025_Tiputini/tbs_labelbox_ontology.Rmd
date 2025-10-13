@@ -86,3 +86,58 @@ for _, row in df.iterrows():
 project_ontology = client.create_ontology("TBS close-up photo segmentation - single list (espanol)", ontology, media_type=MediaType.Image)
 ```
 
+
+```{r path-ontology-id}
+py$file_path <- here("Labelbox/2025_Tiputini/data", "labelbox_tbs_completelist_Amazonia_Ecuatoriana.csv")
+
+py$ontology_id <- Sys.getenv("ONTOLOGY_ID")
+```
+
+
+```{python update ontology}
+import pandas as pd
+import json
+import labelbox as lb
+
+df = pd.read_csv(file_path, encoding='latin1')
+
+# Get existing ontology by ID
+ontology = client.get_ontology(ontology_id)
+
+# Ontologies are stored as JSON. Fetch the normalized dict:
+ontology_json = ontology.normalized
+
+# Keep a copy of the original for comparison
+with open("ontology_original.json", "w", encoding="utf-8") as f:
+    json.dump(ontology_json, f, indent=2, ensure_ascii=False)
+
+# Track position index
+start_pos = len(ontology_json["tools"][0]["classifications"][0]["options"])
+
+# Add new options from CSV
+new_options = []
+for i, row in df.iterrows():
+    taxon_id = str(row["gbif_accepted_taxon_id"])
+    sci_name = row["gbif_accepted_scientific_name"]
+
+    option = {
+        "schemaNodeId": None,
+        "featureSchemaId": None,
+        "label": sci_name,
+        "value": taxon_id,
+        "position": start_pos + len(new_options),
+        "kind": "CheckboxOption"
+    }
+    new_options.append(option)
+
+# Append them
+ontology_json["tools"][0]["classifications"][0]["options"].extend(new_options)
+
+# Save updated JSON for review
+with open("ontology_updated.json", "w", encoding="utf-8") as f:
+    json.dump(ontology_json, f, indent=2, ensure_ascii=False)
+
+updated_classification = client.upsert_feature_schema(
+    ontology_json["tools"][0]
+)
+```
