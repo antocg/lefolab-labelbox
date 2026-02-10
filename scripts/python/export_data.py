@@ -6,6 +6,7 @@ import os
 import sys
 
 from dotenv import load_dotenv
+from pathlib import Path
 
 # Setup logging with timestamp
 logger = logging.getLogger()
@@ -28,7 +29,8 @@ logger.addHandler(stdout_handler)
 logger.addHandler(stderr_handler)
 
 # Load environment variables from .env file
-load_dotenv()
+project_root = Path(__file__).parent.parent.parent
+load_dotenv(dotenv_path=project_root / '.env')
 
 # Get environment variables
 LABELBOX_API_KEY = os.getenv("LABELBOX_API_KEY")
