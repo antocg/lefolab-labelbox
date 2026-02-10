@@ -1,0 +1,13 @@
+branca
+ExifRead
+folium
+geopandas
+labelbox
+matplotlib
+numpy
+pyproj
+python-dotenv
+rasterio
+requests
+rioxarray
+tqdm
