@@ -27,7 +27,9 @@ PROJECT_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 
 # Load environment variables from .env file
 if [ -f "${PROJECT_ROOT}/.env" ]; then
-    export $(grep -v '^#' "${PROJECT_ROOT}/.env" | xargs)
+    set -a
+    source "${PROJECT_ROOT}/.env"
+    set +a
 else
     error_message ".env file not found at: ${PROJECT_ROOT}/.env"
     exit 1

@@ -28,10 +28,15 @@ source /opt/miniconda3/bin/activate labelbox
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 
-# Set environment variables
-set -a
-source "${PROJECT_ROOT}/.env"
-set +a
+# Load environment variables from .env file
+if [ -f "${PROJECT_ROOT}/.env" ]; then
+    set -a
+    source "${PROJECT_ROOT}/.env"
+    set +a
+else
+    error_message ".env file not found at: ${PROJECT_ROOT}/.env"
+    exit 1
+fi
 
 # Define projects array
 projects=("2025_TBS" "2024_BCI" "2024_BCI_PLOTS" "2024_BCI_OFFISLAND" "2024_BCI_PLOTS_OLD" "2024_BCI_NORTHEAST_OLD")
