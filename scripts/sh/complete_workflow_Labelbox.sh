@@ -21,21 +21,25 @@ check_command() {
     fi
 }
 
-# List of missions
-MISSIONS=(
-"" # Add mission_id
-"" # Add mission_id
-# Add more mission_id here
-)
+# Get the project root directory
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 
-# To import data into Labelbox
-LABELBOX_PREFIX=""      # Prefix for the dataset name
-LABELBOX_PROJECT=""     # Project name to send data rows
+# Load environment variables from .env file
+if [ -f "${PROJECT_ROOT}/.env" ]; then
+    export $(grep -v '^#' "${PROJECT_ROOT}/.env" | xargs)
+else
+    error_message ".env file not found at: ${PROJECT_ROOT}/.env"
+    exit 1
+fi
 
-# To generate maps
-DTM_PATH=""             # Path to DTM file, if available (optional)
-GITHUB_PROJECT=""       # Github project name for copying DTM overview file from GitHub repo (optional)
-MAPPING_MISSION=""      # Name of the mapping mission to use for overview (optional)
+# Load configuration
+if [ -f "${PROJECT_ROOT}/config.sh" ]; then
+    source "${PROJECT_ROOT}/config.sh"
+else
+    error_message "config.sh not found at: ${PROJECT_ROOT}/config.sh"
+    exit 1
+fi
 
 # Validate required paths exist
 if [ ! -z "$DTM_PATH" ] && [ ! -f "$DTM_PATH" ]; then
@@ -64,16 +68,20 @@ for MISSION in "${MISSIONS[@]}"; do
     fi
 
     log_message "Copying data from lefodata to Arbutus for $MISSION"
-    rclone --config /etc/rclone.conf copy /mnt/nfs/lefodata/data/drone_missions/$YEAR/$MISSION/ AllianceCanBuckets:$MISSION -c
+    rclone --config /etc/rclone.conf copy /mnt/nfs/lefodata/data/drone_missions/$YEAR/$MISSION/ AllianceCanBuckets:$BUCKET_WPT/$MISSION -c
     check_command "rclone copy for $MISSION"
     log_message "Data copied to Arbutus for $MISSION"
 
-    source /opt/miniconda3/bin/activate
-    conda activate labelbox
+    source /opt/miniconda3/bin/activate labelbox
     check_command "conda activate labelbox"
     
     log_message "Importing data rows for $MISSION in Labelbox"
-    python /app/lefolab-utils/Labelbox/import_datarows.py --mission_id "$MISSION" --prefix "$LABELBOX_PREFIX"
+    if [ -n "$LABELBOX_PREFIX" ]; then
+        LABELBOX_PREFIX_ARG="--prefix $LABELBOX_PREFIX"
+    else
+        LABELBOX_PREFIX_ARG=""
+    fi
+    python "${PROJECT_ROOT}/scripts/python/import_datarows.py" --mission_id "$MISSION" $LABELBOX_PREFIX_ARG
     check_command "import_datarows.py for $MISSION"
     log_message "Data rows imported for $MISSION in Labelbox"
 
@@ -86,7 +94,7 @@ for MISSION in "${MISSIONS[@]}"; do
     
     if [ -z "$DTM_PATH" ]; then
         log_message "DTM path is not set for $MISSION"
-        python /app/lefolab-utils/Labelbox/generate_maps.py --mission_id $MISSION --output_dir $OUTPUT_DIR $MAPPING_MISSION_ARG
+        python "${PROJECT_ROOT}/scripts/python/generate_maps.py" --mission_id "$MISSION" --output_dir "$OUTPUT_DIR" $MAPPING_MISSION_ARG
         check_command "generate_maps.py (without DTM) for $MISSION"
     else
         if [ -n "$GITHUB_PROJECT" ]; then
@@ -94,20 +102,20 @@ for MISSION in "${MISSIONS[@]}"; do
         else
             GITHUB_PROJECT_ARG=""
         fi
-        python /app/lefolab-utils/Labelbox/generate_maps.py --mission_id $MISSION --dtm_path  $DTM_PATH --output_dir $OUTPUT_DIR $GITHUB_PROJECT_ARG $MAPPING_MISSION_ARG
+        python "${PROJECT_ROOT}/scripts/python/generate_maps.py" --mission_id "$MISSION" --dtm_path "$DTM_PATH" --output_dir "$OUTPUT_DIR" $GITHUB_PROJECT_ARG $MAPPING_MISSION_ARG
         check_command "generate_maps.py (with DTM) for $MISSION"
     fi
     log_message "Maps generated for $MISSION and saved in $OUTPUT_DIR"
 
     log_message "Sending data rows for $MISSION to $LABELBOX_PROJECT"
-    python /app/lefolab-utils/Labelbox/send_to_annotate.py --mission_id "$MISSION" --prefix "$LABELBOX_PREFIX" --project "$LABELBOX_PROJECT"
+    python "${PROJECT_ROOT}/scripts/python/send_to_annotate.py" --mission_id "$MISSION" --project "$LABELBOX_PROJECT" $LABELBOX_PREFIX_ARG
     check_command "send_to_annotate.py for $MISSION"
     log_message "Data rows sent for $MISSION to $LABELBOX_PROJECT"
 
     conda deactivate
 
     log_message "Copying maps to Arbutus for $MISSION"
-    rclone --config /etc/rclone.conf copy "$OUTPUT_DIR/$MISSION/" "AllianceCanBuckets:$MISSION" -c
+    rclone --config /etc/rclone.conf copy "$OUTPUT_DIR/$MISSION/" "AllianceCanBuckets:$BUCKET_WPT/$MISSION" -c
     check_command "rclone copy maps for $MISSION"
     log_message "Maps copied to Arbutus for $MISSION"
 

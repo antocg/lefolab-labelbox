@@ -71,3 +71,6 @@ temp*/
 
 # Data folder not to be shared
 projects/2025_Manaus/data
+
+# Test folder
+test/

@@ -29,17 +29,20 @@ load_dotenv()
 
 # Get environment variables
 ALLIANCECAN_URL = os.getenv("ALLIANCECAN_URL")
-BASE_PATH_CONRAD = os.getenv("BASE_PATH_CONRAD")
+CONRAD_PATH = os.getenv("CONRAD_PATH")
+BUCKET_WPT = os.getenv("BUCKET_WPT")
 
 # Verify environment variables are set
 if not ALLIANCECAN_URL:
     raise ValueError("ALLIANCECAN_URL environment variable is not set")
-if not BASE_PATH_CONRAD:
-    raise ValueError("BASE_PATH_CONRAD environment variable is not set")
+if not CONRAD_PATH:
+    raise ValueError("CONRAD_PATH environment variable is not set")
+if not BUCKET_WPT:
+    raise ValueError("BUCKET_WPT environment variable is not set")
 
 def search_latest_mapping(mission_id):
     """
-    Search for the most recent mapping mission in BASE_PATH_CONRAD/YYYY/ by zoom mission.
+    Search for the most recent mapping mission in CONRAD_PATH/YYYY/ by zoom mission.
 
     Args:
         mission_id (str): Zoom mission_id to filter mapping missions.
@@ -61,7 +64,7 @@ def search_latest_mapping(mission_id):
     
     matching_dirs = []
     for year in years:
-        folder_path = os.path.join(BASE_PATH_CONRAD, year)
+        folder_path = os.path.join(CONRAD_PATH, year)
         if not os.path.exists(folder_path):
             continue
         # Get all subdirectories in the folder that match the keyword
@@ -433,7 +436,7 @@ def setup_logging(mission_id, output_dir):
     log_dir = os.path.join(output_dir, mission_id, 'labelbox')
     os.makedirs(log_dir, exist_ok=True)
 
-    info_log_file = os.path.join(log_dir, f'{mission_id}_maps_info.log')
+    info_log_file = os.path.join(log_dir, f'{mission_id}_maps.log')
     error_log_file = os.path.join(log_dir, f'{mission_id}_maps_error.log')
 
     logger = logging.getLogger('MapGenerator')
@@ -493,7 +496,7 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
         raise ValueError(f"Mapping mission {mapping_mission} does not start with 8 digits")
     year = mapping_mission[:4]
 
-    basename_path = f"{BASE_PATH_CONRAD}/{year}/{mapping_mission}/{mapping_mission}"
+    basename_path = f"{CONRAD_PATH}/{year}/{mapping_mission}/{mapping_mission}"
 
     # Define paths to DSM files
     dsm_cog_path = f"{basename_path}_dsm.cog.tif"
@@ -510,32 +513,41 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
         rgb_path = rgb_cog_path
 
     # List all pictures on Alliance Canada for a given mission
-    # Step 1: Specify the URL of the folder
-    folder_url = f"{ALLIANCECAN_URL}/{mission_id}/"
+    # Specify the URL of the folder
+    folder_url = f"{ALLIANCECAN_URL}/{BUCKET_WPT}/{mission_id}/"
 
-    # Step 2: Fetch the XML data
+    # Fetch the XML data
     response = requests.get(folder_url)
     if response.status_code == 200:
-        # Step 3: Parse the XML
+        # Parse the XML
         xml_data = response.text
         root = ET.fromstring(xml_data)
 
-        # Step 4: Extract the namespace from the root tag
+        # Extract the namespace from the root tag
         namespace = {"ns": root.tag.split("}")[0].strip("{")} if "}" in root.tag else {}
 
-        # Step 5: Extract file keys
+        # Extract file keys
         file_keys = []
         for content in root.findall("ns:Contents", namespace):
             key = content.find("ns:Key", namespace).text
-            if key.lower().endswith(".jpg"):  # keep pictures only
+            if key.lower().endswith(".jpg"):
                 file_keys.append(key)
 
         logger.info(f"{len(file_keys)} pictures found for this mission : {mission_id}")
         
-        # Step 6: Filter for close-up pictures
-        zoom_files = [key for key in file_keys if "zoom" in key]
+        # Filter for close-up pictures (detect naming convention)
+        closeup_files = [key for key in file_keys if "tele" in key]
+        if closeup_files:
+            logger.info(f"{len(closeup_files)} close-up pictures (tele) found for this mission : {mission_id}")
+        
+        else:
+            closeup_files = [key for key in file_keys if "zoom" in key]
+            if closeup_files:
+                logger.info("Using legacy naming convention (zoom).")
+                logger.info(f"{len(closeup_files)} close-up pictures (zoom) found for this mission : {mission_id}")
+            else:
+                logger.warning(f"No close-up pictures found for this mission : {mission_id}")
 
-        logger.info(f"{len(zoom_files)} close-up pictures found for this mission : {mission_id}")
     else:
         logger.error(f"Failed to fetch XML. HTTP Status Code: {response.status_code}")
         return
@@ -550,25 +562,33 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
     errors_occurred = 0
     
     # Define the URL for the RGB and DTM overview image
-    rgb_png_url = f"{ALLIANCECAN_URL}/{mission_id}/labelbox/{mapping_mission}_rgb.overview.png"
-    dtm_png_url = f"{ALLIANCECAN_URL}/{mission_id}/labelbox/{mapping_mission}_dtm.overview.png"
+    rgb_png_url = f"{folder_url}labelbox/{mapping_mission}_rgb.overview.png"
+    dtm_png_url = f"{folder_url}labelbox/{mapping_mission}_dtm.overview.png"
     
-    # Process all zoom files
-    for zoom_file in zoom_files:
-        # Extract the identifier from the zoom filename
-        zoom_basename = os.path.basename(zoom_file)
-        identifier_match = zoom_basename.split("_")[-1].lower().replace("zoom.jpg", "")
+    # Process all close-up files
+    for closeup_file in closeup_files:
+        # Detect naming convention and extract the polygon id
+        if "tele" in closeup_file:
+            polygon_id = closeup_file.split('_')[-1].lower().replace('tele.jpg', '')
+            wide_file_end = f"_{polygon_id}wide.JPG"
+            exclusion_keyword = "tele"
+        else:
+            # Legacy naming convention (zoom)
+            polygon_id = closeup_file.split('_')[-1].lower().replace('zoom.jpg', '')
+            wide_file_end = f"_{polygon_id}.JPG"
+            exclusion_keyword = "zoom"
         
-        # Find the corresponding wide photo that has the same identifier
+        # Find the corresponding wide file from file_keys
         wide_file = None
-        for key in file_keys:
-            wide_basename = os.path.basename(key)
-            if re.search(rf'_{identifier_match}\.jpg$', wide_basename, re.IGNORECASE):
-                wide_file = key
-                break
+        matching_wide_files = [key for key in file_keys if wide_file_end in key and exclusion_keyword not in key]
+        
+        if len(matching_wide_files) > 1:
+            logger.warning(f"Warning: Multiple wide pictures found for {closeup_file}: {matching_wide_files}. Using the first match.")
+        
+        wide_file = matching_wide_files[0] if matching_wide_files else None
         
         if not wide_file:
-            logger.warning(f"Could not find matching wide photo for {zoom_file} with identifier {identifier_match}")
+            logger.warning(f"No wide file found for {closeup_file}")
             break
         
         # Build the URL for wide pictures to extract coordinates
@@ -583,7 +603,7 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
             
             try:
                 # Build the output file name and directory path
-                filename_with_extension = os.path.basename(zoom_file)
+                filename_with_extension = os.path.basename(closeup_file)
                 filename = os.path.splitext(filename_with_extension)[0]
                 
                 # Create the directory path
@@ -599,10 +619,10 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
                 logger.info(f"Created map: {output_file}")
                 maps_created += 1
             except Exception as e:
-                logger.error(f"Error creating map for {zoom_file}: {str(e)}")
+                logger.error(f"Error creating map for {closeup_file}: {str(e)}")
                 errors_occurred += 1
         else:
-            logger.warning(f"No coordinates found for {zoom_file}")
+            logger.warning(f"No coordinates found for {closeup_file}")
             errors_occurred += 1
     
     logger.info(f"Mission {mission_id} - Total maps created: {maps_created} in {time.time() - start_time:.1f} seconds")
@@ -615,7 +635,7 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
         os.makedirs(dest_dir, exist_ok=True)
         
         # Copy RGB overview file
-        rgb_overview_src = f"{BASE_PATH_CONRAD}/{year}/{mapping_mission}/{mapping_mission}_rgb.overview.png"
+        rgb_overview_src = f"{CONRAD_PATH}/{year}/{mapping_mission}/{mapping_mission}_rgb.overview.png"
         rgb_overview_dest = f"{dest_dir}/{mapping_mission}_rgb.overview.png"
         
         if os.path.exists(rgb_overview_src):
@@ -626,7 +646,7 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
         
         # Copy DTM overview file if github_project is provided
         if github_project:
-            dtm_overview_src = f"/app/lefolab-utils/Labelbox/{github_project}/{github_project}_dtm.overview.png"
+            dtm_overview_src = f"/app/lefolab-Labelbox/projects/{github_project}/{github_project}_dtm.overview.png"
             dtm_overview_dest = f"{dest_dir}/{mapping_mission}_dtm.overview.png"
             
             if os.path.exists(dtm_overview_src):

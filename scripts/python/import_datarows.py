@@ -8,6 +8,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 from dotenv import load_dotenv
+from pathlib import Path
 
 # Setup logging with timestamp
 logger = logging.getLogger()
@@ -30,11 +31,13 @@ logger.addHandler(stdout_handler)
 logger.addHandler(stderr_handler)
 
 # Load environment variables from .env file
-load_dotenv()
+project_root = Path(__file__).parent.parent.parent
+load_dotenv(dotenv_path=project_root / '.env')
 
 # Get environment variables
 ALLIANCECAN_URL = os.getenv("ALLIANCECAN_URL")
 LABELBOX_API_KEY = os.getenv("LABELBOX_API_KEY")
+BUCKET_WPT = os.getenv("BUCKET_WPT")
 
 # Verify environment variables are set
 if not ALLIANCECAN_URL:
@@ -43,47 +46,74 @@ if not ALLIANCECAN_URL:
 if not LABELBOX_API_KEY:
     logger.error("LABELBOX_API_KEY environment variable is not set")
     raise ValueError("LABELBOX_API_KEY environment variable is not set")
+if not BUCKET_WPT:
+    logger.error("BUCKET_WPT environment variable is not set")
+    raise ValueError("BUCKET_WPT environment variable is not set")
 
 client = lb.Client(api_key=LABELBOX_API_KEY)
 
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description="Import data rows into Labelbox.")
 parser.add_argument("--mission_id", required=True, help="Mission ID to generate the dataset.")
-parser.add_argument("--prefix", required=True, help="Prefix for the dataset name.")
+parser.add_argument("--prefix", help="Prefix for the dataset name.")
 args = parser.parse_args()
 
 mission_id = args.mission_id
-prefix = args.prefix
+
+if args.prefix:
+    prefix = args.prefix
+else:
+    parts = mission_id.split('_')
+    if len(parts) >= 4:
+        site = parts[1]
+        if site.startswith('tbs'):
+            prefix = '2025_tiputini'
+        elif site.startswith('bci'):
+            prefix = '2024_bci'
+        else:
+            logger.error("Site in mission ID is not recognized, unable to extract prefix for Labelbox dataset.")
+            raise ValueError("Site in mission ID is not recognized, unable to extract prefix for Labelbox dataset. Please provide a prefix.")
+    else:
+        logger.error("Mission ID does not follow expected format, unable to extract prefix for Labelbox dataset.")
+        raise ValueError("Mission ID does not follow expected format, unable to extract prefix for Labelbox dataset. Please provide a prefix.")
 
 # List all pictures on Alliance Canada for a given mission
-# Step 1: Specify the URL of the folder
-folder_url = f"{ALLIANCECAN_URL}/{mission_id}/"
+# Specify the URL of the folder
+folder_url = f"{ALLIANCECAN_URL}/{BUCKET_WPT}/{mission_id}/"
 
-# Step 2: Fetch the XML data
+# Fetch the XML data
 response = requests.get(folder_url)
 if response.status_code == 200:
-    # Step 3: Parse the XML
+    # Parse the XML
     xml_data = response.text
     root = ET.fromstring(xml_data)
 
-    # Step 4: Extract the namespace from the root tag
+    # Extract the namespace from the root tag
     namespace = {"ns": root.tag.split("}")[0].strip("{")} if "}" in root.tag else {}
 
-    # Step 5: Extract file keys
+    # Extract file keys
     file_keys = []
     for content in root.findall("ns:Contents", namespace):
         key = content.find("ns:Key", namespace).text
-        if key.lower().endswith(".jpg"):  # keep pictures only
+        if key.lower().endswith(".jpg"):
             file_keys.append(key)
 
     # Print the result
     logger.info(f"{len(file_keys)} pictures found for this mission : {mission_id}")
     
-    # Step 6: Filter for close-up pictures
-    zoom_files = [key for key in file_keys if "zoom" in key]
+    # Filter for close-up pictures (detect naming convention)
+    closeup_files = [key for key in file_keys if "tele" in key]
+    if closeup_files:
+        logger.info(f"{len(closeup_files)} close-up pictures (tele) found for this mission : {mission_id}")
+    
+    else:
+        closeup_files = [key for key in file_keys if "zoom" in key]
+        if closeup_files:
+            logger.info("Using legacy naming convention (zoom).")
+            logger.info(f"{len(closeup_files)} close-up pictures (zoom) found for this mission : {mission_id}")
+        else:
+            logger.warning(f"No close-up pictures found for this mission : {mission_id}")
 
-    # Print the result
-    logger.info(f"{len(zoom_files)} close-up pictures found for this mission : {mission_id}")
 else:
     logger.error(f"Failed to fetch XML. HTTP Status Code: {response.status_code}")
 
@@ -114,45 +144,54 @@ assets_template = {
 # Create a list of assets
 assets = []
 
-for i, zoom_file in enumerate(zoom_files):
+for i, closeup_file in enumerate(closeup_files):
     # Make a copy of the template for each asset
     asset = copy.deepcopy(assets_template)
     
-    # Replace row_data with the current zoom_file (URL)
-    asset["row_data"] = f"{folder_url}{zoom_file}"
+    # Replace row_data with the current closeup_file (URL)
+    asset["row_data"] = f"{folder_url}{closeup_file}"
     
     # Use file name as unique global_key
-    file = zoom_file.split('/', 1)[-1]
+    file = closeup_file.split('/', 1)[-1]
     asset["global_key"] = file
     
     # Metadata fields : mission_id
     asset["metadata_fields"][0]["value"] = f"{mission_id}" 
     
-    # Extract the polygon id from the zoom file name
-    polygon_id = zoom_file.split('_')[-1].replace('zoom.JPG', '')
+    # Detect naming convention and extract the polygon id
+    if "tele" in closeup_file:
+        polygon_id = closeup_file.split('_')[-1].lower().replace('tele.jpg', '')
+        wide_file_end = f"_{polygon_id}wide.JPG"
+        exclusion_keyword = "tele"
+    else:
+        # Legacy naming convention (zoom)
+        polygon_id = closeup_file.split('_')[-1].lower().replace('zoom.jpg', '')
+        wide_file_end = f"_{polygon_id}.JPG"
+        exclusion_keyword = "zoom"
     
     # Metadata fields : polygon_id
     asset["metadata_fields"][1]["value"] = f"{polygon_id}" 
     
     # Attach the map
-    zoom_basename = os.path.basename(zoom_file)
-    map_url = f"{ALLIANCECAN_URL}/{mission_id}/labelbox/attachments/{zoom_basename.replace('.JPG', '.html')}"
+    closeup_basename = os.path.basename(closeup_file)
+    map_url = f"{ALLIANCECAN_URL}/{mission_id}/labelbox/attachments/{closeup_basename.replace('.JPG', '.html')}"
     
     asset["attachments"][1]["value"] = map_url
     
     # Find the corresponding wide file from file_keys
     wide_file = None
-    wide_file_end = f"_{polygon_id}.JPG"
-    for key in file_keys:
-        if wide_file_end in key and "zoom" not in key:
-            wide_file = key
-            break  # Exit the loop once the first match is found
+    matching_wide_files = [key for key in file_keys if wide_file_end in key and exclusion_keyword not in key]
+    
+    if len(matching_wide_files) > 1:
+        logger.warning(f"Warning: Multiple wide pictures found for {closeup_file}: {matching_wide_files}. Using the first match.")
+    
+    wide_file = matching_wide_files[0] if matching_wide_files else None
     
     # If a wide file is found, set the attachment value
     if wide_file:
         asset["attachments"][0]["value"] = f"{folder_url}{wide_file}"
     else:
-        logger.warning(f"No wide file found for {zoom_file}")
+        logger.warning(f"No wide file found for {closeup_file}")
     
     # Add the updated asset to the list
     assets.append(asset)

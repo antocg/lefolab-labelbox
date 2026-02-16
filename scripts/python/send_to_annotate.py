@@ -31,13 +31,9 @@ logger.addHandler(stderr_handler)
 load_dotenv()
 
 # Get environment variables
-ALLIANCECAN_URL = os.getenv("ALLIANCECAN_URL")
 LABELBOX_API_KEY = os.getenv("LABELBOX_API_KEY")
 
 # Verify environment variables are set
-if not ALLIANCECAN_URL:
-    logger.error("ALLIANCECAN_URL environment variable is not set")
-    raise ValueError("ALLIANCECAN_URL environment variable is not set")
 if not LABELBOX_API_KEY:
     logger.error("LABELBOX_API_KEY environment variable is not set")
     raise ValueError("LABELBOX_API_KEY environment variable is not set")
@@ -47,13 +43,29 @@ client = lb.Client(api_key=LABELBOX_API_KEY)
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description="Send data rows to Labelbox project.")
 parser.add_argument("--mission_id", required=True, help="Mission ID to generate the dataset.")
-parser.add_argument("--prefix", required=True, help="Prefix for the dataset name.")
 parser.add_argument("--project", required=True, help="Project name where the data rows are sent.")
+parser.add_argument("--prefix", help="Prefix for the dataset name.")
 args = parser.parse_args()
 
 mission_id = args.mission_id
-prefix = args.prefix
 project_name = args.project
+
+if args.prefix:
+    prefix = args.prefix
+else:
+    parts = mission_id.split('_')
+    if len(parts) >= 4:
+        site = parts[1]
+        if site.startswith('tbs'):
+            prefix = '2025_tiputini'
+        elif site.startswith('bci'):
+            prefix = '2024_bci'
+        else:
+            logger.error("Site in mission ID is not recognized, unable to extract prefix for Labelbox dataset.")
+            raise ValueError("Site in mission ID is not recognized, unable to extract prefix for Labelbox dataset. Please provide a prefix.")
+    else:
+        logger.error("Mission ID does not follow expected format, unable to extract prefix for Labelbox dataset.")
+        raise ValueError("Mission ID does not follow expected format, unable to extract prefix for Labelbox dataset. Please provide a prefix.")
 
 # Find the project by name
 projects = client.get_projects()

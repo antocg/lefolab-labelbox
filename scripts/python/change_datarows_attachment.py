@@ -7,14 +7,13 @@ import xml.etree.ElementTree as ET
 from dotenv import load_dotenv
 
 
-def get_mission_files(mission_id, alliancecan_url, legacy=False):
+def get_mission_files(mission_id, alliancecan_url):
     """
     Fetch all files for a given mission from Alliance Canada.
     
     Args:
         mission_id (str): Mission ID to fetch files for
         alliancecan_url (str): Base URL for Alliance Canada
-        legacy (bool): If True, use legacy naming convention with "zoom", else use "tele"
         
     Returns:
         tuple: (file_keys, closeup_files, folder_url)
@@ -37,18 +36,23 @@ def get_mission_files(mission_id, alliancecan_url, legacy=False):
     file_keys = []
     for content in root.findall("ns:Contents", namespace):
         key = content.find("ns:Key", namespace).text
-        if key.lower().endswith(".jpg"):  # keep pictures only
+        if key.lower().endswith(".jpg"): 
             file_keys.append(key)
     
     print(f"{len(file_keys)} pictures found for this mission : {mission_id}")
     
-    # Filter for close-up pictures based on naming convention
-    if legacy:
-        closeup_files = [key for key in file_keys if "zoom" in key]
-        print(f"{len(closeup_files)} close-up pictures (zoom) found for this mission : {mission_id}")
-    else:
-        closeup_files = [key for key in file_keys if "tele" in key]
+    # Filter for close-up pictures (detect naming convention)
+    closeup_files = [key for key in file_keys if "tele" in key]
+    
+    if closeup_files:
         print(f"{len(closeup_files)} close-up pictures (tele) found for this mission : {mission_id}")
+    else:
+        closeup_files = [key for key in file_keys if "zoom" in key]
+        if closeup_files:
+            print("Using legacy naming convention (zoom).")
+            print(f"{len(closeup_files)} close-up pictures (zoom) found for this mission : {mission_id}")
+        else:
+            print(f"No close-up pictures found for this mission : {mission_id}")
     
     return file_keys, closeup_files, folder_url
 
@@ -76,7 +80,7 @@ def delete_attachments(client, closeup_files):
     print(f"Deleted attachments for all {len(closeup_files)} data rows")
 
 
-def create_attachments(client, closeup_files, file_keys, folder_url, mission_id, alliancecan_url, legacy=False):
+def create_attachments(client, closeup_files, file_keys, folder_url, mission_id, alliancecan_url):
     """
     Create new attachments for each data row in the dataset.
     
@@ -87,7 +91,6 @@ def create_attachments(client, closeup_files, file_keys, folder_url, mission_id,
         folder_url (str): URL of the folder
         mission_id (str): Mission ID
         alliancecan_url (str): Base URL for Alliance Canada
-        legacy (bool): If True, use legacy naming convention with "zoom", else use "tele"
     """
     print("Creating new attachments...")
     for i, closeup_file in enumerate(closeup_files):
@@ -99,27 +102,29 @@ def create_attachments(client, closeup_files, file_keys, folder_url, mission_id,
         closeup_basename = os.path.basename(closeup_file)
         map_url = f"{alliancecan_url}/{mission_id}/labelbox/attachments/{closeup_basename.replace('.JPG', '.html')}"
         
-        # Extract the polygon id based on naming convention
-        if legacy:
-            polygon_id = closeup_file.split('_')[-1].replace('zoom.JPG', '')
-            wide_file_end = f"_{polygon_id}.JPG"
-            exclusion_keyword = "zoom"
-        else:
-            polygon_id = closeup_file.replace('tele.JPG', '').split('_')[-1]
+        # Detect naming convention and extract the polygon id
+        if "tele" in closeup_file:
+            polygon_id = closeup_file.split('_')[-1].lower().replace('tele.jpg', '')
             wide_file_end = f"_{polygon_id}wide.JPG"
             exclusion_keyword = "tele"
+        else:
+            # Legacy naming convention (zoom)
+            polygon_id = closeup_file.split('_')[-1].lower().replace('zoom.jpg', '')
+            wide_file_end = f"_{polygon_id}.JPG"
+            exclusion_keyword = "zoom"
         
         # Find the corresponding wide file from file_keys
-        wide_file = None
-        for key in file_keys:
-            if wide_file_end in key and exclusion_keyword not in key:
-                wide_file = key
-                break  # Exit the loop once the first match is found
+        matching_wide_files = [key for key in file_keys if wide_file_end in key and exclusion_keyword not in key]
+        
+        if len(matching_wide_files) > 1:
+            print(f"Warning: Multiple wide pictures found for {closeup_file}: {matching_wide_files}. Using the first match.")
+        
+        wide_file = matching_wide_files[0] if matching_wide_files else None
         
         if wide_file:
             data_row.create_attachment(attachment_type="IMAGE", attachment_value=f"{folder_url}{wide_file}", attachment_name="wide")
         else:
-            print(f"Warning: No wide file found for {file} (polygon_id: {polygon_id})")
+            print(f"Warning: No wide file found for {closeup_file} (polygon_id: {polygon_id})")
         
         data_row.create_attachment(attachment_type="HTML", attachment_value=map_url, attachment_name="map")
         
@@ -163,7 +168,6 @@ def main():
     parser.add_argument("--project", required=True, help="Project name.")
     parser.add_argument("-d", "--delete", action="store_true", help="Delete existing attachments.")
     parser.add_argument("-c", "--create", action="store_true", help="Create new attachments.")
-    parser.add_argument("-l", "--legacy", action="store_true", help="Use legacy naming convention with 'zoom' instead of 'tele'.")
     args = parser.parse_args()
     
     # Load environment variables from .env file
@@ -194,7 +198,7 @@ def main():
         return
     
     # Get mission files
-    file_keys, closeup_files, folder_url = get_mission_files(args.mission_id, ALLIANCECAN_URL, args.legacy)
+    file_keys, closeup_files, folder_url = get_mission_files(args.mission_id, ALLIANCECAN_URL)
     
     if not closeup_files:
         print("No close-up files found. Exiting.")
@@ -205,7 +209,7 @@ def main():
         delete_attachments(client, closeup_files)
     
     if args.create:
-        create_attachments(client, closeup_files, file_keys, folder_url, args.mission_id, ALLIANCECAN_URL, args.legacy)
+        create_attachments(client, closeup_files, file_keys, folder_url, args.mission_id, ALLIANCECAN_URL)
     
     if not args.delete and not args.create:
         print("No operation specified. Use -d to delete attachments or -c to create attachments.")
