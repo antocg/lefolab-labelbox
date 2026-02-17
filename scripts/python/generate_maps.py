@@ -1,4 +1,5 @@
 import argparse
+import boto3
 import branca.colormap as bcm
 import datetime
 import exifread
@@ -16,31 +17,18 @@ import sys
 import time
 import xml.etree.ElementTree as ET
 
+from botocore import UNSIGNED
+from botocore.client import Config
 from dotenv import load_dotenv
 from folium import Element
 from folium import IFrame
 from io import BytesIO
 from matplotlib import colormaps
+from pathlib import Path
 from pyproj import Transformer
 from rasterio.transform import rowcol
 
-# Load environment variables from .env file
-load_dotenv()
-
-# Get environment variables
-ALLIANCECAN_URL = os.getenv("ALLIANCECAN_URL")
-CONRAD_PATH = os.getenv("CONRAD_PATH")
-BUCKET_WPT = os.getenv("BUCKET_WPT")
-
-# Verify environment variables are set
-if not ALLIANCECAN_URL:
-    raise ValueError("ALLIANCECAN_URL environment variable is not set")
-if not CONRAD_PATH:
-    raise ValueError("CONRAD_PATH environment variable is not set")
-if not BUCKET_WPT:
-    raise ValueError("BUCKET_WPT environment variable is not set")
-
-def search_latest_mapping(mission_id):
+def search_latest_mapping(mission_id, conrad_path):
     """
     Search for the most recent mapping mission in CONRAD_PATH/YYYY/ by zoom mission.
 
@@ -64,7 +52,7 @@ def search_latest_mapping(mission_id):
     
     matching_dirs = []
     for year in years:
-        folder_path = os.path.join(CONRAD_PATH, year)
+        folder_path = os.path.join(conrad_path, "metashape", year)
         if not os.path.exists(folder_path):
             continue
         # Get all subdirectories in the folder that match the keyword
@@ -481,11 +469,35 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
     logger = setup_logging(mission_id, output_dir)
     logger.info(f"Processing mission: {mission_id}")
     
+    # Load environment variables from .env file
+    project_root = Path(__file__).parent.parent.parent
+    load_dotenv(dotenv_path=project_root / '.env')
+
+    # Get environment variables
+    ALLIANCECAN_URL = os.getenv("ALLIANCECAN_URL")
+    CONRAD_PATH = os.getenv("CONRAD_PATH")
+    BUCKET_WPT = os.getenv("BUCKET_WPT")
+    AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+    AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+
+    # Verify environment variables are set
+    if not ALLIANCECAN_URL:
+        logger.error("ALLIANCECAN_URL environment variable is not set")
+        raise ValueError("ALLIANCECAN_URL environment variable is not set")
+    if not CONRAD_PATH:
+        logger.error("CONRAD_PATH environment variable is not set")
+        raise ValueError("CONRAD_PATH environment variable is not set")
+    if not BUCKET_WPT:
+        logger.error("BUCKET_WPT environment variable is not set")
+        raise ValueError("BUCKET_WPT environment variable is not set")
+    if not AWS_ACCESS_KEY_ID or not AWS_SECRET_ACCESS_KEY:
+        logger.warning("AWS_ACCESS_KEY_ID and/or AWS_SECRET_ACCESS_KEY environment variables are not set. Assuming public bucket access.")
+
     # Use provided mapping_mission or search for the latest
     if mapping_mission:
         logger.info(f"Using provided mapping mission: {mapping_mission}")
     else:
-        mapping_mission = search_latest_mapping(mission_id)
+        mapping_mission = search_latest_mapping(mission_id, CONRAD_PATH)
         logger.info(f"Found mapping mission: {mapping_mission}")
         if not mapping_mission:
             logger.error(f"No mapping mission found for zoom mission {mission_id}. Specify a mapping mission manually.")
@@ -496,7 +508,7 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
         raise ValueError(f"Mapping mission {mapping_mission} does not start with 8 digits")
     year = mapping_mission[:4]
 
-    basename_path = f"{CONRAD_PATH}/{year}/{mapping_mission}/{mapping_mission}"
+    basename_path = f"{CONRAD_PATH}/metashape/{year}/{mapping_mission}/{mapping_mission}"
 
     # Define paths to DSM files
     dsm_cog_path = f"{basename_path}_dsm.cog.tif"
@@ -513,44 +525,60 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
         rgb_path = rgb_cog_path
 
     # List all pictures on Alliance Canada for a given mission
-    # Specify the URL of the folder
-    folder_url = f"{ALLIANCECAN_URL}/{BUCKET_WPT}/{mission_id}/"
 
-    # Fetch the XML data
-    response = requests.get(folder_url)
-    if response.status_code == 200:
-        # Parse the XML
-        xml_data = response.text
-        root = ET.fromstring(xml_data)
+    # Configure S3 client for Alliance Canada (S3-compatible storage)
+    if AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY:
+        # Use credentials if provided
+        s3_client = boto3.client(
+            's3',
+            endpoint_url=ALLIANCECAN_URL,
+            aws_access_key_id=AWS_ACCESS_KEY_ID,
+            aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
+            config=Config(signature_version='s3v4')
+        )
+    else:
+        # Use anonymous access (public bucket)
+        s3_client = boto3.client(
+            's3',
+            endpoint_url=ALLIANCECAN_URL,
+            config=Config(signature_version=UNSIGNED)
+        )
 
-        # Extract the namespace from the root tag
-        namespace = {"ns": root.tag.split("}")[0].strip("{")} if "}" in root.tag else {}
+    # Use paginator to automatically handle pagination
+    try:
+        paginator = s3_client.get_paginator('list_objects_v2')
+        pages = paginator.paginate(Bucket=BUCKET_WPT, Prefix=mission_id)
 
-        # Extract file keys
+        # Collect all file keys
         file_keys = []
-        for content in root.findall("ns:Contents", namespace):
-            key = content.find("ns:Key", namespace).text
-            if key.lower().endswith(".jpg"):
-                file_keys.append(key)
+        for page in pages:
+            if 'Contents' in page:
+                for obj in page['Contents']:
+                    key = obj['Key']
+                    if key.lower().endswith('.jpg'):
+                        file_keys.append(key)
+    except Exception as e:
+        logger.error(f"Failed to retrieve files from S3 bucket: {e}")
+        sys.exit(1)
 
-        logger.info(f"{len(file_keys)} pictures found for this mission : {mission_id}")
-        
-        # Filter for close-up pictures (detect naming convention)
-        closeup_files = [key for key in file_keys if "tele" in key]
-        if closeup_files:
-            logger.info(f"{len(closeup_files)} close-up pictures (tele) found for this mission : {mission_id}")
-        
-        else:
-            closeup_files = [key for key in file_keys if "zoom" in key]
-            if closeup_files:
-                logger.info("Using legacy naming convention (zoom).")
-                logger.info(f"{len(closeup_files)} close-up pictures (zoom) found for this mission : {mission_id}")
-            else:
-                logger.warning(f"No close-up pictures found for this mission : {mission_id}")
+    # Construct folder URL for generating asset URLs
+    folder_url = f"{ALLIANCECAN_URL}/{BUCKET_WPT}"
+
+    # Print the result
+    logger.info(f"{len(file_keys)} pictures found for this mission : {mission_id}")
+
+    # Filter for close-up pictures (detect naming convention)
+    closeup_files = [key for key in file_keys if "tele" in key]
+    if closeup_files:
+        logger.info(f"{len(closeup_files)} close-up pictures (tele) found for this mission : {mission_id}")
 
     else:
-        logger.error(f"Failed to fetch XML. HTTP Status Code: {response.status_code}")
-        return
+        closeup_files = [key for key in file_keys if "zoom" in key]
+        if closeup_files:
+            logger.info("Using legacy naming convention (zoom).")
+            logger.info(f"{len(closeup_files)} close-up pictures (zoom) found for this mission : {mission_id}")
+        else:
+            logger.warning(f"No close-up pictures found for this mission : {mission_id}")
     
     bbox = get_bounding_box_from_raster(rgb_path)
     if not bbox:
@@ -562,8 +590,8 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
     errors_occurred = 0
     
     # Define the URL for the RGB and DTM overview image
-    rgb_png_url = f"{folder_url}labelbox/{mapping_mission}_rgb.overview.png"
-    dtm_png_url = f"{folder_url}labelbox/{mapping_mission}_dtm.overview.png"
+    rgb_png_url = f"{folder_url}/{mission_id}/labelbox/{mapping_mission}_rgb.overview.png"
+    dtm_png_url = f"{folder_url}/{mission_id}/labelbox/dtm.overview.png"
     
     # Process all close-up files
     for closeup_file in closeup_files:
@@ -592,7 +620,7 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
             break
         
         # Build the URL for wide pictures to extract coordinates
-        wide_picture_url = f'{folder_url}{wide_file}'
+        wide_picture_url = f'{folder_url}/{wide_file}'
         
         # Extract coordinates from the wide photo
         wide_coordinates = get_coordinates_from_image_url(wide_picture_url)
@@ -601,25 +629,38 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
         if wide_coordinates:
             lat, lon = wide_coordinates
             
-            try:
-                # Build the output file name and directory path
-                filename_with_extension = os.path.basename(closeup_file)
-                filename = os.path.splitext(filename_with_extension)[0]
-                
-                # Create the directory path
-                output_folder = f"{output_dir}/{mission_id}/labelbox/attachments"
-                os.makedirs(output_folder, exist_ok=True)
-    
-                # Create the full output file path
-                output_file = f"{output_folder}/{filename}.html"
-                
-                # Create the map with the given parameters
-                create_map(lat, lon, rgb_png_url, dtm_png_url, bbox, output_file, dsm_path=dsm_path, dtm_path=dtm_path)
-    
-                logger.info(f"Created map: {output_file}")
-                maps_created += 1
-            except Exception as e:
-                logger.error(f"Error creating map for {closeup_file}: {str(e)}")
+            max_attempts = 3
+            success = False
+            last_error = None
+            
+            for attempt in range(max_attempts):
+                try:
+                    # Build the output file name and directory path
+                    filename_with_extension = os.path.basename(closeup_file)
+                    filename = os.path.splitext(filename_with_extension)[0]
+                    
+                    # Create the directory path
+                    output_folder = f"{output_dir}/{mission_id}/labelbox/attachments"
+                    os.makedirs(output_folder, exist_ok=True)
+        
+                    # Create the full output file path
+                    output_file = f"{output_folder}/{filename}.html"
+                    
+                    # Create the map with the given parameters
+                    create_map(lat, lon, rgb_png_url, dtm_png_url, bbox, output_file, dsm_path=dsm_path, dtm_path=dtm_path)
+        
+                    logger.info(f"Created map: {output_file}")
+                    maps_created += 1
+                    success = True
+                    break
+                except Exception as e:
+                    last_error = e
+                    if attempt < max_attempts - 1:
+                        logger.warning(f"Attempt {attempt + 1} failed for {closeup_file}, retrying... ({str(e)})")
+                        time.sleep(10)
+                    
+            if not success:
+                logger.error(f"Error creating map for {closeup_file} after {max_attempts} attempts: {str(last_error)}")
                 errors_occurred += 1
         else:
             logger.warning(f"No coordinates found for {closeup_file}")
@@ -635,7 +676,7 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
         os.makedirs(dest_dir, exist_ok=True)
         
         # Copy RGB overview file
-        rgb_overview_src = f"{CONRAD_PATH}/{year}/{mapping_mission}/{mapping_mission}_rgb.overview.png"
+        rgb_overview_src = f"{basename_path}_rgb.overview.png"
         rgb_overview_dest = f"{dest_dir}/{mapping_mission}_rgb.overview.png"
         
         if os.path.exists(rgb_overview_src):
@@ -646,8 +687,8 @@ def main(mission_id, output_dir, dtm_path=None, github_project=None, mapping_mis
         
         # Copy DTM overview file if github_project is provided
         if github_project:
-            dtm_overview_src = f"/app/lefolab-Labelbox/projects/{github_project}/{github_project}_dtm.overview.png"
-            dtm_overview_dest = f"{dest_dir}/{mapping_mission}_dtm.overview.png"
+            dtm_overview_src = f"/app/lefolab-labelbox/projects/{github_project}/{github_project}_dtm.overview.png"
+            dtm_overview_dest = f"{dest_dir}/dtm.overview.png"
             
             if os.path.exists(dtm_overview_src):
                 shutil.copy2(dtm_overview_src, dtm_overview_dest)
@@ -671,4 +712,4 @@ if __name__ == "__main__":
         main(args.mission_id, args.output_dir, args.dtm_path, args.github_project, args.mapping_mission)
     except Exception as e:
         logging.getLogger('MapGenerator').error(f"Fatal error: {str(e)}")
-        sys.exit(1)  # Exit with error code for bash script to catch
+        sys.exit(1)

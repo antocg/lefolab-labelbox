@@ -55,7 +55,7 @@ if [ ! -d "/mnt/nfs/lefodata/data/drone_missions/" ]; then
     exit 1
 fi
 
-OUTPUT_DIR="/data/$USER/Labelbox/$LABELBOX_PROJECT"
+OUTPUT_DIR="/data/$USER/labelbox/$LABELBOX_PROJECT"
 mkdir -p "$OUTPUT_DIR"
 
 # Loop through each mission
@@ -120,6 +120,10 @@ for MISSION in "${MISSIONS[@]}"; do
     rclone --config /etc/rclone.conf copy "$OUTPUT_DIR/$MISSION/" "AllianceCanBuckets:$BUCKET_WPT/$MISSION" -c
     check_command "rclone copy maps for $MISSION"
     log_message "Maps copied to Arbutus for $MISSION"
+
+    log_message "Cleaning up local maps for $MISSION"
+    rm -rf "$OUTPUT_DIR/$MISSION"
+    check_command "cleanup maps for $MISSION"
 
     log_message "Mission $MISSION completed successfully"
 

@@ -1,49 +1,71 @@
 import argparse
+import boto3
 import labelbox as lb
 import os
-import requests
-import xml.etree.ElementTree as ET
 
+from botocore import UNSIGNED
+from botocore.client import Config
 from dotenv import load_dotenv
 
 
-def get_mission_files(mission_id, alliancecan_url):
+def get_mission_files(mission_id, alliancecan_url, bucket_wpt, aws_access_key_id=None, aws_secret_access_key=None):
     """
     Fetch all files for a given mission from Alliance Canada.
     
     Args:
         mission_id (str): Mission ID to fetch files for
         alliancecan_url (str): Base URL for Alliance Canada
-        
+        bucket_wpt (str): Bucket name for WPT mission files
+        aws_access_key_id (str): AWS access key ID (optional)
+        aws_secret_access_key (str): AWS secret access key (optional)
     Returns:
         tuple: (file_keys, closeup_files, folder_url)
     """
-    folder_url = f"{alliancecan_url}/{mission_id}/"
-    
-    response = requests.get(folder_url)
-    if response.status_code != 200:
-        print(f"Failed to fetch XML. HTTP Status Code: {response.status_code}")
+    # List all pictures on Alliance Canada for a given mission
+
+    # Configure S3 client for Alliance Canada (S3-compatible storage)
+    if aws_access_key_id and aws_secret_access_key:
+        # Use credentials if provided
+        s3_client = boto3.client(
+            's3',
+            endpoint_url=alliancecan_url,
+            aws_access_key_id=aws_access_key_id,
+            aws_secret_access_key=aws_secret_access_key,
+            config=Config(signature_version='s3v4')
+        )
+    else:
+        # Use anonymous access (public bucket)
+        s3_client = boto3.client(
+            's3',
+            endpoint_url=alliancecan_url,
+            config=Config(signature_version=UNSIGNED)
+        )
+
+    # Use paginator to automatically handle pagination
+    try:
+        paginator = s3_client.get_paginator('list_objects_v2')
+        pages = paginator.paginate(Bucket=bucket_wpt, Prefix=mission_id)
+
+        # Collect all file keys
+        file_keys = []
+        for page in pages:
+            if 'Contents' in page:
+                for obj in page['Contents']:
+                    key = obj['Key']
+                    if key.lower().endswith('.jpg'):
+                        file_keys.append(key)
+    except Exception as e:
+        print(f"Failed to retrieve files from S3 bucket: {e}")
         return None, None, None
-    
-    # Parse the XML
-    xml_data = response.text
-    root = ET.fromstring(xml_data)
-    
-    # Extract the namespace from the root tag
-    namespace = {"ns": root.tag.split("}")[0].strip("{")} if "}" in root.tag else {}
-    
-    # Extract file keys
-    file_keys = []
-    for content in root.findall("ns:Contents", namespace):
-        key = content.find("ns:Key", namespace).text
-        if key.lower().endswith(".jpg"): 
-            file_keys.append(key)
-    
+
+    # Construct folder URL for generating asset URLs
+    folder_url = f"{alliancecan_url}/{bucket_wpt}"
+
+    # Print the result
     print(f"{len(file_keys)} pictures found for this mission : {mission_id}")
-    
+
     # Filter for close-up pictures (detect naming convention)
     closeup_files = [key for key in file_keys if "tele" in key]
-    
     if closeup_files:
         print(f"{len(closeup_files)} close-up pictures (tele) found for this mission : {mission_id}")
     else:
@@ -80,7 +102,7 @@ def delete_attachments(client, closeup_files):
     print(f"Deleted attachments for all {len(closeup_files)} data rows")
 
 
-def create_attachments(client, closeup_files, file_keys, folder_url, mission_id, alliancecan_url):
+def create_attachments(client, closeup_files, file_keys, folder_url, mission_id):
     """
     Create new attachments for each data row in the dataset.
     
@@ -90,7 +112,6 @@ def create_attachments(client, closeup_files, file_keys, folder_url, mission_id,
         file_keys (list): List of all file keys
         folder_url (str): URL of the folder
         mission_id (str): Mission ID
-        alliancecan_url (str): Base URL for Alliance Canada
     """
     print("Creating new attachments...")
     for i, closeup_file in enumerate(closeup_files):
@@ -100,7 +121,7 @@ def create_attachments(client, closeup_files, file_keys, folder_url, mission_id,
         
         # Attach the map
         closeup_basename = os.path.basename(closeup_file)
-        map_url = f"{alliancecan_url}/{mission_id}/labelbox/attachments/{closeup_basename.replace('.JPG', '.html')}"
+        map_url = f"{folder_url}/labelbox/attachments/{closeup_basename.replace('.JPG', '.html')}"
         
         # Detect naming convention and extract the polygon id
         if "tele" in closeup_file:
@@ -122,7 +143,7 @@ def create_attachments(client, closeup_files, file_keys, folder_url, mission_id,
         wide_file = matching_wide_files[0] if matching_wide_files else None
         
         if wide_file:
-            data_row.create_attachment(attachment_type="IMAGE", attachment_value=f"{folder_url}{wide_file}", attachment_name="wide")
+            data_row.create_attachment(attachment_type="IMAGE", attachment_value=f"{folder_url}/{wide_file}", attachment_name="wide")
         else:
             print(f"Warning: No wide file found for {closeup_file} (polygon_id: {polygon_id})")
         
@@ -158,7 +179,7 @@ def create_attachments(client, closeup_files, file_keys, folder_url, mission_id,
 
 #     # Update the attachment
 #     for attachment in attachments_to_update:
-#         attachment.update(value=f"{folder_url}{wide_file}")
+#         attachment.update(value=f"{folder_url}/{wide_file}")
 
 def main():
     """Main function to manage data row attachments in Labelbox."""
@@ -176,13 +197,20 @@ def main():
     # Get environment variables
     ALLIANCECAN_URL = os.getenv("ALLIANCECAN_URL")
     LABELBOX_API_KEY = os.getenv("LABELBOX_API_KEY")
+    BUCKET_WPT = os.getenv("BUCKET_WPT")
+    AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+    AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
     
     # Verify environment variables are set
     if not ALLIANCECAN_URL:
         raise ValueError("ALLIANCECAN_URL environment variable is not set")
     if not LABELBOX_API_KEY:
         raise ValueError("LABELBOX_API_KEY environment variable is not set")
-    
+    if not BUCKET_WPT:
+        raise ValueError("BUCKET_WPT environment variable is not set")
+    if not AWS_ACCESS_KEY_ID or not AWS_SECRET_ACCESS_KEY:
+        print("AWS_ACCESS_KEY_ID and/or AWS_SECRET_ACCESS_KEY environment variables are not set. Assuming public bucket access.")
+
     # Initialize Labelbox client
     client = lb.Client(api_key=LABELBOX_API_KEY)
     
@@ -198,7 +226,7 @@ def main():
         return
     
     # Get mission files
-    file_keys, closeup_files, folder_url = get_mission_files(args.mission_id, ALLIANCECAN_URL)
+    file_keys, closeup_files, folder_url = get_mission_files(args.mission_id, ALLIANCECAN_URL, BUCKET_WPT, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
     
     if not closeup_files:
         print("No close-up files found. Exiting.")
@@ -209,7 +237,7 @@ def main():
         delete_attachments(client, closeup_files)
     
     if args.create:
-        create_attachments(client, closeup_files, file_keys, folder_url, args.mission_id, ALLIANCECAN_URL)
+        create_attachments(client, closeup_files, file_keys, folder_url, args.mission_id)
     
     if not args.delete and not args.create:
         print("No operation specified. Use -d to delete attachments or -c to create attachments.")

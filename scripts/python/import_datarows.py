@@ -1,12 +1,13 @@
 import argparse
+import boto3
 import copy
 import labelbox as lb
 import logging
 import os
-import requests
 import sys
-import xml.etree.ElementTree as ET
 
+from botocore import UNSIGNED
+from botocore.client import Config
 from dotenv import load_dotenv
 from pathlib import Path
 
@@ -30,6 +31,9 @@ logger.handlers = []
 logger.addHandler(stdout_handler)
 logger.addHandler(stderr_handler)
 
+# Suppress urllib3 connection pool warnings
+logging.getLogger('urllib3.connectionpool').setLevel(logging.ERROR)
+
 # Load environment variables from .env file
 project_root = Path(__file__).parent.parent.parent
 load_dotenv(dotenv_path=project_root / '.env')
@@ -38,6 +42,8 @@ load_dotenv(dotenv_path=project_root / '.env')
 ALLIANCECAN_URL = os.getenv("ALLIANCECAN_URL")
 LABELBOX_API_KEY = os.getenv("LABELBOX_API_KEY")
 BUCKET_WPT = os.getenv("BUCKET_WPT")
+AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
 
 # Verify environment variables are set
 if not ALLIANCECAN_URL:
@@ -49,6 +55,8 @@ if not LABELBOX_API_KEY:
 if not BUCKET_WPT:
     logger.error("BUCKET_WPT environment variable is not set")
     raise ValueError("BUCKET_WPT environment variable is not set")
+if not AWS_ACCESS_KEY_ID or not AWS_SECRET_ACCESS_KEY:
+    logger.warning("AWS_ACCESS_KEY_ID and/or AWS_SECRET_ACCESS_KEY environment variables are not set. Assuming public bucket access.")
 
 client = lb.Client(api_key=LABELBOX_API_KEY)
 
@@ -78,44 +86,60 @@ else:
         raise ValueError("Mission ID does not follow expected format, unable to extract prefix for Labelbox dataset. Please provide a prefix.")
 
 # List all pictures on Alliance Canada for a given mission
-# Specify the URL of the folder
-folder_url = f"{ALLIANCECAN_URL}/{BUCKET_WPT}/{mission_id}/"
 
-# Fetch the XML data
-response = requests.get(folder_url)
-if response.status_code == 200:
-    # Parse the XML
-    xml_data = response.text
-    root = ET.fromstring(xml_data)
+# Configure S3 client for Alliance Canada (S3-compatible storage)
+if AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY:
+    # Use credentials if provided
+    s3_client = boto3.client(
+        's3',
+        endpoint_url=ALLIANCECAN_URL,
+        aws_access_key_id=AWS_ACCESS_KEY_ID,
+        aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
+        config=Config(signature_version='s3v4')
+    )
+else:
+    # Use anonymous access (public bucket)
+    s3_client = boto3.client(
+        's3',
+        endpoint_url=ALLIANCECAN_URL,
+        config=Config(signature_version=UNSIGNED)
+    )
 
-    # Extract the namespace from the root tag
-    namespace = {"ns": root.tag.split("}")[0].strip("{")} if "}" in root.tag else {}
+# Use paginator to automatically handle pagination
+try:
+    paginator = s3_client.get_paginator('list_objects_v2')
+    pages = paginator.paginate(Bucket=BUCKET_WPT, Prefix=mission_id)
 
-    # Extract file keys
+    # Collect all file keys
     file_keys = []
-    for content in root.findall("ns:Contents", namespace):
-        key = content.find("ns:Key", namespace).text
-        if key.lower().endswith(".jpg"):
-            file_keys.append(key)
+    for page in pages:
+        if 'Contents' in page:
+            for obj in page['Contents']:
+                key = obj['Key']
+                if key.lower().endswith('.jpg'):
+                    file_keys.append(key)
+except Exception as e:
+    logger.error(f"Failed to retrieve files from S3 bucket: {e}")
+    sys.exit(1)
 
-    # Print the result
-    logger.info(f"{len(file_keys)} pictures found for this mission : {mission_id}")
-    
-    # Filter for close-up pictures (detect naming convention)
-    closeup_files = [key for key in file_keys if "tele" in key]
-    if closeup_files:
-        logger.info(f"{len(closeup_files)} close-up pictures (tele) found for this mission : {mission_id}")
-    
-    else:
-        closeup_files = [key for key in file_keys if "zoom" in key]
-        if closeup_files:
-            logger.info("Using legacy naming convention (zoom).")
-            logger.info(f"{len(closeup_files)} close-up pictures (zoom) found for this mission : {mission_id}")
-        else:
-            logger.warning(f"No close-up pictures found for this mission : {mission_id}")
+# Construct folder URL for generating asset URLs
+folder_url = f"{ALLIANCECAN_URL}/{BUCKET_WPT}"
+
+# Print the result
+logger.info(f"{len(file_keys)} pictures found for this mission : {mission_id}")
+
+# Filter for close-up pictures (detect naming convention)
+closeup_files = [key for key in file_keys if "tele" in key]
+if closeup_files:
+    logger.info(f"{len(closeup_files)} close-up pictures (tele) found for this mission : {mission_id}")
 
 else:
-    logger.error(f"Failed to fetch XML. HTTP Status Code: {response.status_code}")
+    closeup_files = [key for key in file_keys if "zoom" in key]
+    if closeup_files:
+        logger.info("Using legacy naming convention (zoom).")
+        logger.info(f"{len(closeup_files)} close-up pictures (zoom) found for this mission : {mission_id}")
+    else:
+        logger.warning(f"No close-up pictures found for this mission : {mission_id}")
 
 # Create new dataset in Labelbox based on the prefix and mission ID
 # Check if the dataset already exists
@@ -149,7 +173,7 @@ for i, closeup_file in enumerate(closeup_files):
     asset = copy.deepcopy(assets_template)
     
     # Replace row_data with the current closeup_file (URL)
-    asset["row_data"] = f"{folder_url}{closeup_file}"
+    asset["row_data"] = f"{folder_url}/{closeup_file}"
     
     # Use file name as unique global_key
     file = closeup_file.split('/', 1)[-1]
@@ -174,7 +198,7 @@ for i, closeup_file in enumerate(closeup_files):
     
     # Attach the map
     closeup_basename = os.path.basename(closeup_file)
-    map_url = f"{ALLIANCECAN_URL}/{mission_id}/labelbox/attachments/{closeup_basename.replace('.JPG', '.html')}"
+    map_url = f"{folder_url}/{mission_id}/labelbox/attachments/{closeup_basename.replace('.JPG', '.html')}"
     
     asset["attachments"][1]["value"] = map_url
     
@@ -189,7 +213,7 @@ for i, closeup_file in enumerate(closeup_files):
     
     # If a wide file is found, set the attachment value
     if wide_file:
-        asset["attachments"][0]["value"] = f"{folder_url}{wide_file}"
+        asset["attachments"][0]["value"] = f"{folder_url}/{wide_file}"
     else:
         logger.warning(f"No wide file found for {closeup_file}")
     
