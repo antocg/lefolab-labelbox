@@ -39,8 +39,10 @@ from PIL import Image
 
 # ── Configuration ──────────────────────────────────────────────────────────────
 KEYWORDS = ["<keyword_1>", "<keyword_2>"]   # dataset name substrings to match (case-insensitive)
+KEYWORDS = ["2024_bci", "2025_tiputini", "2024_panama"]   # dataset name substrings to match (case-insensitive)
 
 EMBEDDING_NAME = "<embedding_name>"         # custom Labelbox embedding name, e.g. "PlantNet-v7.4-1280px"
+EMBEDDING_NAME = "PlantNet-v7.4-1280px"         # custom Labelbox embedding name, e.g. "PlantNet-v7.4-1280px"
 EMBEDDING_DIMS = 768                        # must match the Pl@ntNet model output dimensions
 
 PLANTNET_API_URL = "https://my-api.plantnet.org/v2/embeddings"
@@ -179,19 +181,67 @@ def verify_version_against_name(api_version: str | None, embedding_name: str):
 
 # ── Cache helpers ──────────────────────────────────────────────────────────────
 
-def load_cache(cache_dir: Path, data_row_id: str) -> dict | None:
-    path = cache_dir / f"{data_row_id}.json"
+def get_version_slug(embedding_name: str) -> str:
+    """Extract 'v7.4' from EMBEDDING_NAME, or 'unknown' if no version tag found."""
+    m = re.search(r"(v\d+\.\d+)", embedding_name)
+    return m.group(1) if m else "unknown"
+
+
+def load_cache(cache_dir: Path, data_row_id: str, version_slug: str) -> dict | None:
+    path = cache_dir / f"{data_row_id}_{version_slug}.json"
     if path.exists():
         with open(path) as f:
             return json.load(f)
     return None
 
 
-def save_cache(cache_dir: Path, data_row_id: str, entry: dict):
-    path = cache_dir / f"{data_row_id}.json"
+def save_cache(cache_dir: Path, data_row_id: str, entry: dict, version_slug: str):
+    path = cache_dir / f"{data_row_id}_{version_slug}.json"
     tmp  = path.with_suffix(".tmp")
     with open(tmp, "w") as f:
         json.dump(entry, f)
+    tmp.replace(path)
+
+
+# def migrate_cache_to_versioned(cache_dir: Path):
+#     """
+#     One-time migration: rename old-style {id}.json files to {id}_{version_slug}.json
+#     by reading the plantnet_version stored inside each file.
+#     """
+#     migrated = 0
+#     for path in sorted(cache_dir.glob("*.json")):
+#         if path.name.startswith("export_"):
+#             continue
+#         if re.search(r"_v\d+\.\d+\.json$", path.name):
+#             continue  # already versioned
+#         try:
+#             with open(path) as f:
+#                 entry = json.load(f)
+#         except (json.JSONDecodeError, OSError):
+#             continue
+#         version = entry.get("plantnet_version")
+#         m = re.search(r"\((\d+\.\d+)\)", version) if version else None
+#         slug = f"v{m.group(1)}" if m else "unknown"
+#         new_path = path.with_name(f"{path.stem}_{slug}.json")
+#         path.rename(new_path)
+#         migrated += 1
+#     if migrated:
+#         print(f"  Migrated {migrated} cache file(s) to versioned filenames")
+
+
+def load_export_cache(cache_dir: Path, dataset_uid: str) -> list[dict] | None:
+    path = cache_dir / f"export_{dataset_uid}.json"
+    if path.exists():
+        with open(path) as f:
+            return json.load(f)
+    return None
+
+
+def save_export_cache(cache_dir: Path, dataset_uid: str, rows: list[dict]):
+    path = cache_dir / f"export_{dataset_uid}.json"
+    tmp  = path.with_suffix(".tmp")
+    with open(tmp, "w") as f:
+        json.dump(rows, f)
     tmp.replace(path)
 
 # ── Labelbox helpers ───────────────────────────────────────────────────────────
@@ -289,18 +339,26 @@ def upload_vectors(embedding, vectors: list[dict]):
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def process_dataset(dataset, cache_dir: Path, plantnet_api_key: str,
-                    delay: float, verbose: bool, test_one: bool) -> list[dict]:
+                    delay: float, verbose: bool, test_one: bool,
+                    refresh_exports: bool = False,
+                    version_slug: str = "unknown") -> list[dict]:
     """
     Fetch embeddings for all data rows in a dataset.
     Returns list of {"id": data_row_id, "vector": [...]} ready for Labelbox upload.
     """
-    rows = export_dataset_rows(dataset, verbose=True)
+    cached_rows = None if refresh_exports else load_export_cache(cache_dir, dataset.uid)
+    if cached_rows is not None:
+        print(f"  Export cache hit: {len(cached_rows)} rows (skipping Labelbox export)")
+        rows = cached_rows
+    else:
+        rows = export_dataset_rows(dataset, verbose=True)
+        save_export_cache(cache_dir, dataset.uid, rows)
 
     if test_one:
         rows = rows[:1]
         print(f"  TEST-ONE: processing 1 data row")
 
-    cached   = sum(1 for r in rows if load_cache(cache_dir, r["data_row_id"]) is not None)
+    cached   = sum(1 for r in rows if load_cache(cache_dir, r["data_row_id"], version_slug) is not None)
     print(f"  Total: {len(rows)}, cached: {cached}, remaining: {len(rows) - cached}")
 
     plantnet_version = None
@@ -312,7 +370,7 @@ def process_dataset(dataset, cache_dir: Path, plantnet_api_key: str,
         url   = row["image_url"]
 
         # Cache hit
-        cached_entry = load_cache(cache_dir, dr_id)
+        cached_entry = load_cache(cache_dir, dr_id, version_slug)
         if cached_entry is not None:
             vectors.append({"id": dr_id, "vector": cached_entry["embedding"]})
             if plantnet_version is None:
@@ -357,7 +415,7 @@ def process_dataset(dataset, cache_dir: Path, plantnet_api_key: str,
                     "crop_size":       crop_meta["crop_size"],
                     "plantnet_version": version,
                 }
-                save_cache(cache_dir, dr_id, entry)
+                save_cache(cache_dir, dr_id, entry, version_slug)
                 vectors.append({"id": dr_id, "vector": embedding_vec})
                 success = True
                 break
@@ -406,6 +464,10 @@ def main():
         "--delay", type=float, default=DEFAULT_DELAY,
         help=f"Delay in seconds between Pl@ntNet API calls (default: {DEFAULT_DELAY})"
     )
+    parser.add_argument(
+        "--refresh-exports", action="store_true",
+        help="Ignore cached dataset exports and re-fetch from Labelbox"
+    )
     args = parser.parse_args()
 
     load_dotenv()
@@ -432,6 +494,10 @@ def main():
     cache_dir = OUTPUT_DIR / "cache"
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     cache_dir.mkdir(parents=True, exist_ok=True)
+
+    version_slug = get_version_slug(EMBEDDING_NAME)
+    print(f"Cache version slug: {version_slug}")
+    # migrate_cache_to_versioned(cache_dir)
 
     # ── Find datasets ──────────────────────────────────────────────────────────
     client = lb.Client(api_key=labelbox_api_key)
@@ -468,12 +534,14 @@ def main():
         print(f"{'─' * 60}")
 
         vectors = process_dataset(
-            dataset       = dataset,
-            cache_dir     = cache_dir,
+            dataset          = dataset,
+            cache_dir        = cache_dir,
             plantnet_api_key = plantnet_api_key,
-            delay         = args.delay,
-            verbose       = args.test_one,
-            test_one      = args.test_one,
+            delay            = args.delay,
+            verbose          = args.test_one,
+            test_one         = args.test_one,
+            refresh_exports  = args.refresh_exports,
+            version_slug     = version_slug,
         )
 
         print(f"  → {len(vectors)} vector(s) ready for upload")
