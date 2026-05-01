@@ -1,0 +1,31 @@
+import csv
+
+with open(r'projects\2024_bci\BCNM_SPECIES_BOTANISTS_LIST_2026-04-30.csv', encoding='utf-8-sig') as f:
+    reader = csv.DictReader(f, delimiter=';')
+    matched_genera = set()
+    accepted_genera = set()
+    current_genera = set()
+    for row in reader:
+        m = row.get('wcvp_matched_name', '').strip()
+        a = row.get('wcvp_accepted_name', '').strip()
+        c = row.get('current_binomial', '').strip()
+        if m: matched_genera.add(m.split()[0])
+        if a: accepted_genera.add(a.split()[0])
+        if c: current_genera.add(c.split()[0])
+
+=== Unique genera counts ===
+current_binomial:   767
+wcvp_matched_name:  767
+wcvp_accepted_name: 765
+
+=== current_binomial vs wcvp_matched_name ===
+In current but NOT in matched (1): ['Masdesvallia']
+In matched but NOT in current (1): ['Masdevallia']
+
+=== current_binomial vs wcvp_accepted_name ===
+In current but NOT in accepted (37): ['Blechum', 'Borreria', 'Callisia', 'Camaridium', 'Chamaesyce', 'Chelonanthus', 'Codonanthe', 'Conyza', 'Didymoglossum', 'Diodella', 'Echinodorus', 'Eichhornia', 'Habranthus', 'Heterotaxis', 'Homalomena', 'Kyllinga', 'Laetia', 'Limnobium', 'Lindernia', 'Masdesvallia', 'Maxillariella', 'Merremia', 'Morinda', 'Nautilocalyx', 'Neomarica', 'Oxycaryum', 'Paspalidium', 'Phthirusa', 'Polygala', 'Polygonum', 'Rhetinantha', 'Solenostemon', 'Stenorrhynchos', 'Tibouchina', 'Tournefortia', 'Trigonidium', 'Vriesea']
+In accepted but NOT in current (35): ['Adelonema', 'Appunia', 'Aquarius', 'Camonea', 'Cantinoa', 'Chaetogastra', 'Chloropetalum', 'Codonanthopsis', 'Coleus', 'Dianthera', 'Erigeron', 'Galianthe', 'Goeppertia', 'Grona', 'Helia', 'Hexasepalum', 'Hydrocharis', 'Hypoderris', 'Lemeltonia', 'Masdevallia', 'Ocellochloa', 'Olmedia', 'Passovia', 'Persicaria', 'Rugoloa', 'Sacoila', 'Senega', 'Sparrea', 'Stephostachys', 'Telmatoblechnum', 'Torenia', 'Trimezia', 'Vandellia', 'Wallisia', 'Zephyranthes']
+
+=== wcvp_matched_name vs wcvp_accepted_name ===
+In matched but NOT in accepted (36): ['Blechum', 'Borreria', 'Callisia', 'Camaridium', 'Chamaesyce', 'Chelonanthus', 'Codonanthe', 'Conyza', 'Didymoglossum', 'Diodella', 'Echinodorus', 'Eichhornia', 'Habranthus', 'Heterotaxis', 'Homalomena', 'Kyllinga', 'Laetia', 'Limnobium', 'Lindernia', 'Maxillariella', 'Merremia', 'Morinda', 'Nautilocalyx', 'Neomarica', 'Oxycaryum', 'Paspalidium', 'Phthirusa', 'Polygala', 'Polygonum', 'Rhetinantha', 'Solenostemon', 'Stenorrhynchos', 'Tibouchina', 'Tournefortia', 'Trigonidium', 'Vriesea']
+In accepted but NOT in matched (34): ['Adelonema', 'Appunia', 'Aquarius', 'Camonea', 'Cantinoa', 'Chaetogastra', 'Chloropetalum', 'Codonanthopsis', 'Coleus', 'Dianthera', 'Erigeron', 'Galianthe', 'Goeppertia', 'Grona', 'Helia', 'Hexasepalum', 'Hydrocharis', 'Hypoderris', 'Lemeltonia', 'Ocellochloa', 'Olmedia', 'Passovia', 'Persicaria', 'Rugoloa', 'Sacoila', 'Senega', 'Sparrea', 'Stephostachys', 'Telmatoblechnum', 'Torenia', 'Trimezia', 'Vandellia', 'Wallisia', 'Zephyranthes']

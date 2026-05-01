@@ -1,0 +1,2415 @@
+type,label,value
+species,Abelmoschus moschatus,8312665
+species,Abuta panamensis-abutpa-ABUP,3830289
+species,Abuta racemosa-abutra-ABUR,7349979
+species,Acalypha arvensis,3056742
+species,Acalypha diversifolia-acaldi-ACAD,3056298
+species,Acalypha macrostachya-acalma-ACA2,3056437
+species,Acalypha wilkesiana-acalwi-ACAW,3057221
+species,Acianthera verecunda,2839908
+species,Aciotis rubricaulis,3861798
+species,Acmella brachyglossa,5386734
+species,Acroceras zizanioides,4139637
+species,Acrostichum aureum,2651706
+species,Acrostichum danaeifolium,2651707
+species,Adelia triloba-ade1tr-ADET,5380432
+species,Adelobotrys adscendens-adelad-ADE1,3860874
+species,Adelphia hiraea-maschi-MASH,5635040
+species,Adenaria floribunda-adenfl,7286112
+species,Adenocalymma arthropetiolatum-ade3ar,4092999
+species,Adenocalymma inundatum-ade3in-ADE2,7298432
+species,Adiantum decoratum,3747462
+species,Adiantum fructuosum,8183182
+species,Adiantum humile,3749246
+species,Adiantum latifolium,2651837
+species,Adiantum lucidum,2651822
+species,Adiantum lunulatum,7173671
+species,Adiantum obliquum,2651838
+species,Adiantum petiolatum,2651824
+species,Adiantum pulverulentum,2651851
+species,Adiantum seemannii,3748782
+species,Adiantum × variopinnatum,7967948
+species,Aechmea magdalenae,2697829
+species,Aechmea nudicaulis,2698486
+species,Aechmea pubescens,2698312
+species,Aechmea setigera,2697849
+species,Aechmea tillandsioides,2698327
+species,Aegiphila cephalophora-aegice-AEGC,3893257
+species,Aegiphila elata-aegiel-AEGE,2925469
+species,Aegiphila panamensis-aegipa-AEGP,3891222
+species,Aeschynomene americana,2949235
+species,Aeschynomene ciliata,2949280
+species,Aeschynomene sensitiva,2949316
+species,Aiouea montana-phoeci-PHOM,9671278
+species,Alchornea costaricensis-alchco-ALCC,3055427
+species,Alchornea latifolia-alchla-ALCL,3055359
+species,Alibertia dwyeri-boropa-BORP,7729119
+species,Alibertia edulis-alibed-ALIE,5335670
+species,Alibertia patinoi-alibpa,7825670
+species,Allamanda cathartica-allaca-ALLC,3169836
+species,Allophylus psilospermus-allops-ALLP,5577078
+species,Alseis blackiana-alsebl-ALSB,5334873
+species,Alsophila cuspidata,5529620
+species,Alternanthera paronychioides,3084922
+species,Alternanthera sessilis,3084939
+species,Amaioua glomerulata-amaico-AMAC,7686451
+species,Amaranthus viridis,5384334
+species,Amphilophium crucigerum-amp3cr,4931838
+species,Amphilophium paniculatum-amp3pa-AMPP,3172589
+species,Anacardium excelsum-anacex-ANAE,5544303
+species,Anacardium occidentale-anacoc-ANAO,5421368
+species,Ananas comosus,5288819
+species,Ananthacorus angustifolius,2650242
+species,Anaxagorea panamensis-anaxpa-ANAP,3156864
+species,Ancistrotropis peduncularis-vignpe,7484829
+species,Andira inermis-andiin-ANDI,2952214
+species,Andropogon bicornis,2706079
+species,Andropogon glomeratus,2706097
+species,Andropogon leucostachyus,2706096
+species,Andropogon virginicus,2706080
+species,Anemopaegma chrysoleucum-anemc1,4093499
+species,Aniseia luxurians-iseilu-ISEL,9730688
+species,Aniseia martinicensis-anisma,2928410
+species,Annona acuminata-annoac-ANNA,5407198
+species,Annona glabra-annogl-ANNG,5407100
+species,Annona hayesii-annoha-ANNH,7539280
+species,Annona muricata-annomu-ANNM,5407273
+species,Annona purpurea-annopu,5407091
+species,Annona spraguei-annosp-ANNS,5407072
+species,Anthephora hermaphrodita,2702936
+species,Anthodon decussatus-ant2de,5579479
+species,Anthurium acutangulum,2873612
+species,Anthurium bakeri,4933146
+species,Anthurium brownii,2872746
+species,Anthurium clavigerum,2872456
+species,Anthurium concolor,2873585
+species,Anthurium flexile,2872279
+species,Anthurium friedrichsthalii,2872380
+species,Anthurium gracile,2872811
+species,Anthurium kunthii,2873587
+species,Anthurium myosuroides,2872448
+species,Anthurium obtusum,2873359
+species,Anthurium ochranthum,2872582
+species,Anthurium paludosum,2872486
+species,Anthurium salvinii,2872887
+species,Anthurium scandens,2873423
+species,Apeiba membranacea-apeime-APEM,4260481
+species,Apeiba tibourbou-apeiti-APET,3152052
+species,Aphelandra sinclairiana-aphesi-APHS,3776906
+species,Apodanthes caseariae,3941218
+species,Araucaria heterophylla,2684969
+species,Ardisia bartletii-ardiba-ARDB,7330940
+species,Ardisia colombiana-ardico,5557236
+species,Ardisia copeyana-ardife-ARDF,5558881
+species,Ardisia guianensis-ardigu-ARDG,5558301
+species,Ardisia pellucida-ardipe-ARDP,7331109
+species,Aristolochia cordiflora-arisco,3589029
+species,Aristolochia pilosa-arispi-ARIP,7313612
+species,Aristolochia tonduzii-aristo-ARIC,3588463
+species,Arthrostemma alatum,5938512
+species,Artocarpus altilis-artoal,2984573
+species,Asclepias curassavica,3170241
+species,Aspasia principissa,5306507
+species,Aspidosperma desmanthum-aspicr-ASPC,3618792
+species,Aspidosperma megalocarpon-aspime-ASPM,7316950
+species,Asplenium abscissum,2650638
+species,Asplenium auritum,2650593
+species,Asplenium juglandifolium,2650663
+species,Asplenium pteropus,2650599
+species,Asplenium serratum,2650661
+species,Asplundia alata,2860961
+species,Astrocaryum standleyanum-ast1st-ASTS,2738130
+species,Astronium graveolens-ast2gr-ASTG,7321588
+species,Attalea butyracea-sch1zo-ATTB,2732721
+species,Averrhoa carambola-averca,2891641
+species,Axonopus compressus,2705924
+species,Ayapana elata,3126530
+species,Ayenia aculeata-byttac-BYTA,9786614
+species,Baccharis trinervis,3129535
+species,Bacopa salzmannii,7332731
+species,Bactris barronis-bactba-BACB,2732931
+species,Bactris coloniata-bactc1-BAC1,2733315
+species,Bactris coloradonis-bactc2-BAC2,2733336
+species,Bactris gasipaes-bactga,2733060
+species,Bactris major-bactma-BACM,2733004
+species,Bactris maraja-bactm1-BAC3,2732946
+species,Baltimora recta,3141365
+species,Bambusa bambos,2705752
+species,Bambusa multiplex,2705757
+species,Banara guianensis-banagu-BANG,7274188
+species,Begonia fischeri,7303483
+species,Begonia guaduensis,7303286
+species,Begonia hirsuta,7580282
+species,Beilschmiedia tovarensis-beilpe-BEIP,4182784
+species,Bellucia grossularioides-bellgr,3866649
+species,Bertiera guianensis-bertgu-BERG,2908816
+species,Besleria laxiflora,3825343
+species,Bignonia aequinoctialis-cydiae-CYDA,3172559
+species,Bignonia binata-clytbi-CLYB,4094291
+species,Bignonia corymbosa-phryco-PHRC,10933324
+species,Bignonia neoheterophylla-bignne,8373300
+species,Billbergia macrolepis,2693848
+species,Bixa orellana-bixaor,2874863
+species,Bixa urucurana-bixaur,4087112
+species,Blakea parasitica-topopa,5600218
+species,Blechnum occidentale,2651529
+species,Blechnum serrulatum,2651546
+species,Blechum costaricense,3780697
+species,Blechum pyramidatum,3173245
+species,Blighia sapida-bligsa,3189955
+species,Boehmeria cylindrica,2984345
+species,Bolbitis portoricensis,2650970
+species,Bonamia trichantha-bonatr-BONT,7324476
+species,Bonellia macrocarpa-jacqma,7151936
+species,Borreria densiflora,2918627
+species,Borreria latifolia,2918294
+species,Borreria ocymifolia,2918757
+species,Borreria prostrata,2918565
+species,Borreria remota,2918689
+species,Borreria repens,2918063
+species,Borreria spicata,2918410
+species,Bothriochloa bladhii,2704093
+species,Bothriochloa pertusa,2704108
+species,Brassavola nodosa,5314167
+species,Brassia caudata,5323839
+species,Bribria crenata-rinocr,11081627
+species,Bronwenia wurdackii-baniwu,3984163
+species,Brosimum alicastrum-brosal-BROA,2984660
+species,Brosimum guianense-brosgu-BROG,7374879
+species,Browallia americana,2932934
+species,Brownea macrophylla-browma,8170495
+species,Bulbophyllum pachyrachis,2844942
+species,Bunchosia nitida-buncco-BUNC,7762264
+species,Bursera simaruba-burssi-BURS,3190450
+species,Byrsonima crassifolia-byrscr-BYRC,3191361
+species,Byrsonima spicata-byrssp-BYRS,7864749
+species,Caesalpinia pulcherrima-caespu,2958715
+species,Cajanus cajan-cajaca,7587087
+species,Caladium bicolor,2868390
+species,Calathea crotalifera,2761715
+species,Calathea inocephala,2761762
+species,Calathea latifolia,2761541
+species,Calathea lutea,2761987
+species,Calathea marantifolia,2761555
+species,Calathea micans,8635798
+species,Calathea panamensis,7998633
+species,Calathea villosa,2761624
+species,Calea prunifolia,3147673
+species,Callichlamys latifolia-cal5la-CAL1,8338389
+species,Callisia ciliata,7395355
+species,Calophyllum longifolium-calolo-CAL2,8223607
+species,Calopogonium caeruleum-cal6ca,7661174
+species,Calopogonium mucunoides-cal6mu,2959433
+species,Calycolpus warszewiczianus-cal1wa-CALW,8353141
+species,Calycophyllum candidissimum-cal2ca-CALC,2904009
+species,Calyptrocarya glomerulata,2730038
+species,Camaridium neglectum,2826797
+species,Camaridium ochroleucum,2826152
+species,Campylocentrum micranthum,2820810
+species,Campylocentrum pachyrrhizum,2820806
+species,Campylocentrum panamense,2820835
+species,Campyloneurum angustifolium,7719550
+species,Campyloneurum aphanophlebium,8656335
+species,Campyloneurum brevifolium,4024988
+species,Campyloneurum costatum,2650514
+species,Campyloneurum phyllitidis,2650516
+species,Canavalia brasiliensis-cal7br,2962154
+species,Capsicum annuum,2932944
+species,Carapichea ipecacuanha,2921359
+species,Carica papaya-caripa,2874484
+species,Carludovica drudei,2860934
+species,Carludovica palmata,2860922
+species,Casearia aculeata-caseac-CAS1,5331145
+species,Casearia arborea-casear-CAS2,5331149
+species,Casearia arguta-casea1,7595115
+species,Casearia bicolor-laetpr-LAEP,5331156
+species,Casearia corymbosa-casec2-CAS5,5603969
+species,Casearia guianensis-casegu-CASG,5331144
+species,Casearia laetioides-zuelgu-ZUEG,7434783
+species,Casearia sylvestris-casesy-CASS,5331148
+species,Cassipourea elliptica-cassel-CAS3,7273558
+species,Castilla elastica-castel-CAS4,7531920
+species,Catasetum bicolor,2803756
+species,Catasetum viridiflavum,2803912
+species,Catharanthus roseus,3169830
+species,Catopsis sessiliflora,8411322
+species,Caularthron bilamellatum,2828116
+species,Cavanillesia platanifolia-cavapl-CAVP,4073280
+species,Cayaponia glandulosa-cayagl,3623745
+species,Cayaponia granatensis-cayagr-CAYG,3623677
+species,Cayaponia racemosa-cayara-CAYR,2874614
+species,Cayaponia sessiliflora-cayase,3622786
+species,Cecropia insignis-cecrin-CECI,4013292
+species,Cecropia longipes-cecrlo-CECL,4013134
+species,Cecropia obtusifolia-cecrob-CECO,2984473
+species,Cecropia peltata-cecrpe-CECP,2984476
+species,Cedrela odorata-cedrod-CEDO,3190511
+species,Ceiba pentandra-ceibpe-CEIP,5406697
+species,Celtis iguanaea-celtig-CELI,2984498
+species,Celtis schippii-celtsc-CELS,4159734
+species,Cenchrus brownii,5289737
+species,Centropogon cornutus,5412613
+species,Centrosema pubescens-cen2pu-CENP,2964904
+species,Ceratophyllum demersum,2882398
+species,Ceratopteris pteridoides,2651590
+species,Cespedesia spathulata-cespma-CES1,3695801
+species,Cestrum latifolium-cestla-CESL,8131064
+species,Cestrum nocturnum-cestno,2928791
+species,Cestrum racemosum-cestra-CESR,7299919
+species,Cestrum schlechtendalii-cestme-CES2,3801334
+species,Chamaedorea tepejilote-cha1te-CHAW,2734551
+species,Chamaesyce hirta,3068956
+species,Chamaesyce hypericifolia,3066328
+species,Chamaesyce hyssopifolia,3065922
+species,Chamaesyce thymifolia,3069747
+species,Chamguava schippii-cha2sc-PSIA,3186028
+species,Chamissoa altissima,3085178
+species,Chaptalia nutans,8208628
+species,Chelonanthus alatus,7518962
+species,Chimarrhis parviflora-chimpa-CHIP,2918960
+species,Chiococca alba-chi2al-CHIA,2907406
+species,Chloris radiata,5289619
+species,Chloris virgata,5289624
+species,Chloroleucon mangense-chloma,2943053
+species,Chomelia psilocarpa-chomps-CHOP,5337286
+species,Chondrodendron tomentosum-chonto-CHOT,3033958
+species,Chromolaena odorata,3087725
+species,Chrysochlamys eclipes-chr1ec-CHRE,5555749
+species,Chrysophyllum argenteum-chr2ar-CHRA,2885742
+species,Chrysophyllum cainito-chr2ca-CHRC,2885828
+species,Chrysothemis friedrichsthaliana,5591990
+species,Chusquea simpliciflora,4130088
+species,Chysis bruennowiana,2813048
+species,Cissampelos pareira-cis1pa,3033937
+species,Cissampelos tropaeolifolia-cis1tr-CIST,7268762
+species,Cissus alata-cissrh-CISR,7760485
+species,Cissus erosa-cisser-CISE,3039162
+species,Cissus fuliginea-cissps-CISP,4054108
+species,Cissus microcarpa-cissmi-CISM,4055001
+species,Cissus verticillata-cisssi-CISS,3039173
+species,Citrus aurantium-citrsi,8077391
+species,Citrus maxima-citrma,3190160
+species,Citrus reticulata,3190172
+species,Citrus × aurantifolia,3190164
+species,Citrus × limon,7647136
+species,Cladium jamaicense,2731343
+species,Cleome parviflora,7767691
+species,Clerodendrum paniculatum,3890745
+species,Clibadium surinamense,3104771
+species,Clibadium sylvestre,3104756
+species,Clitoria falcata-clitru,2946543
+species,Clitoria javitensis-clitja-CLIJ,2946500
+species,Clowesia warczewitzii,3653873
+species,Clusia flavida-clusfl-HAVF,5556500
+species,Clusia minor-cluspr-CLU1,5421056
+species,Clusia uvitana-clusuv-CLUU,5555867
+species,Cnestidium rufescens-cnesru-CNER,3687051
+species,Coccoloba acuminata-cocca2-COC2,7291417
+species,Coccoloba coronata-coccco-COCC,4033276
+species,Coccoloba excelsa-coccex,7291174
+species,Coccoloba johnstonii-coccjo-COC1,4038317
+species,Coccoloba manzinellensis-coccma-COCM,4037724
+species,Coccoloba padiformis-coccpa,4036806
+species,Cochlospermum vitifolium-cochvi-COCV,2874865
+species,Cocos nucifera-coconu,2735117
+species,Codiaeum variegatum-codiva,3071476
+species,Codonanthe crassifolia,3824299
+species,Codonanthe uleana,6365719
+species,Cojoba rufescens-pit1ru-PITR,2981328
+species,Colubrina glandulosa-colugl-COLG,5372466
+species,Columnea billbergiana,5591253
+species,Columnea purpurata,5588997
+species,Combretum cacoucia-combca-COMC,8396259
+species,Combretum decandrum-combde-COMD,3699211
+species,Combretum fruticosum-combfr-COMF,3698513
+species,Combretum laxum-combla-COML,7908521
+species,Commelina erecta,2764389
+species,Commelina rufipes,2763970
+species,Connarus panamensis-connpa-CONP,7999411
+species,Connarus turczaninowii-conntu-CONT,3686802
+species,Conyza bonariensis,5404795
+species,Conyza laevigata,5398196
+species,Copaifera aromatica-copaar-COPA,2978137
+species,Corchorus siliquosus,3152091
+species,Cordia alliodora-cordal-CORA,7649215
+species,Cordia bicolor-cordbi-CORB,5660135
+species,Cordia lasiocalyx-cordla-CORL,5661744
+species,Cordia panamensis-cordpa-CORP,5341268
+species,Cordyline fruticosa,2766278
+species,Coryanthes hunteriana,2795653
+species,Cosmibuena macrocarpa-cosmma,5334661
+species,Costus allenii,2756810
+species,Costus glaucus,2756862
+species,Costus guanaiensis,2756961
+species,Costus laevis,2756834
+species,Costus lasius,2756941
+species,Costus pulverulentus,2756847
+species,Costus scaber,2756885
+species,Costus villosissimus,2756895
+species,Couratari guianensis-courpa-COUP,3083111
+species,Coussapoa asperifolia,7316403
+species,Coussapoa villosa-cousvi-COU2,7316428
+species,Coussarea suaveolens-cou2cu-COUC,12185704
+species,Coutarea hexandra-couthe-COUH,2893703
+species,Crateva tapia-cratta,3054262
+species,Crinum erubescens,2853616
+species,Crossopetalum parviflorum-crospa-CRO3,5580184
+species,Crotalaria cajanifolia,2942793
+species,Crotalaria retusa,2942610
+species,Croton billbergianus-crotbi-CROB,3059312
+species,Croton draco-crotdr-CROP,3058297
+species,Croton hirtus,3058942
+species,Croton schiedeanus-crotsc,3060306
+species,Cryosophila warscewiczii-cryowa-CRYW,2731949
+species,Ctenitis sloanei,2650909
+species,Cuervea kappleriana-cuerka-CUEK,3792999
+species,Cupania cinerea-cupaci-CUPC,3785984
+species,Cupania latifolia-cupala-CUPL,3785309
+species,Cupania rufescens-cuparu-CUPR,3784726
+species,Cupania scrobiculata-cupasc-CUP2,7802452
+species,Cupania seemannii-cupasy-CUPS,7264754
+species,Cuphea carthagenensis,3188685
+species,Cyanthillium cinereum,6445734
+species,Cyathea bicrenata,3600519
+species,Cyathea microdonta,3600004
+species,Cyathea petiolata-cnempe-CNEP,3598477
+species,Cyathula prostrata,5384314
+species,Cyclanthus bipartitus,2861108
+species,Cyclopeltis semicordata,2651219
+species,Cymbosema roseum-cymbro-CYMR,2944792
+species,Cynanchum peraffine-cynacu-CYNC,3170388
+species,Cynodon dactylon,6109637
+species,Cynometra bauhiniifolia-cynoba-CYNB,2966847
+species,Cyperus giganteus,2714554
+species,Cyperus haspan,2715828
+species,Cyperus laxus,2713471
+species,Cyperus luzulae,2714679
+species,Cyperus odoratus,2715219
+species,Cyperus rotundus,2714818
+species,Cyperus simplex,2715022
+species,Cyperus tenuis,2714958
+species,Dalbergia brownei,10668105
+species,Dalbergia monetaria-dalbmo-DALM,2968858
+species,Dalbergia retusa-dalbre-DALR,2968539
+species,Dalechampia cissifolia-daleci-DALC,3055812
+species,Dalechampia dioscoreifolia-daledi-DALD,3055843
+species,Dalechampia tiliifolia-daleti,3055740
+species,Damburneya purpurea-nectpu-NECP,9503920
+species,Danaea nodosa,5274880
+species,Davilla kunthii-daviku,5681074
+species,Davilla nitida-davini-DAVN,5680944
+species,Dendropanax arboreus-dendar-DENA,3035093
+species,Dendropanax caucanus-dendc1,3035067
+species,Dendropanax stenodontus,3035115
+species,Dennstaedtia cicutaria,2650784
+species,Desmodium adscendens,2967767
+species,Desmodium axillare,2967365
+species,Desmodium cajanifolium,2967395
+species,Desmodium distortum,2967251
+species,Desmodium incanum,2967060
+species,Desmodium scorpiurus,8293726
+species,Desmodium tortuosum,2967221
+species,Desmodium triflorum,2967163
+species,Desmodium wydlerianum,2967580
+species,Desmoncus myriacanthos-des1or-DESI,2738781
+species,Desmopsis panamensis-des2pa-DESP,3158129
+species,Dialium guianense-dialgu-DIAG,2971008
+species,Diastema racemiferum,5590420
+species,Dichaea panamensis,2789905
+species,Dichaea trulla,2789983
+species,Dichorisandra amabilis,2763611
+species,Dicranopteris flexuosa,5275374
+species,Didymoglossum ekmanii,3607755
+species,Didymoglossum godmanii,3607692
+species,Didymoglossum kapplerianum,3607608
+species,Didymoglossum kraussii,3607597
+species,Didymoglossum ovale,3607383
+species,Didymoglossum punctatum,3607318
+species,Didymopanax morototoni-sch2mo-SCHM,3038523
+species,Dieffenbachia isthmia,2869418
+species,Dieffenbachia longispatha,2869465
+species,Dieffenbachia obscurinervia,2869423
+species,Digitaria bicornis,5289968
+species,Digitaria horizontalis,5289958
+species,Digitaria violascens,5289995
+species,Dimerandra emarginata,2815832
+species,Dimerocostus strobilaceus,2756979
+species,Dioclea guianensis-diocgu-DIOG,5359611
+species,Diodella sarmentosa,3846005
+species,Dioscorea alata-dio1al-DIO1,2754476
+species,Dioscorea hondurensis-dio1ho,2755391
+species,Dioscorea mexicana-dio1me,2754517
+species,Dioscorea pilosiuscula-dio1pi-DIOS,2754717
+species,Dioscorea polygonoides-dio1po-DIOP,2754948
+species,Dioscorea trifida-dio1tr,2755239
+species,Dioscorea urophylla-dio1ur-DIOU,2755057
+species,Diospyros artanthifolia-dio2ar-DIO2,7848675
+species,Diplazium grandifolium,2650880
+species,Dipteryx oleifera-diptpa-DIPP,2947126
+species,Disciphania ernstii-dis1er,7268790
+species,Dolichandra unguis-cati-macfun-MACU,5830619
+species,Doliocarpus dentatus-dolide-DOLD,7303933
+species,Doliocarpus major-dolima-DOL1,3083498
+species,Doliocarpus multiflorus-dolimu-DOL2,4163413
+species,Doliocarpus olivaceus-doliol-DOLO,8862949
+species,Dorstenia contrajerva,2984541
+species,Dracontium soconuscum,5330706
+species,Drymaria cordata,5384509
+species,Drymonia serrulata-drymse-DRSE,5590493
+species,Dryopteris patula,5275152
+species,Drypetes standleyi-drypst-DRYS,3075619
+species,Echinodorus grisebachii,5328812
+species,Eclipta prostrata,5384950
+species,Eichhornia azurea,2765950
+species,Eichhornia crassipes,2765940
+species,Elaeis oleifera-elaeol-ELAO,8791596
+species,Elaphoglossum doanense,4011506
+species,Elaphoglossum hayesii,4011560
+species,Elaphoglossum latum,4011933
+species,Elaphoglossum lherminieri,8593158
+species,Elaphoglossum longicrure,4011483
+species,Elaphoglossum peltatum,2651039
+species,Eleocharis geniculata,2716850
+species,Eleocharis plicarhachis,2717615
+species,Elephantopus mollis,5395928
+species,Eleusine indica,2705953
+species,Eleutheranthera ruderalis,3119915
+species,Elleanthus longibracteatus,2839253
+species,Elytraria imbricata,3173240
+species,Emilia sonchifolia,5401598
+species,Entada gigas-entamo-ENTM,2976183
+species,Entada polystachya-entapo,2976206
+species,Enterolobium cyclocarpum-entecy-ENTC,2961150
+species,Epidendrum angustisegmentum,5320338
+species,Epidendrum bifarium,5319951
+species,Epidendrum cardiophorum,5319717
+species,Epidendrum chlorocorymbos,5319800
+species,Epidendrum coronatum,5320970
+species,Epidendrum eburneum,5320078
+species,Epidendrum flexuosum,5319849
+species,Epidendrum laterale,9739891
+species,Epidendrum lockhartioides,5320681
+species,Epidendrum nocturnum,5320021
+species,Epidendrum radicans,5320619
+species,Epidendrum schlechterianum,5320100
+species,Epidendrum sculptum,5319815
+species,Epidendrum stamfordianum,5320048
+species,Epidendrum stangeanum,5320009
+species,Epidendrum strobiliferum,5321235
+species,Epidendrum umbilliferum,5319797
+species,Epiphyllum hookeri,6379095
+species,Epiphyllum phyllanthus,5384030
+species,Erechtites hieraciifolius,3132457
+species,Erycina pusilla,2852481
+species,Eryngium foetidum,3034425
+species,Erythrina costaricensis-ery1co-ERYC,5349770
+species,Erythrina fusca-ery1fu,5349620
+species,Erythroxylum macrophyllum-ery2ma-ERYM,7870294
+species,Erythroxylum panamense-ery2pa-ERYP,3694401
+species,Esenbeckia panamensis-esenpa,5592910
+species,Eugenia florida-eugeco-EUGC,5417919
+species,Eugenia galalonensis-eugega-EUGG,5416878
+species,Eugenia nesiotica-eugene-EUGN,5417636
+species,Eugenia oerstediana-eugeoe-EUGO,5418017
+species,Eugenia principium-eugepr-EUGP,5417515
+species,Eugenia uniflora-eugeun-EUGU,5416458
+species,Eugenia venezuelensis-eugeve-EUGV,5417525
+species,Eulophia alta,5311790
+species,Euphorbia heterophylla,3064495
+species,Fairchildia panamensis-swarpa-SWAP,2951308
+species,Faramea luteovirens-faralu-FARL,2898057
+species,Faramea multiflora-faramu,8295089
+species,Faramea occidentalis-faraoc-FARO,2898087
+species,Fevillea cordifolia-fevico-FEVC,2874555
+species,Ficus americana-ficuam-FIP1,5361926
+species,Ficus citrifolia-ficuci-FICI,5361938
+species,Ficus colubrinae-ficuc1-FIC1,5570299
+species,Ficus costaricana-ficuc2-FIC2,5569991
+species,Ficus dugandii,5572171
+species,Ficus insipida-ficuin-FIIN,6358534
+species,Ficus matiziana-ficubu-FIBU,5571399
+species,Ficus maxima-ficuma-FIMA,5571386
+species,Ficus microcarpa,7467639
+species,Ficus nymphaeifolia-ficuny-FINY,5570630
+species,Ficus obtusifolia-ficuob-FIOB,5361910
+species,Ficus paraensis-ficupa-FIPA,5569960
+species,Ficus pertusa-ficupe-FIP2,7944396
+species,Ficus popenoei-ficupo-FIPO,7262862
+species,Ficus tonduzii-ficuto-FITO,5572425
+species,Ficus trigonata-ficutr-FITR,5361896
+species,Ficus yoponensis-ficuyo-FIYO,5571280
+species,Fimbristylis dichotoma,2708808
+species,Fischeria billbergiana-fiscbi-FISB,8235491
+species,Fleischmannia microstemon,5399722
+species,Fleischmannia sinclairii,9010063
+species,Forsteronia acouci-forsvi-FORV,3618404
+species,Forsteronia myriantha-forsmy-FORM,3617628
+species,Fridericia candicans-arraca-ARR1,8032537
+species,Fridericia chica-arrach-ARR2,7669080
+species,Fridericia florida-arrafl-ARRF,7423177
+species,Fridericia patellifera-arrapa-ARRP,8375350
+species,Fridericia schumanniana-arrave-ARRV,7930324
+species,Fuirena umbellata,2718992
+species,Funastrum clausum-funacl,3170223
+species,Furcraea cabuya,2769847
+species,Garcia nutans-garcnu-GARN,3071459
+species,Garcinia intermedia-gar2in-RHEE,3714243
+species,Garcinia madruno-gar2ma-RHEA,3713863
+species,Garcinia mangostana-gar2m2,3189571
+species,Genipa americana-geniam-GENA,2895593
+species,Geonoma congesta-geonco-GEO2,2734302
+species,Geonoma cuneata-geoncu-GEOC,2734082
+species,Geonoma interrupta-geonin-GEOI,2734323
+species,Geonoma procumbens,2734087
+species,Geophila gracilis,5340391
+species,Geophila repens,5340379
+species,Gibasis geniculata,2764872
+species,Gleichenella pectinata,3789904
+species,Gnetum leyboldii-gnetle-GNEL,2653166
+species,Gomphrena serrata,3084909
+species,Gongora fulva,2839072
+species,Gonolobus albomarginatus-gon1al-GONA,3572413
+species,Gouania colombiana-gouaco-GOUC,5603088
+species,Gouania polygama-gouapo-GOUP,5372439
+species,Grias cauliflora-griaca-GRIF,3082334
+species,Guadua macclurei,4154822
+species,Guapira myrtiflora-guapst-GUAS,3701155
+species,Guarea bullata-guarsp-GUA3,3849647
+species,Guarea grandifolia-guargr-GUA1,3852108
+species,Guarea guidonia-guargu-GUA2,3190500
+species,Guarianthe patinii,2816065
+species,Guatteria amplifolia-guatam-GUAA,3155625
+species,Guatteria lucens-guatdu-GUAD,3155712
+species,Guazuma ulmifolia-guazul-GUAU,3152195
+species,Guettarda foliacea-guetfo-GUEF,2894890
+species,Gurania bignoniacea-guraco-GURC,3624043
+species,Gurania makoyana-gurama-GUR1,3623306
+species,Gurania tubulosa-guratu-GUR2,3622595
+species,Gustavia fosteri-gustfo-GUSF,5383826
+species,Gustavia superba-gustsu-GUSS,5383848
+species,Guzmania lingulata,2699095
+species,Guzmania monostachia,2699018
+species,Gynerium sagittatum,5289743
+species,Habenaria alata,2829178
+species,Habenaria bicornis,2828570
+species,Habenaria repens,2830046
+species,Habranthus tubispathus,2853552
+species,Hamelia axillaris-hameax-HAM1,2902047
+species,Hamelia patens-hamepa-HAMP,2902066
+species,Hampea appendiculata-hampap-HAM2,7279624
+species,Handroanthus guayacan-tab1gu-TABG,4092274
+species,Handroanthus ochraceus-tab1oc-TABO,4092146
+species,Hasseltia floribunda-hassfl-HASF,7760145
+species,Hawkesiophyton ulei-markul-MARU,3803090
+species,Hebeclinium macrophyllum,3139425
+species,Heisteria acuminata-heisac-HEIA,7222047
+species,Heisteria concinna-heisco-HEIC,7432012
+species,Heisteria macrophylla-heisma,8046878
+species,Heliconia curtispatha,2760903
+species,Heliconia irrasa,2760834
+species,Heliconia latispatha,2760940
+species,Heliconia mariae,2760810
+species,Heliconia metallica,2760726
+species,Heliconia platystachys,2760865
+species,Heliconia vaginalis,2760862
+species,Heliconia wagneriana,2760619
+species,Heliocarpus americanus-heliam-HELP,4259460
+species,Heliotropium angustiflorum-touran,10931974
+species,Heliotropium indicum,2925788
+species,Heliotropium verdcourtii-tourhi-TOUH,4060815
+species,Hemidictyum marginatum,2650883
+species,Hemionitis palmata,2651709
+species,Henriettea succosa-henrsu,3860494
+species,Herpetacanthus panamensis,3781085
+species,Herrania nycterodendron-herrny,3668149
+species,Herrania purpurea-herrpu-HERP,3668083
+species,Heterocondylus vitalbae-het1vi,3142668
+species,Heteropterys laurifolia-hetela-HETL,3191295
+species,Heteropterys obovata-heteob,3982741
+species,Heteropterys panamensis-hetepa-HETP,3982625
+species,Heterotaxis crassifolia,5319467
+species,Hevea brasiliensis-hevebr,3071171
+species,Hibiscus bifurcatus-hibibi,3152591
+species,Hibiscus rosa-sinensis-hibiro,3152559
+species,Hibiscus sororius,7278701
+species,Hieronyma alchorneoides-hyeral-HYEL,3079092
+species,Hippeastrum puniceum,2854416
+species,Hippobroma longiflora,3168943
+species,Hippocratea volubilis-hip2vo-HIPV,3169012
+species,Hiraea fagifolia-hiraf1,7285448
+species,Hiraea faginea-hirafa-HIRF,3191289
+species,Hiraea fosteri-hirafo-HIR3,3984694
+species,Hiraea grandifolia-hiragr-HIRG,7285406
+species,Hiraea reclinata-hirare-HIR1,3983773
+species,Hiraea smilacina-hiraqu-HIRQ,3984686
+species,Hirtella americana-hirtam-HIRA,2985148
+species,Hirtella racemosa-hirtra-HIR2,2985122
+species,Hirtella triandra-hirttr-HIRT,2985089
+species,Hoffmannia nicotianifolia,5335315
+species,Hoffmannia subauriculata-hoffsu-HOFE,5335430
+species,Homalomena wendlandii,2868741
+species,Homolepis aturensis,4117506
+species,Humiriastrum diguense-humidi-HUMD,7320157
+species,Huperzia dichotoma,2688505
+species,Hura crepitans-huracr-HURC,5380015
+species,Hydrangea peruviana-hydrpe-HYDP,7318951
+species,Hydrilla verticillata,5329570
+species,Hydrocotyle umbellata,3034614
+species,Hygrophila costata,5415348
+species,Hylenaea praecelsa-hylepr-HYLP,3793660
+species,Hymenachne amplexicaulis,2705781
+species,Hymenaea courbaril-hymeco-HYMC,2950750
+species,Hymenasplenium delitescens,7402450
+species,Hymenocallis littoralis,2860119
+species,Hymenophyllum abruptum,7315617
+species,Hyparrhenia rufa,2703246
+species,Hypolytrum longifolium,2709274
+species,Hyptis brevipes,7306536
+species,Hyptis capitata,2926815
+species,Hyptis mutabilis,2926813
+species,Ichnanthus pallens,2704501
+species,Ichnanthus tenuis,2704499
+species,Indigofera trita,4271745
+species,Inga acuminata-ingas1-INAC,5357542
+species,Inga cocleensis-ingaco-INCO,5358068
+species,Inga goldmanii-ingago-INGO,5357822
+species,Inga hayesii-ingaha-INHA,5357942
+species,Inga laurina-ingafa-INFA,5358039
+species,Inga marginata-ingama-INMA,7546887
+species,Inga mucuna-ingam1-INM1,5358088
+species,Inga multijuga-ingam2-INM2,5357635
+species,Inga nobilis-ingaqu-INQU,5357519
+species,Inga oerstediana-ingami-INMI,5358014
+species,Inga pauciflora-ingapa-INPA,5357820
+species,Inga pezizifera-ingape-INPE,5357576
+species,Inga punctata-ingapu-INPU,5357665
+species,Inga ruiziana-ingaru-INRU,5357975
+species,Inga sapindoides-ingasa-INSA,5357706
+species,Inga spectabilis-ingasp-INSP,5357491
+species,Inga thibaudiana-ingath-INTH,5357991
+species,Inga umbellifera-ingaum-INUM,7703842
+species,Inga vera-ingave-INVE,5357680
+species,Ionopsis satyrioides,5321868
+species,Ionopsis utricularioides,5321877
+species,Ipomoea batatas-ipomba,2928551
+species,Ipomoea philomega-ipomph-IPOP,7926928
+species,Ipomoea quamoclit-ipomqu,2928562
+species,Ipomoea squamosa-ipomsq-IPOS,4927163
+species,Ipomoea tiliacea-ipomti-IPOT,2928552
+species,Iresine angustifolia,3085026
+species,Iresine diffusa,3085038
+species,Isachne polygonoides,7813673
+species,Ischaemum rugosum,2702462
+species,Ischaemum timorense,2702458
+species,Ischnosiphon leucophaeus,2761089
+species,Isertia haenkeana-iserha-ISEH,2903537
+species,Ixora chinensis-ixorco,2905600
+species,Ixora miquelii-ixorfl,2905283
+species,Jacaranda copaia-jac1co-JACC,7298763
+species,Jacaratia spinosa-jac2sp-JACS,7269688
+species,Jatropha curcas-jatrcu,3072953
+species,Jupunba barbouriana-pit1ba-ABAB,11659250
+species,Jupunba macradenia-pit1ma-PITM,11919516
+species,Justicia graciliflora-justgr-JUSG,3779183
+species,Justicia pectoralis,3173087
+species,Koanophyllon wetmorei-koanwe-KOAW,3145039
+species,Kohleria tubiflora,5592178
+species,Kyllinga brevifolia,2718737
+species,Kyllinga odorata,2718760
+species,Kyllinga pumila,2718844
+species,Lacistema aggregatum-laciag-LACA,3075397
+species,Lacmellea panamensis-lacmpa-LACP,3617831
+species,Laetia thamnia-laetth-LAET,7946110
+species,Lafoensia punicifolia-lafopu-LAFP,3989500
+species,Lantana camara-lantca-LANC,2925303
+species,Lantana urticifolia,2925331
+species,Lasiacis oaxacensis,4134977
+species,Lasiacis procerrima,4134928
+species,Lasiacis sorghoidea,2702854
+species,Leersia hexandra,2702901
+species,Leochilus scriptus,2803295
+species,Lepidagathis alopecuroidea,3172921
+species,Lepidaploa canescens,3099738
+species,Leptochloa virgata,2703885
+species,Leucaena multicapitula-leucmu-LEUM,2970407
+species,Licania hypoleuca-licahy-LICH,2985272
+species,Limnobium laevigatum,5329643
+species,Lindackeria laurina-lindla-LINL,3879668
+species,Lindernia crustacea,3171890
+species,Lindernia diffusa,3171880
+species,Liparis nervosa,5322999
+species,Lithachne pauciflorus,2703323
+species,Lockhartia acuta,5307762
+species,Lockhartia pittieri,5307760
+species,Lomariopsis vestita,4012634
+species,Lonchocarpus ferrugineus-loncfe,2969106
+species,Lonchocarpus heptaphyllus-loncla-LONL,2969089
+species,Lonchocarpus luteomaculatus-lonclu-LON2,2969181
+species,Lonchocarpus velutinus-loncve,2969008
+species,Lozania pittieri-lozapi-LOZP,3075439
+species,Ludovia integrifolia,5327022
+species,Ludwigia decurrens,5421002
+species,Ludwigia dodecandra,5545340
+species,Ludwigia helminthorrhiza,5545304
+species,Ludwigia leptocarpa,5421007
+species,Ludwigia octovalvis,5420987
+species,Ludwigia sedoides,5545123
+species,Ludwigia torulosa,5545108
+species,Luehea seemannii-luehse-LUE1,7149790
+species,Luehea speciosa-luehsp-LUE2,5406662
+species,Lycaste powellii,5313360
+species,Lycianthes maxonii-lycima-LYCM,7299566
+species,Lycianthes synanthera-lycisy-LYCS,3798770
+species,Lycopodiella cernua,2688348
+species,Lygodium radiatum,3744427
+species,Lygodium venustum,2650437
+species,Mabea occidentalis-mabeoc-MABO,3071832
+species,Machaerium darienense,5355087
+species,Machaerium floribundum-machfl-MACF,5354927
+species,Machaerium isadelphum-machmi-MAC1,7932857
+species,Machaerium kegelii-machke-MACK,5355165
+species,Machaerium microphyllum,5354962
+species,Machaerium milleflorum-machm2-MAC2,5355082
+species,Machaerium pittieri-machar-MACA,5355161
+species,Machaerium polyphyllum,5355047
+species,Machaerium salvadorense-machsa,5354919
+species,Machaerium seemannii-machse-MACS,5355162
+species,Maclura tinctoria-maclti-MACT,12340747
+species,Macrocnemum roseum-macrgl-MACG,2895641
+species,Macropsychanthus comosus-diocre-DIOR,10954319
+species,Macropsychanthus wilsonii-diocwi-DIOW,10990808
+species,Macroscepis hirsuta-matehi,3579340
+species,Macrothelypteris torresiana,8846035
+species,Malouetia guatemalensis-malogu-MALG,3619989
+species,Malpighia romeroana-malpro-MALR,7285434
+species,Mammea americana-mammam,3189421
+species,Mandevilla villosa-mandvi-MANV,3615169
+species,Manettia reclinata,5338365
+species,Mangifera indica-mangin-MANI,3190638
+species,Manihot esculenta-man1es,3060998
+species,Manilkara zapota-maniza,2885158
+species,Mansoa verrucifera-mansve-ONOV,4094246
+species,Maquira guianensis-maquco-MAQC,3763686
+species,Maranthes panamensis-marapa-MAR1,2984748
+species,Marcgravia nepenthoides-marcne-MAR3,5614666
+species,Margaritaria nobilis-margno-MAR2,5383279
+species,Marila laxiflora-mar1la-MARL,7656893
+species,Maripa panamensis-maripa-MARP,5549221
+species,Martinella obovata-martob-MARO,5415078
+species,Mascagnia divaricata-mascdi,3983715
+species,Mascagnia ovatifolia-mascne-MASN,7285093
+species,Masdesvallia livingstoneana,2848628
+species,Matayba oppositifolia-mataap-MATA,3784095
+species,Matelea denticulata-matede,3573014
+species,Matelea pinguifolia-matep1,3570864
+species,Maxillaria macleei,5318014
+species,Maxillaria porrecta,5318366
+species,Maxillariella acervata,2826347
+species,Maxillariella alba,2825895
+species,Maxillariella variabilis,2826838
+species,Maxonia apiifolia,2650997
+species,Maytenus schippii-maytsc-MAYS,3794112
+species,Mecardonia procumbens,3172014
+species,Megathyrsus maximus,4108550
+species,Melampodium divaricatum,3138949
+species,Melanthera nivea,3092271
+species,Melochia lupulina,7931142
+species,Melochia melissifolia,8364764
+species,Melothria pendula-melope-MELP,2874550
+species,Melothria trilobata-melotr-MELT,7317621
+species,Mendoncia costaricana-mendgr-MENG,3772633
+species,Mendoncia retusa-mendre,3771888
+species,Merremia umbellata-merrum,3678484
+species,Mesechites trifidus-mesetr-MEST,7317257
+species,Metaxya rostrata,5565003
+species,Mickelia nicotianifolia,7675663
+species,Miconia affinis-micoaf-MIC1,3188559
+species,Miconia argentea-micoar-MIC2,3859926
+species,Miconia cinnamomea-conoci-CONC,3869829
+species,Miconia conobracteata-conobr-CONB,10712139
+species,Miconia conospeciosa-conosp-CON1,10820655
+species,Miconia dentata-clidde-CLID,10677735
+species,Miconia dependens-clidca-CLI1,10738960
+species,Miconia dorsiloba-micodo-MICD,3867274
+species,Miconia elata-micoel-MICE,3866980
+species,Miconia formicocollina-clidc1,10772614
+species,Miconia galactantha-micose-MIC6,3865683
+species,Miconia hondurensis-micoho-MICH,3864206
+species,Miconia impetiolaris-micoim-MICI,8409353
+species,Miconia lacera-micola-MIC3,3863059
+species,Miconia lateriflora-micol1-MIC4,3862739
+species,Miconia lonchophylla-micolo-MIC5,3862232
+species,Miconia minutiflora-micobo-MICB,10932080
+species,Miconia nervosa-micone-MICN,3859839
+species,Miconia octona-clidoc-CLIO,10699427
+species,Miconia prasina-micopr-MICP,3188562
+species,Miconia purpureoviolacea-cliddi-CLIP,10800391
+species,Miconia quinquenervia-micoqu,7428033
+species,Miconia rufostellulata-micor1,3868203
+species,Miconia shattuckii-micosh-MIC7,3866811
+species,Miconia simplex-micosi-MIC9,3866743
+species,Miconia sulcicaulis-leandi-LEAD,10839238
+species,Miconia trichocalyx-clidse-CLIS,11171156
+species,Miconia xalapensis-conoxa,3862726
+species,Microgramma lycopodioides,2650548
+species,Microgramma percussa,4026062
+species,Microgramma reptans,2650542
+species,Microtea debilis,6412855
+species,Mikania guaco-mikagu,5398809
+species,Mikania houstoniana-mikaho-MIKH,11088382
+species,Mikania leiostachya-mikale-MIKL,5398756
+species,Mikania micrantha-mikami-MIKM,5398421
+species,Mikania tonduzii-mikato-MIKT,5398391
+species,Mimosa casta,2969870
+species,Mimosa pigra,2969431
+species,Mimosa pudica,2969284
+species,Momordica charantia-momoch-MOMC,2874581
+species,Monstera adansonii,2868136
+species,Monstera dubia,2868179
+species,Monstera pinnatipartita,2868226
+species,Montrichardia arborescens,2868256
+species,Moquilea platypus-licapl-LICP,2985306
+species,Morinda seibertii-appuse-APPS,5596623
+species,Morisonia frondosa-cappfr-CAPF,9696362
+species,Mormodes powelli,2789599
+species,Mosannona garwoodii-malmsp-CRES,3648797
+species,Mosquitoxylum jamaicense-mosqja-MOSJ,7321670
+species,Mouriri myrtilloides-mourmy-MOUM,3870233
+species,Mucuna mutisiana-mucumu-MUCM,2951409
+species,Mucuna rostrata-mucuro,2951411
+species,Muntingia calabura-muntca-MUNC,3152036
+species,Murdannia nudiflora,2764680
+species,Musa acuminata,2762680
+species,Myoxanthus trachychlamys,2801857
+species,Myrcia fosteri-myrcfo-MYR1,3174678
+species,Myrcia splendens-myrcga-MYRG,3174691
+species,Myrcia tomentosa-myrcze-MYRZ,3174416
+species,Myriocarpa longipes-myrilo-MYRY,7300750
+species,Myriopus maculatus-tourma,4061086
+species,Myrospermum frutescens-myrofr-MYR2,2976681
+species,Myroxylon balsamum-myr3ba,5357190
+species,Nautilocalyx panamensis,3819982
+species,Nectandra cissiflora-nectci-NECC,5685370
+species,Nectandra lineata-nectgl-NECL,5685105
+species,Neea amplifolia-neeaam-NEEA,3700440
+species,Neea delicatula-neeade,3700097
+species,Nelsonia canescens,5415356
+species,Neomarica variegata,2745732
+species,Nephrolepis biserrata,2650936
+species,Nephrolepis pendula,7811517
+species,Neurolaena lobata-neurlo-NEUL,3096775
+species,Niphidium oblanceolatum,4030132
+species,Notopleura uliginosa,5336735
+species,Notylia albida,2850703
+species,Notylia barkeri,2850658
+species,Notylia pentachne,2850722
+species,Nymphaea ampla,2882432
+species,Nymphaea conardii,2882428
+species,Nymphoides indica,5341503
+species,Ochroma pyramidale-ochrpy-OCHP,3152240
+species,Ocotea leptobotra-ocotce-OCOC,4179703
+species,Ocotea oblonga-ocotob-OCOO,7304263
+species,Ocotea puberula-ocotpu-OCOP,7304142
+species,Ocotea rubrinervis-ocotru,4183235
+species,Ocotea whitei-ocotwh-OCOS,4180728
+species,Odontadenia puncticulosa-odo1pu-ODOP,3616386
+species,Odontadenia semidigyna-odo1ma-ODOM,10525151
+species,Odontocarya tamoides-odo2ta-ODO1,7268771
+species,Odontocarya truncata-odo2tr-ODO2,3830257
+species,Oenocarpus mapora-oenoma-OENM,2735446
+species,Oldenlandia corymbosa,2911970
+species,Olyra ecaudata,5679041
+species,Olyra latifolia,5290105
+species,Omphalea diandra-omphdi-OMPD,3062246
+species,Operculina codonantha-operco,7459303
+species,Ophioglossum reticulatum,2650137
+species,Oplismenus burmannii,2705738
+species,Oplismenus hirtellus,2705737
+species,Oreopanax capitatus-oreoca-OREC,3036624
+species,Ormosia amazonica-ormoam-ORMA,5355607
+species,Ormosia coccinea-ormocr-ORMC,5355587
+species,Ormosia macrocalyx-ormoma-ORMM,5355476
+species,Ormosia panamensis-ormopa-ORMP,5355604
+species,Ornithocephalus bicornis,5321656
+species,Ornithocephalus powellii,5321633
+species,Orthoclada laxa,4142419
+species,Oryctanthus alveolatus,7288139
+species,Oryctanthus cordifolius,4003367
+species,Oryctanthus occidentalis,7288101
+species,Oryza latifolia,2703456
+species,Ouratea lucens-ouralu-OURL,7326730
+species,Oxandra panamensis-oxanpa,3154745
+species,Oxycaryum cubense,2710864
+species,Pachira aquatica-pochaq-PACA,3152235
+species,Pachira sessilis-pochse-BOMS,4073559
+species,Pachyptera kerere-manske-PACK,4094079
+species,Palicourea acuminata-psycac-PYAC,7763101
+species,Palicourea brachiata-psycb1-PYB1,8416596
+species,Palicourea cyanococca-psycpi-PYPI,10934022
+species,Palicourea deflexa-psycde-PYDE,7579870
+species,Palicourea gracilenta-psycb2-PYB2,10232993
+species,Palicourea guianensis-paligu-PALG,2898772
+species,Palicourea hebeclada-psycpu-PYPU,7486068
+species,Palicourea hoffmannseggiana-psycfu-PYFU,8095300
+species,Palicourea racemosa-psycra-PYRA,11086770
+species,Palicourea tomentosa-psycpo-PYPO,7866160
+species,Palicourea violacea-psycc1-PYC1,2921742
+species,Palmorchis nitida,2832439
+species,Palmorchis powellii,2832433
+species,Panicum grande,4143644
+species,Panicum mertensii,4135162
+species,Panicum pilosum,2705110
+species,Panicum polygonatum,4123944
+species,Panicum pulchellum,4127647
+species,Panicum trichanthum,2705169
+species,Panicum trichoides,2705068
+species,Parathesis fusca-par2fu,3722763
+species,Parathesis microcalyx-par2mi-PARM,3722415
+species,Paspalidium geminatum,2703482
+species,Paspalum conjugatum,2705656
+species,Paspalum decumbens,2705582
+species,Paspalum microstachyum,4107284
+species,Paspalum notatum,2705621
+species,Paspalum paniculatum,2705587
+species,Paspalum plicatulum,2705584
+species,Paspalum repens,2705655
+species,Paspalum saccharoides,4154344
+species,Paspalum virgatum,2705620
+species,Passiflora ambigua-passam-PAS1,7849294
+species,Passiflora auriculata-passau-PAS2,3587589
+species,Passiflora biflora-passbi-PASB,2874204
+species,Passiflora coriacea,7565198
+species,Passiflora foetida-passfo-PASF,2874211
+species,Passiflora holosericea-passho,7499561
+species,Passiflora menispermifolia-passm3,7313428
+species,Passiflora misera-passmi,3587005
+species,Passiflora nitida-passni-PASN,3587301
+species,Passiflora platyloba-passpl,7313348
+species,Passiflora sandrae,3587070
+species,Passiflora seemannii-passse-PASS,3586863
+species,Passiflora vitifolia-passvi-PASV,2874186
+species,Paullinia baileyi-paulba-PAU1,3785356
+species,Paullinia bracteosa-paulbr-PAU2,3785232
+species,Paullinia clavigera-paulfi-PAUF,7264791
+species,Paullinia fuscescens-paulfu-PAU3,3189951
+species,Paullinia glomerulosa-paulg2-PAU4,3784333
+species,Paullinia mallophylla-paulma-PAUM,3783920
+species,Paullinia pinnata-paulpi-PAU5,3189950
+species,Paullinia pterocarpa-paulpt-PAU6,3787941
+species,Paullinia rugosa-paulru-PAUR,3787746
+species,Paullinia turbacensis-paultu-PAUT,3787116
+species,Pavonia castaneifolia,5619204
+species,Pavonia dasypetala-lopida-PAVD,5619129
+species,Pavonia paniculata,5406773
+species,Pavonia schiedeana,5618317
+species,Pecluma hygrometrica,4028220
+species,Pecluma pectinata,2650508
+species,Peltogyne purpurea-pel2pu-PELP,2952734
+species,Pentagonia macrophylla-pentma-PENM,5334728
+species,Peperomia ciliolibractea,4184709
+species,Peperomia cordulata,4191308
+species,Peperomia ebingeri,4188094
+species,Peperomia elata,4187809
+species,Peperomia glabella,3086385
+species,Peperomia macrostachya,4184624
+species,Peperomia mameiana,4185825
+species,Peperomia obscurifolia,7305877
+species,Peperomia obtusifolia,3086423
+species,Peperomia pellucida,3086412
+species,Peperomia portobellensis,4185938
+species,Peperomia rotundifolia,3086378
+species,Peperomia tenuifolia,4184010
+species,Perebea xanthochyma-perexa-PERX,3765422
+species,Peristeria elata,5307524
+species,Peritassa pruinosa-peripr-PERP,3793233
+species,Persea americana-persam-PER1,3034046
+species,Petiveria alliacea,3084012
+species,Petrea volubilis-petras-PETA,2925536
+species,Pharus latifolius,2703641
+species,Pharus parvifolius,2703640
+species,Pharus virescens,5678353
+species,Philodendron alliodorum,2870955
+species,Philodendron fragrantissimum,2870944
+species,Philodendron grandipes,2870675
+species,Philodendron hederaceum,2871003
+species,Philodendron immixtum,2871325
+species,Philodendron inaequilaterum,2871286
+species,Philodendron jacquinii,2871149
+species,Philodendron opacum,2871173
+species,Philodendron panamense,2871053
+species,Philodendron pterotum,2870965
+species,Philodendron radiatum,2870769
+species,Philodendron rayanum,2870726
+species,Philodendron rigidifolium,2871253
+species,Philodendron sagittifolium,2870829
+species,Philodendron tripartitum,2870748
+species,Phoradendron piperoides,2889900
+species,Phoradendron quadrangulare,2889874
+species,Phragmites australis,5290149
+species,Phthirusa pyrifolia,7288052
+species,Phyllanthus acuminatus-phylac-PHYA,5381441
+species,Phyllanthus amarus,5382589
+species,Phyllanthus urinaria,5382780
+species,Physalis angulata,5341792
+species,Physalis pubescens,5341819
+species,Phytolacca rivinoides,3084014
+species,Picramnia latifolia-picrla-PICL,3708918
+species,Pilea microphylla,5361841
+species,Pinochia peninsularis-forspe-FORP,3616996
+species,Piparea dentata-caseco-CASC,3878707
+species,Piper aequale-pipeae-PPAE,3086344
+species,Piper arboreum-pipea1-PPA1,7304860
+species,Piper auritum-pipeau-PPAU,3086352
+species,Piper carrilloanum-pipeca-PPCA,4185525
+species,Piper colonense-pipecu-PPCU,4190837
+species,Piper cordulatum-pipeco-PPCO,7305838
+species,Piper darienense,7305503
+species,Piper dilatatum-piped1,3086349
+species,Piper grande-pipegr-PPGR,8107355
+species,Piper hispidum-pipehi-PPHI,3086355
+species,Piper imperiale-pipeim-PPIM,4185175
+species,Piper marginatum-pipema-PPMA,3086325
+species,Piper multiplinervium-pipemu,4191505
+species,Piper peltatum-pipep1,3086365
+species,Piper peracuminatum-pipep2,4185472
+species,Piper perlasense-pipepe-PPPE,4185113
+species,Piper pseudogaragaranum,4189182
+species,Piper pubistipulum,7305547
+species,Piper reticulatum-pipere-PPRE,3086330
+species,Piper trigonum,4190593
+species,Piper villiramulum-pipevi,7305499
+species,Piper viridicaule,4187704
+species,Pisonia aculeata-pisoac-PISA,3086260
+species,Pistia stratiotes,2870583
+species,Pitcairnia heterophylla,5288518
+species,Pithecellobium hymenaeifolium-pit1hy-PITH,3796237
+species,Pittoniotis trichantha-antitr-ANTT,2911216
+species,Pityrogramma calomelanos,2651790
+species,Platymiscium dimorphandrum-pla1pi-PLAP,2944735
+species,Platypodium elegans-pla2el-PLAE,2977383
+species,Pleiostachya pruinosa,2762184
+species,Pleonotoma variabilis-pleova-PLEV,7298647
+species,Pleopeltis christensenii,8189442
+species,Pleopeltis panamensis,4028990
+species,Pleopeltis polypodioides,2650496
+species,Pluchea odorata,3132617
+species,Pochota fendleri-pochqu-BOMQ,9158473
+species,Pogonopus exsertus-pogosp,5340236
+species,Polybotrya caudata,4042509
+species,Polygala paniculata,3191373
+species,Polygonum acuminatum,5334340
+species,Polygonum hydropiperoides,5334468
+species,Polygonum punctatum,7512339
+species,Polyscias guilfoylei-pol1gu,3035681
+species,Polystachya foliosa,2792004
+species,Polystachya masayensis,2792546
+species,Polytaenium citrifolium,9389130
+species,Polytrias indica,4153188
+species,Pombalia prunifolia-hybapr-HYBP,8195188
+species,Pontederia rotundifolia,2766055
+species,Portulaca oleracea,3084719
+species,Posoqueria latifolia-posola-POSL,2893899
+species,Poulsenia armata-poular-POUA,5570848
+species,Pourouma bicolor-pourbi-POUB,7316430
+species,Pouteria fossicola-poutfo-POUF,2884117
+species,Pouteria reticulata-poutre-POUU,2884054
+species,Pouteria sapota-poutsa-POU1,2884162
+species,Pouteria stipitata-poutst-POU2,2884149
+species,Pouzolzia obliqua-pouzob-POUO,4099683
+species,Prestonia ipomaeifolia-presip-PREI,5536522
+species,Prestonia lenticellata-presle,5536478
+species,Prestonia mexicana-presme,5536413
+species,Prestonia portobellensis-prespo-PREP,5536313
+species,Prestonia quinquangularis-presac-PREA,5414415
+species,Prestonia trifida-presob-PREO,5536196
+species,Prionostemma aspera-pri1as-PRIA,5579703
+species,Prioria copaifera-pri2co-PRIC,2947108
+species,Prosthechea aemula,2794015
+species,Prosthechea chacaoensis,2794103
+species,Prosthechea fragrans,2794328
+species,Prosthechea pygmaea,2794075
+species,Protium confusum-protsp-PRO1,3993929
+species,Protium costaricense-protco-PROC,3993783
+species,Protium panamense-protpa-PROP,3993834
+species,Protium stevensonii-tet2pa-TET2,11108033
+species,Protium tenuifolium-protte-PROT,7286790
+species,Protium trifoliolatum-prottr,3992925
+species,Pseudelephantopus spicatus,3092022
+species,Pseudobombax septenatum-pse1se-PSE1,4073614
+species,Pseudolmedia spuria-pse2sp-PSE2,2984543
+species,Pseudosamanea guachapele-albigu-ALBG,2972923
+species,Psidium friedrichsthalianum-psidfr-PSIF,5420358
+species,Psidium guajava-psidgu-PSIG,5420380
+species,Psiguria triphylla-psigbi-PSIB,3624442
+species,Psiguria warscewiczii-psigwa-PSIW,3624367
+species,Psychotria biaristata-psycg1-PYG1,2921957
+species,Psychotria carthagenensis-psycc3,2920891
+species,Psychotria chagrensis-psycch-PYCH,2920161
+species,Psychotria grandis-psycg3-PYG3,2922874
+species,Psychotria guapilensis,2922447
+species,Psychotria horizontalis-psycho-PYHO,2920395
+species,Psychotria limonensis-psycli-PYLI,2920461
+species,Psychotria marginata-psycma-PYMA,2910824
+species,Psychotria micrantha-psycmi-PYMI,2923258
+species,Psychotria psychotriifolia-psycps-PYPS,2922893
+species,Psychotria tenuifolia-psycg2-PYG2,2922399
+species,Pteris altissima,5275403
+species,Pteris grandifolia,5275402
+species,Pteris propinqua,7710896
+species,Pteris pungens,5275405
+species,Pterocarpus officinalis-pterof-PTEO,5349333
+species,Pterocarpus rohrii-pterro-PTER,5349322
+species,Pteropepon acariaeanthus-pseuac,7379457
+species,Quararibea pterocalyx-quarpt-QUAP,4073797
+species,Quararibea stenophylla-quaras-QUA1,4073669
+species,Quassia amara-quasam-QUA2,3190647
+species,Quiina macrophylla-quiisc-QUIS,8288718
+species,Randia armata-randar-RANA,5339445
+species,Rauvolfia littoralis-rauvli-RAUL,7874193
+species,Renealmia alpinia,5302606
+species,Renealmia cernua,5302530
+species,Rhabdadenia biflora-rhabbi-RHAB,7981652
+species,Rhetinantha friedrichsthalii,2826294
+species,Rhipidocladum racemiflorum,4142909
+species,Rhipsalis baccifera,3084036
+species,Rhodospatha moritziana,2872017
+species,Rhodospatha wendlandii,2872011
+species,Rhynchosia calycosa-rhynca,5350932
+species,Rhynchosia erythrinoides-rhyner,5350991
+species,Rhynchospora cephalotes,2721655
+species,Rhynchospora contracta,2720826
+species,Rhynchospora corymbosa,2721495
+species,Rhynchospora nervosa,2721307
+species,Rhynchospora pedersenii,2720588
+species,Rhynchospora radicans,2721217
+species,Rinorea silvatica-rinosy-RIN2,4077284
+species,Rinorea squamata-rinosq-RIN1,4077443
+species,Rivina humilis,3084027
+species,Robrichia schomburgkii-entesc-ENTS,12308693
+species,Rodriguezia lanceolata,5313640
+species,Rolandra fruticosa,3114266
+species,Ronabea emetica,2902131
+species,Rosenbergiodendron formosum-randfo-RANF,2904221
+species,Rossioglossum ampliatum,5826486
+species,Rottboellia cochinchinensis,2704075
+species,Roupala montana-roupmo-ROUM,7831077
+species,Rourea adenophora-rourad,3686515
+species,Rourea glabra-rourgl-ROUG,7326575
+species,Ruehssia crassipes-marscr-MARC,11887412
+species,Ruellia metallica,5573754
+species,Sabicea villosa-sabivi-SABV,2900221
+species,Saccharum officinarum,2703912
+species,Saccharum spontaneum,2703935
+species,Sacciolepis striata,2703628
+species,Saccoloma elegans,7265847
+species,Sagittaria lancifolia,5328895
+species,Salvia occidentalis,2927014
+species,Salvinia radula,5579461
+species,Sapium glandulosum-sapiau-SAPG,5379918
+species,Saurauia yasicae-saurla-SAUY,7270715
+species,Scaphyglottis behrii,2847177
+species,Scaphyglottis longicaulis,2847103
+species,Scaphyglottis prolifera,2847042
+species,Schistocarpha eupatorioides,3105021
+species,Schizachyrium brevifolium,8303121
+species,Schizachyrium microstachyum,4124635
+species,Schizaea elegans,2650558
+species,Schizolobium parahyba-schipa-SCHP,2945453
+species,Schnella guianensis-bauhgu-BAUG,4929144
+species,Schnella reflexa-bauhre-BAUR,8193417
+species,Schwackaea cupheoides,3859446
+species,Sciadotenia nitida-sci1ni,3830126
+species,Scleria eggersiana,2712456
+species,Scleria macrophylla,2712441
+species,Scleria melaleuca,2712839
+species,Scleria mitis,2712617
+species,Scleria secans,2712691
+species,Scoparia dulcis,3171787
+species,Scyphostelma filisepalum-liedfi,8279212
+species,Securidaca diversifolia-secudi-SECD,5421445
+species,Securidaca tenuifolia-secute,5658078
+species,Selaginella arthritica,3710316
+species,Selaginella exaltata,7897088
+species,Selaginella flagellata,3710367
+species,Selaginella haematodes,4940392
+species,Selaginella horizontalis,7864342
+species,Selaginella mollis,8184076
+species,Senegalia hayesii-acacha-ACAH,2981234
+species,Senegalia polyphylla-sen1po,2980360
+species,Senegalia riparia-acacri-ACAR,2978843
+species,Senna bacillaris-sennba,2957751
+species,Senna dariensis-sennda-SEND,2956921
+species,Senna obtusifolia,2957408
+species,Senna reticulata-sennre-SENR,2957303
+species,Senna undulata-sennun-SENU,2957590
+species,Serjania atrolineata-serjat-SERA,7265058
+species,Serjania circumvallata-serjci-SER1,5577883
+species,Serjania cornigera-serjco-SER2,5577803
+species,Serjania mexicana-serjme-SERM,7705119
+species,Serjania paucidentata-serjpa-SER3,8005307
+species,Serjania pluvialiflorens-serjpl-SER4,5576976
+species,Serjania pyramidata-serjpy,5576920
+species,Serjania rhombea-serjrh-SERR,5576868
+species,Serjania trachygona-serjtr-SERT,5576677
+species,Serpocaulon maritimum,4023916
+species,Serpocaulon triseriale,4023792
+species,Serpocaulon wagneri,4023771
+species,Setaria palmifolia,2702958
+species,Setaria parviflora,5289679
+species,Setaria vulpiseta,5289673
+species,Sicydium schiedeanum-sicyco-SICC,5537212
+species,Sida hirsutissima,7692420
+species,Sida rhombifolia,5406735
+species,Sievekingia suavis,2806919
+species,Simarouba amara-simaam-SIMA,7720664
+species,Siparuna cristata-sipacr-SIPG,7264504
+species,Siparuna guianensis-sipagu,7264535
+species,Siparuna pauciflora-sipapa-SIPP,3782356
+species,Sloanea terniflora-sloate-SLOT,5651141
+species,Sloanea zuliaensis-sloazu-SLOZ,5651096
+species,Smilax domingensis-smilla-SMID,5295279
+species,Smilax mollis-smilmo-SMIM,5295233
+species,Smilax purhampuy-smilpu,5295631
+species,Smilax spinosa-smils1-SMI1,5295334
+species,Smilax spissa-smils2-SMI2,5295259
+species,Sobralia bletiae,2797412
+species,Sobralia decora,2797555
+species,Sobralia fragans,2797489
+species,Sobralia macrophylla,2797465
+species,Socratea exorrhiza-socrex-SOCE,2732453
+species,Solanum adhaerens,8023576
+species,Solanum allophyllum,2931303
+species,Solanum arboreum-solaar-SOL2,2931033
+species,Solanum asperum-solaas-SOL4,2930051
+species,Solanum aturense-solaat,2929121
+species,Solanum hayesii-solaha-SOLH,2932218
+species,Solanum jamaicense-solaja,2931492
+species,Solanum lanceifolium-solala-SOL5,2929009
+species,Solanum lepidotum-solast-SOL3,2931223
+species,Solanum nudum-solanu-SOL1,2931480
+species,Solanum rudepannum-solaru-SOLO,3802204
+species,Solanum rugosum-solar1,2929481
+species,Solanum splendens-cyphha-CYPH,9478958
+species,Solanum subinerme-solasu-SOLS,2932599
+species,Solanum umbellatum-solaum,2929008
+species,Solenostemon scutellarioides,3887871
+species,Sorocea affinis-soroaf-SORA,3763103
+species,Souroubea sympetala-soursy-SOUS,3916170
+species,Spachea membranacea-spacme-SPAM,3984541
+species,Spananthe paniculata,6027076
+species,Spathiphyllum friedrichsthalii,2869742
+species,Spathiphyllum phryniifolium,2869659
+species,Spathodea campanulata-spatca,3172574
+species,Specklinia brighamii,2835703
+species,Specklinia grobyi,2835608
+species,Spermacoce tenuior,2918843
+species,Sphagneticola trilobata,3116842
+species,Spigelia anthelmia,5414391
+species,Spigelia hamellioides,5645845
+species,Spigelia humboldtiana,7289408
+species,Spiracantha cornifolia,3088979
+species,Spondias mombin-sponmo-SPOM,3190593
+species,Spondias radlkoferi-sponra-SPOR,3660942
+species,Sporobolus jacquemontii,4149456
+species,Stachytarpheta jamaicensis,2925463
+species,Stanhopea costaricensis,4935132
+species,Stelis crescentiicola,5310071
+species,Stemodia verticillata,3171751
+species,Stenorrhynchos lanceolatum,2808947
+species,Stenospermation angustifolium,2870214
+species,Sterculia apetala-sterap-STEA,5406679
+species,Sterculia recordiana-sterre,7694287
+species,Sticherus bifidus,2651575
+species,Stigmaphyllon ellipticum-stigel-STIE,7285222
+species,Stigmaphyllon hypargyreum-stighy-STIH,3983566
+species,Stigmaphyllon lindenianum-stigli-STIL,7285160
+species,Stigmaphyllon puberum-stigpu-STIP,3191311
+species,Stigmatopteris sordida,4042126
+species,Stizophyllum inaequilaterum-stizin-STII,4091727
+species,Stizophyllum riparium-stizri-STIR,4091599
+species,Streptochaeta sodiroana,7842000
+species,Streptochaeta spicata,4129635
+species,Streptogyna americana,4129604
+species,Stromanthe jacquinii,2761292
+species,Struthanthus orbicularis,4001990
+species,Strychnos brachistantha-strybr-STRB,5645729
+species,Strychnos darienensis-stryda-STRD,5645381
+species,Strychnos panamensis-strypa-STRP,7289427
+species,Strychnos toxifera-stryto-STRT,7564494
+species,Stylogyne turbacensis-stylst-STYS,7331069
+species,Swartzia simplex var. continentalis-swars2-SWA2,5352053
+species,Swartzia simplex var. grandiflora-swars1-SWA1,5352058
+species,Symphonia globulifera-sympgl-SYMG,8185162
+species,Synechanthus warscewiczianus-synewa-SYNW,2736134
+species,Synedrella nodiflora,5404991
+species,Syngonium erythrophyllum,2867864
+species,Syngonium podophyllum,2867866
+species,Syngonium wendlandii,2867865
+species,Syzygium jambos-syzyja,3183534
+species,Syzygium malaccense-syzyma-SYZM,3184509
+species,Tabebuia rosea-tab1ro-TABR,3172537
+species,Tabernaemontana africana-stemgr-STEG,8426630
+species,Tabernaemontana arborea-tab2ar-TABA,8416120
+species,Tabernaemontana divaricata-tab2di,3169625
+species,Tachigali panamensis-tachve-TACV,7478385
+species,Talisia croatii-talipr-TALP,3788402
+species,Talisia nervosa-taline-TALN,3788079
+species,Tanaecium dichotomum-arraco,10685791
+species,Tanaecium pyramidatum-par3py,7933875
+species,Tanaecium tetragonolobum-cerate-CERT,8323761
+species,Tassadia obovata-cynare-CYNR,3571251
+species,Tectaria incisa,5275167
+species,Tectaria nicotianifolia,7608790
+species,Tectaria panamensis,7382059
+species,Tectaria pilosa,7644381
+species,Tectaria rivalis,7889881
+species,Teramnus uncinatus-teraun,2951909
+species,Teramnus volubilis-teravo,2951939
+species,Terminalia amazonia-termam-TERA,3699754
+species,Terminalia oblonga-termob-TERO,3189396
+species,Terminalia tetraphylla-buchca,9307101
+species,Ternstroemia tepezapote-ternte-TERT,3590257
+species,Tetracera hydrophila-tet1hy-TETH,5681356
+species,Tetracera portobellensis-tet1po-TET1,5681043
+species,Tetracera volubilis-tet1vo-TETV,8420425
+species,Tetrapterys discolor-tet3di-TETD,7285556
+species,Tetrapterys goudotiana-tet3go,8372713
+species,Tetrapterys seemannii-tet3se-TETS,3984668
+species,Tetrapterys tinifolia-tet3ma-TETM,7386810
+species,Tetrathylacium johansenii-tet4jo-TETJ,7796300
+species,Teuscheria pickiana,2817694
+species,Thalia geniculata,5303044
+species,Thelypteris arborescens,5666946
+species,Thelypteris balbisii,5275267
+species,Thelypteris dentata,5275277
+species,Thelypteris interrupta,5275319
+species,Thelypteris nicaraguensis,5666158
+species,Thelypteris opulenta,5275254
+species,Thelypteris poiteana,5275325
+species,Thelypteris serrata,5275280
+species,Theobroma cacao-theoca-THEC,3152205
+species,Thevetia ahouai-thevah-THEA,12365554
+species,Thinouia myriantha-thinmy-THIM,3787794
+species,Thismia panamensis,2756443
+species,Thunbergia erecta,5415461
+species,Tibouchina longifolia,3188521
+species,Tilesia baccata-wulfba-WULB,5400111
+species,Tillandsia anceps,2695848
+species,Tillandsia bulbosa,2695645
+species,Tillandsia elongata,2695706
+species,Tillandsia fasciculata,2695969
+species,Tillandsia monadelpha,2695099
+species,Tillandsia subulifera,2695727
+species,Tocoyena pittieri-tocopi-TOCP,2898256
+species,Tontelea passiflora-tontov-TONO,7946419
+species,Tournefortia bicolor-tourbi-TOUB,2925846
+species,Tournefortia cuspidata-tourcu-TOUC,4065747
+species,Tovomita longifolia-tovolo-TOVL,3711314
+species,Tovomita stylosa-tovost-TOVS,3710887
+species,Tradescantia zanonia,2765134
+species,Trattinnickia aspera-tratas-TRAA,3992709
+species,Trema domingense-tremin,4160257
+species,Trema micranthum-tremmi-TREM,2984501
+species,Trichanthera gigantea-tri1gi-TRIG,8138695
+species,Trichilia hirta-tri2hi-TRIH,3190494
+species,Trichilia pallida-tri2pa-TRI1,3190491
+species,Trichilia pleeana-tri2pl-TRI2,3852019
+species,Trichilia tuberculata-tri2tu-TRI3,3850448
+species,Trichocentrum capistratum,4935288
+species,Trichocentrum nudum,2846431
+species,Trichomanes anadromum,5533001
+species,Trichomanes diversifrons,7632615
+species,Trichomanes pinnatum,5275202
+species,Trichopilia maculata,2790539
+species,Trichopilia subulata,2790559
+species,Trichospermum mexicanum-tri4ga-TRI6,4261486
+species,Trichostigma octandrum-tricoc-TRIO,5383980
+species,Tridax procumbens,3149462
+species,Trigonia rugosa-trigru-TRIF,5687666
+species,Trigonidium egertonianum,5312467
+species,Triphora debilis,5310489
+species,Triphora gentianoides,5310490
+species,Triplaris cumingiana-tripcu-TRIC,4038399
+species,Triplophyllum funestum,5275170
+species,Tripogandra serrulata,2765458
+species,Triumfetta lappula-triula,3152066
+species,Trophis caucana-olmeas-OLMA,3766728
+species,Trophis racemosa-tropra-TROR,2984648
+species,Turnera panamensis-turnpa-TURP,4161192
+species,Turpinia occidentalis-turpoc-TURO,5421358
+species,Tynanthus croatianus-tynncr-TYNC,4093245
+species,Typha domingensis,5289534
+species,Uleiorchis ulei,2797248
+species,Uncaria tomentosa-uncato-UNCT,5338267
+species,Unonopsis pittieri-unonpi-UNOP,3157769
+species,Urera baccifera-urerba-UREB,2984339
+species,Urera eggersii,4099429
+species,Urera simplex-urereg-UREE,4098366
+species,Urochloa fusca,4150651
+species,Urochloa mutica,2705848
+species,Utricularia foliosa,3172439
+species,Utricularia gibba,3172407
+species,Vachellia melanoceras-acacme-ACA1,3795438
+species,Vailia anomala-blepmu-BLEM,9763251
+species,Vanilla planifolia,2803398
+species,Vanilla pompona,2803463
+species,Vantanea depleta-vantde-VAND,3649031
+species,Varronia spinescens-varrsp,4059050
+species,Vasconcellea cauliflora-carica-CARC,3838758
+species,Vatairea erythrocarpa-vataer-VATE,2965130
+species,Verbesina gigantea-verbgi-VERG,3147859
+species,Vernonanthura patens-vernpa-VERP,3124739
+species,Vigna trichocarpa-vigntr,2982684
+species,Vigna vexillata-vignve-VIGV,2982409
+species,Virola elongata-viroel-VIRE,7171876
+species,Virola fosteri-virosp-VIR3,10895411
+species,Virola sebifera-virose-VIR1,3152846
+species,Virola surinamensis-virosu-VIR2,3152848
+species,Vismia baccifera-vismba-VIS1,8113584
+species,Vismia billbergiana-vismbi-VIS2,3714594
+species,Vismia latisepala-vismla,3713902
+species,Vismia macrophylla-vismma-VISM,7798391
+species,Vitex cooperi-viteco-VITC,3881425
+species,Vitis tiliifolia-vititi-VITT,5372391
+species,Vittaria graminifolia,2650247
+species,Vittaria lineata,2650246
+species,Vochysia ferruginea-vochfe-VOCF,7378543
+species,Voyria corymbosa,7270431
+species,Voyria tenella,3170032
+species,Voyria truncata,3843350
+species,Vriesea heliconioides,5289176
+species,Waltheria glomerata-waltgl,7439875
+species,Warczewiczella lipscombiae,2791325
+species,Warszewiczia coccinea-warsco-WARC,5340116
+species,Werauhia gladioliflora,2700524
+species,Werauhia ringens,2700468
+species,Werauhia sanguinolenta,2700541
+species,Witheringia solanacea-withso,8625966
+species,Xanthosoma helleborifolium,5330922
+species,Xanthosoma mexicanum,5330948
+species,Xanthosoma sagittifolium,5330901
+species,Xestaea lisianthoides,3843175
+species,Xiphidium caeruleum,5303594
+species,Xylobium foveatum,2850838
+species,Xylophragma seemanniana-xyl3se,4092456
+species,Xylopia frutescens-xyl1fr-XYLF,3157107
+species,Xylopia macrantha-xyl1ma-XYLM,3157070
+species,Xylosma chlorantha-xyl2ch-XYLC,3880242
+species,Xylosma oligandra-xyl2ol-XYLO,3879525
+species,Zanthoxylum acuminatum-zantpr-ZAN2,3833649
+species,Zanthoxylum ekmanii-zantbe-ZANB,3831433
+species,Zanthoxylum panamense-zantp1-ZAN1,3835690
+species,Zanthoxylum riedelianum-zantri,3834649
+species,Zanthoxylum setulosum-zantse-ZANS,3834280
+species,Zingiber officinale,2757280
+species,Zygia dinizii-pit1di-PITD,5580495
+genus,Abelmoschus,3152705
+genus,Abuta,7268654
+genus,Acalypha,3055964
+genus,Acianthera,7848554
+genus,Aciotis,3861666
+genus,Acmella,7764312
+genus,Acroceras,2705722
+genus,Acrostichum,2650221
+genus,Adelia,3072378
+genus,Adelobotrys,3860441
+genus,Adelphia,3231255
+genus,Adenaria,7286104
+genus,Adenocalymma,10767005
+genus,Adiantum,2650796
+genus,Aechmea,2697812
+genus,Aegiphila,9156446
+genus,Aeschynomene,2949034
+genus,Aiouea,3034063
+genus,Alchornea,3055345
+genus,Alibertia,2896652
+genus,Allamanda,3169834
+genus,Allophylus,3189992
+genus,Alseis,2894134
+genus,Alsophila,2650312
+genus,Alternanthera,3084921
+genus,Amaioua,2901120
+genus,Amaranthus,3085074
+genus,Amphilophium,3172588
+genus,Anacardium,5421367
+genus,Ananas,2699430
+genus,Ananthacorus,2650220
+genus,Anaxagorea,8275519
+genus,Ancistrotropis,8264243
+genus,Andira,7858091
+genus,Andropogon,2706077
+genus,Anemopaegma,3172463
+genus,Aniseia,2928409
+genus,Annona,3155252
+genus,Anthephora,2702935
+genus,Anthodon,3231386
+genus,Anthurium,2872218
+genus,Apeiba,3152049
+genus,Aphelandra,3173228
+genus,Apodanthes,7279680
+genus,Araucaria,2684910
+genus,Ardisia,3169458
+genus,Aristolochia,2873978
+genus,Arthrostemma,8025368
+genus,Artocarpus,2984563
+genus,Asclepias,3170229
+genus,Aspasia,2786136
+genus,Aspidosperma,7316607
+genus,Asplenium,2650583
+genus,Asplundia,2860937
+genus,Astrocaryum,2738048
+genus,Astronium,7321564
+genus,Attalea,2732664
+genus,Averrhoa,9407103
+genus,Axonopus,2705922
+genus,Ayapana,3126519
+genus,Ayenia,3152178
+genus,Baccharis,3129135
+genus,Bacopa,3171166
+genus,Bactris,2732906
+genus,Baltimora,3141359
+genus,Bambusa,2705751
+genus,Banara,2874154
+genus,Begonia,2874710
+genus,Beilschmiedia,3034072
+genus,Bellucia,3866386
+genus,Bertiera,8303739
+genus,Besleria,6365035
+genus,Bignonia,3172515
+genus,Billbergia,2693699
+genus,Bixa,2874862
+genus,Blakea,3231475
+genus,Blechnum,2651523
+genus,Blechum,7816594
+genus,Blighia,3189954
+genus,Boehmeria,2984344
+genus,Bolbitis,2650960
+genus,Bonamia,9766793
+genus,Bonellia,8100196
+genus,Borreria,6367618
+genus,Bothriochloa,2704089
+genus,Brassavola,2815993
+genus,Brassia,2840323
+genus,Bribria,10977818
+genus,Bronwenia,7285159
+genus,Brosimum,2984656
+genus,Browallia,2932933
+genus,Brownea,2970433
+genus,Bulbophyllum,9574503
+genus,Bunchosia,7404976
+genus,Bursera,3190446
+genus,Byrsonima,3191347
+genus,Caesalpinia,2958443
+genus,Cajanus,2960263
+genus,Caladium,2868340
+genus,Calathea,8394666
+genus,Calea,3147446
+genus,Callichlamys,3233574
+genus,Callisia,2763692
+genus,Calophyllum,3189443
+genus,Calopogonium,2959416
+genus,Calycolpus,3177606
+genus,Calycophyllum,2903995
+genus,Calyptrocarya,2730025
+genus,Camaridium,8371283
+genus,Campylocentrum,2820788
+genus,Campyloneurum,7500358
+genus,Canavalia,8285917
+genus,Capsicum,2932937
+genus,Carapichea,2898583
+genus,Carica,2874482
+genus,Carludovica,2733712
+genus,Casearia,2874105
+genus,Cassipourea,3086519
+genus,Castilla,2984557
+genus,Catasetum,2803699
+genus,Catharanthus,3169829
+genus,Catopsis,2698780
+genus,Caularthron,2828109
+genus,Cavanillesia,7296146
+genus,Cayaponia,2874613
+genus,Cecropia,2984472
+genus,Cedrela,3190510
+genus,Ceiba,3152218
+genus,Celtis,2984479
+genus,Cenchrus,2703201
+genus,Centropogon,7815589
+genus,Centrosema,2964887
+genus,Ceratophyllum,2882396
+genus,Ceratopteris,2651585
+genus,Cespedesia,7326758
+genus,Cestrum,2928784
+genus,Chamaedorea,2734376
+genus,Chamaesyce,8120305
+genus,Chamguava,3186024
+genus,Chamissoa,3085177
+genus,Chaptalia,3090180
+genus,Chelonanthus,7270401
+genus,Chimarrhis,2918950
+genus,Chiococca,2907380
+genus,Chloris,2702742
+genus,Chloroleucon,2943030
+genus,Chomelia,2903121
+genus,Chondrodendron,3033957
+genus,Chromolaena,7824453
+genus,Chrysochlamys,3231115
+genus,Chrysophyllum,2885576
+genus,Chrysothemis,3172903
+genus,Chusquea,2706422
+genus,Chysis,2813041
+genus,Cissampelos,3033936
+genus,Cissus,3039160
+genus,Citrus,3190155
+genus,Cladium,2731321
+genus,Cleome,3041500
+genus,Clerodendrum,2925347
+genus,Clibadium,3104738
+genus,Clitoria,2946499
+genus,Clowesia,2790379
+genus,Clusia,3189424
+genus,Cnestidium,3686857
+genus,Coccoloba,2888822
+genus,Cochlospermum,2874864
+genus,Cocos,2735116
+genus,Codiaeum,3071464
+genus,Codonanthe,6365712
+genus,Cojoba,2981327
+genus,Colubrina,3039524
+genus,Columnea,3172890
+genus,Combretum,2986357
+genus,Commelina,2763939
+genus,Connarus,3032531
+genus,Conyza,5397989
+genus,Copaifera,2978115
+genus,Corchorus,3032212
+genus,Cordia,2900865
+genus,Cordyline,2766216
+genus,Coryanthes,2795651
+genus,Cosmibuena,2892977
+genus,Costus,2756771
+genus,Couratari,3083098
+genus,Coussapoa,7316389
+genus,Coussarea,2904739
+genus,Coutarea,2893702
+genus,Crateva,3054261
+genus,Crinum,2773870
+genus,Crossopetalum,3169149
+genus,Crotalaria,2941719
+genus,Croton,3057454
+genus,Cryosophila,2731923
+genus,Ctenitis,2650908
+genus,Cuervea,7265630
+genus,Cupania,3189959
+genus,Cuphea,3188676
+genus,Cyanthillium,3148294
+genus,Cyathea,2650273
+genus,Cyathula,5384313
+genus,Cyclanthus,2861107
+genus,Cyclopeltis,2651218
+genus,Cymbosema,7580269
+genus,Cynanchum,3170354
+genus,Cynodon,2703525
+genus,Cynometra,2966806
+genus,Cyperus,2713455
+genus,Dalbergia,2968358
+genus,Dalechampia,3055556
+genus,Damburneya,7304488
+genus,Danaea,2650112
+genus,Davilla,3234608
+genus,Dendropanax,3034954
+genus,Dennstaedtia,10847691
+genus,Desmodium,2967050
+genus,Desmoncus,2738753
+genus,Desmopsis,3158103
+genus,Dialium,2970932
+genus,Diastema,3233450
+genus,Dichaea,2789818
+genus,Dichorisandra,2763579
+genus,Dicranopteris,10601986
+genus,Didymoglossum,6420223
+genus,Didymopanax,6419087
+genus,Dieffenbachia,2869330
+genus,Digitaria,2704525
+genus,Dimerandra,2815831
+genus,Dimerocostus,2756978
+genus,Dioclea,2974376
+genus,Diodella,2901478
+genus,Dioscorea,2754367
+genus,Diospyros,3030169
+genus,Diplazium,2650853
+genus,Dipteryx,2947121
+genus,Disciphania,7268753
+genus,Dolichandra,6401165
+genus,Doliocarpus,3083497
+genus,Dorstenia,2984540
+genus,Dracontium,7392210
+genus,Drymaria,3085329
+genus,Drymonia,3233484
+genus,Dryopteris,2651126
+genus,Drypetes,3075615
+genus,Echinodorus,9615308
+genus,Eclipta,3086569
+genus,Eichhornia,2765939
+genus,Elaeis,2731881
+genus,Elaphoglossum,2651032
+genus,Eleocharis,2716791
+genus,Elephantopus,3119618
+genus,Eleusine,2705952
+genus,Eleutheranthera,3119908
+genus,Elleanthus,8236864
+genus,Elytraria,3173236
+genus,Emilia,3137995
+genus,Entada,2976182
+genus,Enterolobium,2961142
+genus,Epidendrum,5297341
+genus,Epiphyllum,3084180
+genus,Erechtites,3132453
+genus,Erycina,2852447
+genus,Eryngium,3034387
+genus,Erythrina,2945830
+genus,Erythroxylum,2873937
+genus,Esenbeckia,3190391
+genus,Eugenia,3177662
+genus,Eulophia,2805899
+genus,Euphorbia,11397237
+genus,Fairchildia,2953999
+genus,Faramea,2897889
+genus,Fevillea,2874554
+genus,Ficus,2984588
+genus,Fimbristylis,2708034
+genus,Fischeria,3230932
+genus,Fleischmannia,3130722
+genus,Forsteronia,8171331
+genus,Fridericia,3233562
+genus,Fuirena,2718982
+genus,Funastrum,3170214
+genus,Furcraea,2766202
+genus,Garcia,3071457
+genus,Garcinia,3189556
+genus,Genipa,2895591
+genus,Geonoma,2734029
+genus,Geophila,2919183
+genus,Gibasis,2764853
+genus,Gleichenella,7265296
+genus,Gnetum,2653091
+genus,Gomphrena,3084899
+genus,Gongora,2839066
+genus,Gonolobus,3170204
+genus,Gouania,3039434
+genus,Grias,3082326
+genus,Guadua,4127579
+genus,Guapira,3086054
+genus,Guarea,3190499
+genus,Guarianthe,2816064
+genus,Guatteria,3155604
+genus,Guazuma,3152194
+genus,Guettarda,2894616
+genus,Gurania,7317515
+genus,Gustavia,3082580
+genus,Guzmania,2698853
+genus,Gynerium,5289742
+genus,Habenaria,2828306
+genus,Habranthus,2853438
+genus,Hamelia,2902033
+genus,Hampea,7279598
+genus,Handroanthus,6401269
+genus,Hasseltia,3231177
+genus,Hawkesiophyton,7300142
+genus,Hebeclinium,3139421
+genus,Heisteria,3232590
+genus,Heliconia,2760545
+genus,Heliocarpus,3152062
+genus,Heliotropium,2925766
+genus,Hemidictyum,7458886
+genus,Hemionitis,2650222
+genus,Henriettea,3188527
+genus,Herpetacanthus,7545462
+genus,Herrania,7322892
+genus,Heterocondylus,3115617
+genus,Heteropterys,3191290
+genus,Heterotaxis,2828243
+genus,Hevea,3071157
+genus,Hibiscus,3152542
+genus,Hieronyma,7570851
+genus,Hippeastrum,2854235
+genus,Hippobroma,3168942
+genus,Hippocratea,3169011
+genus,Hiraea,3191288
+genus,Hirtella,2944960
+genus,Hoffmannia,2895112
+genus,Homalomena,2868531
+genus,Homolepis,4117430
+genus,Humiriastrum,7320138
+genus,Huperzia,2688450
+genus,Hura,3071143
+genus,Hydrangea,2985983
+genus,Hydrilla,2865997
+genus,Hydrocotyle,3034601
+genus,Hygrophila,9795574
+genus,Hylenaea,7265702
+genus,Hymenachne,2705780
+genus,Hymenaea,2950720
+genus,Hymenasplenium,7310868
+genus,Hymenocallis,2860118
+genus,Hymenophyllum,2651287
+genus,Hyparrhenia,2703241
+genus,Hypolytrum,2709252
+genus,Hyptis,2926807
+genus,Ichnanthus,2704498
+genus,Indigofera,2971355
+genus,Inga,2965936
+genus,Ionopsis,2834188
+genus,Ipomoea,2928509
+genus,Iresine,10679135
+genus,Isachne,2703543
+genus,Ischaemum,2702456
+genus,Ischnosiphon,2761017
+genus,Isertia,2903511
+genus,Ixora,2905224
+genus,Jacaranda,3172498
+genus,Jacaratia,7269679
+genus,Jatropha,3072692
+genus,Jupunba,7266089
+genus,Justicia,2904597
+genus,Koanophyllon,3144909
+genus,Kohleria,5337639
+genus,Kyllinga,8041233
+genus,Lacistema,3075381
+genus,Lacmellea,7316922
+genus,Laetia,8901623
+genus,Lafoensia,7286250
+genus,Lantana,2925302
+genus,Lasiacis,2702848
+genus,Leersia,8001519
+genus,Leochilus,2803272
+genus,Lepidagathis,6360058
+genus,Lepidaploa,3099651
+genus,Leptochloa,2703864
+genus,Leucaena,2970337
+genus,Licania,2985250
+genus,Limnobium,9729103
+genus,Lindackeria,7274185
+genus,Lindernia,3171875
+genus,Liparis,2837251
+genus,Lithachne,2703322
+genus,Lockhartia,2791118
+genus,Lomariopsis,2651224
+genus,Lonchocarpus,2968975
+genus,Lozania,3075434
+genus,Ludovia,5293109
+genus,Ludwigia,3189286
+genus,Luehea,3152076
+genus,Lycaste,2812712
+genus,Lycianthes,2928971
+genus,Lycopodiella,2688338
+genus,Lygodium,2650431
+genus,Mabea,3071743
+genus,Machaerium,2959589
+genus,Maclura,2984579
+genus,Macrocnemum,2895624
+genus,Macropsychanthus,2974520
+genus,Macroscepis,7312421
+genus,Macrothelypteris,7464531
+genus,Malouetia,7317134
+genus,Malpighia,3191274
+genus,Mammea,3189420
+genus,Mandevilla,3169658
+genus,Manettia,2906969
+genus,Mangifera,3075453
+genus,Manihot,3060685
+genus,Manilkara,2885024
+genus,Mansoa,3172602
+genus,Maquira,7262473
+genus,Maranthes,2984709
+genus,Marcgravia,3189414
+genus,Margaritaria,8016408
+genus,Marila,3189554
+genus,Maripa,3234444
+genus,Martinella,3172519
+genus,Mascagnia,7284941
+genus,Masdevallia,2847989
+genus,Matayba,3190011
+genus,Matelea,3170475
+genus,Maxillaria,2825779
+genus,Maxillariella,2825111
+genus,Maxonia,2650996
+genus,Maytenus,3169095
+genus,Mecardonia,3172013
+genus,Megathyrsus,6431475
+genus,Melampodium,3138947
+genus,Melanthera,3092268
+genus,Melochia,3152114
+genus,Melothria,2874549
+genus,Mendoncia,7263432
+genus,Merremia,2928639
+genus,Mesechites,7317256
+genus,Metaxya,8336203
+genus,Mickelia,6008852
+genus,Miconia,3188558
+genus,Microgramma,8393217
+genus,Microtea,6412817
+genus,Mikania,7722389
+genus,Mimosa,2969235
+genus,Momordica,2874578
+genus,Monstera,2868125
+genus,Montrichardia,8145000
+genus,Moquilea,7335164
+genus,Morinda,2915429
+genus,Morisonia,3054275
+genus,Mormodes,2789560
+genus,Mosannona,3158155
+genus,Mosquitoxylum,7321669
+genus,Mouriri,3188623
+genus,Mucuna,2951351
+genus,Muntingia,3152035
+genus,Murdannia,2764564
+genus,Musa,2760990
+genus,Myoxanthus,2801819
+genus,Myrcia,3173889
+genus,Myriocarpa,3234510
+genus,Myriopus,7131644
+genus,Myrospermum,2976680
+genus,Myroxylon,7362006
+genus,Nautilocalyx,7368374
+genus,Nectandra,3034018
+genus,Neea,3086079
+genus,Nelsonia,3172939
+genus,Neomarica,2745679
+genus,Nephrolepis,2650926
+genus,Neurolaena,3096766
+genus,Niphidium,2650441
+genus,Notopleura,2901654
+genus,Notylia,2850644
+genus,Nymphaea,2882411
+genus,Nymphoides,7785713
+genus,Ochroma,3152238
+genus,Ocotea,3034076
+genus,Odontadenia,7316739
+genus,Odontocarya,7268633
+genus,Oenocarpus,2735438
+genus,Oldenlandia,2915706
+genus,Olyra,2705466
+genus,Omphalea,3062195
+genus,Operculina,9469847
+genus,Ophioglossum,2650127
+genus,Oplismenus,2705732
+genus,Oreopanax,3036520
+genus,Ormosia,2960439
+genus,Ornithocephalus,2833233
+genus,Orthoclada,4115850
+genus,Oryctanthus,7288086
+genus,Oryza,2703455
+genus,Ouratea,3189667
+genus,Oxandra,3154735
+genus,Oxycaryum,2710863
+genus,Pachira,3152234
+genus,Pachyptera,7368500
+genus,Palicourea,2898662
+genus,Palmorchis,2832424
+genus,Panicum,2705064
+genus,Parathesis,3169397
+genus,Paspalidium,8158660
+genus,Paspalum,2705540
+genus,Passiflora,2874172
+genus,Paullinia,3189948
+genus,Pavonia,3152525
+genus,Pecluma,2650499
+genus,Peltogyne,2952686
+genus,Pentagonia,2893500
+genus,Peperomia,3086367
+genus,Perebea,7262669
+genus,Peristeria,2789700
+genus,Peritassa,7265649
+genus,Persea,3034041
+genus,Petiveria,3084011
+genus,Petrea,2925535
+genus,Pharus,2703636
+genus,Philodendron,2861312
+genus,Phoradendron,2889864
+genus,Phragmites,2705783
+genus,Phthirusa,7287983
+genus,Phyllanthus,3061139
+genus,Physalis,2928907
+genus,Phytolacca,3084013
+genus,Picramnia,8118842
+genus,Pilea,2984417
+genus,Pinochia,9465712
+genus,Piparea,7274133
+genus,Piper,3075433
+genus,Pisonia,3086250
+genus,Pistia,2870582
+genus,Pitcairnia,2696685
+genus,Pithecellobium,2962745
+genus,Pittoniotis,2911205
+genus,Pityrogramma,2651789
+genus,Platymiscium,2944717
+genus,Platypodium,2977382
+genus,Pleiostachya,2762180
+genus,Pleonotoma,7298646
+genus,Pleopeltis,2650485
+genus,Pluchea,3132596
+genus,Pochota,7296119
+genus,Pogonopus,2919027
+genus,Polybotrya,6424186
+genus,Polygala,3191366
+genus,Polygonum,2889077
+genus,Polyscias,3035574
+genus,Polystachya,2791998
+genus,Polytaenium,6393286
+genus,Polytrias,2702782
+genus,Pombalia,7296722
+genus,Pontederia,2740415
+genus,Portulaca,3084696
+genus,Posoqueria,2893876
+genus,Poulsenia,3234567
+genus,Pourouma,7316388
+genus,Pouteria,2884049
+genus,Pouzolzia,2984382
+genus,Prestonia,3169716
+genus,Prionostemma,3231392
+genus,Prioria,2947107
+genus,Prosthechea,2793960
+genus,Protium,7286732
+genus,Pseudelephantopus,3092014
+genus,Pseudobombax,3152211
+genus,Pseudolmedia,2984542
+genus,Pseudosamanea,8107622
+genus,Psidium,3187232
+genus,Psiguria,7883254
+genus,Psychotria,2919963
+genus,Pteris,2651676
+genus,Pterocarpus,5349236
+genus,Pteropepon,7317728
+genus,Quararibea,3152231
+genus,Quassia,3190646
+genus,Quiina,7285768
+genus,Randia,2911655
+genus,Rauvolfia,3169769
+genus,Renealmia,9627671
+genus,Rhabdadenia,8027623
+genus,Rhetinantha,2852394
+genus,Rhipidocladum,4126203
+genus,Rhipsalis,3084035
+genus,Rhodospatha,2871974
+genus,Rhynchosia,2947992
+genus,Rhynchospora,2701052
+genus,Rinorea,7296208
+genus,Rivina,3084026
+genus,Robrichia,12315962
+genus,Rodriguezia,2813498
+genus,Rolandra,3114265
+genus,Ronabea,2902111
+genus,Rosenbergiodendron,8244725
+genus,Rossioglossum,2812303
+genus,Rottboellia,2704074
+genus,Roupala,7286930
+genus,Rourea,3032534
+genus,Ruehssia,7311749
+genus,Ruellia,3171840
+genus,Sabicea,2900141
+genus,Saccharum,2703910
+genus,Sacciolepis,2703625
+genus,Saccoloma,2650791
+genus,Sagittaria,2766037
+genus,Salvia,2926981
+genus,Salvinia,7801597
+genus,Sapium,5379830
+genus,Saurauia,7270665
+genus,Scaphyglottis,2846991
+genus,Schistocarpha,3105013
+genus,Schizachyrium,2704427
+genus,Schizaea,2650554
+genus,Schizolobium,2945452
+genus,Schnella,7278569
+genus,Schwackaea,3859447
+genus,Sciadotenia,7268706
+genus,Scleria,2712271
+genus,Scoparia,3171784
+genus,Scyphostelma,8354156
+genus,Securidaca,3191472
+genus,Selaginella,2688177
+genus,Senegalia,7989631
+genus,Senna,2956904
+genus,Serjania,5421120
+genus,Serpocaulon,7126636
+genus,Setaria,2702955
+genus,Sicydium,8052497
+genus,Sida,3152100
+genus,Sievekingia,2806909
+genus,Simarouba,3190668
+genus,Siparuna,7264484
+genus,Sloanea,3152097
+genus,Smilax,2740627
+genus,Sobralia,2797375
+genus,Socratea,2732448
+genus,Solanum,2928997
+genus,Solenostemon,2927317
+genus,Sorocea,7262353
+genus,Souroubea,7275871
+genus,Spachea,7285388
+genus,Spananthe,6027075
+genus,Spathiphyllum,2869649
+genus,Spathodea,3172573
+genus,Specklinia,2835322
+genus,Spermacoce,2918053
+genus,Sphagneticola,3116841
+genus,Spigelia,3169498
+genus,Spiracantha,3088978
+genus,Spondias,3190592
+genus,Sporobolus,2704744
+genus,Stachytarpheta,2925448
+genus,Stanhopea,2801506
+genus,Stelis,2798967
+genus,Stemodia,3171744
+genus,Stenorrhynchos,2785232
+genus,Stenospermation,2870157
+genus,Sterculia,3152129
+genus,Sticherus,7392014
+genus,Stigmaphyllon,3191310
+genus,Stigmatopteris,7319189
+genus,Stizophyllum,7298367
+genus,Streptochaeta,4129634
+genus,Streptogyna,4129597
+genus,Stromanthe,2761248
+genus,Struthanthus,7287856
+genus,Strychnos,3169589
+genus,Stylogyne,3169452
+genus,Swartzia,2950920
+genus,Symphonia,8233185
+genus,Synechanthus,2736133
+genus,Synedrella,2652808
+genus,Syngonium,2867833
+genus,Syzygium,3029010
+genus,Tabebuia,7935410
+genus,Tabernaemontana,3169624
+genus,Tachigali,2945125
+genus,Talisia,3189946
+genus,Tanaecium,7298714
+genus,Tassadia,7311668
+genus,Tectaria,2651193
+genus,Teramnus,2951908
+genus,Terminalia,3189387
+genus,Ternstroemia,3189600
+genus,Tetracera,3234607
+genus,Tetrapterys,3191303
+genus,Tetrathylacium,7274104
+genus,Teuscheria,2817691
+genus,Thalia,2760991
+genus,Thelypteris,5937466
+genus,Theobroma,2984934
+genus,Thevetia,5414404
+genus,Thinouia,7264997
+genus,Thismia,9418909
+genus,Thunbergia,3173206
+genus,Tibouchina,3188517
+genus,Tilesia,3132362
+genus,Tillandsia,8279994
+genus,Tocoyena,2898227
+genus,Tontelea,7550998
+genus,Tournefortia,2925828
+genus,Tovomita,7329865
+genus,Tradescantia,2765096
+genus,Trattinnickia,7286734
+genus,Trema,2984500
+genus,Trichanthera,3233813
+genus,Trichilia,3190490
+genus,Trichocentrum,2846368
+genus,Trichomanes,2651238
+genus,Trichopilia,2790529
+genus,Trichospermum,3152055
+genus,Trichostigma,3083999
+genus,Tridax,3149429
+genus,Trigonia,3231357
+genus,Trigonidium,2807434
+genus,Triphora,2803189
+genus,Triplaris,6390747
+genus,Triplophyllum,2651214
+genus,Tripogandra,2765377
+genus,Triumfetta,3152064
+genus,Trophis,10808815
+genus,Turnera,2874846
+genus,Turpinia,3190468
+genus,Tynanthus,3172598
+genus,Typha,2702102
+genus,Uleiorchis,2797247
+genus,Uncaria,2906635
+genus,Unonopsis,3157765
+genus,Urera,2984329
+genus,Urochloa,2705813
+genus,Utricularia,3172398
+genus,Vachellia,8142432
+genus,Vailia,7585755
+genus,Vanilla,2743233
+genus,Vantanea,7158977
+genus,Varronia,7131431
+genus,Vasconcellea,7106306
+genus,Vatairea,2965112
+genus,Verbesina,3147795
+genus,Vernonanthura,3110435
+genus,Vigna,2982372
+genus,Virola,3152843
+genus,Vismia,3189574
+genus,Vitex,2925556
+genus,Vitis,7467468
+genus,Vittaria,2650240
+genus,Vochysia,8225540
+genus,Voyria,7780728
+genus,Vriesea,2699764
+genus,Waltheria,3152104
+genus,Warczewiczella,2797648
+genus,Warszewiczia,2917365
+genus,Werauhia,7289561
+genus,Witheringia,5341755
+genus,Xanthosoma,2872044
+genus,Xestaea,7270332
+genus,Xiphidium,2765813
+genus,Xylobium,2850767
+genus,Xylophragma,7298486
+genus,Xylopia,3157015
+genus,Xylosma,2874117
+genus,Zanthoxylum,3190076
+genus,Zingiber,2756693
+genus,Zygia,2939650
+family,Acanthaceae,2393
+family,Achariaceae,3231308
+family,Actinidiaceae,2385
+family,Alismataceae,3720
+family,Amaranthaceae,3064
+family,Amaryllidaceae,7682
+family,Anacardiaceae,2398
+family,Annonaceae,9291
+family,Apiaceae,6720
+family,Apocynaceae,6701
+family,Apodanthaceae,3745203
+family,Araceae,6979
+family,Araliaceae,8800
+family,Araucariaceae,3924
+family,Arecaceae,7681
+family,Aristolochiaceae,3066
+family,Asparagaceae,7683
+family,Aspleniaceae,6625
+family,Asteraceae,3065
+family,Begoniaceae,6638
+family,Bignoniaceae,6655
+family,Bixaceae,6637
+family,Boraginaceae,2498
+family,Bromeliaceae,3740
+family,Burmanniaceae,3733
+family,Burseraceae,6659
+family,Cactaceae,2519
+family,Calophyllaceae,4907584
+family,Campanulaceae,8801
+family,Cannabaceae,2384
+family,Capparaceae,3111
+family,Caricaceae,6636
+family,Caryophyllaceae,2518
+family,Celastraceae,6715
+family,Ceratophyllaceae,2425
+family,Chrysobalanaceae,9111
+family,Cleomaceae,3845332
+family,Clusiaceae,6646
+family,Combretaceae,2431
+family,Commelinaceae,2763195
+family,Connaraceae,6669
+family,Convolvulaceae,2389
+family,Costaceae,4492
+family,Cucurbitaceae,6634
+family,Cyatheaceae,6624
+family,Cyclanthaceae,7703
+family,Cyperaceae,7708
+family,Dennstaedtiaceae,6623
+family,Dilleniaceae,2511
+family,Dioscoreaceae,7694
+family,Ebenaceae,6709
+family,Elaeocarpaceae,2435
+family,Erythroxylaceae,6686
+family,Euphorbiaceae,4691
+family,Fabaceae,5386
+family,Gentianaceae,2503
+family,Gesneriaceae,6654
+family,Gleicheniaceae,6621
+family,Gnetaceae,6755
+family,Haemodoraceae,7691
+family,Heliconiaceae,4677
+family,Humiriaceae,3231239
+family,Hydrangeaceae,6667
+family,Hydrocharitaceae,3721
+family,Hymenophyllaceae,2372
+family,Hypericaceae,4900406
+family,Iridaceae,7698
+family,Lacistemataceae,7524
+family,Lamiaceae,2497
+family,Lauraceae,6688
+family,Lecythidaceae,3990
+family,Lentibulariaceae,2391
+family,Linderniaceae,4160847
+family,Loganiaceae,2502
+family,Loranthaceae,6663
+family,Lycopodiaceae,6725
+family,Lythraceae,6684
+family,Malpighiaceae,6676
+family,Malvaceae,6685
+family,Marantaceae,8784
+family,Marattiaceae,6628
+family,Marcgraviaceae,6643
+family,Melastomataceae,6683
+family,Meliaceae,2397
+family,Menispermaceae,2411
+family,Menyanthaceae,2386
+family,Microteaceae,4930835
+family,Moraceae,6640
+family,Muntingiaceae,2230
+family,Musaceae,4686
+family,Myristicaceae,2439
+family,Myrtaceae,5014
+family,Nyctaginaceae,6718
+family,Nymphaeaceae,2423
+family,Ochnaceae,6642
+family,Olacaceae,6662
+family,Onagraceae,2430
+family,Ophioglossaceae,6627
+family,Orchidaceae,7689
+family,Oxalidaceae,6697
+family,Passifloraceae,2378
+family,Pentaphylacaceae,4259202
+family,Petiveriaceae,4923867
+family,Phyllanthaceae,8807
+family,Phytolaccaceae,2516
+family,Picramniaceae,3694522
+family,Piperaceae,6678
+family,Plantaginaceae,2420
+family,Poaceae,3073
+family,Polygalaceae,2417
+family,Polygonaceae,2416
+family,Polypodiaceae,2368
+family,Pontederiaceae,3731
+family,Portulacaceae,6717
+family,Primulaceae,6674
+family,Proteaceae,2414
+family,Pteridaceae,2367
+family,Putranjivaceae,8808
+family,Rhamnaceae,2407
+family,Rhizophoraceae,6671
+family,Rubiaceae,8798
+family,Rutaceae,2396
+family,Saccolomataceae,3873580
+family,Salicaceae,6664
+family,Salviniaceae,6629
+family,Santalaceae,6661
+family,Sapindaceae,6657
+family,Sapotaceae,8802
+family,Schizaeaceae,2366
+family,Selaginellaceae,6724
+family,Simaroubaceae,2395
+family,Siparunaceae,4893899
+family,Smilacaceae,7702
+family,Solanaceae,7717
+family,Staphyleaceae,6656
+family,Trigoniaceae,3231355
+family,Typhaceae,4246
+family,Urticaceae,6639
+family,Verbenaceae,6689
+family,Violaceae,6631
+family,Vitaceae,6672
+family,Vochysiaceae,3231623
+family,Zingiberaceae,4687
