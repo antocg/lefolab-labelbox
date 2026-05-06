@@ -70,9 +70,12 @@ temp*/
 .Renviron
 
 # Data folder not to be shared
-projects/2025_Manaus/data
+projects/archive/2025_Manaus/data/
 
 # Test and output folders
 test/
 output/
-"projects/archive/2025_Manaus/data/" 
+
+# Heavy data files
+projects/*/*dsm*.png
+projects/*/*dtm*.png

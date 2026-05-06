@@ -78,12 +78,12 @@ for MISSION in "${MISSIONS[@]}"; do
     check_command "conda activate labelbox"
     
     log_message "Importing data rows for $MISSION in Labelbox"
-    if [ -n "$LABELBOX_PREFIX" ]; then
-        LABELBOX_PREFIX_ARG="--prefix $LABELBOX_PREFIX"
+    if [ -n "$LABELBOX_PROJECT" ]; then
+        LABELBOX_PROJECT_ARG="--project $LABELBOX_PROJECT"
     else
-        LABELBOX_PREFIX_ARG=""
+        LABELBOX_PROJECT_ARG=""
     fi
-    python "${PROJECT_ROOT}/scripts/python/import_datarows.py" --mission_id "$MISSION" $LABELBOX_PREFIX_ARG
+    python "${PROJECT_ROOT}/scripts/python/import_datarows.py" --mission "$MISSION" $LABELBOX_PROJECT_ARG
     check_command "import_datarows.py for $MISSION"
     log_message "Data rows imported for $MISSION in Labelbox"
 
