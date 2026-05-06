@@ -62,28 +62,28 @@ client = lb.Client(api_key=LABELBOX_API_KEY)
 
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description="Import data rows into Labelbox.")
-parser.add_argument("--mission_id", required=True, help="Mission ID to generate the dataset.")
-parser.add_argument("--prefix", help="Prefix for the dataset name.")
+parser.add_argument("--mission", required=True, help="Mission ID of the pictures to import.")
+parser.add_argument("--project", help="Project ID of the mission. Based on Fulcrum project and used for dataset name")
 args = parser.parse_args()
 
-mission_id = args.mission_id
+mission = args.mission
 
-if args.prefix:
-    prefix = args.prefix
+if args.project:
+    project = args.project
 else:
-    parts = mission_id.split('_')
+    parts = mission.split('_')
     if len(parts) >= 4:
         site = parts[1]
         if site.startswith('tbs'):
-            prefix = '2025_tiputini'
+            project = '2025_tiputini'
         elif site.startswith('bci'):
-            prefix = '2024_bci'
+            project = '2024_bci'
         else:
-            logger.error("Site in mission ID is not recognized, unable to extract prefix for Labelbox dataset.")
-            raise ValueError("Site in mission ID is not recognized, unable to extract prefix for Labelbox dataset. Please provide a prefix.")
+            logger.error("Site in mission name is not recognized, unable to extract project for Labelbox dataset.")
+            raise ValueError("Site in mission name is not recognized, unable to extract project for Labelbox dataset. Please provide a project.")
     else:
-        logger.error("Mission ID does not follow expected format, unable to extract prefix for Labelbox dataset.")
-        raise ValueError("Mission ID does not follow expected format, unable to extract prefix for Labelbox dataset. Please provide a prefix.")
+        logger.error("Mission name does not follow expected format, unable to extract project for Labelbox dataset.")
+        raise ValueError("Mission name does not follow expected format, unable to extract project for Labelbox dataset. Please provide a project.")
 
 # List all pictures on Alliance Canada for a given mission
 
@@ -108,7 +108,7 @@ else:
 # Use paginator to automatically handle pagination
 try:
     paginator = s3_client.get_paginator('list_objects_v2')
-    pages = paginator.paginate(Bucket=BUCKET_WPT, Prefix=mission_id)
+    pages = paginator.paginate(Bucket=BUCKET_WPT, Prefix=mission)
 
     # Collect all file keys
     file_keys = []
@@ -126,29 +126,53 @@ except Exception as e:
 folder_url = f"{ALLIANCECAN_URL}/{BUCKET_WPT}"
 
 # Print the result
-logger.info(f"{len(file_keys)} pictures found for this mission : {mission_id}")
+logger.info(f"{len(file_keys)} pictures found for this mission : {mission}")
 
 # Filter for close-up pictures (detect naming convention)
 closeup_files = [key for key in file_keys if "tele" in key]
 if closeup_files:
-    logger.info(f"{len(closeup_files)} close-up pictures (tele) found for this mission : {mission_id}")
+    exclusion_keyword = "tele"
+    logger.info(f"{len(closeup_files)} close-up pictures (tele) found for this mission : {mission}")
 
 else:
     closeup_files = [key for key in file_keys if "zoom" in key]
     if closeup_files:
+        exclusion_keyword = "zoom"
         logger.info("Using legacy naming convention (zoom).")
-        logger.info(f"{len(closeup_files)} close-up pictures (zoom) found for this mission : {mission_id}")
+        logger.info(f"{len(closeup_files)} close-up pictures (zoom) found for this mission : {mission}")
     else:
-        logger.warning(f"No close-up pictures found for this mission : {mission_id}")
+        logger.error(f"No close-up pictures found for this mission : {mission}")
+        sys.exit(1)
 
-# Create new dataset in Labelbox based on the prefix and mission ID
+# Verify that wide (and med) picture counts match close-up count
+if exclusion_keyword == "tele":
+    wide_files_all = [key for key in file_keys if "wide" in key.lower()]
+else:
+    # Legacy zoom: wide files have no keyword, so exclude zoom and med
+    wide_files_all = [key for key in file_keys if "zoom" not in key.lower() and "med" not in key.lower()]
+
+med_files_all = [key for key in file_keys if "med" in key.lower()]
+
+logger.info(f"{len(wide_files_all)} wide pictures found for this mission : {mission}")
+
+if len(wide_files_all) != len(closeup_files):
+    logger.error(f"Picture count mismatch: {len(closeup_files)} close-up vs {len(wide_files_all)} wide pictures.")
+    sys.exit(1)
+
+if med_files_all:
+    logger.info(f"{len(med_files_all)} med pictures found for this mission : {mission}")
+    if len(med_files_all) != len(closeup_files):
+        logger.error(f"Picture count mismatch: {len(closeup_files)} close-up vs {len(med_files_all)} med pictures.")
+        sys.exit(1)
+
+# Import data rows into Labelbox dataset named after the project
 # Check if the dataset already exists
 existing_datasets = client.get_datasets()
-dataset_name = f"{prefix}_{mission_id}"
+dataset_name = project
 existing_dataset = next((ds for ds in existing_datasets if ds.name == dataset_name), None)
 
 if existing_dataset:
-    logger.info(f"Dataset {dataset_name} already exists")
+    logger.info(f"Dataset {dataset_name} already exists. Importing data rows into this dataset.")
     dataset = existing_dataset
 else:
     logger.info(f"Creating new dataset {dataset_name}")
@@ -179,26 +203,24 @@ for i, closeup_file in enumerate(closeup_files):
     file = closeup_file.split('/', 1)[-1]
     asset["global_key"] = file
     
-    # Metadata fields : mission_id
-    asset["metadata_fields"][0]["value"] = f"{mission_id}" 
+    # Metadata fields : mission
+    asset["metadata_fields"][0]["value"] = f"{mission}" 
     
-    # Detect naming convention and extract the polygon id
-    if "tele" in closeup_file:
+    # Extract the polygon id and determine matching file suffixes
+    if exclusion_keyword == "tele":
         polygon_id = closeup_file.split('_')[-1].lower().replace('tele.jpg', '')
         wide_file_end = f"_{polygon_id}wide.JPG"
-        exclusion_keyword = "tele"
     else:
         # Legacy naming convention (zoom)
         polygon_id = closeup_file.split('_')[-1].lower().replace('zoom.jpg', '')
         wide_file_end = f"_{polygon_id}.JPG"
-        exclusion_keyword = "zoom"
     
     # Metadata fields : polygon_id
     asset["metadata_fields"][1]["value"] = f"{polygon_id}" 
     
     # Attach the map
     closeup_basename = os.path.basename(closeup_file)
-    map_url = f"{folder_url}/{mission_id}/labelbox/attachments/{closeup_basename.replace('.JPG', '.html')}"
+    map_url = f"{folder_url}/{mission}/labelbox/attachments/{closeup_basename.replace('.JPG', '.html')}"
     
     asset["attachments"][1]["value"] = map_url
     
@@ -207,16 +229,31 @@ for i, closeup_file in enumerate(closeup_files):
     matching_wide_files = [key for key in file_keys if wide_file_end in key and exclusion_keyword not in key]
     
     if len(matching_wide_files) > 1:
-        logger.warning(f"Warning: Multiple wide pictures found for {closeup_file}: {matching_wide_files}. Using the first match.")
-    
+        logger.error(f"Multiple wide pictures found for {closeup_file}: {matching_wide_files}. Exiting.")
+        sys.exit(1)
+
     wide_file = matching_wide_files[0] if matching_wide_files else None
     
     # If a wide file is found, set the attachment value
     if wide_file:
         asset["attachments"][0]["value"] = f"{folder_url}/{wide_file}"
     else:
-        logger.warning(f"No wide file found for {closeup_file}")
-    
+        logger.error(f"No wide file found for {closeup_file}. Exiting.")
+        sys.exit(1)
+
+    # Find the corresponding med file (optional)
+    med_file_end = f"_{polygon_id}med.JPG"
+    matching_med_files = [key for key in file_keys if med_file_end in key]
+
+    if len(matching_med_files) > 1:
+        logger.error(f"Multiple med pictures found for {closeup_file}: {matching_med_files}. Exiting.")
+        sys.exit(1)
+
+    med_file = matching_med_files[0] if matching_med_files else None
+
+    if med_file:
+        asset["attachments"].insert(1, {"type": "IMAGE", "value": f"{folder_url}/{med_file}", "name": "med"})
+
     # Add the updated asset to the list
     assets.append(asset)
 
@@ -242,4 +279,4 @@ else:
         if other_errors:
             logger.error(f"Other errors: {other_errors}")
         else:
-            logger.info("No errors while importing data to Labelbox.")
+            logger.info("No other errors while importing data to Labelbox.")
