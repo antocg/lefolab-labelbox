@@ -26,10 +26,6 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-*.config
-
-*.tiff
-*.tif
 # History files
 .Rhistory
 .Rapp.history
@@ -87,6 +83,7 @@ temp*/
 # Workspace files
 *.code-workspace
 **/.vscode/
+.claude/
 
 # Virtual environment folders
 **/.venv/
@@ -112,3 +109,6 @@ projects/*/*dtm*.tif
 
 # Generated maps
 projects/*/output_maps/
+
+# Cache folders (embeddings, GBIF lookups)
+projects/*/cache/

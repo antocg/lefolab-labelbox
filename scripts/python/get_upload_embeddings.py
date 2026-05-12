@@ -257,8 +257,9 @@ def get_or_create_embedding(client: lb.Client, name: str, dims: int):
     return emb
 
 
-def upload_vectors(embedding, vectors: list[dict]):
+def upload_vectors(embedding, vectors: list[dict], tmp_dir: Path):
     ndjson_lines = "\n".join(json.dumps(v) for v in vectors)
+    tmp_path = tmp_dir / "_upload.ndjson"
     batch_count = 0
 
     def on_batch(_):
@@ -266,7 +267,11 @@ def upload_vectors(embedding, vectors: list[dict]):
         batch_count += 1
         logger.info("  Batch %d accepted", batch_count)
 
-    embedding.import_vectors_from_file(io.BytesIO(ndjson_lines.encode()), callback=on_batch)
+    try:
+        tmp_path.write_text(ndjson_lines, encoding="utf-8")
+        embedding.import_vectors_from_file(str(tmp_path), callback=on_batch)
+    finally:
+        tmp_path.unlink(missing_ok=True)
 
 
 # ── Version probe ──────────────────────────────────────────────────────────────
@@ -440,7 +445,7 @@ def main():
 
     load_dotenv(dotenv_path=project_root / ".env")
 
-    cache_dir = project_root / "projects" / args.project / "cache"
+    cache_dir = project_root / "projects" / args.project / "cache" / "embeddings"
     cache_dir.mkdir(parents=True, exist_ok=True)
     status_path = project_root / "projects" / args.project / "embeddings_status.json"
 
@@ -514,7 +519,7 @@ def main():
     # ── Upload ─────────────────────────────────────────────────────────────────
     if vectors:
         logger.info("Uploading %d vector(s) to Labelbox...", len(vectors))
-        upload_vectors(lb_embedding, vectors)
+        upload_vectors(lb_embedding, vectors, cache_dir)
         logger.info("Upload submitted.")
     else:
         logger.info("No vectors to upload.")

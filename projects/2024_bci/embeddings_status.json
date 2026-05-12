@@ -1,0 +1,11 @@
+{
+  "project": "2024_bci",
+  "embedding_name": "PlantNet-v7.4-1280px",
+  "version_slug": "v7.4",
+  "dataset_name": "2024_bci",
+  "dataset_id": "cmon3zoss00wu0705ertl0vd7",
+  "total_rows": 1,
+  "completed_rows": 1,
+  "all_complete": false,
+  "last_run": "2026-05-12T00:58:16.243225"
+}
