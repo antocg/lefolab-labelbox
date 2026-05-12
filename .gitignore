@@ -1,3 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
 *.config
 
 *.tiff
@@ -79,3 +107,8 @@ output/
 # Heavy data files
 projects/*/*dsm*.png
 projects/*/*dtm*.png
+projects/*/*dsm*.tif
+projects/*/*dtm*.tif
+
+# Generated maps
+projects/*/output_maps/
