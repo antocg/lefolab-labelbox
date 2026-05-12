@@ -130,3 +130,11 @@ for MISSION in "${MISSIONS[@]}"; do
 done
 
 log_message "All missions completed successfully"
+
+# ── PlantNet embeddings ────────────────────────────────────────────────────────
+log_message "Getting and uploading PlantNet embeddings for $LABELBOX_PROJECT"
+source /opt/miniconda3/bin/activate labelbox
+python "${PROJECT_ROOT}/scripts/python/get_upload_embeddings.py" --project "$LABELBOX_PROJECT" \
+    || log_message "WARNING: Embeddings step did not complete (daily quota may have been reached). Re-run tomorrow."
+conda deactivate
+log_message "Embeddings step finished for $LABELBOX_PROJECT"
