@@ -1,5 +1,6 @@
 import argparse
 import csv
+import importlib.util
 import json
 import labelbox as lb
 import logging
@@ -9,55 +10,6 @@ import sys
 
 from dotenv import load_dotenv
 from pathlib import Path
-
-# ---------------------------------------------------------------------------
-# CONFIGURATION — edit these for each project
-# ---------------------------------------------------------------------------
-
-# Input CSV path (relative to project root)
-INPUT_CSV = "projects/2024_bci/BCNM_SPECIES_BOTANISTS_LIST_2026-04-30.csv"
-
-# CSV format
-CSV_DELIMITER = ";"
-CSV_ENCODING = "utf-8-sig"
-
-# CSV column names
-COL_BINOMIAL = "current_binomial"
-COL_CODE1 = "sp6"   # optional extra code appended to label (set to None to omit)
-COL_CODE2 = "sp4"   # optional extra code appended to label (set to None to omit)
-COL_GENUS = "wcvp_matched_name"
-COL_FAMILY = "wcvp_accepted_family"
-COL_GBIF_ID = "wcvp_matched_name_gbif_id"
-
-# Label format: binomial + non-empty codes joined by this separator
-LABEL_SEPARATOR = "-"
-
-# Labelbox ontology structure
-ONTOLOGY_NAME = "BCNM 2026 - Planta"
-BBOX_TOOL_NAME = "Planta"
-TAXON_CLASS_NAME = "Taxón"
-ORGAN_CLASS_NAME = "Órgano"
-
-# Órgano checklist options: list of (value, label) tuples
-ORGAN_OPTIONS = [
-    ("flor", "Flor"),
-    ("fruto", "Fruto"),
-]
-
-# Output folder for Labelbox list CSV (relative to project root)
-OUTPUT_DIR = "projects/2024_bci"
-
-# GBIF cache file (relative to project root)
-GBIF_CACHE_FILE = "projects/2024_bci/gbif_cache.json"
-
-# GBIF API
-GBIF_MATCH_URL = "https://api.gbif.org/v1/species/match"
-GBIF_MAX_RETRIES = 3
-GBIF_PHYLUM = "Tracheophyta"
-
-# ---------------------------------------------------------------------------
-# END CONFIGURATION
-# ---------------------------------------------------------------------------
 
 project_root = Path(__file__).parent.parent.parent
 load_dotenv(dotenv_path=project_root / ".env")
@@ -79,6 +31,13 @@ logger.addHandler(stdout_handler)
 logger.addHandler(stderr_handler)
 
 
+def load_config(path):
+    spec = importlib.util.spec_from_file_location("config", path)
+    cfg = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(cfg)
+    return cfg
+
+
 def load_cache(cache_path: Path) -> dict:
     if cache_path.exists():
         with open(cache_path, encoding="utf-8") as f:
@@ -92,18 +51,18 @@ def save_cache(cache: dict, cache_path: Path) -> None:
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
 
-def resolve_gbif(name: str, rank: str, cache: dict) -> int | None:
+def resolve_gbif(name: str, rank: str, cache: dict, cfg) -> int | None:
     key = f"{name}|{rank}"
     if key in cache:
         return cache[key]
 
     params = {"name": name, "rank": rank}
-    if GBIF_PHYLUM:
-        params["phylum"] = GBIF_PHYLUM
+    if cfg.GBIF_PHYLUM:
+        params["phylum"] = cfg.GBIF_PHYLUM
 
-    for attempt in range(GBIF_MAX_RETRIES):
+    for attempt in range(cfg.GBIF_MAX_RETRIES):
         try:
-            r = requests.get(GBIF_MATCH_URL, params=params, timeout=10)
+            r = requests.get(cfg.GBIF_MATCH_URL, params=params, timeout=10)
             r.raise_for_status()
             data = r.json()
             if data.get("matchType") == "EXACT":
@@ -114,37 +73,37 @@ def resolve_gbif(name: str, rank: str, cache: dict) -> int | None:
                 cache[key] = None
                 return None
         except Exception as e:
-            if attempt == GBIF_MAX_RETRIES - 1:
-                logger.warning(f"GBIF lookup failed for {name} ({rank}) after {GBIF_MAX_RETRIES} attempts: {e}")
+            if attempt == cfg.GBIF_MAX_RETRIES - 1:
+                logger.warning(f"GBIF lookup failed for {name} ({rank}) after {cfg.GBIF_MAX_RETRIES} attempts: {e}")
     cache[key] = None
     return None
 
 
-def build_species_label(row: dict) -> str:
-    parts = [row[COL_BINOMIAL]]
-    for col in (COL_CODE1, COL_CODE2):
+def build_species_label(row: dict, cfg) -> str:
+    parts = [row[cfg.COL_BINOMIAL]]
+    for col in (cfg.COL_CODE1, cfg.COL_CODE2):
         if col is not None:
-            code = row.get(col, "").strip()
+            code = row.get(col, "").strip().upper()
             if code:
                 parts.append(code)
-    return LABEL_SEPARATOR.join(parts)
+    return cfg.LABEL_SEPARATOR.join(parts)
 
 
-def load_species_rows() -> list[dict]:
-    csv_path = project_root / INPUT_CSV
+def load_species_rows(cfg) -> list[dict]:
+    csv_path = project_root / cfg.INPUT_CSV
     rows = []
-    with open(csv_path, encoding=CSV_ENCODING, newline="") as f:
-        reader = csv.DictReader(f, delimiter=CSV_DELIMITER)
+    with open(csv_path, encoding=cfg.CSV_ENCODING, newline="") as f:
+        reader = csv.DictReader(f, delimiter=cfg.CSV_DELIMITER)
         for row in reader:
             rows.append(row)
     return rows
 
 
-def extract_genera(rows: list[dict]) -> list[str]:
+def extract_genera(rows: list[dict], cfg) -> list[str]:
     seen = set()
     genera = []
     for row in rows:
-        col_genus = row.get(COL_GENUS, "").strip()
+        col_genus = row.get(cfg.COL_GENUS, "").strip()
         if not col_genus:
             continue
         genus = col_genus.split()[0]
@@ -154,11 +113,11 @@ def extract_genera(rows: list[dict]) -> list[str]:
     return sorted(genera)
 
 
-def extract_families(rows: list[dict]) -> list[str]:
+def extract_families(rows: list[dict], cfg) -> list[str]:
     seen = set()
     families = []
     for row in rows:
-        col_family = row.get(COL_FAMILY, "").strip()
+        col_family = row.get(cfg.COL_FAMILY, "").strip()
         if col_family and col_family not in seen:
             seen.add(col_family)
             families.append(col_family)
@@ -181,32 +140,32 @@ def prompt_manual_gbif_id(name: str, rank: str, suggestion: str | None, cache: d
         print("  Invalid input — please enter a numeric ID.")
 
 
-def build_taxon_options(rows: list[dict], cache: dict) -> list[dict]:
+def build_taxon_options(rows: list[dict], cache: dict, cfg) -> list[dict]:
     options = []
     seen_ids = set()
 
     # Species
     for row in rows:
-        gbif_id_raw = row.get(COL_GBIF_ID, "").strip()
+        gbif_id_raw = row.get(cfg.COL_GBIF_ID, "").strip()
         if not gbif_id_raw:
-            logger.warning(f"Missing {COL_GBIF_ID} for row: {row.get(COL_BINOMIAL, '?')} — skipping")
+            logger.warning(f"Missing {cfg.COL_GBIF_ID} for row: {row.get(cfg.COL_BINOMIAL, '?')} — skipping")
             continue
         try:
             gbif_id = int(gbif_id_raw)
         except ValueError:
-            logger.warning(f"Non-integer {COL_GBIF_ID} '{gbif_id_raw}' for {row.get(COL_BINOMIAL, '?')} — skipping")
+            logger.warning(f"Non-integer {cfg.COL_GBIF_ID} '{gbif_id_raw}' for {row.get(cfg.COL_BINOMIAL, '?')} — skipping")
             continue
         if gbif_id in seen_ids:
             continue
         seen_ids.add(gbif_id)
-        options.append({"type": "species", "label": build_species_label(row), "value": str(gbif_id)})
+        options.append({"type": "species", "label": build_species_label(row, cfg), "value": str(gbif_id)})
 
     # Genera
-    for genus in extract_genera(rows):
-        gbif_id = resolve_gbif(genus, "GENUS", cache)
+    for genus in extract_genera(rows, cfg):
+        gbif_id = resolve_gbif(genus, "GENUS", cache, cfg)
         if gbif_id is None:
             example = next(
-                (r[COL_BINOMIAL] for r in rows if r.get(COL_GENUS, "").split()[0:1] == [genus]),
+                (r[cfg.COL_BINOMIAL] for r in rows if r.get(cfg.COL_GENUS, "").split()[0:1] == [genus]),
                 None,
             )
             gbif_id = prompt_manual_gbif_id(genus, "GENUS", example, cache)
@@ -216,11 +175,11 @@ def build_taxon_options(rows: list[dict], cache: dict) -> list[dict]:
         options.append({"type": "genus", "label": genus, "value": str(gbif_id)})
 
     # Families
-    for family in extract_families(rows):
-        gbif_id = resolve_gbif(family, "FAMILY", cache)
+    for family in extract_families(rows, cfg):
+        gbif_id = resolve_gbif(family, "FAMILY", cache, cfg)
         if gbif_id is None:
             example = next(
-                (r[COL_BINOMIAL] for r in rows if r.get(COL_FAMILY, "").strip() == family),
+                (r[cfg.COL_BINOMIAL] for r in rows if r.get(cfg.COL_FAMILY, "").strip() == family),
                 None,
             )
             gbif_id = prompt_manual_gbif_id(family, "FAMILY", example, cache)
@@ -232,8 +191,8 @@ def build_taxon_options(rows: list[dict], cache: dict) -> list[dict]:
     return options
 
 
-def save_list(options: list[dict]) -> None:
-    output_path = project_root / OUTPUT_DIR
+def save_list(options: list[dict], cfg) -> None:
+    output_path = project_root / cfg.OUTPUT_DIR
     output_path.mkdir(parents=True, exist_ok=True)
     list_file = output_path / "labelbox_list.csv"
     with open(list_file, "w", encoding="utf-8", newline="") as f:
@@ -243,22 +202,22 @@ def save_list(options: list[dict]) -> None:
     logger.info(f"List saved to {list_file} ({len(options)} rows)")
 
 
-def build_ontology(options: list[dict]) -> lb.OntologyBuilder:
+def build_ontology(options: list[dict], cfg) -> lb.OntologyBuilder:
     taxon_options = [lb.Option(value=o["value"], label=o["label"]) for o in options]
-    organ_options = [lb.Option(value=v, label=l) for v, l in ORGAN_OPTIONS]
+    organ_options = [lb.Option(value=v, label=l) for v, l in cfg.ORGAN_OPTIONS]
 
     tool = lb.Tool(
         tool=lb.Tool.Type.BBOX,
-        name=BBOX_TOOL_NAME,
+        name=cfg.BBOX_TOOL_NAME,
         classifications=[
             lb.Classification(
                 class_type=lb.Classification.Type.RADIO,
-                name=TAXON_CLASS_NAME,
+                name=cfg.TAXON_CLASS_NAME,
                 options=taxon_options,
             ),
             lb.Classification(
                 class_type=lb.Classification.Type.CHECKLIST,
-                name=ORGAN_CLASS_NAME,
+                name=cfg.ORGAN_CLASS_NAME,
                 options=organ_options,
             ),
         ],
@@ -269,17 +228,27 @@ def build_ontology(options: list[dict]) -> lb.OntologyBuilder:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build a Labelbox ontology from a species CSV.")
-    parser.parse_args()
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--project", help="Project name (e.g. '2024_bci'); resolves to projects/<project>/config_ontology.py")
+    group.add_argument("--config", help="Full path to a config file (fallback when --project is not used)")
+    args = parser.parse_args()
 
-    cache_path = project_root / GBIF_CACHE_FILE
+    if args.project:
+        config_path = project_root / "projects" / args.project / "config_ontology.py"
+    else:
+        config_path = Path(args.config)
+
+    cfg = load_config(config_path)
+
+    cache_path = project_root / cfg.GBIF_CACHE_FILE
     cache = load_cache(cache_path)
 
-    logger.info(f"Loading species list from {INPUT_CSV}")
-    rows = load_species_rows()
+    logger.info(f"Loading species list from {cfg.INPUT_CSV}")
+    rows = load_species_rows(cfg)
     logger.info(f"{len(rows)} rows loaded")
 
     logger.info("Resolving GBIF IDs for species, genera, and families…")
-    options = build_taxon_options(rows, cache)
+    options = build_taxon_options(rows, cache, cfg)
     save_cache(cache, cache_path)
 
     species_count = sum(1 for o in options if o["type"] == "species")
@@ -287,10 +256,10 @@ def main() -> None:
     family_count = sum(1 for o in options if o["type"] == "family")
     logger.info(f"Taxón options: {species_count} species, {genus_count} genera, {family_count} families ({len(options)} total)")
 
-    save_list(options)
+    save_list(options, cfg)
 
     try:
-        answer = input(f"\nReview the list above and confirm creation of '{ONTOLOGY_NAME}' in Labelbox. Type 'yes' to proceed: ").strip().lower()
+        answer = input(f"\nReview the list above and confirm creation of '{cfg.ONTOLOGY_NAME}' in Labelbox. Type 'yes' to proceed: ").strip().lower()
     except (EOFError, KeyboardInterrupt):
         print()
         logger.info("Aborted.")
@@ -306,11 +275,11 @@ def main() -> None:
         sys.exit(1)
 
     client = lb.Client(api_key=LABELBOX_API_KEY)
-    ontology_builder = build_ontology(options)
+    ontology_builder = build_ontology(options, cfg)
 
-    logger.info(f"Creating ontology '{ONTOLOGY_NAME}' in Labelbox…")
+    logger.info(f"Creating ontology '{cfg.ONTOLOGY_NAME}' in Labelbox…")
     ontology = client.create_ontology(
-        name=ONTOLOGY_NAME,
+        name=cfg.ONTOLOGY_NAME,
         normalized=ontology_builder.asdict(),
         media_type=lb.MediaType.Image,
     )
