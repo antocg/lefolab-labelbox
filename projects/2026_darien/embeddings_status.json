@@ -1,0 +1,11 @@
+{
+  "project": "2026_darien",
+  "embedding_name": "PlantNet-v7.4-1280px",
+  "version_slug": "v7.4",
+  "dataset_name": "2026_darien",
+  "dataset_id": "cmp22wmo9002a07669znlrnk5",
+  "total_rows": 165,
+  "completed_rows": 165,
+  "all_complete": true,
+  "last_run": "2026-05-12T11:29:48.952581"
+}

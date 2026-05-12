@@ -279,4 +279,4 @@ else:
         if other_errors:
             logger.error(f"Other errors: {other_errors}")
         else:
-            logger.info("No other errors while importing data to Labelbox.")
+            logger.info("No errors while importing data to Labelbox.")
